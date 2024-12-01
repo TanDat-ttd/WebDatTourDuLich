@@ -1,0 +1,3579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tour Booking</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" >
+	 <link href="fonts/css/fontawesome.min.css" rel="stylesheet" >
+	<link href="fonts/css/brands.min.css" rel="stylesheet" />
+    <link href="fonts/css/solid.min.css" rel="stylesheet" />
+	<link href="css/global.css" rel="stylesheet">
+	<link href="css/index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+
+<section id="top" class="bg_black pt-2 pb-2">
+ <div class="container-xl">
+  <div class="row top_1">
+   <div class="col-md-3">
+     <div class="top_1l">
+	   <span class="d-inline-block col_green fs-1 lh-1 me-1"><i class="fa fa-location-arrow"></i></span>
+	   <h6 class="mb-0 text-white d-inline-block fw-bold font_14">Email: <br>
+<a class="col_green a_tag1 fs-6" href="#">info@gmail.com</a></h6>
+	 </div>
+   </div>
+   <div class="col-md-6">
+     <div class="top_1m text-center">
+	   <p class="mb-0 text-light">50% Off Your Next Trip. Hurry Up For Your New Tour! <a class="col_green a_tag1" href="#">Book Your Tour</a></p>
+	 </div>
+   </div>
+   <div class="col-md-3">
+     <div class="top_1r text-end">
+      <ul class="mb-0">
+	    <li class="d-inline-block"><a class="d-block text-center rounded-circle" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+		<li class="d-inline-block ms-2"><a class="d-block text-center rounded-circle" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+		<li class="d-inline-block ms-2"><a class="d-block text-center rounded-circle" href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+		<li class="d-inline-block ms-2"><a class="d-block text-center rounded-circle" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+	  </ul>
+	 </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="header">
+<nav class="navbar navbar-expand-md navbar-light px_4" id="navbar_sticky">
+  <div class="container-fluid">
+    <a class="navbar-brand  p-0 fw-bold" href="index.html"><i class="fa fa-plane-arrival col_green"></i> Tour <span class="col_yellow">Booking</span> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	   <ul class="navbar-nav mb-0 ms-auto nav_1">
+	    
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+		 
+		<li class="nav-item">
+          <a class="nav-link" href="about.html">About </a>
+        </li>
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Tours
+          </a>
+          <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="tour.html"> Tour</a></li>
+            <li><a class="dropdown-item border-0" href="detail.html"> Tour Detail</a></li>
+          </ul>
+        </li>
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Destination
+          </a>
+          <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="destination.html"> Destination</a></li>
+            <li><a class="dropdown-item border-0" href="destination_detail.html"> Destination Detail</a></li>
+          </ul>
+        </li>
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Blog
+          </a>
+          <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="blog.html"> Blog</a></li>
+            <li><a class="dropdown-item border-0" href="blog_detail.html"> Blog Detail</a></li>
+          </ul>
+        </li>
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pages
+          </a>
+          <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+		    <li><a class="dropdown-item" href="gallery.html"> Gallery</a></li>
+			<li><a class="dropdown-item border-0" href="faq.html"> Faq</a></li>
+          </ul>
+        </li>
+			
+		<li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav mb-0 ms-auto nav_2">
+	    <li class="nav-item">
+          <a class="nav-link fs-4" href="#"><i class="fa fa-user"></i></a>
+        </li>
+		    
+		<li class="nav-item">
+          <a class="nav-link fs-4 drop_icon col_green" href="#"><i class="fa fa-phone"></i></a>
+        </li>
+		
+		<li class="mb-0  d-inline-block fw-bold font_14 nav-item">To More Inquiry<br>
+<a class="col_green a_tag1 fs-5" href="#">+(000) 345 67 89</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</section>
+
+<div class="main position-relative">
+  <div class="main_1">
+    <section id="center" class="center_home px_4">
+ <div class="container-fluid">
+  <div class="row">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/1.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-md-block">
+	     <h6 class="d-inline-block bg_yellow text-white p-3 px-5 fs-5"><i class="fa fa-map-location me-1"></i> Spain</h6>
+		 <h1 class="text-white font_70 mt-2">Let’s Explore Your <br> Holiday Trip.</h1>
+		 <p class="mt-3 text-light">Life is unpredictable, and we understand that plans might change. Enjoy flexible booking options, so you can <br> reschedule or modify your trip with ease.</p>
+		 <h6><span class="col_yellow">
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star-half-alt"></i>
+		 </span> 4.5</h6>
+		<ul class="mb-0 mt-4">
+		  <li class="d-inline-block"><a class="button" href="#">Book A Trip</a></li>
+		  <li class="d-inline-block ms-3 fw-bold"><a class="text-white fs-4" href="#"><i class="fa fa-umbrella-beach d-inline-block text-center rounded-circle bg_green fs-3 align-middle me-1"></i> Tripadvisor</a></li>
+		</ul>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/2.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-md-block">
+	     <h6 class="d-inline-block bg_yellow text-white p-3 px-5 fs-5"><i class="fa fa-map-location me-1"></i> London</h6>
+		 <h1 class="text-white font_70 mt-2">Journey and <br> Discover Places.</h1>
+		 <p class="mt-3 text-light">Life is unpredictable, and we understand that plans might change. Enjoy flexible booking options, so you can <br> reschedule or modify your trip with ease.</p>
+		 <h6><span class="col_yellow">
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star-half-alt"></i>
+		 </span> 4.5</h6>
+		<ul class="mb-0 mt-4">
+		  <li class="d-inline-block"><a class="button" href="#">Book A Trip</a></li>
+		  <li class="d-inline-block ms-3 fw-bold"><a class="text-white fs-4" href="#"><i class="fa fa-umbrella-beach d-inline-block text-center rounded-circle bg_green fs-3 align-middle me-1"></i> Tripadvisor</a></li>
+		</ul>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/3.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-md-block">
+	     <h6 class="d-inline-block bg_yellow text-white p-3 px-5 fs-5"><i class="fa fa-map-location me-1"></i> Paris</h6>
+		 <h1 class="text-white font_70 mt-2">Trek and Venture <br> to a Spot.</h1>
+		 <p class="mt-3 text-light">Life is unpredictable, and we understand that plans might change. Enjoy flexible booking options, so you can <br> reschedule or modify your trip with ease.</p>
+		 <h6><span class="col_yellow">
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star-half-alt"></i>
+		 </span> 4.5</h6>
+		<ul class="mb-0 mt-4">
+		  <li class="d-inline-block"><a class="button" href="#">Book A Trip</a></li>
+		  <li class="d-inline-block ms-3 fw-bold"><a class="text-white fs-4" href="#"><i class="fa fa-umbrella-beach d-inline-block text-center rounded-circle bg_green fs-3 align-middle me-1"></i> Tripadvisor</a></li>
+		</ul>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  </div>
+ </div>
+</section>
+  </div>
+   <div class="main_2 position-absolute w-100">
+     <section id="book" class="px_4 mb-5">
+ <div class="container-fluid">
+  <div class="row book_1 text-center">
+     <div class="col-md-12">
+	    <ul class="nav nav-tabs mb-0 bg_light">
+<li class="nav-item d-inline-block">
+<a href="#home" data-bs-toggle="tab" aria-expanded="false" class="nav-link active border-0">
+<span class="d-md-block"><i class="fa fa-map-marked me-1"></i> Tour</span>
+</a>
+</li>
+<li class="nav-item d-inline-block">
+<a href="#profile" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+<span class="d-md-block"><i class="fa fa-hotel me-1"></i> Hotel</span>
+</a>
+</li>
+<li class="nav-item d-inline-block">
+<a href="#profile1" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+<span class="d-md-block"><i class="fa fa-passport me-1"></i> Visa</span>
+</a>
+</li>
+
+<li class="nav-item d-inline-block">
+<a href="#profile2" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+<span class="d-md-block"><i class="fa fa-swimmer me-1"></i> Activities</span>
+</a>
+</li>
+
+<li class="nav-item d-inline-block">
+<a href="#profile3" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+<span class="d-md-block"><i class="fa fa-bus me-1"></i> Transport</span>
+</a>
+</li>
+
+</ul>
+	 </div>
+  </div>
+  <div class="row book_2 mx-0">
+     <div class="tab-content">
+<div class="tab-pane active" id="home">
+  <div class="book_2i row bg_light">
+    <div class="col">
+	 <div class="book_2il">
+	   <h6><i class="fa fa-map-marker me-1 col_green fs-3 align-middle"></i> Destination</h6>
+	   <select class="form-select fw-bold text-black" aria-label="Default select example">
+<option selected="">Select Destination</option>
+<option value="1">Sweden</option>
+<option value="2">Japan</option>
+<option value="3">London</option>
+<option value="4">France</option>
+</select>
+	 </div>
+	</div>
+	<div class="col">
+	 <div class="book_2il">
+	   <h6><i class="fa fa-suitcase-rolling me-1 col_green fs-3 align-middle"></i> Tour Type</h6>
+	   <select class="form-select fw-bold text-black" aria-label="Default select example">
+<option selected="">Select Tour Type</option>
+<option value="1">Luxury Tour</option>
+<option value="2">Group Tour</option>
+<option value="3">Honeymoon Tour</option>
+<option value="4">Historical Tour</option>
+</select>
+	 </div>
+	</div>
+	<div class="col">
+	 <div class="book_2il">
+	   <h6><i class="fa fa-calendar me-1 col_green fs-3 align-middle"></i> When</h6>
+	   <select class="form-select fw-bold text-black" aria-label="Default select example">
+<option selected="">Select Month</option>
+<option value="1">January</option>
+<option value="2">February</option>
+<option value="3">March</option>
+<option value="4">April</option>
+</select>
+	 </div>
+	</div>
+	<div class="col">
+	 <div class="book_2il">
+	   <h6><i class="fa fa-clock me-1 col_green fs-3 align-middle"></i> Tour Duration</h6>
+	   <select class="form-select fw-bold text-black" aria-label="Default select example">
+<option selected="">Select Duration</option>
+<option value="1">1 Week</option>
+<option value="2">3 Days / 4 Night</option>
+<option value="3">5 Days / 5 Night</option>
+<option value="4">5 Days / 6 Night</option>
+</select>
+	 </div>
+	</div>
+	<div class="col pe-0">
+	 <div class="book_2ir text-center bg_green">
+	 <h5 class="mb"><a class="text-white d-block" href="#">Search</a></h5>
+	 </div>
+	</div>
+  </div>
+</div>
+<div class="tab-pane" id="profile">
+   <div class="book_2i row bg_light">
+    <div class="col">
+	 <div class="book_2il">
+	   <h6><i class="fa fa-map-marker me-1 col_green fs-3 align-middle"></i> Location</h6>
+	   <select class="form-select fw-bold text-black" aria-label="Default select example">
+<option selected="">Select Location</option>
+<option value="1">Sweden</option>
+<option value="2">Japan</option>
+<option value="3">London</option>
+<option value="4">France</option>
+</select>
+	 </div>
+	</div>
+	<div class="col">
+	 <div class="book_2il">
+	   <h6><i class="fa fa-clock me-1 col_green fs-3 align-middle"></i> Check in - Check out</h6>
+	   <input class="form-control fw-bold text-black" id="example-date" type="date" name="date">
+	 </div>
+	</div>
+	<div class="col">
+	 <div class="book_2il">
+	   <h6><i class="fa fa-bed me-1 col_green fs-3 align-middle"></i> Room</h6>
+	   <select class="form-select fw-bold text-black" aria-label="Default select example">
+<option selected="">Room Type</option>
+<option value="1">Luxyry</option>
+<option value="2">Ordinary</option>
+<option value="3">Single</option>
+<option value="4">Double</option>
+</select>
+	 </div>
+	</div>
+	<div class="col">
+	 <div class="book_2il">
+	   <h6><i class="fa fa-user me-1 col_green fs-3 align-middle"></i> Guest</h6>
+	   <select class="form-select fw-bold text-black" aria-label="Default select example">
+<option selected="">1 Person</option>
+<option value="1">2 Person</option>
+<option value="2">3 Person</option>
+<option value="3">4 Person</option>
+<option value="4">5 Person</option>
+</select>
+	 </div>
+	</div>
+	<div class="col pe-0">
+	 <div class="book_2ir text-center bg_green">
+	 <h5 class="mb"><a class="text-white d-block" href="#">Search</a></h5>
+	 </div>
+	</div>
+  </div>  
+</div>
+
+<div class="tab-pane" id="profile1">
+  <div class="book_2i row bg_light">
+    <div class="col">
+	 <div class="book_2il">
+	   <h6><i class="fa fa-map-marker me-1 col_green fs-3 align-middle"></i> Country</h6>
+	   <select class="form-select fw-bold text-black" aria-label="Default select example">
+<option selected="">Select Country</option>
+<option value="1">Sweden</option>
+<option value="2">Japan</option>
+<option value="3">London</option>
+<option value="4">France</option>
+</select>
+	 </div>
+	</div>
+	<div class="col">
+	 <div class="book_2il">
+	   <h6><i class="fa fa-passport me-1 col_green fs-3 align-middle"></i> Visa Type</h6>
+	   <select class="form-select fw-bold text-black" aria-label="Default select example">
+<option selected="">Select Visa Type</option>
+<option value="1">Diplomat</option>
+<option value="2">Medical</option>
+<option value="3">Tourist</option>
+</select>
+	 </div>
+	</div>
+	<div class="col">
+	 <div class="book_2il">
+	   <h6><i class="fa fa-flag me-1 col_green fs-3 align-middle"></i> Nationality</h6>
+	   <select class="form-select fw-bold text-black" aria-label="Default select example">
+<option selected="">Select Nationality</option>
+<option value="1">Algerian</option>
+<option value="2">Indian</option>
+<option value="3">American</option>
+<option value="4">British</option>
+</select>
+	 </div>
+	</div>
+	<div class="col">
+	 <div class="book_2il">
+	   <h6><i class="fa fa-user me-1 col_green fs-3 align-middle"></i> Visa Mode</h6>
+	   <select class="form-select fw-bold text-black" aria-label="Default select example">
+<option selected="">Select Visa Mode</option>
+<option value="1">Electronic</option>
+<option value="2">Emergency</option>
+</select>
+	 </div>
+	</div>
+	<div class="col pe-0">
+	 <div class="book_2ir text-center bg_green">
+	 <h5 class="mb"><a class="text-white d-block" href="#">Search</a></h5>
+	 </div>
+	</div>
+  </div>
+ </div>
+
+<div class="tab-pane" id="profile2">
+   <div class="book_2i row bg_light">
+    <div class="col">
+	 <div class="book_2il">
+	 <h6><i class="fa fa-map-marker me-1 col_green fs-3 align-middle"></i> Location</h6>
+	   <select class="form-select fw-bold text-black" aria-label="Default select example">
+<option selected="">Select Location</option>
+<option value="1">Sweden</option>
+<option value="2">Japan</option>
+<option value="3">London</option>
+<option value="4">France</option>
+</select>
+	 </div>
+	</div>
+	<div class="col">
+	 <div class="book_2il">
+	   <h6><i class="fa fa-suitcase-rolling me-1 col_green fs-3 align-middle"></i> Activities Type</h6>
+	   <select class="form-select fw-bold text-black" aria-label="Default select example">
+<option selected="">Select Activity Type</option>
+<option value="1">Sports and Fitness</option>
+<option value="2">Volunteer Work</option>
+</select>
+	 </div>
+	</div>
+	<div class="col">
+	 <div class="book_2il">
+	   <h6><i class="fa fa-calendar me-1 col_green fs-3 align-middle"></i> When</h6>
+	   <select class="form-select fw-bold text-black" aria-label="Default select example">
+<option selected="">Select Month</option>
+<option value="1">January</option>
+<option value="2">February</option>
+<option value="3">March</option>
+<option value="4">April</option>
+</select>
+	 </div>
+	</div>
+	<div class="col">
+	 <div class="book_2il">
+	   <h6><i class="fa fa-calendar me-1 col_green fs-3 align-middle"></i> Activite Day</h6>
+	   <select class="form-select fw-bold text-black" aria-label="Default select example">
+<option selected="">Select Activity Day</option>
+<option value="1">Sunday</option>
+<option value="2">Monday</option>
+<option value="3">Tuesday</option>
+<option value="4">Saturday</option>
+</select>
+	 </div>
+	</div>
+	<div class="col pe-0">
+	 <div class="book_2ir text-center bg_green">
+	 <h5 class="mb"><a class="text-white d-block" href="#">Search</a></h5>
+	 </div>
+	</div>
+  </div>
+</div>
+
+<div class="tab-pane" id="profile3">
+   <div class="book_2i row bg_light">
+    <div class="col">
+	 <div class="book_2il">
+	   <h6><i class="fa fa-map-marker me-1 col_green fs-3 align-middle"></i> Location Form</h6>
+	   <select class="form-select fw-bold text-black" aria-label="Default select example">
+<option selected="">Select Location</option>
+<option value="1">Sweden</option>
+<option value="2">Japan</option>
+<option value="3">London</option>
+<option value="4">France</option>
+</select>
+	 </div>
+	</div>
+	<div class="col">
+	 <div class="book_2il">
+	   <h6><i class="fa fa-car me-1 col_green fs-3 align-middle"></i> Transport Type</h6>
+	   <select class="form-select fw-bold text-black" aria-label="Default select example">
+<option selected="">Which Type?</option>
+<option value="1">Bus</option>
+<option value="2">Plane</option>
+<option value="3">Boat</option>
+<option value="4">Car</option>
+</select>
+	 </div>
+	</div>
+	<div class="col">
+	 <div class="book_2il">
+	   <h6><i class="fa fa-calendar me-1 col_green fs-3 align-middle"></i> When</h6>
+	   <select class="form-select fw-bold text-black" aria-label="Default select example">
+<option selected="">Select Month</option>
+<option value="1">January</option>
+<option value="2">February</option>
+<option value="3">March</option>
+<option value="4">April</option>
+</select>
+	 </div>
+	</div>
+	<div class="col">
+	 <div class="book_2il">
+	   <h6><i class="fa fa-clock me-1 col_green fs-3 align-middle"></i> Tour Duration</h6>
+	   <select class="form-select fw-bold text-black" aria-label="Default select example">
+<option selected="">Select Duration</option>
+<option value="1">1 Week</option>
+<option value="2">3 Days / 4 Night</option>
+<option value="3">5 Days / 5 Night</option>
+<option value="4">5 Days / 6 Night</option>
+</select>
+	 </div>
+	</div>
+	<div class="col pe-0">
+	 <div class="book_2ir text-center bg_green">
+	 <h5 class="mb"><a class="text-white d-block" href="#">Search</a></h5>
+	 </div>
+	</div>
+  </div>
+</div>
+
+</div>
+  </div>
+ </div>
+</section>
+   </div>
+</div>
+
+
+<section id="about_h" class="p_3">
+ <div class="container-xl">
+  <div class="row about_h1">
+    <div class="col-md-6">
+	  <div class="about_h1l">
+	    <h5 class="family_1 icon_tag col_green"><i class="fa fa-leaf me-1"></i> About Us <i class="fa fa-leaf ms-1"></i></h5>
+		<h1 class="font_50 mt-3">Let’s know About Our Journey For Tour </h1>
+		<ul class="nav nav-tabs mb-4 border-0 mt-4">
+<li class="nav-item d-inline-block">
+<a href="#profile4" data-bs-toggle="tab" aria-expanded="true" class="nav-link active">
+<span class="d-md-block"><i class="fa fa-bullseye me-1"></i> Mission & Vision</span>
+</a>
+</li>
+
+<li class="nav-item d-inline-block">
+<a href="#profile5" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+<span class="d-md-block"><i class="fa fa-user me-1"></i> Focus On Customer</span>
+</a>
+</li>
+
+</ul>
+<div class="tab-content">
+
+<div class="tab-pane active" id="profile4">
+     <p class="mb-0">
+Gtiam ac rortor id jkugs commodo vulputate. Vebsidoe porttitor erat felis and sed vehicula tortor malesuada gravida. Mauris volutpat enim quis pulv gont congue. Suspendisse ullamcorper, enim vitae tristique blandit, eratot augue torel tempo libero, non porta lectus tortor et elit. Quisque finibusot enim et rtrewqas gravida, eu elementum turpis tyroxiwn. Integer female go tellus kjherws, tyresca and gernicomeu. </p>
+</div>
+
+<div class="tab-pane" id="profile5">
+    <p class="mb-0">
+Etiam ac tortor id purus commodo vulputate. Vestibulum porttitor erat felis and sed vehicula tortor malesuada gravida. Mauris volutpat enim quis pulv gont congue. Suspendisse ullamcorper, enim vitae tristique blandit, eratot augue torel tempo libero, non porta lectus tortor et elit. Quisque finibusot enim et eratourgt gravida, eu elementum turpis lacinia. Integer female go tellus ligula, attendora and condimentum. </p>
+</div>
+
+</div>
+  <div class="about_h1li row mt-4">
+    <div class="col-md-5">
+	  <div class="about_h1lil">
+	    <h6 class="mb-0"><a class="button" href="#">More About</a></h6>
+	  </div>
+	</div>
+	<div class="col-md-7">
+	  <div class="about_h1lir">
+	    <ul class="mb-0">
+		 <li class="d-inline-block"><img class="rounded-circle" alt="abc" src="img/4.jpg"></li>
+		 <li class="d-inline-block"><img class="rounded-circle" alt="abc" src="img/5.jpg"></li>
+		 <li class="d-inline-block"><img class="rounded-circle" alt="abc" src="img/6.jpg"></li>
+		 <li class="d-inline-block align-middle"><span class="fw-bold">3+</span> <br> Customer</li>
+		</ul>
+	  </div>
+	</div>
+  </div>
+	  </div>
+	</div>
+	<div class="col-md-6">
+	  <div class="about_h1r">
+	    <div class="about_h1ri row">
+		  <div class="col-md-6 col-sm-6">
+		     <div class="about_h1ril">
+			   <img src="img/9.jpg" class="rounded_1 w-100" alt="abc">
+			    <img src="img/8.jpg" class="rounded_1 w-100 mt-4" alt="abc">
+			 </div>
+		  </div>
+		  <div class="col-md-6 col-sm-6">
+		     <div class="about_h1ril">
+			  <img src="img/10.jpg" class="rounded_1 w-100" alt="abc">
+			  <img src="img/7.jpg" class="rounded_1 w-100 mt-4" alt="abc">
+			 </div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+ </div>
+</section>
+
+<section id="vacation" class="p_3">
+ <div class="container-xl">
+  <div class="row vacation_1 text-center mb-4">
+    <div class="col-md-12">
+	  <h5 class="family_1 icon_tag col_green"><i class="fa fa-leaf me-1"></i> Journey to the <i class="fa fa-leaf ms-1"></i></h5>
+		<h1 class="font_50 mt-3 mb-0">Desired Vacation Spots</h1>
+	</div>
+  </div>
+  <div class="row vacation_2">
+    <div class="col-md-3">
+	  <div class="vacation_2i position-relative">
+	    <div class="vacation_2i1">
+		  <img src="img/11.jpg" alt="abc" class="rounded_1 w-100">
+		</div>
+		<div class="vacation_2i2 text-center position-absolute bottom-0 w-100 h-100  px-3 bg_back">
+		  <h3 class="mb-0 text-white">Sweden</h3>
+		</div>
+		<div class="vacation_2i3 text-center position-absolute top-0 w-100 h-100 bg_back  px-3">
+		   <h3 class="mb-0"><a class="text-white a_tag1" href="#">Sweden</a></h3>
+		   <hr class="line mx-auto">
+		   <h6 class="d-inline-block bg_green text-white p-2 px-4"> 4 Tour</h6>
+		</div>
+	  </div>
+	</div>
+	<div class="col-md-6">
+	  <div class="vacation_2i position-relative">
+	    <div class="vacation_2i1">
+		  <img src="img/13.jpg" alt="abc" class="rounded_1 w-100">
+		</div>
+		<div class="vacation_2i2 vacation_2i2o text-center position-absolute bottom-0 w-100 h-100  px-3 bg_back">
+		  <h3 class="mb-0 text-white">Japan</h3>
+		</div>
+		<div class="vacation_2i3 vacation_2i3o text-center position-absolute top-0 w-100 h-100 bg_back  px-3">
+		   <h3 class="mb-0"><a class="text-white a_tag1" href="#">Japan</a></h3>
+		   <hr class="line mx-auto">
+		   <h6 class="d-inline-block bg_green text-white p-2 px-4"> 1 Tour</h6>
+		</div>
+	  </div>
+	</div>
+<div class="col-md-3">
+	  <div class="vacation_2i position-relative">
+	    <div class="vacation_2i1">
+		  <img src="img/12.jpg" alt="abc" class="rounded_1 w-100">
+		</div>
+		<div class="vacation_2i2 text-center position-absolute bottom-0 w-100 h-100  px-3 bg_back">
+		  <h3 class="mb-0 text-white">India</h3>
+		</div>
+		<div class="vacation_2i3 text-center position-absolute top-0 w-100 h-100 bg_back  px-3">
+		   <h3 class="mb-0"><a class="text-white a_tag1" href="#">India</a></h3>
+		   <hr class="line mx-auto">
+		   <h6 class="d-inline-block bg_green text-white p-2 px-4"> 2 Tour</h6>
+		</div>
+	  </div>
+	</div>
+  </div>
+  <div class="row vacation_2 mt-4">
+    <div class="col-md-3">
+	  <div class="vacation_2i position-relative">
+	    <div class="vacation_2i1">
+		  <img src="img/15.jpg" alt="abc" class="rounded_1 w-100">
+		</div>
+		<div class="vacation_2i2 text-center position-absolute bottom-0 w-100 h-100  px-3 bg_back">
+		  <h3 class="mb-0 text-white">London</h3>
+		</div>
+		<div class="vacation_2i3 text-center position-absolute top-0 w-100 h-100 bg_back  px-3">
+		   <h3 class="mb-0"><a class="text-white a_tag1" href="#">London</a></h3>
+		   <hr class="line mx-auto">
+		   <h6 class="d-inline-block bg_green text-white p-2 px-4"> 5 Tour</h6>
+		</div>
+	  </div>
+	</div>
+	<div class="col-md-6">
+	  <div class="vacation_2i position-relative">
+	    <div class="vacation_2i1">
+		  <img src="img/14.jpg" alt="abc" class="rounded_1 w-100">
+		</div>
+		<div class="vacation_2i2 vacation_2i2o text-center position-absolute bottom-0 w-100 h-100  px-3 bg_back">
+		  <h3 class="mb-0 text-white">Usa</h3>
+		</div>
+		<div class="vacation_2i3 vacation_2i3o text-center position-absolute top-0 w-100 h-100 bg_back  px-3">
+		   <h3 class="mb-0"><a class="text-white a_tag1" href="#">Usa</a></h3>
+		   <hr class="line mx-auto">
+		   <h6 class="d-inline-block bg_green text-white p-2 px-4"> 1 Tour</h6>
+		</div>
+	  </div>
+	</div>
+<div class="col-md-3">
+	  <div class="vacation_2i position-relative">
+	    <div class="vacation_2i1">
+		  <img src="img/16.jpg" alt="abc" class="rounded_1 w-100">
+		</div>
+		<div class="vacation_2i2 text-center position-absolute bottom-0 w-100 h-100  px-3 bg_back">
+		  <h3 class="mb-0 text-white">Brazil</h3>
+		</div>
+		<div class="vacation_2i3 text-center position-absolute top-0 w-100 h-100 bg_back  px-3">
+		   <h3 class="mb-0"><a class="text-white a_tag1" href="#">Brazil</a></h3>
+		   <hr class="line mx-auto">
+		   <h6 class="d-inline-block bg_green text-white p-2 px-4"> 4 Tour</h6>
+		</div>
+	  </div>
+	</div>
+  </div>
+ </div>
+</section>
+
+<section id="expe" class="p_3">
+ <div class="container-xl">
+  <div class="row vacation_1 text-center mb-4">
+    <div class="col-md-12">
+	  <h5 class="family_1 icon_tag col_green"><i class="fa fa-leaf me-1"></i> Tour Experience <i class="fa fa-leaf ms-1"></i></h5>
+		<h1 class="font_50 mt-3 mb-0">Ultimate Travel Experience</h1>
+	</div>
+  </div>
+  <div class="row expe_1 mb-4">
+    <div class="col-md-12">
+	  <ul class="nav nav-tabs mb-4 border-0 justify-content-center">
+<li class="nav-item d-inline-block">
+<a href="#profile6" data-bs-toggle="tab" aria-expanded="true" class="nav-link active">
+<span class="d-md-block"><i class="fa fa-map-marker me-1"></i> Tour Package</span>
+</a>
+</li>
+
+<li class="nav-item d-inline-block">
+<a href="#profile7" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+<span class="d-md-block"><i class="fa fa-hotel me-1"></i> Hotel</span>
+</a>
+</li>
+<li class="nav-item d-inline-block">
+<a href="#profile8" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+<span class="d-md-block"><i class="fa fa-bus me-1"></i> Transports</span>
+</a>
+</li>
+</ul>
+      <div class="tab-content">
+
+<div class="tab-pane active" id="profile6">
+    <div class="profile6i row">
+	  <div class="col-md-4">
+	    <div class="profile6il p-3 shadow_box rounded_1">
+		  <div class="profile6il1 position-relative">
+		   <div class="profile6il1i">
+		     <a href="#"><img src="img/17.jpg" alt="abc" class="w-100 rounded_1"></a>
+		</div>
+		   <div class="profile6il1i1 position-absolute top-0">
+		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 1 WEEK</h6><br>
+			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> EGYPT</a></h6>
+		</div>
+		</div>
+		<div class="profile6il2 mt-3">
+		  <h5><a href="#">Discover Serenity, Exploration, And Enlightenment.</a></h5>
+		  <ul class="font_12">
+		   <li class="d-inline-block me-1"><a href="#">LOREM PORTA</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">SEA BEACH</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">IPSUM WORLD</a></li>
+		  </ul>
+		  <hr>
+		  <div class="profile6il2i row">
+		    <div class="col-md-6">
+			  <div class="profile6il2il">
+			    <h6 class="font_14 mb-0">Starting From:<br>
+<span class="fw-bold"><span class="fs-4 col_green">$340</span> <span class="text-decoration-line-through text-muted">$450</span></span><br>
+<span class="font_12">TAXES INCL/PERS</span></h6>
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <div class="profile6il2ir text-end pt-2">
+			    <h6 class="mb-0"><a class="button px-3" href="#">Book A Trip <i class="fa fa-plane"></i></a></h6>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		</div>
+	  </div>
+	  <div class="col-md-4">
+	    <div class="profile6il p-3 shadow_box rounded_1">
+		  <div class="profile6il1 position-relative">
+		   <div class="profile6il1i">
+		     <a href="#"><img src="img/18.jpg" alt="abc" class="w-100 rounded_1"></a>
+		</div>
+		   <div class="profile6il1i1 position-absolute top-0">
+		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 2 DAYS / 3 NIGHT</h6><br>
+			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> Spain</a></h6>
+		</div>
+		</div>
+		<div class="profile6il2 mt-3">
+		  <h5><a href="#">Embracing City Lights, Landm, And Iconic Culture.</a></h5>
+		  <ul class="font_12">
+		   <li class="d-inline-block me-1"><a href="#">LOREM PORTA</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">SEA BEACH</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">IPSUM WORLD</a></li>
+		  </ul>
+		  <hr>
+		  <div class="profile6il2i row">
+		    <div class="col-md-6">
+			  <div class="profile6il2il">
+			    <h6 class="font_14 mb-0">Starting From:<br>
+<span class="fw-bold"><span class="fs-4 col_green">$260</span> <span class="text-decoration-line-through text-muted">$410</span></span><br>
+<span class="font_12">TAXES INCL/PERS</span></h6>
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <div class="profile6il2ir text-end pt-2">
+			    <h6 class="mb-0"><a class="button px-3" href="#">Book A Trip <i class="fa fa-plane"></i></a></h6>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		</div>
+	  </div>
+	  <div class="col-md-4">
+	    <div class="profile6il p-3 shadow_box rounded_1">
+		  <div class="profile6il1 position-relative">
+		   <div class="profile6il1i">
+		     <a href="#"><img src="img/19.jpg" alt="abc" class="w-100 rounded_1"></a>
+		</div>
+		   <div class="profile6il1i1 position-absolute top-0">
+		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 3 DAYS / 4 NIGHT</h6><br>
+			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> LONDON</a></h6>
+		</div>
+		</div>
+		<div class="profile6il2 mt-3">
+		  <h5><a href="#">Immersive Cultural Expirees, Local Cuisine.</a></h5>
+		  <ul class="font_12">
+		   <li class="d-inline-block me-1"><a href="#">LOREM PORTA</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">SEA BEACH</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">IPSUM WORLD</a></li>
+		  </ul>
+		  <hr>
+		  <div class="profile6il2i row">
+		    <div class="col-md-6">
+			  <div class="profile6il2il">
+			    <h6 class="font_14 mb-0">Starting From:<br>
+<span class="fw-bold"><span class="fs-4 col_green">$430</span> <span class="text-decoration-line-through text-muted">$620</span></span><br>
+<span class="font_12">TAXES INCL/PERS</span></h6>
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <div class="profile6il2ir text-end pt-2">
+			    <h6 class="mb-0"><a class="button px-3" href="#">Book A Trip <i class="fa fa-plane"></i></a></h6>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		</div>
+	  </div>
+	</div>
+	<div class="profile6i row mt-4">
+	  <div class="col-md-4">
+	    <div class="profile6il p-3 shadow_box rounded_1">
+		  <div class="profile6il1 position-relative">
+		   <div class="profile6il1i">
+		     <a href="#"><img src="img/22.jpg" alt="abc" class="w-100 rounded_1"></a>
+		</div>
+		   <div class="profile6il1i1 position-absolute top-0">
+		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 1 WEEK</h6><br>
+			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> EGYPT</a></h6>
+		</div>
+		</div>
+		<div class="profile6il2 mt-3">
+		  <h5><a href="#">Discover Serenity, Exploration, And Enlightenment.</a></h5>
+		  <ul class="font_12">
+		   <li class="d-inline-block me-1"><a href="#">LOREM PORTA</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">SEA BEACH</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">IPSUM WORLD</a></li>
+		  </ul>
+		  <hr>
+		  <div class="profile6il2i row">
+		    <div class="col-md-6">
+			  <div class="profile6il2il">
+			    <h6 class="font_14 mb-0">Starting From:<br>
+<span class="fw-bold"><span class="fs-4 col_green">$340</span> <span class="text-decoration-line-through text-muted">$450</span></span><br>
+<span class="font_12">TAXES INCL/PERS</span></h6>
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <div class="profile6il2ir text-end pt-2">
+			    <h6 class="mb-0"><a class="button px-3" href="#">Book A Trip <i class="fa fa-plane"></i></a></h6>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		</div>
+	  </div>
+	  <div class="col-md-4">
+	    <div class="profile6il p-3 shadow_box rounded_1">
+		  <div class="profile6il1 position-relative">
+		   <div class="profile6il1i">
+		     <a href="#"><img src="img/20.jpg" alt="abc" class="w-100 rounded_1"></a>
+		</div>
+		   <div class="profile6il1i1 position-absolute top-0">
+		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 2 DAYS / 3 NIGHT</h6><br>
+			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> Spain</a></h6>
+		</div>
+		</div>
+		<div class="profile6il2 mt-3">
+		  <h5><a href="#">Embracing City Lights, Landm, And Iconic Culture.</a></h5>
+		  <ul class="font_12">
+		   <li class="d-inline-block me-1"><a href="#">LOREM PORTA</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">SEA BEACH</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">IPSUM WORLD</a></li>
+		  </ul>
+		  <hr>
+		  <div class="profile6il2i row">
+		    <div class="col-md-6">
+			  <div class="profile6il2il">
+			    <h6 class="font_14 mb-0">Starting From:<br>
+<span class="fw-bold"><span class="fs-4 col_green">$260</span> <span class="text-decoration-line-through text-muted">$410</span></span><br>
+<span class="font_12">TAXES INCL/PERS</span></h6>
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <div class="profile6il2ir text-end pt-2">
+			    <h6 class="mb-0"><a class="button px-3" href="#">Book A Trip <i class="fa fa-plane"></i></a></h6>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		</div>
+	  </div>
+	  <div class="col-md-4">
+	    <div class="profile6il p-3 shadow_box rounded_1">
+		  <div class="profile6il1 position-relative">
+		   <div class="profile6il1i">
+		     <a href="#"><img src="img/21.jpg" alt="abc" class="w-100 rounded_1"></a>
+		</div>
+		   <div class="profile6il1i1 position-absolute top-0">
+		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 3 DAYS / 4 NIGHT</h6><br>
+			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> LONDON</a></h6>
+		</div>
+		</div>
+		<div class="profile6il2 mt-3">
+		  <h5><a href="#">Immersive Cultural Expirees, Local Cuisine.</a></h5>
+		  <ul class="font_12">
+		   <li class="d-inline-block me-1"><a href="#">LOREM PORTA</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">SEA BEACH</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">IPSUM WORLD</a></li>
+		  </ul>
+		  <hr>
+		  <div class="profile6il2i row">
+		    <div class="col-md-6">
+			  <div class="profile6il2il">
+			    <h6 class="font_14 mb-0">Starting From:<br>
+<span class="fw-bold"><span class="fs-4 col_green">$430</span> <span class="text-decoration-line-through text-muted">$620</span></span><br>
+<span class="font_12">TAXES INCL/PERS</span></h6>
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <div class="profile6il2ir text-end pt-2">
+			    <h6 class="mb-0"><a class="button px-3" href="#">Book A Trip <i class="fa fa-plane"></i></a></h6>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		</div>
+	  </div>
+	</div>
+</div>
+
+<div class="tab-pane" id="profile7">
+    <div class="profile7i row">
+	  <div class="col-md-6">
+	    <div class="profile7il border_1">
+		   <div class="profile7il1 position-relative">
+		      <div class="profile7il1i">
+		        <div class="grid clearfix">
+			<figure class="effect-jazz mb-0">
+			<a href="#"><img src="img/23.jpg" class="w-100 rounded-0" alt="img25"></a>
+			</figure>
+			</div>
+		   </div>
+		<div class="profile7il1i1 position-absolute top-0">
+		  <h6 class="d-inline-block bg_green text-white p-2 px-4"> Breakfast Included</h6>
+		</div>
+		</div>
+		<div class="profile7il2 p-4">
+		    <h4><a href="#">Eclipse Haven Lodge</a></h4>
+			<p class="font_14 lh-base"><i class="fa fa-map-marker col_green me-1"></i> House 128/140, Road 01, Avenue 02, Lorem DPHS, Amet, India - See Map 1 km to city center</p>
+			<ul class="font_14">
+			 <li class="d-inline-block"><i class="fa fa-tv me-1 col_green align-middle"></i> TV</li>
+			 <li class="d-inline-block ms-2"><i class="fa fa-temperature-up me-1 col_green align-middle"></i> Heater</li>
+			 <li class="d-inline-block ms-2"><i class="fa fa-lock me-1 col_green align-middle"></i> Saving Safe</li>
+			 <li class="d-inline-block ms-2"><i class="fa fa-wifi me-1 col_green align-middle"></i> Free Wifi</li>
+			 <li class="d-inline-block ms-2"><i class="fa fa-phone me-1 col_green align-middle"></i> Phone</li>
+			</ul>
+			<div class="profile7il2i row">
+			  <div class="col-md-6">
+			    <div class="profile7il2il">
+				   <h5 class="font_15">Sea View<br>
+Semi Double<br>
+<span class="fw-normal">1 king bed</span></h5>
+<h6 class="mb-0 font_15"><span class="fw-bold col_green">Free cancellation</span><br>
+before 48 hours</h6>
+				</div>
+			  </div>
+			  <div class="col-md-6">
+			    <div class="profile7il2ir text-end">
+				  <h6 class="font_14 mb-0">1 Night, 2 Adults<br>
+<span class="fw-bold"><span class="fs-4 col_green">$340</span> <span class="text-decoration-line-through text-muted">$450</span></span><br>
+</h6>
+<h6 class="mb-0 mt-2"><a class="button px-3" href="#">Check Availability <i class="fa fa-arrow-right align-middle"></i></a></h6>
+				</div>
+			  </div>
+			</div>
+		</div>
+		</div>
+	  </div>
+	  <div class="col-md-6">
+	    <div class="profile7il border_1">
+		   <div class="profile7il1 position-relative">
+		      <div class="profile7il1i">
+		        <div class="grid clearfix">
+			<figure class="effect-jazz mb-0">
+			<a href="#"><img src="img/24.jpg" class="w-100 rounded-0" alt="img25"></a>
+			</figure>
+			</div>
+		   </div>
+		<div class="profile7il1i1 position-absolute top-0">
+		  <h6 class="d-inline-block bg_green text-white p-2 px-4"> Breakfast Included</h6>
+		</div>
+		</div>
+		<div class="profile7il2 p-4">
+		    <h4><a href="#">Twilight Serenity Manor</a></h4>
+			<p class="font_14 lh-base"><i class="fa fa-map-marker col_green me-1"></i> House 128/140, Road 01, Avenue 02, Lorem DPHS, Amet, India - See Map 1 km to city center</p>
+			<ul class="font_14">
+			 <li class="d-inline-block"><i class="fa fa-tv me-1 col_green align-middle"></i> TV</li>
+			 <li class="d-inline-block ms-2"><i class="fa fa-temperature-up me-1 col_green align-middle"></i> Heater</li>
+			 <li class="d-inline-block ms-2"><i class="fa fa-lock me-1 col_green align-middle"></i> Saving Safe</li>
+			 <li class="d-inline-block ms-2"><i class="fa fa-wifi me-1 col_green align-middle"></i> Free Wifi</li>
+			 <li class="d-inline-block ms-2"><i class="fa fa-phone me-1 col_green align-middle"></i> Phone</li>
+			</ul>
+			<div class="profile7il2i row">
+			  <div class="col-md-6">
+			    <div class="profile7il2il">
+				   <h5 class="font_15">Sea View<br>
+Semi Double<br>
+<span class="fw-normal">1 king bed</span></h5>
+<h6 class="mb-0 font_15"><span class="fw-bold col_green">Free cancellation</span><br>
+before 48 hours</h6>
+				</div>
+			  </div>
+			  <div class="col-md-6">
+			    <div class="profile7il2ir text-end">
+				  <h6 class="font_14 mb-0">1 Night, 2 Adults<br>
+<span class="fw-bold"><span class="fs-4 col_green">$230</span> <span class="text-decoration-line-through text-muted">$320</span></span><br>
+</h6>
+<h6 class="mb-0 mt-2"><a class="button px-3" href="#">Check Availability <i class="fa fa-arrow-right align-middle"></i></a></h6>
+				</div>
+			  </div>
+			</div>
+		</div>
+		</div>
+	  </div>
+	</div>
+	<div class="profile7i row mt-4">
+	  <div class="col-md-6">
+	    <div class="profile7il border_1">
+		   <div class="profile7il1 position-relative">
+		      <div class="profile7il1i">
+		        <div class="grid clearfix">
+			<figure class="effect-jazz mb-0">
+			<a href="#"><img src="img/25.jpg" class="w-100 rounded-0" alt="img25"></a>
+			</figure>
+			</div>
+		   </div>
+		<div class="profile7il1i1 position-absolute top-0">
+		  <h6 class="d-inline-block bg_green text-white p-2 px-4"> Breakfast Included</h6>
+		</div>
+		</div>
+		<div class="profile7il2 p-4">
+		    <h4><a href="#">Dusk Retreat Resort</a></h4>
+			<p class="font_14 lh-base"><i class="fa fa-map-marker col_green me-1"></i> House 128/140, Road 01, Avenue 02, Lorem DPHS, Amet, India - See Map 1 km to city center</p>
+			<ul class="font_14">
+			 <li class="d-inline-block"><i class="fa fa-tv me-1 col_green align-middle"></i> TV</li>
+			 <li class="d-inline-block ms-2"><i class="fa fa-temperature-up me-1 col_green align-middle"></i> Heater</li>
+			 <li class="d-inline-block ms-2"><i class="fa fa-lock me-1 col_green align-middle"></i> Saving Safe</li>
+			 <li class="d-inline-block ms-2"><i class="fa fa-wifi me-1 col_green align-middle"></i> Free Wifi</li>
+			 <li class="d-inline-block ms-2"><i class="fa fa-phone me-1 col_green align-middle"></i> Phone</li>
+			</ul>
+			<div class="profile7il2i row">
+			  <div class="col-md-6">
+			    <div class="profile7il2il">
+				   <h5 class="font_15">Sea View<br>
+Semi Double<br>
+<span class="fw-normal">1 king bed</span></h5>
+<h6 class="mb-0 font_15"><span class="fw-bold col_green">Free cancellation</span><br>
+before 48 hours</h6>
+				</div>
+			  </div>
+			  <div class="col-md-6">
+			    <div class="profile7il2ir text-end">
+				  <h6 class="font_14 mb-0">1 Night, 2 Adults<br>
+<span class="fw-bold"><span class="fs-4 col_green">$340</span> <span class="text-decoration-line-through text-muted">$450</span></span><br>
+</h6>
+<h6 class="mb-0 mt-2"><a class="button px-3" href="#">Check Availability <i class="fa fa-arrow-right align-middle"></i></a></h6>
+				</div>
+			  </div>
+			</div>
+		</div>
+		</div>
+	  </div>
+	  <div class="col-md-6">
+	    <div class="profile7il border_1">
+		   <div class="profile7il1 position-relative">
+		      <div class="profile7il1i">
+		        <div class="grid clearfix">
+			<figure class="effect-jazz mb-0">
+			<a href="#"><img src="img/26.jpg" class="w-100 rounded-0" alt="img25"></a>
+			</figure>
+			</div>
+		   </div>
+		<div class="profile7il1i1 position-absolute top-0">
+		  <h6 class="d-inline-block bg_green text-white p-2 px-4"> Breakfast Included</h6>
+		</div>
+		</div>
+		<div class="profile7il2 p-4">
+		    <h4><a href="#">Sunset Oasis Inn</a></h4>
+			<p class="font_14 lh-base"><i class="fa fa-map-marker col_green me-1"></i> House 128/140, Road 01, Avenue 02, Lorem DPHS, Amet, India - See Map 1 km to city center</p>
+			<ul class="font_14">
+			 <li class="d-inline-block"><i class="fa fa-tv me-1 col_green align-middle"></i> TV</li>
+			 <li class="d-inline-block ms-2"><i class="fa fa-temperature-up me-1 col_green align-middle"></i> Heater</li>
+			 <li class="d-inline-block ms-2"><i class="fa fa-lock me-1 col_green align-middle"></i> Saving Safe</li>
+			 <li class="d-inline-block ms-2"><i class="fa fa-wifi me-1 col_green align-middle"></i> Free Wifi</li>
+			 <li class="d-inline-block ms-2"><i class="fa fa-phone me-1 col_green align-middle"></i> Phone</li>
+			</ul>
+			<div class="profile7il2i row">
+			  <div class="col-md-6">
+			    <div class="profile7il2il">
+				   <h5 class="font_15">Sea View<br>
+Semi Double<br>
+<span class="fw-normal">1 king bed</span></h5>
+<h6 class="mb-0 font_15"><span class="fw-bold col_green">Free cancellation</span><br>
+before 48 hours</h6>
+				</div>
+			  </div>
+			  <div class="col-md-6">
+			    <div class="profile7il2ir text-end">
+				  <h6 class="font_14 mb-0">1 Night, 2 Adults<br>
+<span class="fw-bold"><span class="fs-4 col_green">$230</span> <span class="text-decoration-line-through text-muted">$320</span></span><br>
+</h6>
+<h6 class="mb-0 mt-2"><a class="button px-3" href="#">Check Availability <i class="fa fa-arrow-right align-middle"></i></a></h6>
+				</div>
+			  </div>
+			</div>
+		</div>
+		</div>
+	  </div>
+	</div>
+</div>
+
+<div class="tab-pane" id="profile8">
+    <div class="profile8i row">
+	  <div class="col-md-4">
+	    <div class="profile8il">
+		   <div class="profile8il1 position-relative">
+		      <div class="profile8il1i">
+		        <div class="grid clearfix">
+			<figure class="effect-jazz mb-0">
+			<a href="#"><img src="img/27.jpg" class="w-100 rounded-0" alt="img25"></a>
+			</figure>
+			</div>
+		   </div>
+		<div class="profile8il1i1 position-absolute top-0">
+		  <h6 class="d-inline-block bg_green text-white p-2 px-4"> 450km</h6>
+		</div>
+		</div>
+		 <div class="profile8il2 shadow_box p-4 px-3">
+		   <h4><a href="#">Athens To Istanbul, Journey Through History’s Heart</a></h4>
+		   <h6 class="mt-3">Available Transport :</h6>
+		   <ul>
+		     <li class="d-inline-block text-center border_1 rounded_1"><i class="fa fa-bus fs-4"></i> <br> Bus</li>
+			 <li class="d-inline-block text-center border_1 rounded_1"><i class="fa fa-car fs-4"></i> <br> Car</li>
+			 <li class="d-inline-block text-center border_1 rounded_1"><i class="fa fa-train fs-4"></i> <br> Train</li>
+			 <li class="d-inline-block text-center border_1 rounded_1"><i class="fa fa-plane fs-4"></i> <br> Plane</li>
+		   </ul>
+		   <div class="profile8il2i row mt-4">
+		     <div class="col-md-6">
+			   <div class="profile8il2il">
+			     <h6 class="mb-0"><a class="button px-3" href="#">View Details</a></h6>
+			   </div>
+			 </div>
+			 <div class="col-md-6">
+			   <div class="profile8il2ir text-end pt-3">
+			     <h6 class="mb-0 font_14">
+				   <span class="col_yellow font_12">
+				   <i class="fa fa-star"></i>
+				   <i class="fa fa-star"></i>
+				   <i class="fa fa-star"></i>
+				   <i class="fa fa-star"></i>
+				   <i class="fa fa-star-half-alt"></i>
+				   </span>
+				   (4.5)
+				 </h6>
+			   </div>
+			 </div>
+		   </div>
+		 </div>
+		</div>
+	  </div>
+	  <div class="col-md-4">
+	    <div class="profile8il">
+		   <div class="profile8il1 position-relative">
+		      <div class="profile8il1i">
+		        <div class="grid clearfix">
+			<figure class="effect-jazz mb-0">
+			<a href="#"><img src="img/28.jpg" class="w-100 rounded-0" alt="img25"></a>
+			</figure>
+			</div>
+		   </div>
+		<div class="profile8il1i1 position-absolute top-0">
+		  <h6 class="d-inline-block bg_green text-white p-2 px-4"> 360km</h6>
+		</div>
+		</div>
+		 <div class="profile8il2 shadow_box p-4 px-3">
+		   <h4><a href="#">Tokyo To Paris, Discovering Culture’s Treasures</a></h4>
+		   <h6 class="mt-3">Available Transport :</h6>
+		   <ul>
+		     <li class="d-inline-block text-center border_1 rounded_1"><i class="fa fa-bus fs-4"></i> <br> Bus</li>
+			 <li class="d-inline-block text-center border_1 rounded_1"><i class="fa fa-car fs-4"></i> <br> Car</li>
+			 <li class="d-inline-block text-center border_1 rounded_1"><i class="fa fa-train fs-4"></i> <br> Train</li>
+			 <li class="d-inline-block text-center border_1 rounded_1"><i class="fa fa-plane fs-4"></i> <br> Plane</li>
+		   </ul>
+		   <div class="profile8il2i row mt-4">
+		     <div class="col-md-6">
+			   <div class="profile8il2il">
+			     <h6 class="mb-0"><a class="button px-3" href="#">View Details</a></h6>
+			   </div>
+			 </div>
+			 <div class="col-md-6">
+			   <div class="profile8il2ir text-end pt-3">
+			     <h6 class="mb-0 font_14">
+				   <span class="col_yellow font_12">
+				   <i class="fa fa-star"></i>
+				   <i class="fa fa-star"></i>
+				   <i class="fa fa-star"></i>
+				   <i class="fa fa-star"></i>
+				   <i class="fa fa-star-half-alt"></i>
+				   </span>
+				   (4.5)
+				 </h6>
+			   </div>
+			 </div>
+		   </div>
+		 </div>
+		</div>
+	  </div>
+	  <div class="col-md-4">
+	    <div class="profile8il">
+		   <div class="profile8il1 position-relative">
+		      <div class="profile8il1i">
+		        <div class="grid clearfix">
+			<figure class="effect-jazz mb-0">
+			<a href="#"><img src="img/29.jpg" class="w-100 rounded-0" alt="img25"></a>
+			</figure>
+			</div>
+		   </div>
+		<div class="profile8il1i1 position-absolute top-0">
+		  <h6 class="d-inline-block bg_green text-white p-2 px-4"> 120km</h6>
+		</div>
+		</div>
+		 <div class="profile8il2 shadow_box p-4 px-3">
+		   <h4><a href="#">Cairo To Rome, Unveiling Ancient Marvels Awaits</a></h4>
+		   <h6 class="mt-3">Available Transport :</h6>
+		   <ul>
+		     <li class="d-inline-block text-center border_1 rounded_1"><i class="fa fa-bus fs-4"></i> <br> Bus</li>
+			 <li class="d-inline-block text-center border_1 rounded_1"><i class="fa fa-car fs-4"></i> <br> Car</li>
+			 <li class="d-inline-block text-center border_1 rounded_1"><i class="fa fa-train fs-4"></i> <br> Train</li>
+			 <li class="d-inline-block text-center border_1 rounded_1"><i class="fa fa-plane fs-4"></i> <br> Plane</li>
+		   </ul>
+		   <div class="profile8il2i row mt-4">
+		     <div class="col-md-6">
+			   <div class="profile8il2il">
+			     <h6 class="mb-0"><a class="button px-3" href="#">View Details</a></h6>
+			   </div>
+			 </div>
+			 <div class="col-md-6">
+			   <div class="profile8il2ir text-end pt-3">
+			     <h6 class="mb-0 font_14">
+				   <span class="col_yellow font_12">
+				   <i class="fa fa-star"></i>
+				   <i class="fa fa-star"></i>
+				   <i class="fa fa-star"></i>
+				   <i class="fa fa-star"></i>
+				   <i class="fa fa-star-half-alt"></i>
+				   </span>
+				   (4.5)
+				 </h6>
+			   </div>
+			 </div>
+		   </div>
+		 </div>
+		</div>
+	  </div>
+	</div>
+	<div class="profile8i row mt-4">
+	  <div class="col-md-4">
+	    <div class="profile8il">
+		   <div class="profile8il1 position-relative">
+		      <div class="profile8il1i">
+		        <div class="grid clearfix">
+			<figure class="effect-jazz mb-0">
+			<a href="#"><img src="img/30.jpg" class="w-100 rounded-0" alt="img25"></a>
+			</figure>
+			</div>
+		   </div>
+		<div class="profile8il1i1 position-absolute top-0">
+		  <h6 class="d-inline-block bg_green text-white p-2 px-4"> 180km</h6>
+		</div>
+		</div>
+		 <div class="profile8il2 shadow_box p-4 px-3">
+		   <h4><a href="#">Athens To Istanbul, Journey Through History’s Heart</a></h4>
+		   <h6 class="mt-3">Available Transport :</h6>
+		   <ul>
+		     <li class="d-inline-block text-center border_1 rounded_1"><i class="fa fa-bus fs-4"></i> <br> Bus</li>
+			 <li class="d-inline-block text-center border_1 rounded_1"><i class="fa fa-car fs-4"></i> <br> Car</li>
+			 <li class="d-inline-block text-center border_1 rounded_1"><i class="fa fa-train fs-4"></i> <br> Train</li>
+			 <li class="d-inline-block text-center border_1 rounded_1"><i class="fa fa-plane fs-4"></i> <br> Plane</li>
+		   </ul>
+		   <div class="profile8il2i row mt-4">
+		     <div class="col-md-6">
+			   <div class="profile8il2il">
+			     <h6 class="mb-0"><a class="button px-3" href="#">View Details</a></h6>
+			   </div>
+			 </div>
+			 <div class="col-md-6">
+			   <div class="profile8il2ir text-end pt-3">
+			     <h6 class="mb-0 font_14">
+				   <span class="col_yellow font_12">
+				   <i class="fa fa-star"></i>
+				   <i class="fa fa-star"></i>
+				   <i class="fa fa-star"></i>
+				   <i class="fa fa-star"></i>
+				   <i class="fa fa-star-half-alt"></i>
+				   </span>
+				   (4.5)
+				 </h6>
+			   </div>
+			 </div>
+		   </div>
+		 </div>
+		</div>
+	  </div>
+	  <div class="col-md-4">
+	    <div class="profile8il">
+		   <div class="profile8il1 position-relative">
+		      <div class="profile8il1i">
+		        <div class="grid clearfix">
+			<figure class="effect-jazz mb-0">
+			<a href="#"><img src="img/31.jpg" class="w-100 rounded-0" alt="img25"></a>
+			</figure>
+			</div>
+		   </div>
+		<div class="profile8il1i1 position-absolute top-0">
+		  <h6 class="d-inline-block bg_green text-white p-2 px-4"> 240km</h6>
+		</div>
+		</div>
+		 <div class="profile8il2 shadow_box p-4 px-3">
+		   <h4><a href="#">Tokyo To Paris, Discovering Culture’s Treasures</a></h4>
+		   <h6 class="mt-3">Available Transport :</h6>
+		   <ul>
+		     <li class="d-inline-block text-center border_1 rounded_1"><i class="fa fa-bus fs-4"></i> <br> Bus</li>
+			 <li class="d-inline-block text-center border_1 rounded_1"><i class="fa fa-car fs-4"></i> <br> Car</li>
+			 <li class="d-inline-block text-center border_1 rounded_1"><i class="fa fa-train fs-4"></i> <br> Train</li>
+			 <li class="d-inline-block text-center border_1 rounded_1"><i class="fa fa-plane fs-4"></i> <br> Plane</li>
+		   </ul>
+		   <div class="profile8il2i row mt-4">
+		     <div class="col-md-6">
+			   <div class="profile8il2il">
+			     <h6 class="mb-0"><a class="button px-3" href="#">View Details</a></h6>
+			   </div>
+			 </div>
+			 <div class="col-md-6">
+			   <div class="profile8il2ir text-end pt-3">
+			     <h6 class="mb-0 font_14">
+				   <span class="col_yellow font_12">
+				   <i class="fa fa-star"></i>
+				   <i class="fa fa-star"></i>
+				   <i class="fa fa-star"></i>
+				   <i class="fa fa-star"></i>
+				   <i class="fa fa-star-half-alt"></i>
+				   </span>
+				   (4.5)
+				 </h6>
+			   </div>
+			 </div>
+		   </div>
+		 </div>
+		</div>
+	  </div>
+	  <div class="col-md-4">
+	    <div class="profile8il">
+		   <div class="profile8il1 position-relative">
+		      <div class="profile8il1i">
+		        <div class="grid clearfix">
+			<figure class="effect-jazz mb-0">
+			<a href="#"><img src="img/32.jpg" class="w-100 rounded-0" alt="img25"></a>
+			</figure>
+			</div>
+		   </div>
+		<div class="profile8il1i1 position-absolute top-0">
+		  <h6 class="d-inline-block bg_green text-white p-2 px-4"> 290km</h6>
+		</div>
+		</div>
+		 <div class="profile8il2 shadow_box p-4 px-3">
+		   <h4><a href="#">Cairo To Rome, Unveiling Ancient Marvels Awaits</a></h4>
+		   <h6 class="mt-3">Available Transport :</h6>
+		   <ul>
+		     <li class="d-inline-block text-center border_1 rounded_1"><i class="fa fa-bus fs-4"></i> <br> Bus</li>
+			 <li class="d-inline-block text-center border_1 rounded_1"><i class="fa fa-car fs-4"></i> <br> Car</li>
+			 <li class="d-inline-block text-center border_1 rounded_1"><i class="fa fa-train fs-4"></i> <br> Train</li>
+			 <li class="d-inline-block text-center border_1 rounded_1"><i class="fa fa-plane fs-4"></i> <br> Plane</li>
+		   </ul>
+		   <div class="profile8il2i row mt-4">
+		     <div class="col-md-6">
+			   <div class="profile8il2il">
+			     <h6 class="mb-0"><a class="button px-3" href="#">View Details</a></h6>
+			   </div>
+			 </div>
+			 <div class="col-md-6">
+			   <div class="profile8il2ir text-end pt-3">
+			     <h6 class="mb-0 font_14">
+				   <span class="col_yellow font_12">
+				   <i class="fa fa-star"></i>
+				   <i class="fa fa-star"></i>
+				   <i class="fa fa-star"></i>
+				   <i class="fa fa-star"></i>
+				   <i class="fa fa-star-half-alt"></i>
+				   </span>
+				   (4.5)
+				 </h6>
+			   </div>
+			 </div>
+		   </div>
+		 </div>
+		</div>
+	  </div>
+	</div>
+</div>
+
+</div>
+	</div>
+  </div>
+ </div>
+</section>
+
+<section id="faci">
+ <div class="container-fluid">
+  <div class="row faci_1">
+    <div class="col-md-6 p-0">
+      <div class="faci_1l bg_light1">
+	      <h5 class="family_1 icon_tag col_green"><i class="fa fa-leaf me-1"></i> Tour Experience <i class="fa fa-leaf ms-1"></i></h5>
+		<h1 class="font_50 mt-3 mb-0">Finest Safety <br> Systems</h1>
+		<p class="mt-2">Curabitur convallis enim at orci ullamcorper sagittis. Morbi porand gon nullalacu scelerisque in aliquam vitae, aliquam ut lectus. Nam utte mink Phasellus magna, efficitur finibus dictum auctor, volutpat gonet torrend accumsan purusDon luctus nunc non dapibus volutpat.</p>
+		<ul class="fw-bold mb-0">
+		 <li><i class="fa fa-circle col_green font_10 me-1"></i> Travel Alerts and Registration</li>
+		 <li class="mt-3"><i class="fa fa-circle col_green font_10 me-1"></i> Health and Medical Security</li>
+		</ul>
+		<div class="faci_1li row mt-3">
+		 <div class="col-md-6">
+		   <div class="faci_1lil">
+		      <ul class="mb-0 fw-bold">
+			     <li><i class="fa fa-circle col_green font_10 me-1"></i> Travel Documentation</li>
+			  </ul>
+		   </div>
+		 </div>
+		 <div class="col-md-6">
+		   <div class="faci_1lil">
+		      <ul class="mb-0 fw-bold">
+		 <li><i class="fa fa-circle col_green font_10 me-1"></i> Money and Payment</li>
+			  </ul>
+		   </div>
+		 </div>
+		</div>
+		<div class="faci_1li row mt-3">
+		 <div class="col-md-6">
+		   <div class="faci_1lil">
+		      <ul class="mb-0 fw-bold">
+			     <li><i class="fa fa-circle col_green font_10 me-1"></i> Transportation Security</li>
+			  </ul>
+		   </div>
+		 </div>
+		 <div class="col-md-6">
+		   <div class="faci_1lil">
+		      <ul class="mb-0 fw-bold">
+		 <li><i class="fa fa-circle col_green font_10 me-1"></i> Local Knowledge Guide</li>
+			  </ul>
+		   </div>
+		 </div>
+		</div>
+	  </div>
+	</div>
+	<div class="col-md-6 p-0">
+           <div class="faci_1r position-relative">
+	          <div class="faci_1ri">
+	
+		     </div>
+		     <div class="faci_1ri1 position-absolute bg_light p-4 rounded_1">
+	            <div class="faci_1ri1i rounded_1 p-4 border_1 bg-white">
+				  <h5>Overall Rating</h5>
+				<h3 class="col_green mb-1">4.5</h3>
+				<h6 class="font_13 col_green">Out of 5</h6>
+				<h6 class="mb-0 font_14">
+				   <span class="col_yellow font_12">
+				   <i class="fa fa-star"></i>
+				   <i class="fa fa-star"></i>
+				   <i class="fa fa-star"></i>
+				   <i class="fa fa-star"></i>
+				   <i class="fa fa-star-half-alt"></i>
+				   </span>
+				   (4.5)
+				 </h6>
+				 <p class="mb-0 font_12 text-muted mt-3">Based on 12242 Independent review</p>
+				</div>
+				<div class="faci_1ri1i rounded_1 p-4 border_1 bg-white mt-3">
+				  <h5>Customer Experience</h5>
+				<p class="font_13 text-muted lh-base">Curabitur convallis enim at  sagittis. <br> Morbi porand  scelerisque in aliquam vitae</p>
+				<div class="faci_1ri1i1 row">
+				  <div class="col-md-6">
+				    <div class="faci_1ri1i1l bg_light p-3">
+					  	<h3 class="col_green mb-1">4.5</h3>
+				<h6 class="font_13 col_green">Out of 5</h6>
+				<h6 class="mb-0 font_14">
+				   <span class="col_yellow font_12">
+				   <i class="fa fa-star"></i>
+				   <i class="fa fa-star"></i>
+				   <i class="fa fa-star"></i>
+				   <i class="fa fa-star"></i>
+				   <i class="fa fa-star-half-alt"></i>
+				   </span>
+				   </h6>
+					</div>
+				  </div>
+				  <div class="col-md-6">
+				    <div class="faci_1ri1i1r">
+					 <span class="font_12 col_green">
+					   <i class="fa fa-star col_yellow"></i>
+					   <i class="fa fa-star col_yellow"></i>
+					   <i class="fa fa-star col_yellow"></i>
+					   <i class="fa fa-star col_yellow"></i>
+					  <i class="fa fa-star col_yellow"></i>
+					  2300
+					 </span><br>
+					  <span class="font_12 col_green">
+					   <i class="fa fa-star col_yellow"></i>
+					   <i class="fa fa-star col_yellow"></i>
+					   <i class="fa fa-star col_yellow"></i>
+					   <i class="fa fa-star col_yellow"></i>
+					  <i class="fa fa-star-half-alt col_yellow"></i>
+					  800
+					 </span><br>
+					 <span class="font_12 col_green">
+					   <i class="fa fa-star col_yellow"></i>
+					   <i class="fa fa-star col_yellow"></i>
+					   <i class="fa fa-star col_yellow"></i>
+					   <i class="fa fa-star col_yellow"></i>
+					  600
+					 </span><br>
+					  <span class="font_12 col_green">
+					   <i class="fa fa-star col_yellow"></i>
+					   <i class="fa fa-star col_yellow"></i>
+					   <i class="fa fa-star col_yellow"></i>
+					   <i class="fa fa-star-half-alt col_yellow"></i>
+					  300
+					 </span><br>
+					   <span class="font_12 col_green">
+					   <i class="fa fa-star col_yellow"></i>
+					   <i class="fa fa-star col_yellow"></i>
+					   <i class="fa fa-star col_yellow"></i>
+					  100
+					 </span>
+					</div>
+				  </div>
+				</div>
+				</div>
+		     </div>
+		   </div>
+		 </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+ </div>
+</section>
+
+<section id="package" class="p_3">
+ <div class="container-xl">
+  <div class="row vacation_1 text-center mb-4">
+    <div class="col-md-12">
+	  <h5 class="family_1 icon_tag col_green"><i class="fa fa-leaf me-1"></i> Tour Package <i class="fa fa-leaf ms-1"></i></h5>
+		<h1 class="font_50 mt-3 mb-0">Affordable Vacation Bundles</h1>
+	</div>
+  </div>
+  <div class="profile6i row">
+	  <div class="col-md-4">
+	    <div class="profile6il p-3 shadow_box rounded_1">
+		  <div class="profile6il1 position-relative">
+		   <div class="profile6il1i">
+		     <a href="#"><img src="img/17.jpg" alt="abc" class="w-100 rounded_1"></a>
+		</div>
+		   <div class="profile6il1i1 position-absolute top-0">
+		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 1 WEEK</h6><br>
+			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> EGYPT</a></h6>
+		</div>
+		</div>
+		<div class="profile6il2 mt-3">
+		  <h5><a href="#">Discover Serenity, Exploration, And Enlightenment.</a></h5>
+		  <ul class="font_12">
+		   <li class="d-inline-block me-1"><a href="#">LOREM PORTA</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">SEA BEACH</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">IPSUM WORLD</a></li>
+		  </ul>
+		  <hr>
+		  <div class="profile6il2i row">
+		    <div class="col-md-6">
+			  <div class="profile6il2il">
+			    <h6 class="font_14 mb-0">Starting From:<br>
+<span class="fw-bold"><span class="fs-4 col_green">$340</span> <span class="text-decoration-line-through text-muted">$450</span></span><br>
+<span class="font_12">TAXES INCL/PERS</span></h6>
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <div class="profile6il2ir text-end pt-2">
+			    <h6 class="mb-0"><a class="button px-3" href="#">Book A Trip <i class="fa fa-plane"></i></a></h6>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		</div>
+	  </div>
+	  <div class="col-md-4">
+	    <div class="profile6il p-3 shadow_box rounded_1">
+		  <div class="profile6il1 position-relative">
+		   <div class="profile6il1i">
+		     <a href="#"><img src="img/18.jpg" alt="abc" class="w-100 rounded_1"></a>
+		</div>
+		   <div class="profile6il1i1 position-absolute top-0">
+		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 2 DAYS / 3 NIGHT</h6><br>
+			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> Spain</a></h6>
+		</div>
+		</div>
+		<div class="profile6il2 mt-3">
+		  <h5><a href="#">Embracing City Lights, Landm, And Iconic Culture.</a></h5>
+		  <ul class="font_12">
+		   <li class="d-inline-block me-1"><a href="#">LOREM PORTA</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">SEA BEACH</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">IPSUM WORLD</a></li>
+		  </ul>
+		  <hr>
+		  <div class="profile6il2i row">
+		    <div class="col-md-6">
+			  <div class="profile6il2il">
+			    <h6 class="font_14 mb-0">Starting From:<br>
+<span class="fw-bold"><span class="fs-4 col_green">$260</span> <span class="text-decoration-line-through text-muted">$410</span></span><br>
+<span class="font_12">TAXES INCL/PERS</span></h6>
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <div class="profile6il2ir text-end pt-2">
+			    <h6 class="mb-0"><a class="button px-3" href="#">Book A Trip <i class="fa fa-plane"></i></a></h6>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		</div>
+	  </div>
+	  <div class="col-md-4">
+	    <div class="profile6il p-3 shadow_box rounded_1">
+		  <div class="profile6il1 position-relative">
+		   <div class="profile6il1i">
+		     <a href="#"><img src="img/19.jpg" alt="abc" class="w-100 rounded_1"></a>
+		</div>
+		   <div class="profile6il1i1 position-absolute top-0">
+		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 3 DAYS / 4 NIGHT</h6><br>
+			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> LONDON</a></h6>
+		</div>
+		</div>
+		<div class="profile6il2 mt-3">
+		  <h5><a href="#">Immersive Cultural Expirees, Local Cuisine.</a></h5>
+		  <ul class="font_12">
+		   <li class="d-inline-block me-1"><a href="#">LOREM PORTA</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">SEA BEACH</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">IPSUM WORLD</a></li>
+		  </ul>
+		  <hr>
+		  <div class="profile6il2i row">
+		    <div class="col-md-6">
+			  <div class="profile6il2il">
+			    <h6 class="font_14 mb-0">Starting From:<br>
+<span class="fw-bold"><span class="fs-4 col_green">$430</span> <span class="text-decoration-line-through text-muted">$620</span></span><br>
+<span class="font_12">TAXES INCL/PERS</span></h6>
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <div class="profile6il2ir text-end pt-2">
+			    <h6 class="mb-0"><a class="button px-3" href="#">Book A Trip <i class="fa fa-plane"></i></a></h6>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		</div>
+	  </div>
+	</div>
+	<div class="profile6i row mt-4">
+	  <div class="col-md-4">
+	    <div class="profile6il p-3 shadow_box rounded_1">
+		  <div class="profile6il1 position-relative">
+		   <div class="profile6il1i">
+		     <a href="#"><img src="img/22.jpg" alt="abc" class="w-100 rounded_1"></a>
+		</div>
+		   <div class="profile6il1i1 position-absolute top-0">
+		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 1 WEEK</h6><br>
+			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> EGYPT</a></h6>
+		</div>
+		</div>
+		<div class="profile6il2 mt-3">
+		  <h5><a href="#">Discover Serenity, Exploration, And Enlightenment.</a></h5>
+		  <ul class="font_12">
+		   <li class="d-inline-block me-1"><a href="#">LOREM PORTA</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">SEA BEACH</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">IPSUM WORLD</a></li>
+		  </ul>
+		  <hr>
+		  <div class="profile6il2i row">
+		    <div class="col-md-6">
+			  <div class="profile6il2il">
+			    <h6 class="font_14 mb-0">Starting From:<br>
+<span class="fw-bold"><span class="fs-4 col_green">$340</span> <span class="text-decoration-line-through text-muted">$450</span></span><br>
+<span class="font_12">TAXES INCL/PERS</span></h6>
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <div class="profile6il2ir text-end pt-2">
+			    <h6 class="mb-0"><a class="button px-3" href="#">Book A Trip <i class="fa fa-plane"></i></a></h6>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		</div>
+	  </div>
+	  <div class="col-md-4">
+	    <div class="profile6il p-3 shadow_box rounded_1">
+		  <div class="profile6il1 position-relative">
+		   <div class="profile6il1i">
+		     <a href="#"><img src="img/20.jpg" alt="abc" class="w-100 rounded_1"></a>
+		</div>
+		   <div class="profile6il1i1 position-absolute top-0">
+		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 2 DAYS / 3 NIGHT</h6><br>
+			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> Spain</a></h6>
+		</div>
+		</div>
+		<div class="profile6il2 mt-3">
+		  <h5><a href="#">Embracing City Lights, Landm, And Iconic Culture.</a></h5>
+		  <ul class="font_12">
+		   <li class="d-inline-block me-1"><a href="#">LOREM PORTA</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">SEA BEACH</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">IPSUM WORLD</a></li>
+		  </ul>
+		  <hr>
+		  <div class="profile6il2i row">
+		    <div class="col-md-6">
+			  <div class="profile6il2il">
+			    <h6 class="font_14 mb-0">Starting From:<br>
+<span class="fw-bold"><span class="fs-4 col_green">$260</span> <span class="text-decoration-line-through text-muted">$410</span></span><br>
+<span class="font_12">TAXES INCL/PERS</span></h6>
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <div class="profile6il2ir text-end pt-2">
+			    <h6 class="mb-0"><a class="button px-3" href="#">Book A Trip <i class="fa fa-plane"></i></a></h6>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		</div>
+	  </div>
+	  <div class="col-md-4">
+	    <div class="profile6il p-3 shadow_box rounded_1">
+		  <div class="profile6il1 position-relative">
+		   <div class="profile6il1i">
+		     <a href="#"><img src="img/21.jpg" alt="abc" class="w-100 rounded_1"></a>
+		</div>
+		   <div class="profile6il1i1 position-absolute top-0">
+		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 3 DAYS / 4 NIGHT</h6><br>
+			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> LONDON</a></h6>
+		</div>
+		</div>
+		<div class="profile6il2 mt-3">
+		  <h5><a href="#">Immersive Cultural Expirees, Local Cuisine.</a></h5>
+		  <ul class="font_12">
+		   <li class="d-inline-block me-1"><a href="#">LOREM PORTA</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">SEA BEACH</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">IPSUM WORLD</a></li>
+		  </ul>
+		  <hr>
+		  <div class="profile6il2i row">
+		    <div class="col-md-6">
+			  <div class="profile6il2il">
+			    <h6 class="font_14 mb-0">Starting From:<br>
+<span class="fw-bold"><span class="fs-4 col_green">$430</span> <span class="text-decoration-line-through text-muted">$620</span></span><br>
+<span class="font_12">TAXES INCL/PERS</span></h6>
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <div class="profile6il2ir text-end pt-2">
+			    <h6 class="mb-0"><a class="button px-3" href="#">Book A Trip <i class="fa fa-plane"></i></a></h6>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		</div>
+	  </div>
+	</div>
+	<div class="row package_1 text-center mt-5">
+    <div class="col-md-12">
+     <h6 class="mb-0"><a class="button_1" href="#">View All Package</a></h6>
+	</div>
+  </div>
+ </div>
+</section>
+
+<section id="choose" class="p_3">
+ <div class="container-xl">
+  <div class="row vacation_1 text-center mb-4">
+    <div class="col-md-12">
+	  <h5 class="family_1 icon_tag col_green"><i class="fa fa-leaf me-1"></i> Our Success <i class="fa fa-leaf ms-1"></i></h5>
+		<h1 class="font_50 mt-3 mb-0">Why Choose Tour Booking</h1>
+	</div>
+  </div>
+  <div class="row choose_1">
+    <div class="col-md-4">
+     <div class="choose_1l p-4 px-3 bg_light border_1 rounded_1">
+	   <div class="choose_1li row">
+	      <div class="col-md-4">
+		    <div class="choose_1lil">
+			  <span class="d-inline-block bg_light1 text-center rounded-circle text-center"><i class="fa fa-globe"></i></span>
+			</div>
+		  </div>
+		  <div class="col-md-8">
+		    <div class="choose_1lir">
+			 <h5>Worldwide Coverage</h5>
+			 <p class="mb-0">Cras facilisis fermentum ex seda ullamcorper odio rutrum accoun Phasellus auctor</p>
+			</div>
+		  </div>
+	 </div>
+	 </div>
+	</div>
+	<div class="col-md-4">
+     <div class="choose_1l p-4 px-3 bg_light1 border_1 rounded_1">
+	   <div class="choose_1li row">
+	      <div class="col-md-4">
+		    <div class="choose_1lil">
+			  <span class="d-inline-block bg_light text-center rounded-circle text-center"><i class="fa fa-dollar"></i></span>
+			</div>
+		  </div>
+		  <div class="col-md-8">
+		    <div class="choose_1lir">
+			 <h5>Competitive Pricing</h5>
+			 <p class="mb-0">Burabitur convallis enim atnora ullamcorper sagittis. Morbi nug scelerisque for thana.</p>
+			</div>
+		  </div>
+	 </div>
+	 </div>
+	</div>
+	<div class="col-md-4">
+     <div class="choose_1l p-4 px-3 bg_light border_1 rounded_1">
+	   <div class="choose_1li row">
+	      <div class="col-md-4">
+		    <div class="choose_1lil">
+			  <span class="d-inline-block bg_light1 text-center rounded-circle text-center"><i class="fa fa-calendar"></i></span>
+			</div>
+		  </div>
+		  <div class="col-md-8">
+		    <div class="choose_1lir">
+			 <h5>Fast Booking</h5>
+			 <p class="mb-0">Fermentum eitorx quis maximum Etiam luctus erat vulputate urnan posuere convallis.</p>
+			</div>
+		  </div>
+	 </div>
+	 </div>
+	</div>
+  </div>
+  <div class="row choose_1 mt-4">
+    <div class="col-md-4">
+     <div class="choose_1l p-4 px-3 bg_light border_1 rounded_1">
+	   <div class="choose_1li row">
+	      <div class="col-md-4">
+		    <div class="choose_1lil">
+			  <span class="d-inline-block bg_light1 text-center rounded-circle text-center"><i class="fa fa-user-plus"></i></span>
+			</div>
+		  </div>
+		  <div class="col-md-8">
+		    <div class="choose_1lir">
+			 <h5>Guided Tours</h5>
+			 <p class="mb-0">Cras facilisis fermentum ex seda ullamcorper odio rutrum accoun Phasellus auctor</p>
+			</div>
+		  </div>
+	 </div>
+	 </div>
+	</div>
+	<div class="col-md-4">
+     <div class="choose_1l p-4 px-3 bg_light1 border_1 rounded_1">
+	   <div class="choose_1li row">
+	      <div class="col-md-4">
+		    <div class="choose_1lil">
+			  <span class="d-inline-block bg_light text-center rounded-circle text-center"><i class="fa fa-phone"></i></span>
+			</div>
+		  </div>
+		  <div class="col-md-8">
+		    <div class="choose_1lir">
+			 <h5>Best Support 24/7</h5>
+			 <p class="mb-0">Burabitur convallis enim atnora ullamcorper sagittis. Morbi nug scelerisque for thana.</p>
+			</div>
+		  </div>
+	 </div>
+	 </div>
+	</div>
+	<div class="col-md-4">
+     <div class="choose_1l p-4 px-3 bg_light border_1 rounded_1">
+	   <div class="choose_1li row">
+	      <div class="col-md-4">
+		    <div class="choose_1lil">
+			  <span class="d-inline-block bg_light1 text-center rounded-circle text-center"><i class="fa fa-recycle"></i></span>
+			</div>
+		  </div>
+		  <div class="col-md-8">
+		    <div class="choose_1lir">
+			 <h5>Ultimate Flexibility</h5>
+			 <p class="mb-0">Fermentum eitorx quis maximum Etiam luctus erat vulputate urnan posuere convallis.</p>
+			</div>
+		  </div>
+	 </div>
+	 </div>
+	</div>
+  </div>
+ </div>
+</section>
+
+<section id="popular" class="p_3 bg_light1">
+ <div class="container-xl">
+  <div class="row vacation_1 text-center mb-4">
+    <div class="col-md-12">
+	  <h5 class="family_1 icon_tag col_green"><i class="fa fa-leaf me-1"></i> Popular Tour <i class="fa fa-leaf ms-1"></i></h5>
+		<h1 class="font_50 mt-3 mb-0">Elite Tourist Attractions</h1>
+	</div>
+  </div>
+<div class="row popular_1 text-center mb-4 expe_1 ">
+    <div class="col-md-12">
+	  <ul class="nav nav-tabs mb-4 border-0 justify-content-center">
+<li class="nav-item d-inline-block">
+<a href="#profile9" data-bs-toggle="tab" aria-expanded="true" class="nav-link active">
+<span class="d-md-block"> Sweden</span>
+</a>
+</li>
+
+<li class="nav-item d-inline-block">
+<a href="#profile10" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+<span class="d-md-block"> Japan</span>
+</a>
+</li>
+<li class="nav-item d-inline-block">
+<a href="#profile11" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+<span class="d-md-block"> London</span>
+</a>
+</li>
+
+<li class="nav-item d-inline-block">
+<a href="#profile12" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+<span class="d-md-block"> Italy</span>
+</a>
+</li>
+
+<li class="nav-item d-inline-block">
+<a href="#profile13" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+<span class="d-md-block"> Spain</span>
+</a>
+</li>
+</ul>
+      <div class="tab-content">
+
+<div class="tab-pane active" id="profile9">
+   <div class="profile6i row">
+	  <div class="col-md-4">
+	    <div class="profile6il p-3 shadow_box rounded_1">
+		  <div class="profile6il1 position-relative">
+		   <div class="profile6il1i">
+		     <a href="#"><img src="img/17.jpg" alt="abc" class="w-100 rounded_1"></a>
+		</div>
+		   <div class="profile6il1i1 position-absolute top-0">
+		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 1 WEEK</h6><br>
+			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> EGYPT</a></h6>
+		</div>
+		</div>
+		<div class="profile6il2 mt-3">
+		  <h5><a href="#">Discover Serenity, Exploration, And Enlightenment.</a></h5>
+		  <ul class="font_12">
+		   <li class="d-inline-block me-1"><a href="#">LOREM PORTA</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">SEA BEACH</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">IPSUM WORLD</a></li>
+		  </ul>
+		  <hr>
+		  <div class="profile6il2i row">
+		    <div class="col-md-6">
+			  <div class="profile6il2il">
+			    <h6 class="font_14 mb-0">Starting From:<br>
+<span class="fw-bold"><span class="fs-4 col_green">$340</span> <span class="text-decoration-line-through text-muted">$450</span></span><br>
+<span class="font_12">TAXES INCL/PERS</span></h6>
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <div class="profile6il2ir text-end pt-2">
+			    <h6 class="mb-0"><a class="button px-3" href="#">Book A Trip <i class="fa fa-plane"></i></a></h6>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		</div>
+	  </div>
+	  <div class="col-md-4">
+	    <div class="profile6il p-3 shadow_box rounded_1">
+		  <div class="profile6il1 position-relative">
+		   <div class="profile6il1i">
+		     <a href="#"><img src="img/18.jpg" alt="abc" class="w-100 rounded_1"></a>
+		</div>
+		   <div class="profile6il1i1 position-absolute top-0">
+		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 2 DAYS / 3 NIGHT</h6><br>
+			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> Spain</a></h6>
+		</div>
+		</div>
+		<div class="profile6il2 mt-3">
+		  <h5><a href="#">Embracing City Lights, Landm, And Iconic Culture.</a></h5>
+		  <ul class="font_12">
+		   <li class="d-inline-block me-1"><a href="#">LOREM PORTA</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">SEA BEACH</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">IPSUM WORLD</a></li>
+		  </ul>
+		  <hr>
+		  <div class="profile6il2i row">
+		    <div class="col-md-6">
+			  <div class="profile6il2il">
+			    <h6 class="font_14 mb-0">Starting From:<br>
+<span class="fw-bold"><span class="fs-4 col_green">$260</span> <span class="text-decoration-line-through text-muted">$410</span></span><br>
+<span class="font_12">TAXES INCL/PERS</span></h6>
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <div class="profile6il2ir text-end pt-2">
+			    <h6 class="mb-0"><a class="button px-3" href="#">Book A Trip <i class="fa fa-plane"></i></a></h6>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		</div>
+	  </div>
+	  <div class="col-md-4">
+	    <div class="profile6il p-3 shadow_box rounded_1">
+		  <div class="profile6il1 position-relative">
+		   <div class="profile6il1i">
+		     <a href="#"><img src="img/19.jpg" alt="abc" class="w-100 rounded_1"></a>
+		</div>
+		   <div class="profile6il1i1 position-absolute top-0">
+		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 3 DAYS / 4 NIGHT</h6><br>
+			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> LONDON</a></h6>
+		</div>
+		</div>
+		<div class="profile6il2 mt-3">
+		  <h5><a href="#">Immersive Cultural Expirees, Local Cuisine.</a></h5>
+		  <ul class="font_12">
+		   <li class="d-inline-block me-1"><a href="#">LOREM PORTA</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">SEA BEACH</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">IPSUM WORLD</a></li>
+		  </ul>
+		  <hr>
+		  <div class="profile6il2i row">
+		    <div class="col-md-6">
+			  <div class="profile6il2il">
+			    <h6 class="font_14 mb-0">Starting From:<br>
+<span class="fw-bold"><span class="fs-4 col_green">$430</span> <span class="text-decoration-line-through text-muted">$620</span></span><br>
+<span class="font_12">TAXES INCL/PERS</span></h6>
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <div class="profile6il2ir text-end pt-2">
+			    <h6 class="mb-0"><a class="button px-3" href="#">Book A Trip <i class="fa fa-plane"></i></a></h6>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		</div>
+	  </div>
+	</div>
+</div>
+
+<div class="tab-pane" id="profile10">
+    <div class="profile6i row">
+	  <div class="col-md-4">
+	    <div class="profile6il p-3 shadow_box rounded_1">
+		  <div class="profile6il1 position-relative">
+		   <div class="profile6il1i">
+		     <a href="#"><img src="img/22.jpg" alt="abc" class="w-100 rounded_1"></a>
+		</div>
+		   <div class="profile6il1i1 position-absolute top-0">
+		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 1 WEEK</h6><br>
+			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> EGYPT</a></h6>
+		</div>
+		</div>
+		<div class="profile6il2 mt-3">
+		  <h5><a href="#">Discover Serenity, Exploration, And Enlightenment.</a></h5>
+		  <ul class="font_12">
+		   <li class="d-inline-block me-1"><a href="#">LOREM PORTA</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">SEA BEACH</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">IPSUM WORLD</a></li>
+		  </ul>
+		  <hr>
+		  <div class="profile6il2i row">
+		    <div class="col-md-6">
+			  <div class="profile6il2il">
+			    <h6 class="font_14 mb-0">Starting From:<br>
+<span class="fw-bold"><span class="fs-4 col_green">$340</span> <span class="text-decoration-line-through text-muted">$450</span></span><br>
+<span class="font_12">TAXES INCL/PERS</span></h6>
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <div class="profile6il2ir text-end pt-2">
+			    <h6 class="mb-0"><a class="button px-3" href="#">Book A Trip <i class="fa fa-plane"></i></a></h6>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		</div>
+	  </div>
+	  <div class="col-md-4">
+	    <div class="profile6il p-3 shadow_box rounded_1">
+		  <div class="profile6il1 position-relative">
+		   <div class="profile6il1i">
+		     <a href="#"><img src="img/20.jpg" alt="abc" class="w-100 rounded_1"></a>
+		</div>
+		   <div class="profile6il1i1 position-absolute top-0">
+		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 2 DAYS / 3 NIGHT</h6><br>
+			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> Spain</a></h6>
+		</div>
+		</div>
+		<div class="profile6il2 mt-3">
+		  <h5><a href="#">Embracing City Lights, Landm, And Iconic Culture.</a></h5>
+		  <ul class="font_12">
+		   <li class="d-inline-block me-1"><a href="#">LOREM PORTA</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">SEA BEACH</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">IPSUM WORLD</a></li>
+		  </ul>
+		  <hr>
+		  <div class="profile6il2i row">
+		    <div class="col-md-6">
+			  <div class="profile6il2il">
+			    <h6 class="font_14 mb-0">Starting From:<br>
+<span class="fw-bold"><span class="fs-4 col_green">$260</span> <span class="text-decoration-line-through text-muted">$410</span></span><br>
+<span class="font_12">TAXES INCL/PERS</span></h6>
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <div class="profile6il2ir text-end pt-2">
+			    <h6 class="mb-0"><a class="button px-3" href="#">Book A Trip <i class="fa fa-plane"></i></a></h6>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		</div>
+	  </div>
+
+	</div>
+</div>
+
+<div class="tab-pane" id="profile11">
+    <div class="profile6i row">
+	  <div class="col-md-4">
+	    <div class="profile6il p-3 shadow_box rounded_1">
+		  <div class="profile6il1 position-relative">
+		   <div class="profile6il1i">
+		     <a href="#"><img src="img/19.jpg" alt="abc" class="w-100 rounded_1"></a>
+		</div>
+		   <div class="profile6il1i1 position-absolute top-0">
+		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 3 DAYS / 4 NIGHT</h6><br>
+			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> LONDON</a></h6>
+		</div>
+		</div>
+		<div class="profile6il2 mt-3">
+		  <h5><a href="#">Immersive Cultural Expirees, Local Cuisine.</a></h5>
+		  <ul class="font_12">
+		   <li class="d-inline-block me-1"><a href="#">LOREM PORTA</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">SEA BEACH</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">IPSUM WORLD</a></li>
+		  </ul>
+		  <hr>
+		  <div class="profile6il2i row">
+		    <div class="col-md-6">
+			  <div class="profile6il2il">
+			    <h6 class="font_14 mb-0">Starting From:<br>
+<span class="fw-bold"><span class="fs-4 col_green">$430</span> <span class="text-decoration-line-through text-muted">$620</span></span><br>
+<span class="font_12">TAXES INCL/PERS</span></h6>
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <div class="profile6il2ir text-end pt-2">
+			    <h6 class="mb-0"><a class="button px-3" href="#">Book A Trip <i class="fa fa-plane"></i></a></h6>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		</div>
+	  </div>
+	</div>
+</div>
+
+<div class="tab-pane" id="profile12">
+    <div class="profile6i row">
+	  
+	  <div class="col-md-4">
+	    <div class="profile6il p-3 shadow_box rounded_1">
+		  <div class="profile6il1 position-relative">
+		   <div class="profile6il1i">
+		     <a href="#"><img src="img/20.jpg" alt="abc" class="w-100 rounded_1"></a>
+		</div>
+		   <div class="profile6il1i1 position-absolute top-0">
+		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 2 DAYS / 3 NIGHT</h6><br>
+			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> Spain</a></h6>
+		</div>
+		</div>
+		<div class="profile6il2 mt-3">
+		  <h5><a href="#">Embracing City Lights, Landm, And Iconic Culture.</a></h5>
+		  <ul class="font_12">
+		   <li class="d-inline-block me-1"><a href="#">LOREM PORTA</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">SEA BEACH</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">IPSUM WORLD</a></li>
+		  </ul>
+		  <hr>
+		  <div class="profile6il2i row">
+		    <div class="col-md-6">
+			  <div class="profile6il2il">
+			    <h6 class="font_14 mb-0">Starting From:<br>
+<span class="fw-bold"><span class="fs-4 col_green">$260</span> <span class="text-decoration-line-through text-muted">$410</span></span><br>
+<span class="font_12">TAXES INCL/PERS</span></h6>
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <div class="profile6il2ir text-end pt-2">
+			    <h6 class="mb-0"><a class="button px-3" href="#">Book A Trip <i class="fa fa-plane"></i></a></h6>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		</div>
+	  </div>
+	  <div class="col-md-4">
+	    <div class="profile6il p-3 shadow_box rounded_1">
+		  <div class="profile6il1 position-relative">
+		   <div class="profile6il1i">
+		     <a href="#"><img src="img/21.jpg" alt="abc" class="w-100 rounded_1"></a>
+		</div>
+		   <div class="profile6il1i1 position-absolute top-0">
+		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 3 DAYS / 4 NIGHT</h6><br>
+			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> LONDON</a></h6>
+		</div>
+		</div>
+		<div class="profile6il2 mt-3">
+		  <h5><a href="#">Immersive Cultural Expirees, Local Cuisine.</a></h5>
+		  <ul class="font_12">
+		   <li class="d-inline-block me-1"><a href="#">LOREM PORTA</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">SEA BEACH</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">IPSUM WORLD</a></li>
+		  </ul>
+		  <hr>
+		  <div class="profile6il2i row">
+		    <div class="col-md-6">
+			  <div class="profile6il2il">
+			    <h6 class="font_14 mb-0">Starting From:<br>
+<span class="fw-bold"><span class="fs-4 col_green">$430</span> <span class="text-decoration-line-through text-muted">$620</span></span><br>
+<span class="font_12">TAXES INCL/PERS</span></h6>
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <div class="profile6il2ir text-end pt-2">
+			    <h6 class="mb-0"><a class="button px-3" href="#">Book A Trip <i class="fa fa-plane"></i></a></h6>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		</div>
+	  </div>
+	</div>
+</div>
+
+<div class="tab-pane" id="profile13">
+    <div class="profile6i row">
+	  <div class="col-md-4">
+	    <div class="profile6il p-3 shadow_box rounded_1">
+		  <div class="profile6il1 position-relative">
+		   <div class="profile6il1i">
+		     <a href="#"><img src="img/17.jpg" alt="abc" class="w-100 rounded_1"></a>
+		</div>
+		   <div class="profile6il1i1 position-absolute top-0">
+		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 1 WEEK</h6><br>
+			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> EGYPT</a></h6>
+		</div>
+		</div>
+		<div class="profile6il2 mt-3">
+		  <h5><a href="#">Discover Serenity, Exploration, And Enlightenment.</a></h5>
+		  <ul class="font_12">
+		   <li class="d-inline-block me-1"><a href="#">LOREM PORTA</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">SEA BEACH</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">IPSUM WORLD</a></li>
+		  </ul>
+		  <hr>
+		  <div class="profile6il2i row">
+		    <div class="col-md-6">
+			  <div class="profile6il2il">
+			    <h6 class="font_14 mb-0">Starting From:<br>
+<span class="fw-bold"><span class="fs-4 col_green">$340</span> <span class="text-decoration-line-through text-muted">$450</span></span><br>
+<span class="font_12">TAXES INCL/PERS</span></h6>
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <div class="profile6il2ir text-end pt-2">
+			    <h6 class="mb-0"><a class="button px-3" href="#">Book A Trip <i class="fa fa-plane"></i></a></h6>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		</div>
+	  </div>
+	  
+	  <div class="col-md-4">
+	    <div class="profile6il p-3 shadow_box rounded_1">
+		  <div class="profile6il1 position-relative">
+		   <div class="profile6il1i">
+		     <a href="#"><img src="img/19.jpg" alt="abc" class="w-100 rounded_1"></a>
+		</div>
+		   <div class="profile6il1i1 position-absolute top-0">
+		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 3 DAYS / 4 NIGHT</h6><br>
+			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> LONDON</a></h6>
+		</div>
+		</div>
+		<div class="profile6il2 mt-3">
+		  <h5><a href="#">Immersive Cultural Expirees, Local Cuisine.</a></h5>
+		  <ul class="font_12">
+		   <li class="d-inline-block me-1"><a href="#">LOREM PORTA</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">SEA BEACH</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">IPSUM WORLD</a></li>
+		  </ul>
+		  <hr>
+		  <div class="profile6il2i row">
+		    <div class="col-md-6">
+			  <div class="profile6il2il">
+			    <h6 class="font_14 mb-0">Starting From:<br>
+<span class="fw-bold"><span class="fs-4 col_green">$430</span> <span class="text-decoration-line-through text-muted">$620</span></span><br>
+<span class="font_12">TAXES INCL/PERS</span></h6>
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <div class="profile6il2ir text-end pt-2">
+			    <h6 class="mb-0"><a class="button px-3" href="#">Book A Trip <i class="fa fa-plane"></i></a></h6>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		</div>
+	  </div>
+	</div>
+</div>
+
+</div>
+	</div>
+  </div>
+  <div class="row package_1 text-center mt-5">
+    <div class="col-md-12">
+     <h6 class="mb-0"><a class="button_1" href="#">View All Package</a></h6>
+	</div>
+  </div>
+ </div>
+</section>
+
+<section id="explore" class="p_3">
+ <div class="container-xl">
+  <div class="row vacation_1 text-center mb-4">
+    <div class="col-md-12">
+	  <h5 class="family_1 icon_tag col_green"><i class="fa fa-leaf me-1"></i> Are you ready to travel? <i class="fa fa-leaf ms-1"></i></h5>
+		<h1 class="font_50 mt-3 mb-0">Explore Your Activities</h1>
+	</div>
+  </div>
+<div class="row explore_1">
+    <div class="col-md-5">
+      <div class="explore_1l">
+	    <ul class="nav nav-tabs mb-4 border-0 justify-content-center">
+<li class="nav-item d-inline-block">
+<a href="#profile14" data-bs-toggle="tab" aria-expanded="true" class="nav-link active">
+<span class="d-md-block"><i class="fa fa-zap"></i> <br> Zip lining</span>
+</a>
+</li>
+
+<li class="nav-item d-inline-block">
+<a href="#profile15" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+<span class="d-md-block"><i class="fa fa-plane-arrival"></i> <br>Paragliding</span>
+</a>
+</li>
+<li class="nav-item d-inline-block">
+<a href="#profile16" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+<span class="d-md-block"><i class="fa fa-jug-detergent"></i> <br> Bungee Jumping</span>
+</a>
+</li>
+
+<li class="nav-item d-inline-block">
+<a href="#profile17" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+<span class="d-md-block"><i class="fa fa-air-freshener"></i> <br> Ski touring</span>
+</a>
+</li>
+
+<li class="nav-item d-inline-block">
+<a href="#profile18" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+<span class="d-md-block"><i class="fa fa-water-ladder"></i> <br> Rafting</span>
+</a>
+</li>
+
+<li class="nav-item d-inline-block">
+<a href="#profile19" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+<span class="d-md-block"><i class="fa fa-swimmer"></i> <br> Surfing</span>
+</a>
+</li>
+</ul>
+	  </div>
+	</div>
+	<div class="col-md-7">
+      <div class="explore_1r">
+	    <div class="tab-content">
+<div class="tab-pane active" id="profile14">
+    <div class="explore_1ri row">
+	  <div class="col-md-8">
+	    <div class="explore_1ril">
+		  <h6 class="d-inline-block bg_yellow text-white p-2 px-4 fst-italic"> Zip Lining</h6>
+		  <h2 class="mt-3">Thrill Above Ground: The Zip Line Adventure</h2>
+		  <p class="mt-3">Embark on an adrenaline-fueled journey, zipping through lush landscapes, feeling the wind rush past, and experiencing nature from breathtaking heights. Unleash your inner adventurer today.</p>
+		  <div class="faci_1li row mt-3">
+		 <div class="col-md-6">
+		   <div class="faci_1lil">
+		      <ul class="mb-0 fw-bold">
+			     <li><i class="fa fa-circle col_green font_10 me-1"></i> Treetop Views</li>
+			  </ul>
+		   </div>
+		 </div>
+		 <div class="col-md-6">
+		   <div class="faci_1lil">
+		      <ul class="mb-0 fw-bold">
+		 <li><i class="fa fa-circle col_green font_10 me-1"></i> Adrenaline Rush</li>
+			  </ul>
+		   </div>
+		 </div>
+		</div>
+		<div class="faci_1li row mt-3">
+		 <div class="col-md-6">
+		   <div class="faci_1lil">
+		      <ul class="mb-0 fw-bold">
+			     <li><i class="fa fa-circle col_green font_10 me-1"></i> Safety Measures</li>
+			  </ul>
+		   </div>
+		 </div>
+		 <div class="col-md-6">
+		   <div class="faci_1lil">
+		      <ul class="mb-0 fw-bold">
+		 <li><i class="fa fa-circle col_green font_10 me-1"></i> Nature Immersion</li>
+			  </ul>
+		   </div>
+		 </div>
+		</div>
+		<div class="explore_1rili row mt-4">
+		 <div class="col-md-6">
+		   <div class="explore_1rilil">
+		        <h6 class="mb-0"><a class="button px-3" href="#">Check Availability</a></h6>
+		   </div>
+		 </div>
+		 <div class="col-md-6">
+		   <div class="explore_1rilir">
+		     <h5 class="mb-0 fs-6"><a href="#"><i class="fa fa-play-circle font_50 me-1 align-middle col_yellow"></i> Watch Adventure</a></h5>
+		   </div>
+		 </div>
+		</div>
+		</div>
+	  </div>
+	  <div class="col-md-4">
+	    <div class="explore_1rir pt-5">
+		  <div class="grid clearfix">
+			<figure class="effect-jazz mb-0">
+			<a href="#"><img src="img/34.jpg" class="w-100" alt="img25"></a>
+			</figure>
+			</div>
+			<div class="grid clearfix mt-4">
+			<figure class="effect-jazz mb-0">
+			<a href="#"><img src="img/35.jpg" class="w-100" alt="img25"></a>
+			</figure>
+			</div>
+		</div>
+	  </div>
+	</div>
+</div>
+<div class="tab-pane" id="profile15">
+    <div class="explore_1ri row">
+	  <div class="col-md-8">
+	    <div class="explore_1ril">
+		  <h6 class="d-inline-block bg_yellow text-white p-2 px-4 fst-italic"> Paragliding</h6>
+		  <h2 class="mt-3">Horizon Dance: Unique Paragliding Perspectives.</h2>
+		  <p class="mt-3">Embark on an adrenaline-fueled journey, zipping through lush landscapes, feeling the wind rush past, and experiencing nature from breathtaking heights. Unleash your inner adventurer today.</p>
+		  <div class="faci_1li row mt-3">
+		 <div class="col-md-6">
+		   <div class="faci_1lil">
+		      <ul class="mb-0 fw-bold">
+			     <li><i class="fa fa-circle col_green font_10 me-1"></i> Treetop Views</li>
+			  </ul>
+		   </div>
+		 </div>
+		 <div class="col-md-6">
+		   <div class="faci_1lil">
+		      <ul class="mb-0 fw-bold">
+		 <li><i class="fa fa-circle col_green font_10 me-1"></i> Adrenaline Rush</li>
+			  </ul>
+		   </div>
+		 </div>
+		</div>
+		<div class="faci_1li row mt-3">
+		 <div class="col-md-6">
+		   <div class="faci_1lil">
+		      <ul class="mb-0 fw-bold">
+			     <li><i class="fa fa-circle col_green font_10 me-1"></i> Safety Measures</li>
+			  </ul>
+		   </div>
+		 </div>
+		 <div class="col-md-6">
+		   <div class="faci_1lil">
+		      <ul class="mb-0 fw-bold">
+		 <li><i class="fa fa-circle col_green font_10 me-1"></i> Nature Immersion</li>
+			  </ul>
+		   </div>
+		 </div>
+		</div>
+		<div class="explore_1rili row mt-4">
+		 <div class="col-md-6">
+		   <div class="explore_1rilil">
+		        <h6 class="mb-0"><a class="button px-3" href="#">Check Availability</a></h6>
+		   </div>
+		 </div>
+		 <div class="col-md-6">
+		   <div class="explore_1rilir">
+		     <h5 class="mb-0 fs-6"><a href="#"><i class="fa fa-play-circle font_50 me-1 align-middle col_yellow"></i> Watch Adventure</a></h5>
+		   </div>
+		 </div>
+		</div>
+		</div>
+	  </div>
+	  <div class="col-md-4">
+	    <div class="explore_1rir pt-5">
+		  <div class="grid clearfix">
+			<figure class="effect-jazz mb-0">
+			<a href="#"><img src="img/36.jpg" class="w-100" alt="img25"></a>
+			</figure>
+			</div>
+			<div class="grid clearfix mt-4">
+			<figure class="effect-jazz mb-0">
+			<a href="#"><img src="img/37.jpg" class="w-100" alt="img25"></a>
+			</figure>
+			</div>
+		</div>
+	  </div>
+	</div>
+</div>
+<div class="tab-pane" id="profile16">
+    <div class="explore_1ri row">
+	  <div class="col-md-8">
+	    <div class="explore_1ril">
+		  <h6 class="d-inline-block bg_yellow text-white p-2 px-4 fst-italic"> Bungee Jumping</h6>
+		  <h2 class="mt-3">Plunge: Bungee Jumping's Gravity-Defying Thrill</h2>
+		  <p class="mt-3">Embark on an adrenaline-fueled journey, zipping through lush landscapes, feeling the wind rush past, and experiencing nature from breathtaking heights. Unleash your inner adventurer today.</p>
+		  <div class="faci_1li row mt-3">
+		 <div class="col-md-6">
+		   <div class="faci_1lil">
+		      <ul class="mb-0 fw-bold">
+			     <li><i class="fa fa-circle col_green font_10 me-1"></i> Treetop Views</li>
+			  </ul>
+		   </div>
+		 </div>
+		 <div class="col-md-6">
+		   <div class="faci_1lil">
+		      <ul class="mb-0 fw-bold">
+		 <li><i class="fa fa-circle col_green font_10 me-1"></i> Adrenaline Rush</li>
+			  </ul>
+		   </div>
+		 </div>
+		</div>
+		<div class="faci_1li row mt-3">
+		 <div class="col-md-6">
+		   <div class="faci_1lil">
+		      <ul class="mb-0 fw-bold">
+			     <li><i class="fa fa-circle col_green font_10 me-1"></i> Safety Measures</li>
+			  </ul>
+		   </div>
+		 </div>
+		 <div class="col-md-6">
+		   <div class="faci_1lil">
+		      <ul class="mb-0 fw-bold">
+		 <li><i class="fa fa-circle col_green font_10 me-1"></i> Nature Immersion</li>
+			  </ul>
+		   </div>
+		 </div>
+		</div>
+		<div class="explore_1rili row mt-4">
+		 <div class="col-md-6">
+		   <div class="explore_1rilil">
+		        <h6 class="mb-0"><a class="button px-3" href="#">Check Availability</a></h6>
+		   </div>
+		 </div>
+		 <div class="col-md-6">
+		   <div class="explore_1rilir">
+		     <h5 class="mb-0 fs-6"><a href="#"><i class="fa fa-play-circle font_50 me-1 align-middle col_yellow"></i> Watch Adventure</a></h5>
+		   </div>
+		 </div>
+		</div>
+		</div>
+	  </div>
+	  <div class="col-md-4">
+	    <div class="explore_1rir pt-5">
+		  <div class="grid clearfix">
+			<figure class="effect-jazz mb-0">
+			<a href="#"><img src="img/38.jpg" class="w-100" alt="img25"></a>
+			</figure>
+			</div>
+			<div class="grid clearfix mt-4">
+			<figure class="effect-jazz mb-0">
+			<a href="#"><img src="img/39.jpg" class="w-100" alt="img25"></a>
+			</figure>
+			</div>
+		</div>
+	  </div>
+	</div>
+</div>
+<div class="tab-pane" id="profile17">
+    <div class="explore_1ri row">
+	  <div class="col-md-8">
+	    <div class="explore_1ril">
+		  <h6 class="d-inline-block bg_yellow text-white p-2 px-4 fst-italic"> Ski touring</h6>
+		  <h2 class="mt-3">Powder Quest: Exploring Snow-Covered  on Skis</h2>
+		  <p class="mt-3">Embark on an adrenaline-fueled journey, zipping through lush landscapes, feeling the wind rush past, and experiencing nature from breathtaking heights. Unleash your inner adventurer today.</p>
+		  <div class="faci_1li row mt-3">
+		 <div class="col-md-6">
+		   <div class="faci_1lil">
+		      <ul class="mb-0 fw-bold">
+			     <li><i class="fa fa-circle col_green font_10 me-1"></i> Treetop Views</li>
+			  </ul>
+		   </div>
+		 </div>
+		 <div class="col-md-6">
+		   <div class="faci_1lil">
+		      <ul class="mb-0 fw-bold">
+		 <li><i class="fa fa-circle col_green font_10 me-1"></i> Adrenaline Rush</li>
+			  </ul>
+		   </div>
+		 </div>
+		</div>
+		<div class="faci_1li row mt-3">
+		 <div class="col-md-6">
+		   <div class="faci_1lil">
+		      <ul class="mb-0 fw-bold">
+			     <li><i class="fa fa-circle col_green font_10 me-1"></i> Safety Measures</li>
+			  </ul>
+		   </div>
+		 </div>
+		 <div class="col-md-6">
+		   <div class="faci_1lil">
+		      <ul class="mb-0 fw-bold">
+		 <li><i class="fa fa-circle col_green font_10 me-1"></i> Nature Immersion</li>
+			  </ul>
+		   </div>
+		 </div>
+		</div>
+		<div class="explore_1rili row mt-4">
+		 <div class="col-md-6">
+		   <div class="explore_1rilil">
+		        <h6 class="mb-0"><a class="button px-3" href="#">Check Availability</a></h6>
+		   </div>
+		 </div>
+		 <div class="col-md-6">
+		   <div class="explore_1rilir">
+		     <h5 class="mb-0 fs-6"><a href="#"><i class="fa fa-play-circle font_50 me-1 align-middle col_yellow"></i> Watch Adventure</a></h5>
+		   </div>
+		 </div>
+		</div>
+		</div>
+	  </div>
+	  <div class="col-md-4">
+	    <div class="explore_1rir pt-5">
+		  <div class="grid clearfix">
+			<figure class="effect-jazz mb-0">
+			<a href="#"><img src="img/34.jpg" class="w-100" alt="img25"></a>
+			</figure>
+			</div>
+			<div class="grid clearfix mt-4">
+			<figure class="effect-jazz mb-0">
+			<a href="#"><img src="img/35.jpg" class="w-100" alt="img25"></a>
+			</figure>
+			</div>
+		</div>
+	  </div>
+	</div>
+</div>
+<div class="tab-pane" id="profile18">
+    <div class="explore_1ri row">
+	  <div class="col-md-8">
+	    <div class="explore_1ril">
+		  <h6 class="d-inline-block bg_yellow text-white p-2 px-4 fst-italic"> Rafting</h6>
+		  <h2 class="mt-3">Whitewater Rush: Thrilling Rafting Adventure</h2>
+		  <p class="mt-3">Embark on an adrenaline-fueled journey, zipping through lush landscapes, feeling the wind rush past, and experiencing nature from breathtaking heights. Unleash your inner adventurer today.</p>
+		  <div class="faci_1li row mt-3">
+		 <div class="col-md-6">
+		   <div class="faci_1lil">
+		      <ul class="mb-0 fw-bold">
+			     <li><i class="fa fa-circle col_green font_10 me-1"></i> Treetop Views</li>
+			  </ul>
+		   </div>
+		 </div>
+		 <div class="col-md-6">
+		   <div class="faci_1lil">
+		      <ul class="mb-0 fw-bold">
+		 <li><i class="fa fa-circle col_green font_10 me-1"></i> Adrenaline Rush</li>
+			  </ul>
+		   </div>
+		 </div>
+		</div>
+		<div class="faci_1li row mt-3">
+		 <div class="col-md-6">
+		   <div class="faci_1lil">
+		      <ul class="mb-0 fw-bold">
+			     <li><i class="fa fa-circle col_green font_10 me-1"></i> Safety Measures</li>
+			  </ul>
+		   </div>
+		 </div>
+		 <div class="col-md-6">
+		   <div class="faci_1lil">
+		      <ul class="mb-0 fw-bold">
+		 <li><i class="fa fa-circle col_green font_10 me-1"></i> Nature Immersion</li>
+			  </ul>
+		   </div>
+		 </div>
+		</div>
+		<div class="explore_1rili row mt-4">
+		 <div class="col-md-6">
+		   <div class="explore_1rilil">
+		        <h6 class="mb-0"><a class="button px-3" href="#">Check Availability</a></h6>
+		   </div>
+		 </div>
+		 <div class="col-md-6">
+		   <div class="explore_1rilir">
+		     <h5 class="mb-0 fs-6"><a href="#"><i class="fa fa-play-circle font_50 me-1 align-middle col_yellow"></i> Watch Adventure</a></h5>
+		   </div>
+		 </div>
+		</div>
+		</div>
+	  </div>
+	  <div class="col-md-4">
+	    <div class="explore_1rir pt-5">
+		  <div class="grid clearfix">
+			<figure class="effect-jazz mb-0">
+			<a href="#"><img src="img/36.jpg" class="w-100" alt="img25"></a>
+			</figure>
+			</div>
+			<div class="grid clearfix mt-4">
+			<figure class="effect-jazz mb-0">
+			<a href="#"><img src="img/37.jpg" class="w-100" alt="img25"></a>
+			</figure>
+			</div>
+		</div>
+	  </div>
+	</div>
+</div>
+<div class="tab-pane" id="profile19">
+    <div class="explore_1ri row">
+	  <div class="col-md-8">
+	    <div class="explore_1ril">
+		  <h6 class="d-inline-block bg_yellow text-white p-2 px-4 fst-italic"> Surfing</h6>
+		  <h2 class="mt-3">Ocean Rush: The Thrill of Riding Majestic Surf Waves.</h2>
+		  <p class="mt-3">Embark on an adrenaline-fueled journey, zipping through lush landscapes, feeling the wind rush past, and experiencing nature from breathtaking heights. Unleash your inner adventurer today.</p>
+		  <div class="faci_1li row mt-3">
+		 <div class="col-md-6">
+		   <div class="faci_1lil">
+		      <ul class="mb-0 fw-bold">
+			     <li><i class="fa fa-circle col_green font_10 me-1"></i> Treetop Views</li>
+			  </ul>
+		   </div>
+		 </div>
+		 <div class="col-md-6">
+		   <div class="faci_1lil">
+		      <ul class="mb-0 fw-bold">
+		 <li><i class="fa fa-circle col_green font_10 me-1"></i> Adrenaline Rush</li>
+			  </ul>
+		   </div>
+		 </div>
+		</div>
+		<div class="faci_1li row mt-3">
+		 <div class="col-md-6">
+		   <div class="faci_1lil">
+		      <ul class="mb-0 fw-bold">
+			     <li><i class="fa fa-circle col_green font_10 me-1"></i> Safety Measures</li>
+			  </ul>
+		   </div>
+		 </div>
+		 <div class="col-md-6">
+		   <div class="faci_1lil">
+		      <ul class="mb-0 fw-bold">
+		 <li><i class="fa fa-circle col_green font_10 me-1"></i> Nature Immersion</li>
+			  </ul>
+		   </div>
+		 </div>
+		</div>
+		<div class="explore_1rili row mt-4">
+		 <div class="col-md-6">
+		   <div class="explore_1rilil">
+		        <h6 class="mb-0"><a class="button px-3" href="#">Check Availability</a></h6>
+		   </div>
+		 </div>
+		 <div class="col-md-6">
+		   <div class="explore_1rilir">
+		     <h5 class="mb-0 fs-6"><a href="#"><i class="fa fa-play-circle font_50 me-1 align-middle col_yellow"></i> Watch Adventure</a></h5>
+		   </div>
+		 </div>
+		</div>
+		</div>
+	  </div>
+	  <div class="col-md-4">
+	    <div class="explore_1rir pt-5">
+		  <div class="grid clearfix">
+			<figure class="effect-jazz mb-0">
+			<a href="#"><img src="img/38.jpg" class="w-100" alt="img25"></a>
+			</figure>
+			</div>
+			<div class="grid clearfix mt-4">
+			<figure class="effect-jazz mb-0">
+			<a href="#"><img src="img/39.jpg" class="w-100" alt="img25"></a>
+			</figure>
+			</div>
+		</div>
+	  </div>
+	</div>
+</div>
+</div>
+	  </div>
+	</div>
+  </div>
+ </div>
+</section>
+
+<section id="offer" class="p_3 pt-0">
+ <div class="container-xl">
+  <div class="row vacation_1 text-center mb-4">
+    <div class="col-md-12">
+	  <h5 class="family_1 icon_tag col_green"><i class="fa fa-leaf me-1"></i> Hurry Up <i class="fa fa-leaf ms-1"></i></h5>
+		<h1 class="font_50 mt-3 mb-0">Phenomenal Deals Offered</h1>
+	</div>
+  </div>
+<div class="row offer_1">
+    <div class="col-md-3">
+	  <div class="offer_1l position-relative">
+	    <div class="offer_1li">
+	      <div class="grid clearfix">
+			<figure class="effect-jazz mb-0">
+			<a href="#"><img src="img/11.jpg" class="w-100" alt="img25"></a>
+			</figure>
+			</div>
+	  </div>
+	  <div class="offer_1li1 position-absolute p-4 px-3 bottom-0 w-100 text-center">
+	      <h5 class="family_1 text-white">Savings worldwide</h5>
+		  <h2 class="col_yellow">20% Off</h2>
+		  <h5 class="mb-0"><a class="a_tag1 text-white" href="#">Discover Great Deal</a></h5>
+	  </div>
+	  </div>
+	</div>
+<div class="col-md-6">
+	  <div class="offer_1l position-relative">
+	    <div class="offer_1li">
+	      <div class="grid clearfix">
+			<figure class="effect-jazz mb-0">
+			<a href="#"><img src="img/13.jpg" class="w-100" alt="img25"></a>
+			</figure>
+			</div>
+	  </div>
+	  <div class="offer_1li1 position-absolute p-4 px-3 bottom-0 w-100 text-center">
+	      <h5 class="family_1 text-white">Honeymoon Tour</h5>
+		  <h4 class="text-white">Enjoy <span class="col_yellow fs-2">40%</span> Off</h4>
+		  <h6 class="text-white">2 Country & 15 Location</h6>
+		  <h6 class="mb-0 mt-3"><a class="button_1" href="#">Book Now</a></h6>
+	  </div>
+	  </div>
+	</div>
+	<div class="col-md-3">
+	  <div class="offer_1l position-relative">
+	    <div class="offer_1li">
+	      <div class="grid clearfix">
+			<figure class="effect-jazz mb-0">
+			<a href="#"><img src="img/12.jpg" class="w-100" alt="img25"></a>
+			</figure>
+			</div>
+	  </div>
+	  <div class="offer_1li1 position-absolute p-4 px-3 bottom-0 w-100 text-center">
+	      <h5 class="family_1 text-white">Couple Tour</h5>
+		  <h2 class="col_yellow">30% Off</h2>
+		  <h5 class="mb-0"><a class="a_tag1 text-white" href="#">4 Days In Switzerland</a></h5>
+	  </div>
+	  </div>
+	</div>
+  </div>
+  <div class="row offer_1 mt-4">
+    <div class="col-md-3">
+	  <div class="offer_1l position-relative">
+	    <div class="offer_1li">
+	      <div class="grid clearfix">
+			<figure class="effect-jazz mb-0">
+			<a href="#"><img src="img/15.jpg" class="w-100" alt="img25"></a>
+			</figure>
+			</div>
+	  </div>
+	  <div class="offer_1li1 position-absolute p-4 px-3 bottom-0 w-100 text-center">
+	      <h5 class="family_1 text-white">Savings worldwide</h5>
+		  <h2 class="col_yellow">50% Off</h2>
+		  <h5 class="mb-0"><a class="a_tag1 text-white" href="#">Discover Great Deal</a></h5>
+	  </div>
+	  </div>
+	</div>
+<div class="col-md-6">
+	  <div class="offer_1l position-relative">
+	    <div class="offer_1li">
+	      <div class="grid clearfix">
+			<figure class="effect-jazz mb-0">
+			<a href="#"><img src="img/14.jpg" class="w-100" alt="img25"></a>
+			</figure>
+			</div>
+	  </div>
+	  <div class="offer_1li1 position-absolute p-4 px-3 bottom-0 w-100 text-center">
+	      <h5 class="family_1 text-white">World Tour</h5>
+		  <h4 class="text-white">Enjoy <span class="col_yellow fs-2">25%</span> Off</h4>
+		  <h6 class="text-white">5 Country & 18 Location</h6>
+		  <h6 class="mb-0 mt-3"><a class="button_1" href="#">Book Now</a></h6>
+	  </div>
+	  </div>
+	</div>
+	<div class="col-md-3">
+	  <div class="offer_1l position-relative">
+	    <div class="offer_1li">
+	      <div class="grid clearfix">
+			<figure class="effect-jazz mb-0">
+			<a href="#"><img src="img/16.jpg" class="w-100" alt="img25"></a>
+			</figure>
+			</div>
+	  </div>
+	  <div class="offer_1li1 position-absolute p-4 px-3 bottom-0 w-100 text-center">
+	      <h5 class="family_1 text-white">Popular Tour</h5>
+		  <h2 class="col_yellow">35% Off</h2>
+		  <h5 class="mb-0"><a class="a_tag1 text-white" href="#">6 Days In London</a></h5>
+	  </div>
+	  </div>
+	</div>
+  </div>
+ </div>
+</section>
+
+<section id="testim" class="p_3 bg_light1 carousel_p px_4">
+ <div class="container-fluid">
+  <div class="row vacation_1 text-center mb-4">
+    <div class="col-md-12">
+	  <h5 class="family_1 icon_tag col_green"><i class="fa fa-leaf me-1"></i> Testimonial <i class="fa fa-leaf ms-1"></i></h5>
+		<h1 class="font_50 mt-3 mb-0">Regards From Travelers</h1>
+	</div>
+  </div>
+<div class="testim_1 row">
+	  <div id="carouselExampleCaptions1" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1" aria-label="Slide 2" class="" aria-current="true"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+       <div class="testim_1i row">
+	     <div class="col-md-4">
+		   <div class="testim_1il">
+		     <div class="testim_1il1 bg-white rounded_1 p-4  text-center">
+			   <p>"Absolute perfection! Egens Lab's web development services left me completely satisfied and eager to recommend them to others."</p>
+			   <div class="testim_1il1i row">
+			      <div class="col-md-4">
+				    <div class="testim_1il1il pt-4">
+					  <h5 class="font_14 mb-0"><i class="fa fa-umbrella col_green me-1"></i> Tripadvisor</h5>
+					</div>
+				  </div>
+				  <div class="col-md-4">
+				    <div class="testim_1il1im text-center">
+					  <span class="font_60 lh-1 text-light"><i class="fa fa-quote-right"></i></span>
+					</div>
+				  </div>
+				  <div class="col-md-4">
+				    <div class="testim_1il1ir pt-3">
+					  <h5 class="font_14 lh-base mb-0">May 9, 2023 <br>
+<span class="text-muted fw-normal">10.30 PM</span></h5>
+					</div>
+				  </div>
+			   </div>
+			 </div>
+			 <div class="testim_1il2 mt-4">
+			      <img src="img/4.jpg" class="float-start rounded-circle me-3" alt="abc">
+				  <h4 class="mb-0 lh-1">Lorem Amet <br> <span class="font_14 text-muted fw-normal">France</span></h4>
+			 </div>
+		   </div>
+		 </div>
+		 <div class="col-md-4">
+		   <div class="testim_1il">
+		     <div class="testim_1il1 bg-white rounded_1 p-4  text-center">
+			   <p>"Absolute perfection! Egens Lab's web development services left me completely satisfied and eager to recommend them to others."</p>
+			   <div class="testim_1il1i row">
+			      <div class="col-md-4">
+				    <div class="testim_1il1il pt-4">
+					  <h5 class="font_14 mb-0"><i class="fa fa-umbrella col_green me-1"></i> Tripadvisor</h5>
+					</div>
+				  </div>
+				  <div class="col-md-4">
+				    <div class="testim_1il1im text-center">
+					  <span class="font_60 lh-1 text-light"><i class="fa fa-quote-right"></i></span>
+					</div>
+				  </div>
+				  <div class="col-md-4">
+				    <div class="testim_1il1ir pt-3">
+					  <h5 class="font_14 lh-base mb-0">May 8, 2023 <br>
+<span class="text-muted fw-normal">10.39 PM</span></h5>
+					</div>
+				  </div>
+			   </div>
+			 </div>
+			 <div class="testim_1il2 mt-4">
+			      <img src="img/5.jpg" class="float-start rounded-circle me-3" alt="abc">
+				  <h4 class="mb-0 lh-1">Ipsum Porta <br> <span class="font_14 text-muted fw-normal">London</span></h4>
+			 </div>
+		   </div>
+		 </div>
+		 <div class="col-md-4">
+		   <div class="testim_1il">
+		     <div class="testim_1il1 bg-white rounded_1 p-4  text-center">
+			   <p>"Absolute perfection! Egens Lab's web development services left me completely satisfied and eager to recommend them to others."</p>
+			   <div class="testim_1il1i row">
+			      <div class="col-md-4">
+				    <div class="testim_1il1il pt-4">
+					  <h5 class="font_14 mb-0"><i class="fa fa-umbrella col_green me-1"></i> Tripadvisor</h5>
+					</div>
+				  </div>
+				  <div class="col-md-4">
+				    <div class="testim_1il1im text-center">
+					  <span class="font_60 lh-1 text-light"><i class="fa fa-quote-right"></i></span>
+					</div>
+				  </div>
+				  <div class="col-md-4">
+				    <div class="testim_1il1ir pt-3">
+					  <h5 class="font_14 lh-base mb-0">May 7, 2023 <br>
+<span class="text-muted fw-normal">11.20 PM</span></h5>
+					</div>
+				  </div>
+			   </div>
+			 </div>
+			 <div class="testim_1il2 mt-4">
+			      <img src="img/6.jpg" class="float-start rounded-circle me-3" alt="abc">
+				  <h4 class="mb-0 lh-1">Dolor Quis <br> <span class="font_14 text-muted fw-normal">Spain</span></h4>
+			 </div>
+		   </div>
+		 </div>
+	   </div>
+    </div>
+    <div class="carousel-item">
+        <div class="testim_1i row">
+	      <div class="testim_1i row">
+	     <div class="col-md-4">
+		   <div class="testim_1il">
+		     <div class="testim_1il1 bg-white rounded_1 p-4  text-center">
+			   <p>"Absolute perfection! Egens Lab's web development services left me completely satisfied and eager to recommend them to others."</p>
+			   <div class="testim_1il1i row">
+			      <div class="col-md-4">
+				    <div class="testim_1il1il pt-4">
+					  <h5 class="font_14 mb-0"><i class="fa fa-umbrella col_green me-1"></i> Tripadvisor</h5>
+					</div>
+				  </div>
+				  <div class="col-md-4">
+				    <div class="testim_1il1im text-center">
+					  <span class="font_60 lh-1 text-light"><i class="fa fa-quote-right"></i></span>
+					</div>
+				  </div>
+				  <div class="col-md-4">
+				    <div class="testim_1il1ir pt-3">
+					  <h5 class="font_14 lh-base mb-0">May 9, 2023 <br>
+<span class="text-muted fw-normal">10.30 PM</span></h5>
+					</div>
+				  </div>
+			   </div>
+			 </div>
+			 <div class="testim_1il2 mt-4">
+			      <img src="img/4.jpg" class="float-start rounded-circle me-3" alt="abc">
+				  <h4 class="mb-0 lh-1">Lorem Amet <br> <span class="font_14 text-muted fw-normal">France</span></h4>
+			 </div>
+		   </div>
+		 </div>
+		 <div class="col-md-4">
+		   <div class="testim_1il">
+		     <div class="testim_1il1 bg-white rounded_1 p-4  text-center">
+			   <p>"Absolute perfection! Egens Lab's web development services left me completely satisfied and eager to recommend them to others."</p>
+			   <div class="testim_1il1i row">
+			      <div class="col-md-4">
+				    <div class="testim_1il1il pt-4">
+					  <h5 class="font_14 mb-0"><i class="fa fa-umbrella col_green me-1"></i> Tripadvisor</h5>
+					</div>
+				  </div>
+				  <div class="col-md-4">
+				    <div class="testim_1il1im text-center">
+					  <span class="font_60 lh-1 text-light"><i class="fa fa-quote-right"></i></span>
+					</div>
+				  </div>
+				  <div class="col-md-4">
+				    <div class="testim_1il1ir pt-3">
+					  <h5 class="font_14 lh-base mb-0">May 8, 2023 <br>
+<span class="text-muted fw-normal">10.39 PM</span></h5>
+					</div>
+				  </div>
+			   </div>
+			 </div>
+			 <div class="testim_1il2 mt-4">
+			      <img src="img/5.jpg" class="float-start rounded-circle me-3" alt="abc">
+				  <h4 class="mb-0 lh-1">Ipsum Porta <br> <span class="font_14 text-muted fw-normal">London</span></h4>
+			 </div>
+		   </div>
+		 </div>
+		 <div class="col-md-4">
+		   <div class="testim_1il">
+		     <div class="testim_1il1 bg-white rounded_1 p-4  text-center">
+			   <p>"Absolute perfection! Egens Lab's web development services left me completely satisfied and eager to recommend them to others."</p>
+			   <div class="testim_1il1i row">
+			      <div class="col-md-4">
+				    <div class="testim_1il1il pt-4">
+					  <h5 class="font_14 mb-0"><i class="fa fa-umbrella col_green me-1"></i> Tripadvisor</h5>
+					</div>
+				  </div>
+				  <div class="col-md-4">
+				    <div class="testim_1il1im text-center">
+					  <span class="font_60 lh-1 text-light"><i class="fa fa-quote-right"></i></span>
+					</div>
+				  </div>
+				  <div class="col-md-4">
+				    <div class="testim_1il1ir pt-3">
+					  <h5 class="font_14 lh-base mb-0">May 7, 2023 <br>
+<span class="text-muted fw-normal">11.20 PM</span></h5>
+					</div>
+				  </div>
+			   </div>
+			 </div>
+			 <div class="testim_1il2 mt-4">
+			      <img src="img/6.jpg" class="float-start rounded-circle me-3" alt="abc">
+				  <h4 class="mb-0 lh-1">Dolor Quis <br> <span class="font_14 text-muted fw-normal">Spain</span></h4>
+			 </div>
+		   </div>
+		 </div>
+	   </div>
+	   </div>
+    </div>
+  </div>
+</div>
+	</div>
+ </div>
+</section>
+
+<section id="blog_h" class="p_3">
+ <div class="container-xl">
+  <div class="row vacation_1 text-center mb-4">
+    <div class="col-md-12">
+	  <h5 class="family_1 icon_tag col_green"><i class="fa fa-leaf me-1"></i> Latest Blog <i class="fa fa-leaf ms-1"></i></h5>
+		<h1 class="font_50 mt-3 mb-0">Latest Travel Blog</h1>
+	</div>
+  </div>
+<div class="row blog_h1">
+    <div class="col-md-5">
+      <div class="blog_h1l">
+	   <div class="blog_h1li">
+	    <a href="#"><img alt="abc" class="rounded-top w-100" src="img/40.jpg"></a>
+	  </div>
+	  <div class="blog_h1li1 p-4 shadow_box rounded-bottom">
+	      <ul class="font_14 fw-bold">
+		    <li class="d-inline-block"><a class="text-muted a_tag" href="#">By Lorem</a></li>
+			<li class="d-inline-block ms-2"><i class="fa fa-circle col_green me-1 font_8 align-middle"></i> <a class="text-muted a_tag" href="#">Feb 6, 2024</a></li>
+			<li class="d-inline-block ms-2"><i class="fa fa-circle col_green me-1 font_8 align-middle"></i> <a class="text-muted a_tag" href="#">3 Comments</a></li>
+		  </ul>
+		  <h5><a href="#">Spiritual Sojourn: Pilgrimage Tours For Soul Seekers</a></h5>
+		  <div class="blog_h1li1i row mt-3">
+		    <div class="col-md-4">
+			  <div class="blog_h1li1il">
+			    <h6 class="mb-0 fw-bold"><a class="a_tag1 col_green" href="#">View Post <i class="fa fa-arrow-circle-right ms-1 align-middle"></i></a></h6>
+			  </div>
+			</div>
+			<div class="col-md-8">
+			  <div class="blog_h1li1ir text-end">
+			     <ul class="mb-0">
+		    <li class="d-inline-block"><a class="text-muted a_tag1" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+<li class="d-inline-block ms-2"><a class="text-muted a_tag1" href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+<li class="d-inline-block ms-2"><a class="text-muted a_tag1" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+<li class="d-inline-block ms-2"><a class="text-muted a_tag1" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+		  </ul>
+			  </div>
+			</div>
+		  </div>
+	  </div>
+	  </div>
+	</div>
+	<div class="col-md-7">
+      <div class="blog_h1l">
+        <div class="blog_h1li row p-2 px-0 rounded-3 shadow_box mx-0">
+          <div class="col-md-5">
+		   <div class="blog_h1lil position-relative">
+		     <div class="blog_h1lili">
+			   <div class="grid clearfix">
+			<figure class="effect-jazz mb-0">
+			<a href="#"><img src="img/18.jpg" class="w-100" alt="img25"></a>
+			</figure>
+			</div>
+			 </div>
+			 <div class="blog_h1lili1 position-absolute top-0 p-2">
+			     <h5 class="mb-0 d-inline-block bg_back rounded-circle text-center text-white">7 <br> <span class="fw-normal fs-6">Feb</span></h5>
+			 </div>
+		   </div>
+		  </div>
+		  <div class="col-md-7">
+		   <div class="blog_h1lir pt-3">
+		     <div class="blog_h1li1">
+	      <ul class="font_14 fw-bold">
+		    <li class="d-inline-block"><a class="text-muted a_tag" href="#">By Lorem</a></li>
+			<li class="d-inline-block ms-2"><i class="fa fa-circle col_green me-1 font_8 align-middle"></i> <a class="text-muted a_tag" href="#">Adventure Safari</a></li>
+		  </ul>
+		  <h5><a href="#">Wine Country Escapes: Vineyard Tours For Connoisseurs</a></h5>
+		  <div class="blog_h1li1i row mt-3">
+		    <div class="col-md-4">
+			  <div class="blog_h1li1il">
+			    <h6 class="mb-0 fw-bold"><a class="a_tag1 col_green" href="#">View Post <i class="fa fa-arrow-circle-right ms-1 align-middle"></i></a></h6>
+			  </div>
+			</div>
+			<div class="col-md-8">
+			  <div class="blog_h1li1ir text-end">
+			     <h6 class="mb-0 font_14 text-muted"><i class="fa fa-fire col_green me-1 align-middle"></i> 1 Min Read</h6>
+			  </div>
+			</div>
+		  </div>
+	  </div>
+		   </div>
+		  </div>
+	    </div>
+		<div class="blog_h1li row p-2 px-0 rounded-3 shadow_box mx-0 mt-4">
+          <div class="col-md-5">
+		   <div class="blog_h1lil position-relative">
+		     <div class="blog_h1lili">
+			   <div class="grid clearfix">
+			<figure class="effect-jazz mb-0">
+			<a href="#"><img src="img/19.jpg" class="w-100" alt="img25"></a>
+			</figure>
+			</div>
+			 </div>
+			 <div class="blog_h1lili1 position-absolute top-0 p-2">
+			     <h5 class="mb-0 d-inline-block bg_back rounded-circle text-center text-white">8 <br> <span class="fw-normal fs-6">Feb</span></h5>
+			 </div>
+		   </div>
+		  </div>
+		  <div class="col-md-7">
+		   <div class="blog_h1lir pt-3">
+		     <div class="blog_h1li1">
+	      <ul class="font_14 fw-bold">
+		    <li class="d-inline-block"><a class="text-muted a_tag" href="#">By Porta</a></li>
+			<li class="d-inline-block ms-2"><i class="fa fa-circle col_green me-1 font_8 align-middle"></i> <a class="text-muted a_tag" href="#">Adventure Safari</a></li>
+		  </ul>
+		  <h5><a href="#">Thrills & Chills: Extreme Sports Tours For Adrenaline Junkies</a></h5>
+		  <div class="blog_h1li1i row mt-3">
+		    <div class="col-md-4">
+			  <div class="blog_h1li1il">
+			    <h6 class="mb-0 fw-bold"><a class="a_tag1 col_green" href="#">View Post <i class="fa fa-arrow-circle-right ms-1 align-middle"></i></a></h6>
+			  </div>
+			</div>
+			<div class="col-md-8">
+			  <div class="blog_h1li1ir text-end">
+			     <h6 class="mb-0 font_14 text-muted"><i class="fa fa-fire col_green me-1 align-middle"></i> 2 Min Read</h6>
+			  </div>
+			</div>
+		  </div>
+	  </div>
+		   </div>
+		  </div>
+	    </div>
+		<div class="blog_h1li row p-2 px-0 rounded-3 shadow_box mx-0 mt-4">
+          <div class="col-md-5">
+		   <div class="blog_h1lil position-relative">
+		     <div class="blog_h1lili">
+			   <div class="grid clearfix">
+			<figure class="effect-jazz mb-0">
+			<a href="#"><img src="img/20.jpg" class="w-100" alt="img25"></a>
+			</figure>
+			</div>
+			 </div>
+			 <div class="blog_h1lili1 position-absolute top-0 p-2">
+			     <h5 class="mb-0 d-inline-block bg_back rounded-circle text-center text-white">9 <br> <span class="fw-normal fs-6">Feb</span></h5>
+			 </div>
+		   </div>
+		  </div>
+		  <div class="col-md-7">
+		   <div class="blog_h1lir pt-3">
+		     <div class="blog_h1li1">
+	      <ul class="font_14 fw-bold">
+		    <li class="d-inline-block"><a class="text-muted a_tag" href="#">By Nulla</a></li>
+			<li class="d-inline-block ms-2"><i class="fa fa-circle col_green me-1 font_8 align-middle"></i> <a class="text-muted a_tag" href="#">Adventure Safari</a></li>
+		  </ul>
+		  <h5><a href="#">Urban Wanderlust: City Walking Tours For Street Savvy</a></h5>
+		  <div class="blog_h1li1i row mt-3">
+		    <div class="col-md-4">
+			  <div class="blog_h1li1il">
+			    <h6 class="mb-0 fw-bold"><a class="a_tag1 col_green" href="#">View Post <i class="fa fa-arrow-circle-right ms-1 align-middle"></i></a></h6>
+			  </div>
+			</div>
+			<div class="col-md-8">
+			  <div class="blog_h1li1ir text-end">
+			     <h6 class="mb-0 font_14 text-muted"><i class="fa fa-fire col_green me-1 align-middle"></i> 3 Min Read</h6>
+			  </div>
+			</div>
+		  </div>
+	  </div>
+		   </div>
+		  </div>
+	    </div>
+	  </div>
+	</div>
+  </div>
+ </div>
+</section>
+
+<section id="serv_h" class="p_3">
+ <div class="container-xl">
+  <div class="row vacation_1 text-center mb-4">
+    <div class="col-md-12">
+	  <h5 class="family_1 icon_tag col_green"><i class="fa fa-leaf me-1"></i> Visa Services <i class="fa fa-leaf ms-1"></i></h5>
+		<h1 class="font_50 mt-3 mb-0">Visa Processing</h1>
+	</div>
+  </div>
+<div class="row serv_h1">
+    <div class="col-md-4">
+      <div class="serv_h1l position-relative">
+	     <div class="serv_h1l1">
+	       <a href="#"><img src="img/41.jpg" class="w-100 rounded_top rounded_bottom" alt="abc"></a>
+	  </div>
+	     <div class="serv_h1l2 position-absolute text-center w-100 top-0 px-3">
+	       <h4 class="d-inline-block bg_green text-white p-3 px-5 rounded_5"> London</h4>
+	  </div>
+	  <div class="serv_h1l3 bg_back position-absolute bottom-0 w-100 rounded_bottom">
+	     <div class="serv_h1l3i row">
+		   <div class="col-md-6">
+		     <div class="serv_h1l3il text-center p-3 pt-5">
+			   <h5 class="mb-0 text-white">Electronic</h5>
+			 </div>
+		   </div>
+		   <div class="col-md-6">
+		     <div class="serv_h1l3ir text-center p-3">
+			   <h2 class="text-white mb-0">$6756 <br> <span class="text-decoration-line-through text-white-50 fs-6">$7765</span> </h2>
+			   <h6 class="mb-0 font_14 text-white-50">Per Person</h6>
+			 </div>
+		   </div>
+		 </div>
+	  </div>
+	  </div>
+	</div>
+	<div class="col-md-4">
+      <div class="serv_h1l position-relative">
+	     <div class="serv_h1l1">
+	       <a href="#"><img src="img/42.jpg" class="w-100 rounded_top rounded_bottom" alt="abc"></a>
+	  </div>
+	     <div class="serv_h1l2 position-absolute text-center w-100 top-0 px-3">
+	       <h4 class="d-inline-block bg_green text-white p-3 px-5 rounded_5"> Italy</h4>
+	  </div>
+	  <div class="serv_h1l3 bg_back position-absolute bottom-0 w-100 rounded_bottom">
+	     <div class="serv_h1l3i row">
+		   <div class="col-md-6">
+		     <div class="serv_h1l3il text-center p-3 pt-5">
+			   <h5 class="mb-0 text-white">Electronic</h5>
+			 </div>
+		   </div>
+		   <div class="col-md-6">
+		     <div class="serv_h1l3ir text-center p-3">
+			   <h2 class="text-white mb-0">$5256 <br> <span class="text-decoration-line-through text-white-50 fs-6">$6765</span> </h2>
+			   <h6 class="mb-0 font_14 text-white-50">Per Person</h6>
+			 </div>
+		   </div>
+		 </div>
+	  </div>
+	  </div>
+	</div>
+	<div class="col-md-4">
+      <div class="serv_h1l position-relative">
+	     <div class="serv_h1l1">
+	       <a href="#"><img src="img/43.jpg" class="w-100 rounded_top rounded_bottom" alt="abc"></a>
+	  </div>
+	     <div class="serv_h1l2 position-absolute text-center w-100 top-0 px-3">
+	       <h4 class="d-inline-block bg_green text-white p-3 px-5 rounded_5"> London</h4>
+	  </div>
+	  <div class="serv_h1l3 bg_back position-absolute bottom-0 w-100 rounded_bottom">
+	     <div class="serv_h1l3i row">
+		   <div class="col-md-6">
+		     <div class="serv_h1l3il text-center p-3 pt-5">
+			   <h5 class="mb-0 text-white">Spain</h5>
+			 </div>
+		   </div>
+		   <div class="col-md-6">
+		     <div class="serv_h1l3ir text-center p-3">
+			   <h2 class="text-white mb-0">$4256 <br> <span class="text-decoration-line-through text-white-50 fs-6">$5325</span> </h2>
+			   <h6 class="mb-0 font_14 text-white-50">Per Person</h6>
+			 </div>
+		   </div>
+		 </div>
+	  </div>
+	  </div>
+	</div>
+  </div>
+ </div>
+</section>
+
+<div class="main_footer position-relative">
+  <div class="main_footer1 position-absolute w-100">
+    <section id="join" class="p_3">
+ <div class="container-xl">
+  <div class="row join_1 shadow_box pt-5 pb-5 mx-0 bg-white">
+    <div class="col-md-3">
+      <div class="join_1l">
+	   <img src="img/44.jpg" class="w-100" alt="abc">
+	  </div>
+	</div>
+	<div class="col-md-6">
+      <div class="join_1m text-center">
+	     <h1>Join The Newsletter</h1>
+		 <p>To receive our best monthly deals</p>
+		 <div class="input-group">
+				<input type="text" class="form-control rounded-0 font_14" placeholder="Enter Your Email...">
+				<span class="input-group-btn">
+					<button class="btn btn-primary bg_green rounded-0 p-3 px-4  border-0" type="button">
+						<i class="fa fa-arrow-right"></i> </button>
+				</span>
+		</div>
+	  </div>
+	</div>
+	<div class="col-md-3">
+      <div class="join_1l">
+	    <img src="img/44.jpg" class="w-100" alt="abc">
+	  </div>
+	</div>
+  </div>
+ </div>
+</section>
+  </div>
+  <div class="main_footer2">
+    <section id="footer" class="p_3 bg_black">
+ <div class="container-xl">
+  <div class="row footer_1">
+    <div class="col-md-3">
+	  <div class="footer_1l">
+	    <h3 class="mb-3"><a class="text-white" href="index.html"><i class="fa fa-plane-arrival col_green"></i> Tour <span class="col_yellow">Booking</span> </a></h3>
+		<h2 class="text-light">Want To Take Tour Packages?</h2>
+		<h6 class="mb-0 mt-4"><a class="button" href="#">Book A Tour</a></h6>
+	  </div>
+	</div>
+	<div class="col-md-3">
+	  <div class="footer_1l">
+	    <h5 class="text-white mt-1 mb-3">Quick Link</h5>
+		<div class="row footer_3ism">
+		 <h6 class="col-md-12 col-6"><i class="fa fa-circle col_green me-1 font_8 align-middle"></i> <a class="text-white-50 a_tag" href="#"> About Us</a></h6>
+	 <h6 class="col-md-12 col-6 mt-2"><i class="fa fa-circle col_green me-1 font_8 align-middle"></i> <a class="text-white-50 a_tag" href="#"> Destinations</a></h6>
+	 <h6 class="col-md-12 col-6 mt-2"><i class="fa fa-circle col_green me-1 font_8 align-middle"></i> <a class="text-white-50 a_tag" href="#"> Tour Package</a></h6>
+	 <h6 class="col-md-12 col-6 mt-2"><i class="fa fa-circle col_green me-1 font_8 align-middle"></i> <a class="text-white-50 a_tag" href="#"> Privacy</a></h6>
+	 <h6 class="col-md-12 col-6 mt-2"><i class="fa fa-circle col_green me-1 font_8 align-middle"></i> <a class="text-white-50 a_tag" href="#"> Article</a></h6>
+	 <h6 class="col-md-12 col-6 mt-2 mb-0"><i class="fa fa-circle col_green me-1 font_8 align-middle"></i> <a class="text-white-50 a_tag" href="#"> Contact Us</a></h6>
+	    </div>
+	  </div>
+	</div>
+	<div class="col-md-3">
+	  <div class="footer_1l">
+	    <h5 class="text-white mt-1 mb-3"><i class="fa fa-phone col_yellow me-1"></i> More Inquiry</h5>
+		<h6><a class="text-white-50 a_tag1" href="#">+999-888 123 456</a></h6>
+		<h5 class="text-white mt-4 mb-3"><i class="fa fa-location-arrow col_yellow me-1"></i> Send Mail</h5>
+		<h6><a class="text-white-50 a_tag1" href="#">info@gmail.com</a></h6>
+		<h5 class="text-white mt-4 mb-3"><i class="fa fa-map-marker col_yellow me-1"></i> Address</h5>
+		<p class="mb-0"><a class="text-white-50 a_tag1" href="#">House 128/140, Road 01, India - See Map 1 km to city center</a></p>
+	  </div>
+	</div>
+	<div class="col-md-3">
+	  <div class="footer_1l top_1r ">
+	    <h5 class="text-white mt-1 mb-3"> We Are Here</h5>
+		 <p class="text-white-50">Quisque purus augue, facilisis andi neque idont accumsan fringilla massa. Vivamusol id nibhom condimentum.</p>
+		 <h5 class="text-white mt-4 mb-3"> Social Partner</h5>
+         <ul class="mb-0">
+	    <li class="d-inline-block"><a class="d-block text-center rounded-circle" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+		<li class="d-inline-block ms-2"><a class="d-block text-center rounded-circle" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+		<li class="d-inline-block ms-2"><a class="d-block text-center rounded-circle" href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+		<li class="d-inline-block ms-2"><a class="d-block text-center rounded-circle" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+	  </ul>
+	  </div>
+	</div>
+  </div><hr class="line_1">
+  <div class="row footer_2">
+    <div class="col-md-8">
+	  <div class="footer_2l">
+	    <p class="mb-0 text-white-50">© 2013 Your Website Name. All Rights Reserved | Design by <a class="col_green fw-bold" href="http://www.templateonweb.com">TemplateOnWeb</a></p>
+	  </div>
+	</div>
+<div class="col-md-4">
+	  <div class="footer_2r text-end">
+	    <ul class="mb-0">
+		    <li class="d-inline-block"><a class="text-white-50 a_tag" href="#">Privacy Policy</a></li>
+			<li class="d-inline-block ms-2"><i class="fa fa-circle col_green me-1 font_8 align-middle"></i> <a class="text-white-50 a_tag" href="#">Terms & Condition</a></li>
+		  </ul>
+	  </div>
+	</div>
+  </div>
+ </div>
+</section>
+  </div>
+</div>
+
+<script src="js/common.js"></script>
+
+</body>
+
+
+</html>

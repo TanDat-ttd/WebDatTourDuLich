@@ -1,0 +1,164 @@
+/*
+Template Name: Tour Booking
+File: Layout CSS
+Author: TemplatesOnWeb
+Author URI: https://www.templateonweb.com/
+Licence: <a href="https://www.templateonweb.com/license">Website Template Licence</a>
+*/
+
+/*********************tour****************/
+.center_o {
+background-image: url(../img/2.jpg);
+background-position: center center;
+background-size: cover;
+}
+.center_dt {
+background-image: url(../img/3.jpg);
+background-position: center center;
+background-size: cover;
+}
+
+
+.accordion-button {
+background:#29461c;
+color:#fff; 
+padding:8px 15px;
+font-weight: bold;
+border: 0;
+font-size: 20px;
+text-align: left;
+}
+.accordion-button:focus {
+box-shadow: none;
+border: none;
+}
+.accordion-button:not(.collapsed) {
+background:#63ab45;
+color:#fff;
+padding:8px 15px;
+}
+.accordion-body {
+padding: 20px;
+background: #fff; 
+}
+.accordion-button::after {
+width: auto;
+height: auto;
+content: "+";
+font-size: 40px;
+background-image: none;
+font-weight: 100;
+color: #fff;
+transform: translateY(-4px);
+}
+.accordion-button:not(.collapsed)::after {
+width: auto;
+height: auto;
+background-image: none;
+content: "-";
+font-size: 40px;
+transform: translate(-5px, -4px);
+transform: rotate(0deg);
+}
+.accordion-item{
+border:none;
+border-radius:0;
+background:none;
+border-bottom:1px solid #c4dfb9;
+margin-bottom:10px;
+}
+
+.tour_dt2r1 .nav-tabs .nav-link {
+border: none;
+padding: 12px 20px;
+color: #000;
+background: #fff;
+transition: 0.3s;
+border-radius: 0;
+font-weight: bold;
+}
+.tour_dt2r1 .nav-tabs .nav-link:hover {
+background: #63ab45;
+color: #fff;
+}
+.tour_dt2r1 .nav-tabs .nav-link.active {
+background: #63ab45;
+color: #fff;
+}
+
+.center_faq {
+background-image: url(../img/52.jpg);
+background-position: center center;
+background-size: cover;
+}
+/*********************tour_end****************/
+
+
+
+@media screen and (max-width : 767px){
+.tour_1l1 h4{
+text-align:center; 
+ }
+.tour_1r{
+margin-top:15px; 
+ }
+.tour_1r1{
+text-align:center;  
+ }
+.tour_dt1 .ps-0{
+padding-left:12px!important; 
+ }
+.tour_dt1 .pe-0{
+padding-right:12px!important; 
+ }
+.tour_dt1 img{
+min-height:auto;
+ }
+.tour_dt1r{
+margin-top:15px; 
+ }
+.tour_dt1l {
+margin-top:10px;  
+ }
+.tour_dt2l h4{
+text-align:center; 
+ }
+
+.tour_dt2r{
+margin-top:15px;  
+ }
+.faq_1r{
+margin-top:15px; 
+ }
+ }
+
+
+@media (min-width:576px) and (max-width:767px) {
+
+ }
+ 
+@media (min-width:768px) and (max-width:991px) {
+.tour_1l .offer_1li1 h4{
+font-size:16px;
+ }
+.tour_1l .offer_1li1 h5{
+font-size:14px;
+ }
+.tour_1l .offer_1li1 h6{
+font-size:12px;
+ }
+.tour_1l .offer_1li1 .button_1{
+padding:10px!important;
+font-size:12px;
+ }
+ }
+
+@media (min-width:992px) and (max-width:1200px) {
+
+ }
+@media (min-width:1201px) and (max-width:1320px) {
+
+ }
+
+
+

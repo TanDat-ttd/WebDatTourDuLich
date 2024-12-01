@@ -1,0 +1,164 @@
+/*
+Template Name: Tour Booking
+File: Layout CSS
+Author: TemplatesOnWeb
+Author URI: https://www.templateonweb.com/
+Licence: <a href="https://www.templateonweb.com/license">Website Template Licence</a>
+*/
+
+/*********************about****************/
+.center_about {
+background-image: url(../img/53.jpg);
+background-position: center center;
+background-size: cover;
+}
+.about_pg1lilil span{
+width:55px;
+height:55px;
+line-height:55px; 
+ }
+.about_pg1lil:hover{
+background:#63ab45!important;
+transition: 0.3s; 
+ }
+.about_pg1lil:hover h5{
+color:#fff!important;
+transition: 0.3s; 
+ }
+.about_pg1lilo:hover{
+background:#fbb03b!important;
+transition: 0.3s; 
+ }
+ 
+.about_pg2i{
+border-right:1px solid #c4dfb9;  
+ }
+.about_pg2{
+border-top:1px solid #c4dfb9;
+border-bottom:1px solid #c4dfb9;   
+ }
+.team_1l1i1{
+display:none; 
+transition: 0.3s;
+width:100%;
+height:100%; 
+ }
+.team_1l1i2{
+display:none; 
+transition: 0.3s;
+ }
+.team_1l:hover .team_1l1i1{
+display:block; 
+transition: 0.3s; 
+ }
+.team_1l:hover .team_1l1i2{
+display:block; 
+transition: 0.3s; 
+ }
+.team_1l:hover .team_1l1i2{
+display:block; 
+transition: 0.3s; 
+ }
+.team_1l:hover .team_1l2{
+transition: 0.3s;
+background:#63ab45;
+color:#fff; 
+ }
+ 
+.artic_1l2{
+width:80%;
+left:10%;
+bottom:-100px; 
+ }
+#artic{
+margin-bottom:250px; 
+ }
+.artic_1l:hover .blog_h1lili1 h5 {
+transition: 0.3s;
+background: #63ab45!important;
+}
+/*********************about_end****************/
+
+
+
+@media screen and (max-width : 767px){
+.about_pg1l{
+text-align:center; 
+ }
+.about_pg1l p{
+text-align:left; 
+ }
+.about_pg1lil {
+margin-top:10px; 
+ }
+.about_pg1r {
+margin-top:15px;  
+ }
+.about_pg2i {
+border-right:none;
+text-align:center;
+margin-top:8px;
+margin-bottom:8px;
+}
+.about_pg2i1r{
+margin-top:10px; 
+ }
+.team_1l {
+margin-top:8px;
+margin-bottom:8px; 
+ }
+.artic_1l2 {
+position:static!important;
+width:100%;
+border-radius:0;
+text-align:center;
+}
+.artic_1l {
+margin-top:8px;
+margin-bottom:8px; 
+ }
+#artic {
+margin-bottom:0;
+}
+.about_pg1lilir{
+margin-top:10px; 
+ }
+ }
+
+
+@media (min-width:576px) and (max-width:767px) {
+
+ }
+ 
+@media (min-width:768px) and (max-width:991px) {
+.about_pg1lilil span {
+width: 30px;
+height: 30px;
+line-height: 30px;
+font-size:14px!important;
+}
+.about_pg2i1l .font_50{
+font-size:24px; 
+ }
+.team_1l1i2 li {
+font-size:14px;
+margin-top:4px!important;
+margin-bottom:4px!important;  
+ }
+ }
+
+@media (min-width:992px) and (max-width:1200px) {
+.about_pg1lilil span {
+width: 35px;
+height: 35px;
+line-height: 35px;
+font-size:16px!important;
+}
+
+ }
+@media (min-width:1201px) and (max-width:1320px) {
+
+ }
+
+
+

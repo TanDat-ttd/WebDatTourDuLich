@@ -1,0 +1,130 @@
+/*
+Template Name: Tour Booking
+File: Layout CSS
+Author: TemplatesOnWeb
+Author URI: https://www.templateonweb.com/
+Licence: <a href="https://www.templateonweb.com/license">Website Template Licence</a>
+*/
+
+/*********************destination****************/
+.center_dest {
+background-image: url(../img/33.jpg);
+background-position: center center;
+background-size: cover;
+}
+.center_dest_dt{
+ background-image: url(../img/1.jpg);
+background-position: center center;
+background-size: cover;
+ }
+.center_cont{
+ background-image: url(../img/2.jpg);
+background-position: center center;
+background-size: cover;
+ }
+ 
+.contact_1lil span{
+width:60px;
+height:60px;
+line-height:60px; 
+ }
+.contact_1r .form-control:focus{
+background:#fff; 
+ }
+/*********************destination_end****************/
+
+
+
+@media screen and (max-width : 767px){
+.dest_dt1l h1{
+text-align:center; 
+ }
+.dest_dt1l1i  .pe-0{
+padding-right:12px!important; 
+ }
+.dest_dt1l1i  img{
+margin-top:10px;
+ }
+.dest_dt1r{
+margin-top:15px; 
+ }
+.dest_dt1r1 {
+text-align:center;  
+ }
+.dest_dt2  h2{
+text-align:center; 
+ }
+.dest_dt2  h1{
+text-align:center; 
+ }
+.tour_dt1 .ps-0{
+padding-left:12px!important; 
+ }
+.tour_dt1 .pe-0{
+padding-right:12px!important; 
+ }
+.tour_dt1 img{
+min-height:auto;
+ }
+.tour_dt1r{
+margin-top:15px; 
+ }
+.tour_dt1l {
+margin-top:10px;  
+ }
+.contact_1l{
+text-align:center; 
+ }
+.contact_1lir{
+margin-top:10px; 
+ }
+.contact_1r {
+margin-top:15px;  
+ }
+.detail_1l4b h2{
+text-align:center; 
+ }
+ }
+
+
+@media (min-width:576px) and (max-width:767px) {
+
+ }
+ 
+@media (min-width:768px) and (max-width:991px) {
+.dest_dt1r .offer_1li1 h4{
+font-size:16px;
+ }
+.dest_dt1r .offer_1li1 h5{
+font-size:14px;
+ }
+.dest_dt1r .offer_1li1 h6{
+font-size:12px;
+ }
+.dest_dt1r .offer_1li1 .button_1{
+padding:10px!important;
+font-size:12px;
+ }
+
+.contact_1lil span {
+width: 35px;
+height: 35px;
+line-height: 35px;
+font-size:14px!important;
+}
+ }
+
+@media (min-width:992px) and (max-width:1200px) {
+.contact_1lil span {
+width: 45px;
+height: 45px;
+line-height: 45px;
+font-size:18px!important;
+}
+ }
+@media (min-width:1201px) and (max-width:1320px) {
+
+ }
+
+
+
