@@ -1,344 +1,652 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Tour Booking</title>
-	<link href="css/bootstrap.min.css" rel="stylesheet" >
-	 <link href="fonts/css/fontawesome.min.css" rel="stylesheet" >
-	<link href="fonts/css/brands.min.css" rel="stylesheet" />
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hỏi Đáp</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="fonts/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="fonts/css/brands.min.css" rel="stylesheet" />
     <link href="fonts/css/solid.min.css" rel="stylesheet" />
-	<link href="css/global.css" rel="stylesheet">
-	<link href="css/tour.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-	<script src="js/bootstrap.bundle.min.js"></script>
+    <link href="css/global.css" rel="stylesheet" />
+    <link href="css/tour.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <section id="top" class="bg_black pt-2 pb-2">
+      <div class="container-xl">
+        <div class="row top_1">
+          <div class="col-md-3">
+            <div class="top_1l">
+              <span class="d-inline-block col_green fs-1 lh-1 me-1"
+                ><i class="fa fa-location-arrow"></i
+              ></span>
+              <h6 class="mb-0 text-white d-inline-block fw-bold font_14">
+                Email chính chủ: <br />
+                <a class="col_green a_tag1 fs-6" href="#"
+                  >info@bookingtour.com</a
+                >
+              </h6>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="top_1m text-center">
+              <p class="mb-0 text-light">
+                Sẽ giảm giá 50% cho chuyến đi có sinh nhật khách hàng !
+                <a class="col_green a_tag1" href="#">Đặt vé ngay</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="top_1r text-end">
+              <ul class="mb-0">
+                <li class="d-inline-block">
+                  <a class="d-block text-center rounded-circle" href="#"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                </li>
+                <li class="d-inline-block ms-2">
+                  <a class="d-block text-center rounded-circle" href="#"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="d-inline-block ms-2">
+                  <a class="d-block text-center rounded-circle" href="#"
+                    ><i class="fa-brands fa-pinterest"></i
+                  ></a>
+                </li>
+                <li class="d-inline-block ms-2">
+                  <a class="d-block text-center rounded-circle" href="#"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</head>
-<body>
+    <section id="header">
+      <nav class="navbar navbar-expand-md navbar-light px_4" id="navbar_sticky">
+        <div class="container-fluid">
+          <a class="navbar-brand p-0 fw-bold" href="index.html"
+            ><i class="fa fa-plane-arrival col_green"></i> Tour
+            <span class="col_yellow">Booking</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-0 ms-auto nav_1">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
 
-<section id="top" class="bg_black pt-2 pb-2">
- <div class="container-xl">
-  <div class="row top_1">
-   <div class="col-md-3">
-     <div class="top_1l">
-	   <span class="d-inline-block col_green fs-1 lh-1 me-1"><i class="fa fa-location-arrow"></i></span>
-	   <h6 class="mb-0 text-white d-inline-block fw-bold font_14">Email: <br>
-<a class="col_green a_tag1 fs-6" href="#">info@gmail.com</a></h6>
-	 </div>
-   </div>
-   <div class="col-md-6">
-     <div class="top_1m text-center">
-	   <p class="mb-0 text-light">50% Off Your Next Trip. Hurry Up For Your New Tour! <a class="col_green a_tag1" href="#">Book Your Tour</a></p>
-	 </div>
-   </div>
-   <div class="col-md-3">
-     <div class="top_1r text-end">
-      <ul class="mb-0">
-	    <li class="d-inline-block"><a class="d-block text-center rounded-circle" href="#"><i class="fa-brands fa-facebook"></i></a></li>
-		<li class="d-inline-block ms-2"><a class="d-block text-center rounded-circle" href="#"><i class="fa-brands fa-twitter"></i></a></li>
-		<li class="d-inline-block ms-2"><a class="d-block text-center rounded-circle" href="#"><i class="fa-brands fa-pinterest"></i></a></li>
-		<li class="d-inline-block ms-2"><a class="d-block text-center rounded-circle" href="#"><i class="fa-brands fa-instagram"></i></a></li>
-	  </ul>
-	 </div>
-   </div>
-  </div>
- </div>
-</section>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About </a>
+              </li>
 
-<section id="header">
-<nav class="navbar navbar-expand-md navbar-light px_4" id="navbar_sticky">
-  <div class="container-fluid">
-    <a class="navbar-brand  p-0 fw-bold" href="index.html"><i class="fa fa-plane-arrival col_green"></i> Tour <span class="col_yellow">Booking</span> </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	   <ul class="navbar-nav mb-0 ms-auto nav_1">
-	    
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="index.html">Home</a>
-        </li>
-		 
-		<li class="nav-item">
-          <a class="nav-link" href="about.html">About </a>
-        </li>
-		
-		<li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Tours
-          </a>
-          <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="tour.html"> Tour</a></li>
-            <li><a class="dropdown-item border-0" href="detail.html"> Tour Detail</a></li>
-          </ul>
-        </li>
-		
-		<li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Destination
-          </a>
-          <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="destination.html"> Destination</a></li>
-            <li><a class="dropdown-item border-0" href="destination_detail.html"> Destination Detail</a></li>
-          </ul>
-        </li>
-		
-		<li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Blog
-          </a>
-          <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="blog.html"> Blog</a></li>
-            <li><a class="dropdown-item border-0" href="blog_detail.html"> Blog Detail</a></li>
-          </ul>
-        </li>
-		
-		<li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Pages
-          </a>
-          <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
-		    <li><a class="dropdown-item" href="gallery.html"> Gallery</a></li>
-			<li><a class="dropdown-item border-0" href="faq.html"> Faq</a></li>
-          </ul>
-        </li>
-			
-		<li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-      </ul>
-      <ul class="navbar-nav mb-0 ms-auto nav_2">
-	    <li class="nav-item">
-          <a class="nav-link fs-4" href="#"><i class="fa fa-user"></i></a>
-        </li>
-		    
-		<li class="nav-item">
-          <a class="nav-link fs-4 drop_icon col_green" href="#"><i class="fa fa-phone"></i></a>
-        </li>
-		
-		<li class="mb-0  d-inline-block fw-bold font_14 nav-item">To More Inquiry<br>
-<a class="col_green a_tag1 fs-5" href="#">+(000) 345 67 89</a></li>
-      </ul>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Tours
+                </a>
+                <ul
+                  class="dropdown-menu drop_1"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li><a class="dropdown-item" href="tour.html"> Tour</a></li>
+                  <li>
+                    <a class="dropdown-item border-0" href="detail.html">
+                      Tour Detail</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Destination
+                </a>
+                <ul
+                  class="dropdown-menu drop_1"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li>
+                    <a class="dropdown-item" href="destination.html">
+                      Destination</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item border-0"
+                      href="destination_detail.html"
+                    >
+                      Destination Detail</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Blog
+                </a>
+                <ul
+                  class="dropdown-menu drop_1"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li><a class="dropdown-item" href="blog.html"> Blog</a></li>
+                  <li>
+                    <a class="dropdown-item border-0" href="blog_detail.html">
+                      Blog Detail</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <ul
+                  class="dropdown-menu drop_1"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li>
+                    <a class="dropdown-item" href="gallery.html">Trưng Bày</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item border-0" href="faq.html">
+                      Hỏi Đáp</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav mb-0 ms-auto nav_2">
+              <li class="nav-item">
+                <a class="nav-link fs-4" href="#"><i class="fa fa-user"></i></a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link fs-4 drop_icon col_green" href="#"
+                  ><i class="fa fa-phone"></i
+                ></a>
+              </li>
+
+              <li class="mb-0 d-inline-block fw-bold font_14 nav-item">
+                Tổng Đài liên hệ<br />
+                <a class="col_green a_tag1 fs-5" href="#">+(000) 345 67 89</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section id="center" class="center_faq">
+      <div class="center_om bg_back">
+        <div class="container-xl">
+          <div class="row center_o1 text-center">
+            <div class="col-md-12">
+              <h1 class="text-white font_50">Hỏi Đáp</h1>
+              <h6 class="col_green mb-0 mt-3 fw-bold">
+                <a class="text-light" href="#">Trang Chủ</a>
+                <span class="mx-2 text-white-50"
+                  ><i class="fa fa-arrow-right"></i
+                ></span>
+                Hỏi Đáp
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="p_3">
+      <div class="container-xl">
+        <div class="row faq_1">
+          <div class="col-md-4">
+            <div class="faq_1l">
+              <div class="offer_1l position-relative">
+                <div class="offer_1li">
+                  <div class="grid clearfix">
+                    <figure class="effect-jazz mb-0">
+                      <a href="#"
+                        ><img
+                          src="img/anh-dep-cau-rong-da-nang-viet-nam_055418962.jpg"
+                          class="w-100"
+                          alt="img25"
+                      /></a>
+                    </figure>
+                  </div>
+                </div>
+                <div
+                  class="offer_1li1 position-absolute p-4 px-3 bottom-0 w-100 text-center"
+                >
+                  <h5 class="family_1 text-white">Địa điểm Hot</h5>
+                  <h2 class="col_yellow">Giảm 35%</h2>
+                  <h5 class="mb-0">
+                    <a class="a_tag1 text-white" href="#"
+                      >3 Ngày 2 đêm tại Đà Nẵng</a
+                    >
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="faq_1r">
+              <div class="accordion" id="accordionExample1">
+                <div class="accordion-item mb-0">
+                  <h2 class="accordion-header" id="headingsix">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapsesix"
+                      aria-expanded="true"
+                      aria-controls="collapsesix"
+                    >
+                      01. Làm thế nào để đặt tour du lịch?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapsesix"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingsix"
+                    data-bs-parent="#accordionExample1"
+                  >
+                    <div class="accordion-body">
+                      <p class="mb-0">
+                        Bạn có thể dễ dàng đặt tour du lịch qua website của
+                        chúng tôi hoặc liên hệ trực tiếp với chúng tôi qua điện
+                        thoại/email. Chúng tôi sẽ hỗ trợ bạn chọn tour phù hợp
+                        và xác nhận. Xin cảm ơn chúc bạn một ngày tốt lành
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item mb-0 mt-3">
+                  <h2 class="accordion-header" id="headingseven">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseseven"
+                      aria-expanded="false"
+                      aria-controls="collapseseven"
+                    >
+                      02. Tôi có thể thay đổi lịch trình tour sau khi đã đặt?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseseven"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingseven"
+                    data-bs-parent="#accordionExample1"
+                  >
+                    <div class="accordion-body">
+                      <p class="mb-0">
+                        Thay đổi lịch trình có thể thực hiện được, nhưng sẽ tùy
+                        vào điều kiện và chính sách của tour. Vui lòng liên hệ
+                        với chúng tôi sớm để được hỗ trợ.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item mb-0 mt-3">
+                  <h2 class="accordion-header" id="headingeight">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseeight"
+                      aria-expanded="false"
+                      aria-controls="collapseeight"
+                    >
+                      03. Làm thế nào để thanh toán cho tour?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseeight"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingeight"
+                    data-bs-parent="#accordionExample1"
+                  >
+                    <div class="accordion-body">
+                      <p class="mb-0">
+                        Bạn có thể thanh toán trực tuyến qua thẻ tín dụng,
+                        chuyển khoản ngân hàng hoặc thanh toán trực tiếp tại văn
+                        phòng của chúng tôi. Chúng tôi sẽ cung cấp hướng dẫn chi
+                        tiết về các phương thức thanh toán.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item mb-0 mt-3">
+                  <h2 class="accordion-header" id="headingnine">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapsenine"
+                      aria-expanded="false"
+                      aria-controls="collapsenine"
+                    >
+                      04. Chính sách hủy tour của công ty là gì?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapsenine"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingnine"
+                    data-bs-parent="#accordionExample1"
+                  >
+                    <div class="accordion-body">
+                      <p class="mb-0">
+                        Chính sách hủy tour sẽ phụ thuộc vào loại tour bạn chọn.
+                        Thông thường, bạn có thể hủy tour với một khoản phí nhất
+                        định tùy theo thời gian hủy. Chúng tôi sẽ thông báo chi
+                        tiết về chính sách khi bạn đặt tour.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item mb-0 mt-3">
+                  <h2 class="accordion-header" id="headingten">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseten"
+                      aria-expanded="false"
+                      aria-controls="collapseten"
+                    >
+                      05. Tôi cần chuẩn bị gì trước khi đi tour?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseten"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingten"
+                    data-bs-parent="#accordionExample1"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Bạn cần chuẩn bị các giấy tờ như hộ chiếu và chứng minh
+                        nhân dân, bảo hiểm du lịch, và các giấy tờ khác tùy thân
+                        khác theo yêu cầu của tour.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="main_footer position-relative">
+      <div class="main_footer1 position-absolute w-100">
+        <section id="join" class="p_3">
+          <div class="container-xl">
+            <div class="row join_1 shadow_box pt-5 pb-5 mx-0 bg-white">
+              <div class="col-md-3">
+                <div class="join_1l">
+                  <img src="img/44.jpg" class="w-100" alt="abc" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="join_1m text-center">
+                  <h1>Tham gia</h1>
+                  <p>Để nhận các ưu đãi tốt nhất</p>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control rounded-0 font_14"
+                      placeholder="Email của bạn..."
+                    />
+                    <span class="input-group-btn">
+                      <button
+                        class="btn btn-primary bg_green rounded-0 p-3 px-4 border-0"
+                        type="button"
+                      >
+                        <i class="fa fa-arrow-right"></i>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="join_1l">
+                  <img src="img/44.jpg" class="w-100" alt="abc" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="main_footer2">
+        <section id="footer" class="p_3 bg_black">
+          <div class="container-xl">
+            <div class="row footer_1">
+              <div class="col-md-3">
+                <div class="footer_1l">
+                  <h3 class="mb-3">
+                    <a class="text-white" href="index.html"
+                      ><i class="fa fa-plane-arrival col_green"></i> Tour
+                      <span class="col_yellow">Booking</span>
+                    </a>
+                  </h3>
+                  <h2 class="text-light">Bạn muốn tham khảo các gói tour?</h2>
+                  <h6 class="mb-0 mt-4">
+                    <a class="button" href="#">Đặt tour</a>
+                  </h6>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="footer_1l">
+                  <h5 class="text-white mt-1 mb-3">Liên kết</h5>
+                  <div class="row footer_3ism">
+                    <h6 class="col-md-12 col-6">
+                      <i
+                        class="fa fa-circle col_green me-1 font_8 align-middle"
+                      ></i>
+                      <a class="text-white-50 a_tag" href="#"> Giới thiệu</a>
+                    </h6>
+                    <h6 class="col-md-12 col-6 mt-2">
+                      <i
+                        class="fa fa-circle col_green me-1 font_8 align-middle"
+                      ></i>
+                      <a class="text-white-50 a_tag" href="#"> Điểm đến</a>
+                    </h6>
+                    <h6 class="col-md-12 col-6 mt-2">
+                      <i
+                        class="fa fa-circle col_green me-1 font_8 align-middle"
+                      ></i>
+                      <a class="text-white-50 a_tag" href="#">Các gói tour</a>
+                    </h6>
+                    <h6 class="col-md-12 col-6 mt-2">
+                      <i
+                        class="fa fa-circle col_green me-1 font_8 align-middle"
+                      ></i>
+                      <a class="text-white-50 a_tag" href="#">
+                        Chính sách và quyền riêng tư</a
+                      >
+                    </h6>
+                    <h6 class="col-md-12 col-6 mt-2">
+                      <i
+                        class="fa fa-circle col_green me-1 font_8 align-middle"
+                      ></i>
+                      <a class="text-white-50 a_tag" href="#"> Bài viết</a>
+                    </h6>
+                    <h6 class="col-md-12 col-6 mt-2 mb-0">
+                      <i
+                        class="fa fa-circle col_green me-1 font_8 align-middle"
+                      ></i>
+                      <a class="text-white-50 a_tag" href="#"> Liên hệ</a>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="footer_1l">
+                  <h5 class="text-white mt-1 mb-3">
+                    <i class="fa fa-phone col_yellow me-1"></i> Số điện thoại
+                  </h5>
+                  <h6>
+                    <a class="text-white-50 a_tag1" href="#"
+                      >+999-888 123 456</a
+                    >
+                  </h6>
+                  <h5 class="text-white mt-4 mb-3">
+                    <i class="fa fa-location-arrow col_yellow me-1"></i> EMail
+                  </h5>
+                  <h6>
+                    <a class="text-white-50 a_tag1" href="#"
+                      >info@bookingtour.com</a
+                    >
+                  </h6>
+                  <h5 class="text-white mt-4 mb-3">
+                    <i class="fa fa-map-marker col_yellow me-1"></i> Địa chỉ
+                  </h5>
+                  <p class="mb-0">
+                    <a class="text-white-50 a_tag1" href="#"
+                      >139 Đ. Phú Thọ Hòa, P.Phú Thọ Hoà, Tân Phú, Hồ Chí Minh
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="footer_1l top_1r">
+                  <h5 class="text-white mt-1 mb-3">Lời cam kết</h5>
+                  <p class="text-white-50">
+                    Chúng tôi cam kết mọi thông tin, hình ảnh sẽ được cung cấp
+                    một cách trung thực, chính xác, mang đến trải nghiệm độc đáo
+                    mà chúng tôi mang lại.
+                  </p>
+                  <h5 class="text-white mt-4 mb-3">Mạng Xã Hội</h5>
+                  <ul class="mb-0">
+                    <li class="d-inline-block">
+                      <a class="d-block text-center rounded-circle" href="#"
+                        ><i class="fa-brands fa-facebook"></i
+                      ></a>
+                    </li>
+                    <li class="d-inline-block ms-2">
+                      <a class="d-block text-center rounded-circle" href="#"
+                        ><i class="fa-brands fa-twitter"></i
+                      ></a>
+                    </li>
+                    <li class="d-inline-block ms-2">
+                      <a class="d-block text-center rounded-circle" href="#"
+                        ><i class="fa-brands fa-pinterest"></i
+                      ></a>
+                    </li>
+                    <li class="d-inline-block ms-2">
+                      <a class="d-block text-center rounded-circle" href="#"
+                        ><i class="fa-brands fa-instagram"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr class="line_1" />
+            <div class="row footer_2">
+              <div class="col-md-8">
+                <div class="footer_2l">
+                  <p class="mb-0 text-white-50">
+                    © 2024 TourBooking. All Rights Reserved | Design by:
+                    <a
+                      class="col_green fw-bold"
+                      href="http://www.templateonweb.com"
+                      >Công ty TNHH ITSoft</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="footer_2r text-end">
+                  <ul class="mb-0">
+                    <li class="d-inline-block">
+                      <a class="text-white-50 a_tag" href="#">Privacy Policy</a>
+                    </li>
+                    <li class="d-inline-block ms-2">
+                      <i
+                        class="fa fa-circle col_green me-1 font_8 align-middle"
+                      ></i>
+                      <a class="text-white-50 a_tag" href="#"
+                        >Terms & Condition</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
-  </div>
-</nav>
-</section>
 
-<section id="center" class="center_faq">
-   <div class="center_om bg_back">
-     <div class="container-xl">
-  <div class="row center_o1 text-center">
-     <div class="col-md-12">
-	    <h1 class="text-white font_50">Faq</h1>
-		<h6 class="col_green mb-0 mt-3 fw-bold"><a class="text-light" href="#">Home</a> <span class="mx-2 text-white-50"><i class="fa fa-arrow-right"></i></span> Faq</h6>
-	 </div>
-  </div>
- </div>
-   </div>   
- </section>
-
-<section id="faq" class="p_3">
- <div class="container-xl">
-    <div class="row faq_1">
-	 <div class="col-md-4">
-	  <div class="faq_1l">
-	    <div class="offer_1l position-relative">
-	    <div class="offer_1li">
-	      <div class="grid clearfix">
-			<figure class="effect-jazz mb-0">
-			<a href="#"><img src="img/63.jpg" class="w-100" alt="img25"></a>
-			</figure>
-			</div>
-	  </div>
-	  <div class="offer_1li1 position-absolute p-4 px-3 bottom-0 w-100 text-center">
-	      <h5 class="family_1 text-white">Popular Tour</h5>
-		  <h2 class="col_yellow">35% Off</h2>
-		  <h5 class="mb-0"><a class="a_tag1 text-white" href="#">6 Days In London</a></h5>
-	  </div>
-	  </div>
-	  </div>
-	 </div>
-	 <div class="col-md-8">
-	  <div class="faq_1r">
-	    <div class="accordion" id="accordionExample1">
-  <div class="accordion-item mb-0">
-   <h2 class="accordion-header" id="headingsix">
-     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="true" aria-controls="collapsesix">
-       01. How Do I Book A Trip On Your Website?
-     </button>
-   </h2>
-   <div id="collapsesix" class="accordion-collapse collapse show" aria-labelledby="headingsix" data-bs-parent="#accordionExample1" style="">
-     <div class="accordion-body">
-       <p class="mb-0">Arrive Cairo airport, welcome greeting by our representative who will assist you and provide tra nsfers to your Hotel in Cairo. (the clients will inform us about their arrival time minimum 7 days before)</p>
-     </div>
-   </div>
-  </div>
-   
-  <div class="accordion-item mb-0 mt-3">
-   <h2 class="accordion-header" id="headingseven">
-     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven">
-       02. What Payment Methods Do You Accept?
-     </button>
-   </h2>
-   <div id="collapseseven" class="accordion-collapse collapse" aria-labelledby="headingseven" data-bs-parent="#accordionExample1">
-     <div class="accordion-body"> <p class="mb-0">Arrive Cairo airport, welcome greeting by our representative who will assist you and provide tra nsfers to your Hotel in Cairo. (the clients will inform us about their arrival time minimum 7 days before)</p>
-     </div>
-   </div>
- </div>
-  
-  <div class="accordion-item mb-0 mt-3">
-   <h2 class="accordion-header" id="headingeight">
-     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseeight" aria-expanded="false" aria-controls="collapseeight">
-       03. Can I Make Changes To My Reservation After Booking?
-     </button>
-   </h2>
-   <div id="collapseeight" class="accordion-collapse collapse" aria-labelledby="headingeight" data-bs-parent="#accordionExample1">
-     <div class="accordion-body"> <p class="mb-0">Arrive Cairo airport, welcome greeting by our representative who will assist you and provide tra nsfers to your Hotel in Cairo. (the clients will inform us about their arrival time minimum 7 days before)</p>
-     </div>
-   </div>
- </div>
- 
- <div class="accordion-item mb-0 mt-3">
-   <h2 class="accordion-header" id="headingnine">
-     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsenine" aria-expanded="false" aria-controls="collapsenine">
-   04. What Is Your Cancellation Policy?
-     </button>
-   </h2>
-   <div id="collapsenine" class="accordion-collapse collapse" aria-labelledby="headingnine" data-bs-parent="#accordionExample1">
-     <div class="accordion-body"> <p class="mb-0">Arrive Cairo airport, welcome greeting by our representative who will assist you and provide tra nsfers to your Hotel in Cairo. (the clients will inform us about their arrival time minimum 7 days before)</p>
-     </div>
-   </div>
- </div>
- 
- <div class="accordion-item mb-0 mt-3">
-   <h2 class="accordion-header" id="headingten">
-     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseten" aria-expanded="false" aria-controls="collapseten">
-        05. Do You Offer Group Booking Discounts?
-     </button>
-   </h2>
-   <div id="collapseten" class="accordion-collapse collapse" aria-labelledby="headingten" data-bs-parent="#accordionExample1">
-     <div class="accordion-body"> <p>Arrive Cairo airport, welcome greeting by our representative who will assist you and provide tra nsfers to your Hotel in Cairo. (the clients will inform us about their arrival time minimum 7 days before)</p>
-	   <ul class="mb-0 flex_box">
-<li class="d-flex"><span><i class="fa fa-check col_green me-3 align-middle"></i></span> Admire Big Ben, Buckingham Palace And St Paul’s Cathedral</li>
-<li class="d-flex mt-3"><span><i class="fa fa-check col_green me-3 align-middle"></i></span> Chance To Spot Prominent Landmarks Of The City
-</li></ul>
-     </div>
-   </div>
- </div>
-
-</div>
-	  </div>
-	 </div>
-	</div>
- </div>
-</section>
-
-<div class="main_footer position-relative">
-  <div class="main_footer1 position-absolute w-100">
-    <section id="join" class="p_3">
- <div class="container-xl">
-  <div class="row join_1 shadow_box pt-5 pb-5 mx-0 bg-white">
-    <div class="col-md-3">
-      <div class="join_1l">
-	   <img src="img/44.jpg" class="w-100" alt="abc">
-	  </div>
-	</div>
-	<div class="col-md-6">
-      <div class="join_1m text-center">
-	     <h1>Tham gia</h1>
-		 <p>Để nhận các ưu đãi tốt nhất </p>
-		 <div class="input-group">
-				<input type="text" class="form-control rounded-0 font_14" placeholder="Email của bạn...">
-				<span class="input-group-btn">
-					<button class="btn btn-primary bg_green rounded-0 p-3 px-4  border-0" type="button">
-						<i class="fa fa-arrow-right"></i> </button>
-				</span>
-		</div>
-	  </div>
-	</div>
-	<div class="col-md-3">
-      <div class="join_1l">
-	    <img src="img/44.jpg" class="w-100" alt="abc">
-	  </div>
-	</div>
-  </div>
- </div>
-</section>
-  </div>
-  <div class="main_footer2">
-    <section id="footer" class="p_3 bg_black">
- <div class="container-xl">
-  <div class="row footer_1">
-    <div class="col-md-3">
-	  <div class="footer_1l">
-	    <h3 class="mb-3"><a class="text-white" href="index.html"><i class="fa fa-plane-arrival col_green"></i> Đặt <span class="col_yellow">Tour</span> </a></h3>
-		<h2 class="text-light">Bạn muốn tham khảo các gói tour?</h2>
-		<h6 class="mb-0 mt-4"><a class="button" href="#">Đặt tour</a></h6>
-	  </div>
-	</div>
-	<div class="col-md-3">
-	  <div class="footer_1l">
-	    <h5 class="text-white mt-1 mb-3">Liên kết</h5>
-		<div class="row footer_3ism">
-		 <h6 class="col-md-12 col-6"><i class="fa fa-circle col_green me-1 font_8 align-middle"></i> <a class="text-white-50 a_tag" href="#"> Giới thiệu</a></h6>
-	 <h6 class="col-md-12 col-6 mt-2"><i class="fa fa-circle col_green me-1 font_8 align-middle"></i> <a class="text-white-50 a_tag" href="#"> Điểm đến</a></h6>
-	 <h6 class="col-md-12 col-6 mt-2"><i class="fa fa-circle col_green me-1 font_8 align-middle"></i> <a class="text-white-50 a_tag" href="#"> Các gói tour</a></h6>
-	 <h6 class="col-md-12 col-6 mt-2"><i class="fa fa-circle col_green me-1 font_8 align-middle"></i> <a class="text-white-50 a_tag" href="#"> Quyền riêng tư</a></h6>
-	 <h6 class="col-md-12 col-6 mt-2"><i class="fa fa-circle col_green me-1 font_8 align-middle"></i> <a class="text-white-50 a_tag" href="#"> Bài viết</a></h6>
-	 <h6 class="col-md-12 col-6 mt-2 mb-0"><i class="fa fa-circle col_green me-1 font_8 align-middle"></i> <a class="text-white-50 a_tag" href="#"> Liên hệ</a></h6>
-	    </div>
-	  </div>
-	</div>
-	<div class="col-md-3">
-	  <div class="footer_1l">
-	    <h5 class="text-white mt-1 mb-3"><i class="fa fa-phone col_yellow me-1"></i> Số điện thoại</h5>
-		<h6><a class="text-white-50 a_tag1" href="#">+999-888 123 456</a></h6>
-		<h5 class="text-white mt-4 mb-3"><i class="fa fa-location-arrow col_yellow me-1"></i> EMail</h5>
-		<h6><a class="text-white-50 a_tag1" href="#">info@gmail.com</a></h6>
-		<h5 class="text-white mt-4 mb-3"><i class="fa fa-map-marker col_yellow me-1"></i> Địa chỉ</h5>
-		<p class="mb-0"><a class="text-white-50 a_tag1" href="#">House 128/140, Road 01, India - See Map 1 km to city center</a></p>
-	  </div>
-	</div>
-	<div class="col-md-3">
-	  <div class="footer_1l top_1r ">
-	    <h5 class="text-white mt-1 mb-3"> We Are Here</h5>
-		 <p class="text-white-50">Quisque purus augue, facilisis andi neque idont accumsan fringilla massa. Vivamusol id nibhom condimentum.</p>
-		 <h5 class="text-white mt-4 mb-3"> Social Partner</h5>
-         <ul class="mb-0">
-	    <li class="d-inline-block"><a class="d-block text-center rounded-circle" href="#"><i class="fa-brands fa-facebook"></i></a></li>
-		<li class="d-inline-block ms-2"><a class="d-block text-center rounded-circle" href="#"><i class="fa-brands fa-twitter"></i></a></li>
-		<li class="d-inline-block ms-2"><a class="d-block text-center rounded-circle" href="#"><i class="fa-brands fa-pinterest"></i></a></li>
-		<li class="d-inline-block ms-2"><a class="d-block text-center rounded-circle" href="#"><i class="fa-brands fa-instagram"></i></a></li>
-	  </ul>
-	  </div>
-	</div>
-  </div><hr class="line_1">
-  <div class="row footer_2">
-    <div class="col-md-8">
-	  <div class="footer_2l">
-	    <p class="mb-0 text-white-50">© 2013 Your Website Name. All Rights Reserved | Design by <a class="col_green fw-bold" href="http://www.templateonweb.com">TemplateOnWeb</a></p>
-	  </div>
-	</div>
-<div class="col-md-4">
-	  <div class="footer_2r text-end">
-	    <ul class="mb-0">
-		    <li class="d-inline-block"><a class="text-white-50 a_tag" href="#">Privacy Policy</a></li>
-			<li class="d-inline-block ms-2"><i class="fa fa-circle col_green me-1 font_8 align-middle"></i> <a class="text-white-50 a_tag" href="#">Terms & Condition</a></li>
-		  </ul>
-	  </div>
-	</div>
-  </div>
- </div>
-</section>
-  </div>
-</div>
-
-<script src="js/common.js"></script>
-
-</body>
-
-
+    <script src="js/common.js"></script>
+  </body>
 </html>
