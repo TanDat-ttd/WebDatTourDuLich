@@ -5,6 +5,11 @@ Author: TemplatesOnWeb
 Author URI: https://www.templateonweb.com/
 Licence: <a href="https://www.templateonweb.com/license">Website Template Licence</a>
 */
+.center_gal {
+  background-image: url(../img/3.jpg);
+  background-position: center center;
+  background-size: cover;
+  }
 body{
 font-family: "Jost", sans-serif;
 }
