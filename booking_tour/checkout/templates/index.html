@@ -58,7 +58,7 @@
 <section id="header">
 <nav class="navbar navbar-expand-md navbar-light px_4" id="navbar_sticky">
   <div class="container-fluid">
-    <a class="navbar-brand  p-0 fw-bold" href="index.html"><i class="fa fa-plane-arrival col_green"></i> Tour <span class="col_yellow">Booking</span> </a>
+    <a class="navbar-brand  p-0 fw-bold" href="index.html"><i class="fa fa-plane-arrival col_green"></i> <span class="col_yellow">Đặt Tour Ngay</span> </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -66,10 +66,11 @@
 	   <ul class="navbar-nav mb-0 ms-auto nav_1">
 	    
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link active" aria-current="page" href="index.html">Trang chủ</a>
         </li>
 		 
 		<li class="nav-item">
+<<<<<<< HEAD:booking_tour/checkout/templates/index.html
           <a class="nav-link" href="{% url 'about' %}">About </a>
         </li>
 		
@@ -92,6 +93,17 @@
             <li><a class="dropdown-item border-0" href="destination_detail.html"> Destination Detail</a></li>
           </ul>
         </li>
+=======
+          <a class="nav-link" href="about.html">Giới thiệu </a>
+        </li>
+		
+		<li class="nav-item">
+			<a class="nav-link" href="tour.html"> Tour</a>
+		  </li>
+		<li class="nav-item">
+			<a class="nav-link" href="destination.html"> Điểm đến </a>
+		  </li>
+>>>>>>> b9a85491bbefcaa9b44ad6a32a5d86132de79635:index.html
 		
 		<li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -99,34 +111,39 @@
           </a>
           <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="blog.html"> Blog</a></li>
-            <li><a class="dropdown-item border-0" href="blog_detail.html"> Blog Detail</a></li>
+            <li><a class="dropdown-item border-0" href="blog_detail.html"> Blog điểm đến</a></li>
           </ul>
         </li>
 		
 		<li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Pages
+            Cộng đồng
           </a>
           <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+<<<<<<< HEAD:booking_tour/checkout/templates/index.html
 		    <li><a class="dropdown-item" href="../gallery.html"> Gallery</a></li>
 			<li><a class="dropdown-item border-0" href="../faq.html"> Faq</a></li>
+=======
+		    <li><a class="dropdown-item" href="gallery.html"> Thư viện ảnh</a></li>
+			<li><a class="dropdown-item border-0" href="faq.html"> Câu hỏi thường gặp</a></li>
+>>>>>>> b9a85491bbefcaa9b44ad6a32a5d86132de79635:index.html
           </ul>
         </li>
 			
 		<li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link" href="contact.html">Liên hệ</a>
         </li>
       </ul>
       <ul class="navbar-nav mb-0 ms-auto nav_2">
 	    <li class="nav-item">
-          <a class="nav-link fs-4" href="#"><i class="fa fa-user"></i></a>
+          <a class="nav-link fs-4" href="login.html"><i class="fa fa-user"></i></a>
         </li>
 		    
 		<li class="nav-item">
           <a class="nav-link fs-4 drop_icon col_green" href="#"><i class="fa fa-phone"></i></a>
         </li>
 		
-		<li class="mb-0  d-inline-block fw-bold font_14 nav-item">To More Inquiry<br>
+		<li class="mb-0  d-inline-block fw-bold font_14 nav-item">Để biết thêm thông tin<br>
 <a class="col_green a_tag1 fs-5" href="#">+(000) 345 67 89</a></li>
       </ul>
     </div>
@@ -156,7 +173,6 @@
 		 </span> 4.5</h6>
 		<ul class="mb-0 mt-4">
 		  <li class="d-inline-block"><a class="button" href="#">Đặt Tour</a></li>
-		  <li class="d-inline-block ms-3 fw-bold"><a class="text-white fs-4" href="#"><i class="fa fa-umbrella-beach d-inline-block text-center rounded-circle bg_green fs-3 align-middle me-1"></i> Tripadvisor</a></li>
 		</ul>
       </div>
     </div>
@@ -176,7 +192,6 @@
 		 </span> 4.5</h6>
 		<ul class="mb-0 mt-4">
 		  <li class="d-inline-block"><a class="button" href="#">Đặt Tour</a></li>
-		  <li class="d-inline-block ms-3 fw-bold"><a class="text-white fs-4" href="#"><i class="fa fa-umbrella-beach d-inline-block text-center rounded-circle bg_green fs-3 align-middle me-1"></i> Tripadvisor</a></li>
 		</ul>
       </div>
     </div>
@@ -203,11 +218,11 @@
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
+    <span class="visually-hidden">Quay lại</span>
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
+    <span class="visually-hidden">Tiếp</span>
   </button>
 </div>
   </div>
@@ -386,40 +401,51 @@
 	</div>
 	<div class="col">
 	 <div class="book_2il">
-	   <h6><i class="fa fa-passport me-1 col_green fs-3 align-middle"></i> Visa Type</h6>
+	   <h6><i class="fa fa-passport me-1 col_green fs-3 align-middle"></i> Loại Visa</h6>
 	   <select class="form-select fw-bold text-black" aria-label="Default select example">
-<option selected="">Select Visa Type</option>
-<option value="1">Diplomat</option>
-<option value="2">Medical</option>
-<option value="3">Tourist</option>
+<option selected="">Chọn Loại Visa</option>
+<option value="1">Ngoại giaogiao</option>
+<option value="2">Y tế</option>
+<option value="3">Du Khách</option>
+<option value="4">Thể thao</option>
+<option value="5">Văn hóa</option>
 </select>
 	 </div>
 	</div>
 	<div class="col">
 	 <div class="book_2il">
-	   <h6><i class="fa fa-flag me-1 col_green fs-3 align-middle"></i> Nationality</h6>
+	   <h6><i class="fa fa-flag me-1 col_green fs-3 align-middle"></i> Quốc Tịch</h6>
 	   <select class="form-select fw-bold text-black" aria-label="Default select example">
-<option selected="">Select Nationality</option>
-<option value="1">Algerian</option>
-<option value="2">Indian</option>
-<option value="3">American</option>
-<option value="4">British</option>
+<option selected="">Chọn quốc tịch</option>
+<option value="1">Việt Nam</option>
+<option value="2">Mỹ</option>
+<option value="3">Trung</option>
+<option value="4">Anh</option>
+<option value="5">Ý</option>
+<option value="6">Thái Lan</option>
+<option value="7">Hàn Quốc</option>
+<option value="8">Nhật</option>
+<option value="9">Đức</option>
+<option value="10">Hà Lan</option>
+<option value="11">Canada</option>
+<option value="12">Thụy Sĩ</option>
+<option value="13">Khác</option>
 </select>
 	 </div>
 	</div>
 	<div class="col">
 	 <div class="book_2il">
-	   <h6><i class="fa fa-user me-1 col_green fs-3 align-middle"></i> Visa Mode</h6>
+	   <h6><i class="fa fa-user me-1 col_green fs-3 align-middle"></i> Chế Độ Visa</h6>
 	   <select class="form-select fw-bold text-black" aria-label="Default select example">
-<option selected="">Select Visa Mode</option>
-<option value="1">Electronic</option>
-<option value="2">Emergency</option>
+<option selected="">Chọn chế độ Visa</option>
+<option value="1">Điện tử</option>
+<option value="2">Khẩn cấp</option>
 </select>
 	 </div>
 	</div>
 	<div class="col pe-0">
 	 <div class="book_2ir text-center bg_green">
-	 <h5 class="mb"><a class="text-white d-block" href="#">Search</a></h5>
+	 <h5 class="mb"><a class="text-white d-block" href="#">Tìm kiếm</a></h5>
 	 </div>
 	</div>
   </div>
@@ -441,35 +467,46 @@
 	</div>
 	<div class="col">
 	 <div class="book_2il">
-	   <h6><i class="fa fa-suitcase-rolling me-1 col_green fs-3 align-middle"></i> Activities Type</h6>
+	   <h6><i class="fa fa-suitcase-rolling me-1 col_green fs-3 align-middle"></i> Loại Hoạt Động</h6>
 	   <select class="form-select fw-bold text-black" aria-label="Default select example">
-<option selected="">Select Activity Type</option>
-<option value="1">Sports and Fitness</option>
-<option value="2">Volunteer Work</option>
+<option selected="">Chọn loại hoạt động</option>
+<option value="1">Thể thao</option>
+<option value="2">Công việc tình nguyện </option>
 </select>
 	 </div>
 	</div>
 	<div class="col">
 	 <div class="book_2il">
-	   <h6><i class="fa fa-calendar me-1 col_green fs-3 align-middle"></i> When</h6>
+	   <h6><i class="fa fa-calendar me-1 col_green fs-3 align-middle"></i> Khi nào</h6>
 	   <select class="form-select fw-bold text-black" aria-label="Default select example">
-<option selected="">Select Month</option>
-<option value="1">January</option>
-<option value="2">February</option>
-<option value="3">March</option>
-<option value="4">April</option>
+<option selected="">Chọn tháng</option>
+<option value="1">Tháng 1</option>
+<option value="2">Tháng 2</option>
+<option value="3">Tháng 3</option>
+<option value="4">Tháng 4</option>
+<option value="5">Tháng 5</option>
+<option value="6">Tháng 6</option>
+<option value="7">Tháng 7</option>
+<option value="8">Tháng 8</option>
+<option value="9">Tháng 9</option>
+<option value="10">Tháng 10</option>
+<option value="11">Tháng 11</option>
+<option value="12">Tháng 12</option>
 </select>
 	 </div>
 	</div>
 	<div class="col">
 	 <div class="book_2il">
-	   <h6><i class="fa fa-calendar me-1 col_green fs-3 align-middle"></i> Activite Day</h6>
+	   <h6><i class="fa fa-calendar me-1 col_green fs-3 align-middle"></i> Ngày Hoạt Động</h6>
 	   <select class="form-select fw-bold text-black" aria-label="Default select example">
-<option selected="">Select Activity Day</option>
-<option value="1">Sunday</option>
-<option value="2">Monday</option>
-<option value="3">Tuesday</option>
-<option value="4">Saturday</option>
+<option selected="">Chọn ngày hoạt động</option>
+<option value="1">Chủ nhật</option>
+<option value="2">Thứ 2</option>
+<option value="3">Thứ 3</option>
+<option value="4">Thứu 4</option>
+<option value="5">Thứ 5</option>
+<option value="6">Thứ 6</option>
+<option value="7">Thứ 7</option>
 </select>
 	 </div>
 	</div>
@@ -541,7 +578,7 @@
 	</div>
 	<div class="col pe-0">
 	 <div class="book_2ir text-center bg_green">
-	 <h5 class="mb"><a class="text-white d-block" href="#">Search</a></h5>
+	 <h5 class="mb"><a class="text-white d-block" href="#">Tìm kiếm</a></h5>
 	 </div>
 	</div>
   </div>
@@ -560,8 +597,8 @@
   <div class="row about_h1">
     <div class="col-md-6">
 	  <div class="about_h1l">
-	    <h5 class="family_1 icon_tag col_green"><i class="fa fa-leaf me-1"></i> About Us <i class="fa fa-leaf ms-1"></i></h5>
-		<h1 class="font_50 mt-3">Let’s know About Our Journey For Tour </h1>
+	    <h5 class="family_1 icon_tag col_green"><i class="fa fa-leaf me-1"></i> Về chúng tôi <i class="fa fa-leaf ms-1"></i></h5>
+		<h1 class="font_50 mt-3">Hãy Tìm Hiểu Về Hành Trình Du Lịch Của Chúng Tôi </h1>
 		<ul class="nav nav-tabs mb-4 border-0 mt-4">
 <li class="nav-item d-inline-block">
 <a href="#profile4" data-bs-toggle="tab" aria-expanded="true" class="nav-link active">
@@ -613,14 +650,24 @@
 	    <div class="about_h1ri row">
 		  <div class="col-md-6 col-sm-6">
 		     <div class="about_h1ril">
+<<<<<<< HEAD:booking_tour/checkout/templates/index.html
 			   <img src="../img/9.jpg" class="rounded_1 w-100" alt="abc">
 			    <img src="../img/8.jpg" class="rounded_1 w-100 mt-4" alt="abc">
+=======
+			   <img src="img\dalat_7.png" class="rounded_1 w-100" alt="abc">
+			    <img src="img\45.png" class="rounded_1 w-100 mt-4" alt="abc">
+>>>>>>> b9a85491bbefcaa9b44ad6a32a5d86132de79635:index.html
 			 </div>
 		  </div>
 		  <div class="col-md-6 col-sm-6">
 		     <div class="about_h1ril">
+<<<<<<< HEAD:booking_tour/checkout/templates/index.html
 			  <img src="../img/10.jpg" class="rounded_1 w-100" alt="abc">
 			  <img src="../img/7.jpg" class="rounded_1 w-100 mt-4" alt="abc">
+=======
+			  <img src="img\tpHCM_5.png" class="rounded_1 w-100" alt="abc">
+			  <img src="img\PhuYen.png" class="rounded_1 w-100 mt-4" alt="abc">
+>>>>>>> b9a85491bbefcaa9b44ad6a32a5d86132de79635:index.html
 			 </div>
 		  </div>
 		</div>

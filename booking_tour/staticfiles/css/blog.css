@@ -1,0 +1,123 @@
+/*
+Template Name: Tour Booking
+File: Layout CSS
+Author: TemplatesOnWeb
+Author URI: https://www.templateonweb.com/
+Licence: <a href="https://www.templateonweb.com/license">Website Template Licence</a>
+*/
+
+/*********************blog****************/
+.center_blog {
+background-image: url(../img/1.jpg);
+background-position: center center;
+background-size: cover;
+}
+
+.blog_1lil:hover .blog_h1lili1 h5{
+transition: 0.3s;
+background:#63ab45!important; 
+ }
+.tags a {
+border: 1px solid #c4dfb9;
+color: #333;
+font-size: 14px;
+margin: 0px 2px 6px 0px;
+padding: 6px 16px 6px 16px;
+font-size: 14px;
+transition: 0.3s;
+display: block;
+border-radius:5px;
+}
+.tags a:hover {
+background:#63ab45;
+color:#fff;
+border: 1px solid #63ab45;
+}
+
+.center_blogdt {
+background-image: url(../img/52.jpg);
+background-position: center center;
+background-size: cover;
+}
+.blog_1dt1i1i1{
+top:-25px;
+ }
+.blog_1dt1i1i1 span{
+width:50px;
+height:50px;
+line-height:50px;
+font-size:26px; 
+ }
+
+/*********************blog_end****************/
+
+
+
+@media screen and (max-width : 767px){
+.blog_1lil{
+text-align:center; 
+ }
+.blog_1lil{
+margin-top:8px;
+margin-bottom:8px; 
+ }
+.blog_1r{
+margin-top:15px; 
+ }
+.tour_1l1  h4{
+text-align:center;  
+ }
+.blog_1r1  h4{
+text-align:center; 
+ }
+.blog_1r1ir{
+margin-top:10px; 
+text-align:center;
+ }
+ 
+.blog_1dt1i {
+text-align:center; 
+ }
+.blog_1dt1ir {
+text-align:center!important; 
+margin-top:15px; 
+ }
+.blog_1dt h2{
+text-align:center; 
+ }
+.blog_1dt h3{
+text-align:center; 
+ }
+.blog_1dt2ir {
+text-align:left!important; 
+ }
+.blog_1dt2i1l {
+text-align:left!important;
+margin-top:10px; 
+ }
+.blog_1dt2i1l h6{
+text-align:center;
+ }
+ }
+
+
+@media (min-width:576px) and (max-width:767px) {
+.blog_1r1ir{
+text-align:left;
+margin-top:0; 
+ }
+ }
+ 
+@media (min-width:768px) and (max-width:991px) {
+
+ }
+
+@media (min-width:992px) and (max-width:1200px) {
+
+ }
+@media (min-width:1201px) and (max-width:1320px) {
+
+ }
+
+
+
