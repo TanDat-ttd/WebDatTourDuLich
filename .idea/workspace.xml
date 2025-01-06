@@ -4,7 +4,280 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c2f19cb-cb00-4a0a-bdbe-f42ef3e5ad61" name="Changes" comment="" />
+    <list default="true" id="4c2f19cb-cb00-4a0a-bdbe-f42ef3e5ad61" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/tour_booking/main/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tour_booking/payments/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tour_booking/smart_map/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tour_booking/static/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tour_booking/tours/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tour_booking/users/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/about.css" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/css/about.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/blog.css" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/css/blog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/destination.css" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/css/destination.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/gallery.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/css/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/styleloginregist.css" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/css/styleloginregist.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/tour.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/destination.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/destination2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/destination3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/destination_BinhDinh.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/destination_CaoBang.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/destination_DaLat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/destination_HaNoi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/destination_HoiAn.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/destination_NinhBinh.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/destination_VinhHaLong.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/destination_VungTau.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/faq.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/fonts/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/css/brands.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/fonts/css/brands.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/css/fontawesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/fonts/css/fontawesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/css/solid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/fonts/css/solid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/js/brands.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/fonts/js/brands.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/js/conflict-detection.js" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/fonts/js/conflict-detection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/js/conflict-detection.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/fonts/js/conflict-detection.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/js/fontawesome.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/fonts/js/fontawesome.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/js/solid.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/fonts/js/solid.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/webfonts/fa-brands-400.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/fonts/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/webfonts/fa-brands-400.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/fonts/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/webfonts/fa-solid-900.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/fonts/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/webfonts/fa-solid-900.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/fonts/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gallery.css" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/css/gallery.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gallery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/11.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/111.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/111.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/112.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/112.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/113.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/113.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/114.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/114.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/115.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/115.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/12.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/12.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/15.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/15.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/16.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/17.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/17.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/18.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/18.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/19.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/19.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/19.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/19.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/191.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/191.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/20.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/20.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/20.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/20.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/21.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/21.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/21.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/21.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/22.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/22.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/22.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/22.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/23.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/23.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/24.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/24.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/25.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/25.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/26.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/26.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/27.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/27.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/28.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/28.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/29.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/29.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/30.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/30.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/31.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/31.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/32.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/32.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/33.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/33.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/34.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/34.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/35.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/35.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/36.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/36.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/37.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/37.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/38.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/38.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/39.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/39.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/40.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/40.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/41.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/41.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/41.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/41.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/42.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/42.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/43.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/43.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/44.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/44.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/45.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/45.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/45.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/45.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/46.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/46.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/46.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/46.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/47.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/47.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/47.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/47.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/48.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/48.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/48.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/48.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/49.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/49.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/49.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/49.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/50.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/50.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/51.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/51.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/52.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/52.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/53.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/53.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/54.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/54.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/55.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/55.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/56.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/56.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/57.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/57.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/58.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/58.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/59.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/59.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/60.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/60.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/61.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/61.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/62.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/62.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/63.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/63.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/64.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/64.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/65.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/65.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/66.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/66.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/An Giang.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/An Giang.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Anh-dep-Vinh-Ha-Long-14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/Anh-dep-Vinh-Ha-Long-14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/BinhDinh_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/BinhDinh_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/BinhDinh_10.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/BinhDinh_10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/BinhDinh_11.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/BinhDinh_11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/BinhDinh_12.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/BinhDinh_12.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/BinhDinh_13.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/BinhDinh_13.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/BinhDinh_14.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/BinhDinh_14.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/BinhDinh_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/BinhDinh_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/BinhDinh_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/BinhDinh_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/BinhDinh_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/BinhDinh_4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/BinhDinh_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/BinhDinh_5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/BinhDinh_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/BinhDinh_6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/BinhDinh_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/BinhDinh_7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/BinhDinh_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/BinhDinh_8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/BinhDinh_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/BinhDinh_9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/BinhThuan.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/BinhThuan.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/CaMau.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/CaMau.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/DaLat.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/DaLat.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/DaNang.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/DaNang.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/DaNang.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/DaNang.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Giai-Nhat--Dem-Sai-G.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/Giai-Nhat--Dem-Sai-G.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/HaGiang.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/HaGiang.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/HaiPhong.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/HaiPhong.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/HoaBinh.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/HoaBinh.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Hue.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/Hue.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/LySon.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/LySon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/NhaTrang.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/NhaTrang.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/PhuQuoc.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/PhuQuoc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/PhuYen.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/PhuYen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/QuangBinh.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/QuangBinh.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/SonLa.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/SonLa.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ThanhHoa.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/ThanhHoa.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/anh-2-hinh-bien-vung-tau.webp" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/anh-2-hinh-bien-vung-tau.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/anh-dep-cau-rong-da-nang-viet-nam_055418962.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/anh-dep-cau-rong-da-nang-viet-nam_055418962.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/canh-dep-da-lat-1.webp" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/canh-dep-da-lat-1.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/caobang_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/caobang_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/caobang_10.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/caobang_10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/caobang_11.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/caobang_11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/caobang_12.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/caobang_12.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/caobang_13.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/caobang_13.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/caobang_14.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/caobang_14.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/caobang_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/caobang_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/caobang_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/caobang_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/caobang_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/caobang_4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/caobang_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/caobang_5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/caobang_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/caobang_6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/caobang_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/caobang_7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/caobang_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/caobang_8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/caobang_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/caobang_9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/co-bay-cityhall-sams-studio-1720601000.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/co-bay-cityhall-sams-studio-1720601000.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/dalat_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/dalat_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/dalat_10.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/dalat_10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/dalat_11.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/dalat_11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/dalat_12.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/dalat_12.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/dalat_13.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/dalat_13.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/dalat_14.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/dalat_14.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/dalat_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/dalat_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/dalat_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/dalat_4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/dalat_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/dalat_5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/dalat_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/dalat_6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/dalat_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/dalat_7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/dalat_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/dalat_8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/dalat_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/dalat_9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/hanoi_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/hanoi_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/hanoi_10.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/hanoi_10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/hanoi_11.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/hanoi_11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/hanoi_12.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/hanoi_12.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/hanoi_13.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/hanoi_13.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/hanoi_14.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/hanoi_14.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/hanoi_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/hanoi_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/hanoi_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/hanoi_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/hanoi_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/hanoi_4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/hanoi_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/hanoi_5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/hanoi_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/hanoi_6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/hanoi_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/hanoi_7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/hanoi_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/hanoi_8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/hanoi_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/hanoi_9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/istockphoto-478073811-612x612.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/istockphoto-478073811-612x612.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ninhbinh_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/ninhbinh_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ninhbinh_10.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/ninhbinh_10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ninhbinh_11.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/ninhbinh_11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ninhbinh_12.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/ninhbinh_12.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ninhbinh_13.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/ninhbinh_13.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ninhbinh_14.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/ninhbinh_14.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ninhbinh_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/ninhbinh_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ninhbinh_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/ninhbinh_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ninhbinh_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/ninhbinh_4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ninhbinh_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/ninhbinh_5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ninhbinh_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/ninhbinh_6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ninhbinh_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/ninhbinh_7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ninhbinh_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/ninhbinh_8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ninhbinh_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/ninhbinh_9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vhl_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/vhl_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vhl_10.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/vhl_10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vhl_11.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/vhl_11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vhl_12.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/vhl_12.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vhl_13.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/vhl_13.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vhl_14.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/vhl_14.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vhl_15.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/vhl_15.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vhl_16.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/vhl_16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vhl_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/vhl_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vhl_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/vhl_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vhl_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/vhl_4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vhl_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/vhl_5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vhl_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/vhl_6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vhl_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/vhl_7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vhl_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/vhl_8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vhl_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/vhl_9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vungtau_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/vungtau_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vungtau_10.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/vungtau_10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vungtau_11.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/vungtau_11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vungtau_13.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/vungtau_13.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vungtau_14.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/vungtau_14.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vungtau_15.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/vungtau_15.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vungtau_16.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/vungtau_16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vungtau_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/vungtau_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vungtau_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/vungtau_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vungtau_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/vungtau_4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vungtau_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/vungtau_5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vungtau_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/vungtau_6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vungtau_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/vungtau_7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vungtau_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/vungtau_8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vungtau_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/img/vungtau_9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery-3.7.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/js/jquery-3.7.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styleloginregist.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tour.css" beforeDir="false" afterPath="$PROJECT_DIR$/tour_booking/static/css/tour.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tour.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,32 +316,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "new-feature",
+    "last_opened_file_path": "E:/tour_booking_zip/tour_booking/payments",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "aDefault",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlite&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\tour_booking_zip\tour_booking\payments" />
+      <recent name="E:\tour_booking_zip\tour_booking\smart_map" />
+      <recent name="E:\tour_booking_zip\tour_booking\tours" />
+      <recent name="E:\tour_booking_zip\tour_booking\users" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\tour_booking_zip\booking_tour" />
-      <recent name="E:\tour_booking_zip" />
-      <recent name="E:\tour_booking_zip\booking_tour\checkout\templates" />
-      <recent name="E:\tour_booking_zip\booking_tour\checkout\templates\checkout" />
       <recent name="E:\tour_booking_zip\tour_booking" />
+      <recent name="E:\tour_booking_zip" />
+      <recent name="E:\tour_booking_zip\tour_booking\tour_booking\static" />
+      <recent name="E:\tour_booking_zip\tour_booking\tour_booking" />
+      <recent name="E:\tour_booking_zip\css" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -95,7 +375,7 @@
       <workItem from="1735034759635" duration="29635000" />
       <workItem from="1735191543593" duration="5000" />
       <workItem from="1735210953949" duration="536000" />
-      <workItem from="1736145412514" duration="650000" />
+      <workItem from="1736145412514" duration="4789000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tour Booking</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" >
+	 <link href="fonts/css/fontawesome.min.css" rel="stylesheet" >
+	<link href="fonts/css/brands.min.css" rel="stylesheet" />
+    <link href="fonts/css/solid.min.css" rel="stylesheet" />
+	<link href="css/global.css" rel="stylesheet">
+	<link href="css/destination.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+
+<section id="top" class="bg_black pt-2 pb-2">
+ <div class="container-xl">
+  <div class="row top_1">
+   <div class="col-md-3">
+     <div class="top_1l">
+	   <span class="d-inline-block col_green fs-1 lh-1 me-1"><i class="fa fa-location-arrow"></i></span>
+	   <h6 class="mb-0 text-white d-inline-block fw-bold font_14">Email: <br>
+<a class="col_green a_tag1 fs-6" href="#">info@gmail.com</a></h6>
+	 </div>
+   </div>
+   <div class="col-md-6">
+     <div class="top_1m text-center">
+	   <p class="mb-0 text-light">Sẽ giảm giá 50% cho chuyến đi có sinh nhật khách hàng!  <a class="col_green a_tag1" href="#">Book Your Tour</a></p>
+	 </div>
+   </div>
+   <div class="col-md-3">
+     <div class="top_1r text-end">
+      <ul class="mb-0">
+	    <li class="d-inline-block"><a class="d-block text-center rounded-circle" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+		<li class="d-inline-block ms-2"><a class="d-block text-center rounded-circle" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+		<li class="d-inline-block ms-2"><a class="d-block text-center rounded-circle" href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+		<li class="d-inline-block ms-2"><a class="d-block text-center rounded-circle" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+	  </ul>
+	 </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="header">
+<nav class="navbar navbar-expand-md navbar-light px_4" id="navbar_sticky">
+  <div class="container-fluid">
+    <a class="navbar-brand  p-0 fw-bold" href="index.html"><i class="fa fa-plane-arrival col_green"></i> Tour <span class="col_yellow">Booking</span> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	   <ul class="navbar-nav mb-0 ms-auto nav_1">
+	    
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+        </li>
+		 
+		<li class="nav-item">
+          <a class="nav-link" href="about.html">About </a>
+        </li>
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Tours
+          </a>
+          <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="tour.html"> Tour</a></li>
+            <li><a class="dropdown-item border-0" href="detail.html"> Tour Detail</a></li>
+          </ul>
+        </li>
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Destination
+          </a>
+          <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="destination.html"> Destination</a></li>
+            <li><a class="dropdown-item border-0" href="destination_detail.html"> Destination Detail</a></li>
+          </ul>
+        </li>
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Blog
+          </a>
+          <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="blog.html"> Blog</a></li>
+            <li><a class="dropdown-item border-0" href="blog_detail.html"> Blog Detail</a></li>
+          </ul>
+        </li>
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pages
+          </a>
+          <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+		    <li><a class="dropdown-item" href="gallery.html"> Gallery</a></li>
+			<li><a class="dropdown-item border-0" href="faq.html"> Faq</a></li>
+          </ul>
+        </li>
+			
+		<li class="nav-item">
+          <a class="nav-link active" href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav mb-0 ms-auto nav_2">
+	    <li class="nav-item">
+          <a class="nav-link fs-4" href="#"><i class="fa fa-user"></i></a>
+        </li>
+		    
+		<li class="nav-item">
+          <a class="nav-link fs-4 drop_icon col_green" href="#"><i class="fa fa-phone"></i></a>
+        </li>
+		
+		<li class="mb-0  d-inline-block fw-bold font_14 nav-item">To More Inquiry<br>
+<a class="col_green a_tag1 fs-5" href="#">+(000) 345 67 89</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</section>
+
+<section id="center" class="center_cont">
+   <div class="center_om bg_back">
+     <div class="container-xl">
+  <div class="row center_o1 text-center">
+     <div class="col-md-12">
+	    <h1 class="text-white font_50">Contact</h1>
+		<h6 class="col_green mb-0 mt-3 fw-bold"><a class="text-light" href="#">Home</a> <span class="mx-2 text-white-50"><i class="fa fa-arrow-right"></i></span> Contact</h6>
+	 </div>
+  </div>
+ </div>
+   </div>   
+ </section>
+
+<section id="contact" class="p_3">
+ <div class="container-xl">
+   <div class="row contact_1">
+     <div class="col-md-5">
+	   <div class="contact_1l">
+	     <h5 class="fs-6 text-muted">Hotline</h5>
+		  <div class="contact_1li row border_1 rounded_1 pt-3 pb-3 mx-0">
+		    <div class="col-md-2">
+			  <div class="contact_1lil">
+			   <span class="d-inline-block rounded-circle text-center fs-4 bg_green text-white"><i class="fa fa-phone"></i></span>
+			  </div>
+			</div>
+			<div class="col-md-10">
+			  <div class="contact_1lir">
+			    <h5 class="mb-0"><a href="#">+84 111 111 1111<br>+84 222 222 2222</a></h5>
+			  </div>
+			</div>
+		  </div>
+		  <h5 class="fs-6 text-muted mt-4">Nhắn ngay</h5>
+		  <div class="contact_1li row border_1 rounded_1 pt-3 pb-3 mx-0">
+		    <div class="col-md-2">
+			  <div class="contact_1lil">
+			   <span class="d-inline-block rounded-circle text-center fs-4 bg_green text-white"><i class="fa fa-envelope"></i></span>
+			  </div>
+			</div>
+			<div class="col-md-10">
+			  <div class="contact_1lir">
+			    <h5 class="mb-0"><a href="#">info@gmail.com <br>info@gmail.com</a></h5>
+			  </div>
+			</div>
+		  </div>
+		    <h5 class="fs-6 text-muted mt-4">Địa chỉ</h5>
+		  <div class="contact_1li row border_1 rounded_1 pt-3 pb-3 mx-0">
+		    <div class="col-md-2">
+			  <div class="contact_1lil">
+			   <span class="d-inline-block rounded-circle text-center fs-4 bg_green text-white"><i class="fa fa-map-marker"></i></span>
+			  </div>
+			</div>
+			<div class="col-md-10">
+			  <div class="contact_1lir">
+			    <h5 class="mb-0">  VQCR+GP6, khu phố 6, Thủ Đức, Hồ Chí Minh</h5>
+			  </div>
+			</div>
+		  </div>
+		  <h5 class="fs-6 text-muted mt-4">giờ mở cửa</h5>
+		  <div class="contact_1li row border_1 rounded_1 pt-3 pb-3 mx-0">
+		    <div class="col-md-2">
+			  <div class="contact_1lil">
+			   <span class="d-inline-block rounded-circle text-center fs-4 bg_green text-white"><i class="fa fa-clock"></i></span>
+			  </div>
+			</div>
+			<div class="col-md-10">
+			  <div class="contact_1lir">
+			    <h5 class="mb-0 mt-3">  9:00Am - 11:Pm, Friday Close</h5>
+			  </div>
+			</div>
+		  </div>
+	   </div>
+	 </div>
+	 <div class="col-md-7">
+	   <div class="contact_1r bg_light1 p-4 rounded_1">
+	     <div class="detail_1l4b">
+		    <h2 class="mb-4">Liên hệ với chúng tôi bất cứ lúc nào</h2>
+			 <div class="detail_1l4b1 row">
+			  <div class="col-md-6">
+			   <div class="detail_1l4b1l">
+			    <h6 class="fw-bold">Họ và tên*</h6>
+			    <input class="form-control rounded_10 border-0" placeholder="Nhập họ và tên..." type="text">
+			   </div>
+			  </div>
+			  <div class="col-md-6">
+			   <div class="detail_1l4b1l">
+			   <h6 class="fw-bold">Số điện thoại*</h6>
+			    <input class="form-control rounded_10 border-0" placeholder="Nhập số điện thoại" type="text">
+			   </div>
+			  </div>
+			 </div>
+			 <div class="detail_1l4b1 row mt-4">
+			  <div class="col-md-6">
+			   <div class="detail_1l4b1l">
+			   <h6 class="fw-bold">Website*</h6>
+			    <input class="form-control rounded_10 border-0" placeholder="Website" type="text">
+			   </div>
+			  </div>
+			  <div class="col-md-6">
+			   <div class="detail_1l4b1l">
+			   <h6 class="fw-bold">Email*</h6>
+			    <input class="form-control rounded_10 border-0" placeholder="Nhập email..." type="text">
+			   </div>
+			  </div>
+			 </div>
+			 <div class="detail_1l4b1 row mt-4">
+			  <div class="col-md-12">
+			   <div class="detail_1l4b1l">
+			   <h6 class="fw-bold">Lời nhắn*</h6>
+			    <textarea class="form-control rounded_10 border-0 form_text" placeholder="viết..."></textarea>
+				<div class="form-check mt-3">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    Lưu tên, email và trang web của tôi trong trình duyệt này cho lần bình luận tiếp theo.
+  </label>
+</div>
+				<h6 class="mb-0 mt-4 center_sm"><a class="button" href="#">Gửi</a></h6>
+			   </div>
+			  </div>
+			  
+			 </div>
+			</div>
+	   </div>
+	 </div>
+   </div>
+   <div class="cont_pg2 row mt-4">
+	   <div class="col-md-12">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15672.858378257437!2d106.7917617!3d10.8712764!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175276398969f7b%3A0x9672b7efd0893fc4!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBOw7RuZyBMw6JtIFRQLiBI4buTIENow60gTWluaA!5e0!3m2!1svi!2s!4v1733246130962!5m2!1svi!2s" height="450" style="border:0; width:100%;" allowfullscreen=""></iframe>
+	</div>
+	  </div>
+ </div>
+</section>
+
+<div class="main_footer position-relative">
+	<div class="main_footer1 position-absolute w-100">
+	  <section id="join" class="p_3">
+		<div class="container-xl">
+		  <div class="row join_1 shadow_box pt-5 pb-5 mx-0 bg-white">
+			<div class="col-md-3">
+			  <div class="join_1l">
+				<img src="img/44.jpg" class="w-100" alt="abc" />
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <div class="join_1m text-center">
+				<h1>Tham gia</h1>
+				<p>Để nhận các ưu đãi tốt nhất</p>
+				<div class="input-group">
+				  <input
+					type="text"
+					class="form-control rounded-0 font_14"
+					placeholder="Email của bạn..."
+				  />
+				  <span class="input-group-btn">
+					<button
+					  class="btn btn-primary bg_green rounded-0 p-3 px-4 border-0"
+					  type="button"
+					>
+					  <i class="fa fa-arrow-right"></i>
+					</button>
+				  </span>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-3">
+			  <div class="join_1l">
+				<img src="img/44.jpg" class="w-100" alt="abc" />
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+	</div>
+	<div class="main_footer2">
+	  <section id="footer" class="p_3 bg_black">
+		<div class="container-xl">
+		  <div class="row footer_1">
+			<div class="col-md-3">
+			  <div class="footer_1l">
+				<h3 class="mb-3">
+				  <a class="text-white" href="index.html"
+					><i class="fa fa-plane-arrival col_green"></i> Tour
+					<span class="col_yellow">Booking</span>
+				  </a>
+				</h3>
+				<h2 class="text-light">Bạn muốn tham khảo các gói tour?</h2>
+				<h6 class="mb-0 mt-4">
+				  <a class="button" href="#">Đặt tour</a>
+				</h6>
+			  </div>
+			</div>
+			<div class="col-md-3">
+			  <div class="footer_1l">
+				<h5 class="text-white mt-1 mb-3">Liên kết</h5>
+				<div class="row footer_3ism">
+				  <h6 class="col-md-12 col-6">
+					<i
+					  class="fa fa-circle col_green me-1 font_8 align-middle"
+					></i>
+					<a class="text-white-50 a_tag" href="#"> Giới thiệu</a>
+				  </h6>
+				  <h6 class="col-md-12 col-6 mt-2">
+					<i
+					  class="fa fa-circle col_green me-1 font_8 align-middle"
+					></i>
+					<a class="text-white-50 a_tag" href="#"> Điểm đến</a>
+				  </h6>
+				  <h6 class="col-md-12 col-6 mt-2">
+					<i
+					  class="fa fa-circle col_green me-1 font_8 align-middle"
+					></i>
+					<a class="text-white-50 a_tag" href="#">Các gói tour</a>
+				  </h6>
+				  <h6 class="col-md-12 col-6 mt-2">
+					<i
+					  class="fa fa-circle col_green me-1 font_8 align-middle"
+					></i>
+					<a class="text-white-50 a_tag" href="#">
+					  Chính sách và quyền riêng tư</a
+					>
+				  </h6>
+				  <h6 class="col-md-12 col-6 mt-2">
+					<i
+					  class="fa fa-circle col_green me-1 font_8 align-middle"
+					></i>
+					<a class="text-white-50 a_tag" href="#"> Bài viết</a>
+				  </h6>
+				  <h6 class="col-md-12 col-6 mt-2 mb-0">
+					<i
+					  class="fa fa-circle col_green me-1 font_8 align-middle"
+					></i>
+					<a class="text-white-50 a_tag" href="#"> Liên hệ</a>
+				  </h6>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-3">
+			  <div class="footer_1l">
+				<h5 class="text-white mt-1 mb-3">
+				  <i class="fa fa-phone col_yellow me-1"></i> Số điện thoại
+				</h5>
+				<h6>
+				  <a class="text-white-50 a_tag1" href="#"
+					>+999-888 123 456</a
+				  >
+				</h6>
+				<h5 class="text-white mt-4 mb-3">
+				  <i class="fa fa-location-arrow col_yellow me-1"></i> EMail
+				</h5>
+				<h6>
+				  <a class="text-white-50 a_tag1" href="#"
+					>info@bookingtour.com</a
+				  >
+				</h6>
+				<h5 class="text-white mt-4 mb-3">
+				  <i class="fa fa-map-marker col_yellow me-1"></i> Địa chỉ
+				</h5>
+				<p class="mb-0">
+				  <a class="text-white-50 a_tag1" href="#"
+					>139 Đ. Phú Thọ Hòa, P.Phú Thọ Hoà, Tân Phú, Hồ Chí Minh
+				  </a>
+				</p>
+			  </div>
+			</div>
+			<div class="col-md-3">
+			  <div class="footer_1l top_1r">
+				<h5 class="text-white mt-1 mb-3">Lời cam kết</h5>
+				<p class="text-white-50">
+				  Chúng tôi cam kết mọi thông tin, hình ảnh sẽ được cung cấp
+				  một cách trung thực, chính xác, mang đến trải nghiệm độc đáo
+				  mà chúng tôi mang lại.
+				</p>
+				<h5 class="text-white mt-4 mb-3">Mạng Xã Hội</h5>
+				<ul class="mb-0">
+				  <li class="d-inline-block">
+					<a class="d-block text-center rounded-circle" href="#"
+					  ><i class="fa-brands fa-facebook"></i
+					></a>
+				  </li>
+				  <li class="d-inline-block ms-2">
+					<a class="d-block text-center rounded-circle" href="#"
+					  ><i class="fa-brands fa-twitter"></i
+					></a>
+				  </li>
+				  <li class="d-inline-block ms-2">
+					<a class="d-block text-center rounded-circle" href="#"
+					  ><i class="fa-brands fa-pinterest"></i
+					></a>
+				  </li>
+				  <li class="d-inline-block ms-2">
+					<a class="d-block text-center rounded-circle" href="#"
+					  ><i class="fa-brands fa-instagram"></i
+					></a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		  <hr class="line_1" />
+		  <div class="row footer_2">
+			<div class="col-md-8">
+			  <div class="footer_2l">
+				<p class="mb-0 text-white-50">
+				  © 2024 TourBooking. All Rights Reserved | Design by:
+				  <a
+					class="col_green fw-bold"
+					href="http://127.0.0.1:5500/gallery.html"
+					>Công ty TNHH Tour Booking
+				  </a>
+				</p>
+			  </div>
+			</div>
+			<div class="col-md-4">
+			  <div class="footer_2r text-end">
+				<ul class="mb-0">
+				  <li class="d-inline-block">
+					<a class="text-white-50 a_tag" href="#"
+					  >Chính sách bảo mật</a
+					>
+				  </li>
+				  <li class="d-inline-block ms-2">
+					<i
+					  class="fa fa-circle col_green me-1 font_8 align-middle"
+					></i>
+					<a class="text-white-50 a_tag" href="#"
+					  >Điều khoản & Chính sách</a
+					>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+	</div>
+  </div>
+
+<script src="js/common.js"></script>
+
+</body>
+
+
+</html>
