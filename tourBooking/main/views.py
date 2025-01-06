@@ -84,4 +84,11 @@ def gallery(request):
 
 # Trang tour du lịch
 def tour(request):
-    return render(request, 'tour.html')  # Trả về tour.htmlgit remote add origin https://github.com/TanDat-ttd/WebDatTourDuLich.git
+    return render(request, 'tour.html')  # Trả về tour.html
+
+
+def login(request):
+    return render(request, 'login.html')
+
+def register(request):
+    return render(request, 'register.html')

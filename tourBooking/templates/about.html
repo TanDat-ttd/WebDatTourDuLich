@@ -51,7 +51,7 @@
 	   <section id="header">
 	   <nav class="navbar navbar-expand-md navbar-light px_4" id="navbar_sticky">
 		 <div class="container-fluid">
-		   <a class="navbar-brand  p-0 fw-bold" href="index.html"><i class="fa fa-plane-arrival col_green"></i> <span class="col_yellow">Đặt Tour Ngay</span> </a>
+		   <a class="navbar-brand  p-0 fw-bold" href="{% url 'index' %}"><i class="fa fa-plane-arrival col_green"></i> <span class="col_yellow">Đặt Tour Ngay</span> </a>
 		   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			 <span class="navbar-toggler-icon"></span>
 		   </button>
@@ -59,18 +59,18 @@
 			  <ul class="navbar-nav mb-0 ms-auto nav_1">
 			   
 			   <li class="nav-item">
-				 <a class="nav-link" aria-current="page" href="index.html">Trang chủ</a>
+				 <a class="nav-link" aria-current="page" href="{% url 'index' %}">Trang chủ</a>
 			   </li>
 				
 			   <li class="nav-item">
-				 <a class="nav-link active" href="about.html">Giới thiệu </a>
+				 <a class="nav-link active" href="{% url 'about' %}">Giới thiệu </a>
 			   </li>
 			   
 			   <li class="nav-item">
-				<a class="nav-link" href="tour.html"> Tour</a>
+				<a class="nav-link" href="{% url 'tour' %}"> Tour</a>
 			  </li>
 			   <li class="nav-item">
-				   <a class="nav-link" href="destination.html"> Điểm đến </a>
+				   <a class="nav-link" href="{% url 'destination' %}"> Điểm đến </a>
 				 </li>
 			   
 			   <li class="nav-item dropdown">
@@ -78,8 +78,8 @@
 				   Blog
 				 </a>
 				 <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
-				   <li><a class="dropdown-item" href="blog.html"> Blog</a></li>
-				   <li><a class="dropdown-item border-0" href="blog_detail.html"> Blog điểm đến</a></li>
+				   <li><a class="dropdown-item" href="{% url 'blog' %}"> Blog</a></li>
+				   <li><a class="dropdown-item border-0" href="{% url 'blog_detail' %}"> Blog điểm đến</a></li>
 				 </ul>
 			   </li>
 			   
@@ -88,18 +88,18 @@
 					Cộng đồng
 				 </a>
 				 <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
-				   <li><a class="dropdown-item" href="gallery.html"> Thư viện ảnh</a></li>
-				   <li><a class="dropdown-item border-0" href="faq.html"> Câu hỏi thường gặp</a></li>
+				   <li><a class="dropdown-item" href="{% url 'gallery' %}"> Thư viện ảnh</a></li>
+				   <li><a class="dropdown-item border-0" href="{% url 'faq' %}"> Câu hỏi thường gặp</a></li>
 				 </ul>
 			   </li>
 				   
 			   <li class="nav-item">
-				 <a class="nav-link" href="contact.html">Liên hệ</a>
+				 <a class="nav-link" href="{% url 'contact' %}">Liên hệ</a>
 			   </li>
 			 </ul>
 			 <ul class="navbar-nav mb-0 ms-auto nav_2">
 			   <li class="nav-item">
-				 <a class="nav-link fs-4" href="login.html"><i class="fa fa-user"></i></a>
+				 <a class="nav-link fs-4" href="{% url 'login' %}"><i class="fa fa-user"></i></a>
 			   </li>
 				   
 			   <li class="nav-item">
@@ -119,7 +119,7 @@
 	   <div class="row center_o1 text-center">
 		  <div class="col-md-12">
 			 <h1 class="text-white font_50">Giới thiệu</h1>
-			 <h6 class="col_green mb-0 mt-3 fw-bold"><a class="text-light" href="index.html"> Trang chủ</a> <span class="mx-2 text-white-50"><i class="fa fa-arrow-right"></i></span> Giới thiệu</h6>
+			 <h6 class="col_green mb-0 mt-3 fw-bold"><a class="text-light" href="{% url 'index' %}"> Trang chủ</a> <span class="mx-2 text-white-50"><i class="fa fa-arrow-right"></i></span> Giới thiệu</h6>
 		  </div>
 	   </div>
 	  </div>
@@ -456,21 +456,21 @@
 	    <div class="profile6il p-3 shadow_box rounded_1">
 		  <div class="profile6il1 position-relative">
 		   <div class="profile6il1i">
-		     <a href="destination_HaNoi.html"><img src="../static/img/21.png" alt="abc" class="w-100 rounded_1" width="280" height="300"></a>
+		     <a href="destination_HaNoi{% url '' %}"><img src="../static/img/21.png" alt="abc" class="w-100 rounded_1" width="280" height="300"></a>
 		</div>
 		   <div class="profile6il1i1 position-absolute top-0">
 		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 1 TUẦN</h6><br>
-			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="destination_HaNoi.html"><i class="fa fa-map-marker me-1 col_green"></i>Hà Nội</a></h6>
+			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="{% url 'destination_HaNoi' %}"><i class="fa fa-map-marker me-1 col_green"></i>Hà Nội</a></h6>
 		</div>
 		</div>
 		<div class="profile6il2 mt-3">
-		  <h5><a href="destination_HaNoi.html">Khám phá những khung cảnh thơ mộng và lung linh</a></h5>
+		  <h5><a href="destination_HaNoi{% url '' %}">Khám phá những khung cảnh thơ mộng và lung linh</a></h5>
 		  <ul class="font_12">
-		   <li class="d-inline-block me-1"><a href="destination_HaNoi.html">Phố Tạ Hiện</a></li>
+		   <li class="d-inline-block me-1"><a href="{% url 'destination_HaNoi' %}">Phố Tạ Hiện</a></li>
 		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
-		   <li class="d-inline-block me-1"><a href="destination_HaNoi.html">Tràng Tiền</a></li>
+		   <li class="d-inline-block me-1"><a href="{% url 'destination_HaNoi' %}">Tràng Tiền</a></li>
 		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
-		   <li class="d-inline-block me-1"><a href="destination_HaNoi.html">Nhà hát lớn Hà Nội</a></li>
+		   <li class="d-inline-block me-1"><a href="{% url 'destination_HaNoi' %}">Nhà hát lớn Hà Nội</a></li>
 		  </ul>
 		  <hr>
 		  <div class="profile6il2i row">
@@ -483,7 +483,7 @@
 			</div>
 			<div class="col-md-6">
 			  <div class="profile6il2ir text-end pt-2">
-			    <h6 class="mb-0"><a class="button px-2" href="destination_HaNoi.html">Đặt ngay <i class="fa fa-plane"></i></a></h6>
+			    <h6 class="mb-0"><a class="button px-2" href="{% url 'destination_HaNoi ' %}">Đặt ngay <i class="fa fa-plane"></i></a></h6>
 			  </div>
 			</div>
 		  </div>
@@ -548,36 +548,36 @@
       <div class="explore_1l">
 	    <ul class="nav nav-tabs mb-4 border-0 justify-content-center">
 <li class="nav-item d-inline-block">
-<a href="tour.html" data-bs-toggle="tab" aria-expanded="true" class="nav-link active">
+<a href="{% url 'tour' %}" data-bs-toggle="tab" aria-expanded="true" class="nav-link active">
 <span class="d-md-block"><i class="fa fa-zap"></i> <br> Nhanh chóng</span>
 </a>
 </li>
 
 <li class="nav-item d-inline-block">
-<a href="tour.html" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+<a href="{% url 'tour ' %}" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
 <span class="d-md-block"><i class="fa fa-plane-arrival"></i> <br>Thuận Tiện</span>
 </a>
 </li>
 <li class="nav-item d-inline-block">
-<a href="tour.html" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+<a href="{% url 'tour ' %}" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
 <span class="d-md-block"><i class="fa fa-jug-detergent"></i> <br> Giải trí</span>
 </a>
 </li>
 
 <li class="nav-item d-inline-block">
-<a href="tour.html" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+<a href="{% url 'tour ' %}" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
 <span class="d-md-block"><i class="fa fa-air-freshener"></i> <br> Trượt tuyết</span>
 </a>
 </li>
 
 <li class="nav-item d-inline-block">
-<a href="tour.html" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+<a href="{% url ' tour' %}" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
 <span class="d-md-block"><i class="fa fa-water-ladder"></i> <br> Cáp treo</span>
 </a>
 </li>
 
 <li class="nav-item d-inline-block">
-<a href="tour.html" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+<a href="{% url 'tour ' %}" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
 <span class="d-md-block"><i class="fa fa-swimmer"></i> <br> Bơi lội</span>
 </a>
 </li>
@@ -644,12 +644,12 @@
 	    <div class="explore_1rir pt-5">
 		  <div class="grid clearfix">
 			<figure class="effect-jazz mb-0">
-			<a href="tour.html"><img src="../static/img/34.png" class="w-100" alt="img25"></a>
+			<a href="tour{% url ' ' %}"><img src="../static/img/34.png" class="w-100" alt="img25"></a>
 			</figure>
 			</div>
 			<div class="grid clearfix mt-4">
 			<figure class="effect-jazz mb-0">
-			<a href="tour.html"><img src="../static/img/35.png" class="w-100" alt="img25"></a>
+			<a href="{% url ' tour' %}"><img src="../static/img/35.png" class="w-100" alt="img25"></a>
 			</figure>
 			</div>
 		</div>
@@ -904,7 +904,7 @@
   <div class="row footer_1">
     <div class="col-md-3">
 	  <div class="footer_1l">
-	    <h3 class="mb-3"><a class="text-white" href="index.html"><i class="fa fa-plane-arrival col_green"></i> Đặt <span class="col_yellow">Tour</span> </a></h3>
+	    <h3 class="mb-3"><a class="text-white" href="{% url ' index' %}"><i class="fa fa-plane-arrival col_green"></i> Đặt <span class="col_yellow">Tour</span> </a></h3>
 		<h2 class="text-light">Bạn muốn tham khảo các gói tour?</h2>
 		<h6 class="mb-0 mt-4"><a class="button" href="#">Đặt tour</a></h6>
 	  </div>

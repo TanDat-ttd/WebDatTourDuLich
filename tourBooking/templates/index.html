@@ -51,7 +51,7 @@
 <section id="header">
 <nav class="navbar navbar-expand-md navbar-light px_4" id="navbar_sticky">
   <div class="container-fluid">
-    <a class="navbar-brand  p-0 fw-bold" href="index.html"><i class="fa fa-plane-arrival col_green"></i> <span class="col_yellow">Đặt Tour Ngay</span> </a>
+    <a class="navbar-brand  p-0 fw-bold" href="{% url 'index' %}"><i class="fa fa-plane-arrival col_green"></i> <span class="col_yellow">Đặt Tour Ngay</span> </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -59,18 +59,18 @@
 	   <ul class="navbar-nav mb-0 ms-auto nav_1">
 	    
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Trang chủ</a>
+          <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Trang chủ</a>
         </li>
-		 
-		<li class="nav-item">
-          <a class="nav-link" href="about.html">Giới thiệu </a>
-        </li>
+
+		   <li class="nav-item">
+			   <a class="nav-link" href="{% url 'about' %}">Giới thiệu </a>
+		   </li>
 		
 		<li class="nav-item">
-			<a class="nav-link" href="tour.html"> Tour</a>
+			<a class="nav-link" href="{% url 'tour' %}"> Tour</a>
 		  </li>
 		<li class="nav-item">
-			<a class="nav-link" href="destination.html"> Điểm đến </a>
+			<a class="nav-link" href="{% url 'destination' %}"> Điểm đến </a>
 		  </li>
 		
 		<li class="nav-item dropdown">
@@ -78,8 +78,8 @@
             Blog
           </a>
           <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="blog.html"> Blog</a></li>
-            <li><a class="dropdown-item border-0" href="blog_detail.html"> Blog điểm đến</a></li>
+            <li><a class="dropdown-item" href="{% url 'blog' %}"> Blog</a></li>
+            <li><a class="dropdown-item border-0" href="{% url 'blog_detail' %}"> Blog điểm đến</a></li>
           </ul>
         </li>
 		
@@ -88,18 +88,18 @@
             Cộng đồng
           </a>
           <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
-		    <li><a class="dropdown-item" href="gallery.html"> Thư viện ảnh</a></li>
-			<li><a class="dropdown-item border-0" href="faq.html"> Câu hỏi thường gặp</a></li>
+		    <li><a class="dropdown-item" href="{% url 'gallery' %}"> Thư viện ảnh</a></li>
+			<li><a class="dropdown-item border-0" href="{% url 'faq' %}"> Câu hỏi thường gặp</a></li>
           </ul>
         </li>
 			
 		<li class="nav-item">
-          <a class="nav-link" href="contact.html">Liên hệ</a>
+          <a class="nav-link" href="{% url 'contact' %}">Liên hệ</a>
         </li>
       </ul>
       <ul class="navbar-nav mb-0 ms-auto nav_2">
 	    <li class="nav-item">
-          <a class="nav-link fs-4" href="login.html"><i class="fa fa-user"></i></a>
+          <a class="nav-link fs-4" href="{% url 'login' %}"><i class="fa fa-user"></i></a>
         </li>
 		    
 		<li class="nav-item">
@@ -3863,7 +3863,7 @@ before 48 hours</h6>
 	<div class="row footer_1">
 	  <div class="col-md-3">
 		<div class="footer_1l">
-		  <h3 class="mb-3"><a class="text-white" href="index.html"><i class="fa fa-plane-arrival col_green"></i> Đặt <span class="col_yellow">Tour</span> </a></h3>
+		  <h3 class="mb-3"><a class="text-white" href="{% url 'index' %}"><i class="fa fa-plane-arrival col_green"></i> Đặt <span class="col_yellow">Tour</span> </a></h3>
 		  <h2 class="text-light">Bạn muốn tham khảo các gói tour?</h2>
 		  <h6 class="mb-0 mt-4"><a class="button" href="#">Đặt tour</a></h6>
 		</div>
