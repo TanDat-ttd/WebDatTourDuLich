@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Đặt tour</title>
+	<link href="../static/css/bootstrap.min.css" rel="stylesheet" >
+	 <link href="../static/fonts/css/fontawesome.min.css" rel="stylesheet" >
+	<link href="../static/fonts/css/brands.min.css" rel="stylesheet" />
+    <link href="../static/fonts/css/solid.min.css" rel="stylesheet" />
+	<link href="../static/css/global.css" rel="stylesheet">
+	<link href="../static/css/about.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="../static/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+
+	<section id="top" class="bg_black pt-2 pb-2">
+		<div class="container-xl">
+		 <div class="row top_1">
+		  <div class="col-md-3">
+			<div class="top_1l">
+			  <span class="d-inline-block col_green fs-1 lh-1 me-1"><i class="fa fa-location-arrow"></i></span>
+			  <h6 class="mb-0 text-white d-inline-block fw-bold font_14">Email: <br>
+	   <a class="col_green a_tag1 fs-6" href="#">info@gmail.com</a></h6>
+			</div>
+		  </div>
+		  <div class="col-md-6">
+			<div class="top_1m text-center">
+			  <p class="mb-0 text-light">Giảm giá 50% cho chuyến đi tiếp theo của bạn. Nhanh tay đặt tour mới! <a class="col_green a_tag1" href="#"> Đặt Tour Ngay</a></p>
+			</div>
+		  </div>
+		  <div class="col-md-3">
+			<div class="top_1r text-end">
+			 <ul class="mb-0">
+			   <li class="d-inline-block"><a class="d-block text-center rounded-circle" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+			   <li class="d-inline-block ms-2"><a class="d-block text-center rounded-circle" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+			   <li class="d-inline-block ms-2"><a class="d-block text-center rounded-circle" href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+			   <li class="d-inline-block ms-2"><a class="d-block text-center rounded-circle" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+			 </ul>
+			</div>
+		  </div>
+		 </div>
+		</div>
+	   </section>
+	   
+	   <section id="header">
+	   <nav class="navbar navbar-expand-md navbar-light px_4" id="navbar_sticky">
+		 <div class="container-fluid">
+		   <a class="navbar-brand  p-0 fw-bold" href="{% url 'index' %}"><i class="fa fa-plane-arrival col_green"></i> <span class="col_yellow">Đặt Tour Ngay</span> </a>
+		   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			 <span class="navbar-toggler-icon"></span>
+		   </button>
+		   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav mb-0 ms-auto nav_1">
+			   
+			   <li class="nav-item">
+				 <a class="nav-link" aria-current="page" href="{% url 'index' %}">Trang chủ</a>
+			   </li>
+				
+			   <li class="nav-item">
+				 <a class="nav-link active" href="{% url 'about' %}">Giới thiệu </a>
+			   </li>
+			   
+			   <li class="nav-item">
+				<a class="nav-link" href="{% url 'tour' %}"> Tour</a>
+			  </li>
+			   <li class="nav-item">
+				   <a class="nav-link" href="{% url 'destination' %}"> Điểm đến </a>
+				 </li>
+			   
+			   <li class="nav-item dropdown">
+				 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				   Blog
+				 </a>
+				 <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+				   <li><a class="dropdown-item" href="{% url 'blog' %}"> Blog</a></li>
+				   <li><a class="dropdown-item border-0" href="{% url 'blog_detail' %}"> Blog điểm đến</a></li>
+				 </ul>
+			   </li>
+			   
+			   <li class="nav-item dropdown">
+				 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Cộng đồng
+				 </a>
+				 <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+				   <li><a class="dropdown-item" href="{% url 'gallery' %}"> Thư viện ảnh</a></li>
+				   <li><a class="dropdown-item border-0" href="{% url 'faq' %}"> Câu hỏi thường gặp</a></li>
+				 </ul>
+			   </li>
+				   
+			   <li class="nav-item">
+				 <a class="nav-link" href="{% url 'contact' %}">Liên hệ</a>
+			   </li>
+			 </ul>
+			 <ul class="navbar-nav mb-0 ms-auto nav_2">
+			   <li class="nav-item">
+				 <a class="nav-link fs-4" href="{% url 'login' %}"><i class="fa fa-user"></i></a>
+			   </li>
+				   
+			   <li class="nav-item">
+				 <a class="nav-link fs-4 drop_icon col_green" href="#"><i class="fa fa-phone"></i></a>
+			   </li>
+			   
+			   <li class="mb-0  d-inline-block fw-bold font_14 nav-item">Để biết thêm thông tin<br>
+	   <a class="col_green a_tag1 fs-5" href="#">+(000) 345 67 89</a></li>
+			 </ul>
+		   </div>
+		 </div>
+	   </nav>
+	   </section>
+	   <section id="center" class="center_about">
+		<div class="center_om bg_back">
+		  <div class="container-xl">
+	   <div class="row center_o1 text-center">
+		  <div class="col-md-12">
+			 <h1 class="text-white font_50">Giới thiệu</h1>
+			 <h6 class="col_green mb-0 mt-3 fw-bold"><a class="text-light" href="{% url 'index' %}"> Trang chủ</a> <span class="mx-2 text-white-50"><i class="fa fa-arrow-right"></i></span> Giới thiệu</h6>
+		  </div>
+	   </div>
+	  </div>
+		</div>   
+	  </section>
+<section id="about_pg" class="p_3">
+ <div class="container-xl">
+   <div class="row about_pg1">
+    <div class="col-md-6">
+	  <div class="about_pg1l">
+	    <h5 class="family_1 icon_tag col_green"><i class="fa fa-leaf me-1"></i> Về chúng tôi <i class="fa fa-leaf ms-1"></i></h5>
+		<h1 class="font_50 mt-3">Cung cấp cơ sở du lịch tốt nhất. </h1>
+		<p>Hứa hẹn mang lại những trải nghiệm tuyệt vời nhất cho chuyến du lịch của bạn.</p>
+		<div class="about_pg1li row">
+			<div class="col-md-6 col-sm-6">
+				<div class="about_pg1lil bg_light rounded_1 p-3">
+				  <div class="row about_pg1lili">
+				   <div class="col-md-3">
+					 <div class="about_pg1lilil">
+					   <span class="bg-white text-center fs-2 col_green rounded-circle d-inline-block"><i class="fa fa-user-graduate"></i></span>
+					 </div>
+				   </div>
+				   <div class="col-md-9">
+					 <div class="about_pg1lilir">
+					   <h5 class="mb-0">An toàn là trên hết</h5>
+					 </div>
+				   </div>
+				  </div>
+				</div>
+			  </div>
+		  <div class="col-md-6 col-sm-6">
+		    <div class="about_pg1lil bg_light1 rounded_1 p-3 about_pg1lilo">
+			  <div class="row about_pg1lili">
+			   <div class="col-md-3">
+			     <div class="about_pg1lilil">
+				   <span class="bg-white text-center fs-4 col_green rounded-circle d-inline-block"><i class="fa fa-user-plus"></i></span>
+				 </div>
+			   </div>
+			   <div class="col-md-9">
+			     <div class="about_pg1lilir">
+				   <h5 class="mb-0">Hướng dẫn du lịch đáng tin cậy</h5>
+				 </div>
+			   </div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="about_pg1li row mt-4">
+		  <div class="col-md-6 col-sm-6">
+		    <div class="about_pg1lil bg_light1 rounded_1 p-3 about_pg1lilo">
+			  <div class="row about_pg1lili">
+			   <div class="col-md-3">
+			     <div class="about_pg1lilil">
+				   <span class="bg-white text-center fs-2 col_green rounded-circle d-inline-block"><i class="fa fa-calendar"></i></span>
+				 </div>
+			   </div>
+			   <div class="col-md-9">
+			     <div class="about_pg1lilir">
+				   <h5 class="mb-0">Tiết kiệm thời gian</h5>
+				 </div>
+			   </div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-md-6 col-sm-6">
+		    <div class="about_pg1lil bg_light rounded_1 p-3">
+			  <div class="row about_pg1lili">
+			   <div class="col-md-3">
+			     <div class="about_pg1lilil">
+				   <span class="bg-white text-center fs-2 col_green rounded-circle d-inline-block"><i class="fa fa-user-graduate"></i></span>
+				 </div>
+			   </div>
+			   <div class="col-md-9">
+			     <div class="about_pg1lilir">
+				   <h5 class="mb-0">Chuyên môn và kinh nghiệm</h5>
+				 </div>
+			   </div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="explore_1rili row mt-4">
+		 <div class="col-md-6">
+		   <div class="explore_1rilil">
+		        <h6 class="mb-0"><a class="button" href="#">Tìm hiểu thêm</a></h6>
+		   </div>
+		 </div>
+		 <div class="col-md-6">
+		   <div class="explore_1rilir">
+		     <h5 class="mb-0 fs-6"><a href="#"><i class="fa fa-play-circle font_50 me-1 align-middle col_yellow"></i> Xem Tour</a></h5>
+		   </div>
+		 </div>
+		</div>
+	  </div>
+	</div>
+	<div class="col-md-6">
+	  <div class="about_pg1r position-relative">
+	    <div class="about_pg1ri">
+		  <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="#"><img src="../static/img/54.png" class="w-100" alt="abc"></a>
+				  </figure>
+			  </div>
+		</div>
+		<div class="about_pg1ri1  position-absolute bottom-0 text-end w-100">
+		  <h5 class="mb-0 text-white rounded_1 p-3 bg_green d-inline-block"><span class="fs-1 align-middle">05</span> năm kinh nghiệm</h5>
+		</div>
+	  </div>
+	</div>
+   </div>
+    <div class="row about_pg2 mt-5 pt-4 pb-4">
+	  <div class="col-md-3 col-sm-6">
+	    <div class="about_pg2i">
+		  <div class="about_pg2i1 row">
+		     <div class="col-md-3">
+			  <div class="about_pg2i1l">
+			    <span class="col_green font_50 lh-1"><i class="fa fa-user"></i></span>
+			  </div>
+			 </div>
+			 <div class="col-md-9">
+			  <div class="about_pg2i1r">
+			    <h3 class="mb-1">0.4k+</h3>
+				<h6 class="mb-0">Hài lòng</h6>
+			  </div>
+			 </div>
+		  </div>
+		</div>
+	  </div>
+	  <div class="col-md-3 col-sm-6">
+	    <div class="about_pg2i">
+		  <div class="about_pg2i1 row">
+		     <div class="col-md-3">
+			  <div class="about_pg2i1l">
+			    <span class="col_green font_50 lh-1"><i class="fa fa-key"></i></span>
+			  </div>
+			 </div>
+			 <div class="col-md-9">
+			  <div class="about_pg2i1r">
+			    <h3 class="mb-1">0.6k+</h3>
+				<h6 class="mb-0">Thành công</h6>
+			  </div>
+			 </div>
+		  </div>
+		</div>
+	  </div>
+	  <div class="col-md-3 col-sm-6">
+	    <div class="about_pg2i">
+		  <div class="about_pg2i1 row">
+		     <div class="col-md-3">
+			  <div class="about_pg2i1l">
+			    <span class="col_green font_50 lh-1"><i class="fa fa-thumbs-up"></i></span>
+			  </div>
+			 </div>
+			 <div class="col-md-9">
+			  <div class="about_pg2i1r">
+			    <h3 class="mb-1">32%</h3>
+				<h6 class="mb-0">Đánh giá</h6>
+			  </div>
+			 </div>
+		  </div>
+		</div>
+	  </div>
+	  <div class="col-md-3 col-sm-6">
+	    <div class="about_pg2i border-end-0">
+		  <div class="about_pg2i1 row">
+		     <div class="col-md-3">
+			  <div class="about_pg2i1l">
+			    <span class="col_green font_50 lh-1"><i class="fa fa-user-graduate"></i></span>
+			  </div>
+			 </div>
+			 <div class="col-md-9">
+			  <div class="about_pg2i1r">
+			    <h3 class="mb-1">6</h3>
+				<h6 class="mb-0">Hướng dẫn viên</h6>
+			  </div>
+			 </div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<div class="row about_pg3 mt-4 text-center">
+	  <div class="col-md-12">
+	    <p class="mb-0"><span class="fw-bold">Tuyệt vời!</span>
+<span class="fw-bold ms-2">5.0</span> Đánh giá dựa trên <a href="#"><span class="fw-bold">225353</span> phản hồi</a> <span class="ms-2 fw-bold"><i class="fa fa-umbrella  col_green"></i> người dùng</span></p>
+	  </div>
+	</div>
+ </div>
+</section>
+
+<section id="choose" class="p_3">
+ <div class="container-xl">
+  <div class="row vacation_1 text-center mb-4">
+    <div class="col-md-12">
+	  <h5 class="family_1 icon_tag col_green"><i class="fa fa-leaf me-1"></i> Chúng tôi là ai <i class="fa fa-leaf ms-1"></i></h5>
+		<h1 class="font_50 mt-3 mb-0">Tại sao nên chọn đặt tour</h1>
+	</div>
+  </div>
+  <div class="row choose_1">
+    <div class="col-md-4">
+     <div class="choose_1l p-4 px-3 bg_light border_1 rounded_1">
+	   <div class="choose_1li row">
+	      <div class="col-md-4">
+		    <div class="choose_1lil">
+			  <span class="d-inline-block bg_light1 text-center rounded-circle text-center"><i class="fa fa-globe"></i></span>
+			</div>
+		  </div>
+		  <div class="col-md-8">
+		    <div class="choose_1lir">
+			 <h5>Phủ sóng toàn quốc</h5>
+			 <p class="mb-0">Cung cấp dịch vụ ở hầu hết các địa điểm du lịch nổi tiếng.</p>
+			</div>
+		  </div>
+	 </div>
+	 </div>
+	</div>
+	<div class="col-md-4">
+     <div class="choose_1l p-4 px-3 bg_light1 border_1 rounded_1">
+	   <div class="choose_1li row">
+	      <div class="col-md-4">
+		    <div class="choose_1lil">
+			  <span class="d-inline-block bg_light text-center rounded-circle text-center"><i class="fa fa-dollar"></i></span>
+			</div>
+		  </div>
+		  <div class="col-md-8">
+		    <div class="choose_1lir">
+			 <h5>Giá cả cạnh tranh</h5>
+			 <p class="mb-0">Mang lại giá trị tốt nhất cho ngân sách của bạn.</p>
+			</div>
+		  </div>
+	 </div>
+	 </div>
+	</div>
+	<div class="col-md-4">
+     <div class="choose_1l p-4 px-3 bg_light border_1 rounded_1">
+	   <div class="choose_1li row">
+	      <div class="col-md-4">
+		    <div class="choose_1lil">
+			  <span class="d-inline-block bg_light1 text-center rounded-circle text-center"><i class="fa fa-calendar"></i></span>
+			</div>
+		  </div>
+		  <div class="col-md-8">
+		    <div class="choose_1lir">
+			 <h5>Đặt chỗ nhanh</h5>
+			 <p class="mb-0">Đặt tour nhanh chóng chỉ với vài bước đơn giản, tiết kiệm thời gian.</p>
+			</div>
+		  </div>
+	 </div>
+	 </div>
+	</div>
+  </div>
+  <div class="row choose_1 mt-4">
+    <div class="col-md-4">
+     <div class="choose_1l p-4 px-3 bg_light border_1 rounded_1">
+	   <div class="choose_1li row">
+	      <div class="col-md-4">
+		    <div class="choose_1lil">
+			  <span class="d-inline-block bg_light1 text-center rounded-circle text-center"><i class="fa fa-user-plus"></i></span>
+			</div>
+		  </div>
+		  <div class="col-md-8">
+		    <div class="choose_1lir">
+			 <h5>Tour có hướng dẫn</h5>
+			 <p class="mb-0">Cung cấp các tour có chuyên gia hướng dẫn chuyên nghiệp, giúp bạn trải nghiệm.</p>
+			</div>
+		  </div>
+	 </div>
+	 </div>
+	</div>
+	<div class="col-md-4">
+     <div class="choose_1l p-4 px-3 bg_light1 border_1 rounded_1">
+	   <div class="choose_1li row">
+	      <div class="col-md-4">
+		    <div class="choose_1lil">
+			  <span class="d-inline-block bg_light text-center rounded-circle text-center"><i class="fa fa-phone"></i></span>
+			</div>
+		  </div>
+		  <div class="col-md-8">
+		    <div class="choose_1lir">
+			 <h5>Hỗ trợ tốt nhất 24/7</h5>
+			 <p class="mb-0">Hỗ trợ khách hàng mọi lúc, mọi nơi với đội ngũ tận tâm.</p>
+			</div>
+		  </div>
+	 </div>
+	 </div>
+	</div>
+	<div class="col-md-4">
+     <div class="choose_1l p-4 px-3 bg_light border_1 rounded_1">
+	   <div class="choose_1li row">
+	      <div class="col-md-4">
+		    <div class="choose_1lil">
+			  <span class="d-inline-block bg_light1 text-center rounded-circle text-center"><i class="fa fa-recycle"></i></span>
+			</div>
+		  </div>
+		  <div class="col-md-8">
+		    <div class="choose_1lir">
+			 <h5>Sự linh hoạt tối đa</h5>
+			 <p class="mb-0">Lịch trình linh hoạt, dễ dàng tùy chỉnh theo nhu cầu cá nhân.
+			</p>
+			</div>
+		  </div>
+	 </div>
+	 </div>
+	</div>
+  </div>
+ </div>
+</section>
+
+<section id="offer_pg" class="p_3">
+ <div class="container-fluid">
+   <div class="offer_pg1 row">
+    <div class="col-md-12 col-lg-6">
+	 <div class="offer_pg1l">
+	   <div class="offer_1l position-relative">
+	    <div class="offer_1li">
+	      <div class="grid clearfix">
+			<figure class="effect-jazz mb-0">
+			<a href="#"><img src="../static/img/52.png" class="w-100" alt="img25" widht="450" height="600"></a>
+			</figure>
+			</div>
+	  </div>
+	  <div class="offer_1li1 position-absolute p-4 px-3 bottom-0 w-100 text-center">
+	      <h5 class="family_1 text-white">Tiết kiệm trên toàn quốc</h5>
+		  <h4 class="text-white">Giảm tới <span class="col_yellow fs-2">40%</span> Off</h4>
+		  <h6 class="text-white">Với 5 địa điểm nổi tiếng</h6>
+		  <h6 class="mb-0 mt-3"><a class="button_1" href="#">Đặt ngay</a></h6>
+	  </div>
+	  </div>
+	 </div>
+	</div>
+	<div class="col-md-12 col-lg-6">
+	 <div class="offer_pg1r">
+	   <div class="profile6i row">
+	  <div class="col-md-6">
+	    <div class="profile6il p-3 shadow_box rounded_1">
+		  <div class="profile6il1 position-relative">
+		   <div class="profile6il1i">
+		     <a href="destination_HaNoi{% url '' %}"><img src="../static/img/21.png" alt="abc" class="w-100 rounded_1" width="280" height="300"></a>
+		</div>
+		   <div class="profile6il1i1 position-absolute top-0">
+		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 1 TUẦN</h6><br>
+			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="{% url 'destination_HaNoi' %}"><i class="fa fa-map-marker me-1 col_green"></i>Hà Nội</a></h6>
+		</div>
+		</div>
+		<div class="profile6il2 mt-3">
+		  <h5><a href="destination_HaNoi{% url '' %}">Khám phá những khung cảnh thơ mộng và lung linh</a></h5>
+		  <ul class="font_12">
+		   <li class="d-inline-block me-1"><a href="{% url 'destination_HaNoi' %}">Phố Tạ Hiện</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="{% url 'destination_HaNoi' %}">Tràng Tiền</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="{% url 'destination_HaNoi' %}">Nhà hát lớn Hà Nội</a></li>
+		  </ul>
+		  <hr>
+		  <div class="profile6il2i row">
+		    <div class="col-md-6">
+			  <div class="profile6il2il">
+			    <h6 class="font_14 mb-0">Giảm còn:<br>
+<span class="fw-bold"><span class="fs-4 col_green">2.400.000Đ</span> <span class="text-decoration-line-through text-muted">4.000.000Đ</span></span><br>
+<span class="font_12">Bao gồm thuế/phí</span></h6>
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <div class="profile6il2ir text-end pt-2">
+			    <h6 class="mb-0"><a class="button px-2" href="{% url 'destination_HaNoi ' %}">Đặt ngay <i class="fa fa-plane"></i></a></h6>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		</div>
+	  </div>
+	  <div class="col-md-6">
+	    <div class="profile6il p-3 shadow_box rounded_1">
+		  <div class="profile6il1 position-relative">
+		   <div class="profile6il1i">
+		    <a href="#"><img src="../static/img/22.png" alt="abc" class="w-100 rounded_1" width="280" height="300"></a>
+		</div>
+		   <div class="profile6il1i1 position-absolute top-0">
+		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 2 NGÀY / 3 ĐÊM</h6><br>
+			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> Đà Nẵng</a></h6>
+		</div>
+		</div>
+		<div class="profile6il2 mt-3">
+		  <h5><a href="#">Tìm về một chút nhẹ nhàng lãng mạng.</a></h5>
+		  <ul class="font_12">
+		   <li class="d-inline-block me-1"><a href="#">Cầu khóa tình yêu</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">Bà Nà Hills</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+		   <li class="d-inline-block me-1"><a href="#">Thuận Phước Field</a></li>
+		  </ul>
+		  <hr>
+		  <div class="profile6il2i row">
+		    <div class="col-md-6">
+			  <div class="profile6il2il">
+			    <h6 class="font_14 mb-0">Giảm còn:<br>
+<span class="fw-bold"><span class="fs-4 col_green">1.600.000Đ</span> <span class="text-decoration-line-through text-muted">2.700.000Đ</span></span><br>
+<span class="font_12">Bao gồm thuế/phí</span></h6>
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <div class="profile6il2ir text-end pt-2">
+			    <h6 class="mb-0"><a class="button px-2" href="#">Đặt ngay <i class="fa fa-plane"></i></a></h6>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		</div>
+	  </div>
+	</div>
+	</div>
+	</div>
+   </div>
+ </div>
+</section>
+
+<section id="explore" class="p_3">
+ <div class="container-xl">
+  <div class="row vacation_1 text-center mb-4">
+    <div class="col-md-12">
+	  <h5 class="family_1 icon_tag col_green"><i class="fa fa-leaf me-1"></i> Bạn đã sẵn sàng? <i class="fa fa-leaf ms-1"></i></h5>
+		<h1 class="font_50 mt-3 mb-0">KHÁM PHÁ CÁC HOẠT ĐỘNG CỦA BẠN</h1>
+	</div>
+  </div>
+<div class="row explore_1">
+    <div class="col-md-5">
+      <div class="explore_1l">
+	    <ul class="nav nav-tabs mb-4 border-0 justify-content-center">
+<li class="nav-item d-inline-block">
+<a href="{% url 'tour' %}" data-bs-toggle="tab" aria-expanded="true" class="nav-link active">
+<span class="d-md-block"><i class="fa fa-zap"></i> <br> Nhanh chóng</span>
+</a>
+</li>
+
+<li class="nav-item d-inline-block">
+<a href="{% url 'tour ' %}" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+<span class="d-md-block"><i class="fa fa-plane-arrival"></i> <br>Thuận Tiện</span>
+</a>
+</li>
+<li class="nav-item d-inline-block">
+<a href="{% url 'tour ' %}" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+<span class="d-md-block"><i class="fa fa-jug-detergent"></i> <br> Giải trí</span>
+</a>
+</li>
+
+<li class="nav-item d-inline-block">
+<a href="{% url 'tour ' %}" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+<span class="d-md-block"><i class="fa fa-air-freshener"></i> <br> Trượt tuyết</span>
+</a>
+</li>
+
+<li class="nav-item d-inline-block">
+<a href="{% url ' tour' %}" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+<span class="d-md-block"><i class="fa fa-water-ladder"></i> <br> Cáp treo</span>
+</a>
+</li>
+
+<li class="nav-item d-inline-block">
+<a href="{% url 'tour ' %}" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+<span class="d-md-block"><i class="fa fa-swimmer"></i> <br> Bơi lội</span>
+</a>
+</li>
+</ul>
+	  </div>
+	</div>
+	<div class="col-md-7">
+      <div class="explore_1r">
+	    <div class="tab-content">
+<div class="tab-pane active" id="profile14">
+    <div class="explore_1ri row">
+	  <div class="col-md-8">
+	    <div class="explore_1ril">
+		  <h6 class="d-inline-block bg_yellow text-white p-2 px-4 fst-italic">Nhanh chóng</h6>
+		  <h2 class="mt-3">HÀNH TRÌNH KHÁM PHÁ MIỀN TRUNG</h2>
+		  <p class="mt-3">Tại nơi đây Quý khách có thể thỏa sức mình ngụp lặn trong làn nước biếc, nô giỡn với những con sóng và tắm nắng trên bãi cát trắng mịn.</p>
+		  <div class="faci_1li row mt-3">
+		 <div class="col-md-6">
+		   <div class="faci_1lil">
+		      <ul class="mb-0 fw-bold">
+			     <li><i class="fa fa-circle col_green font_10 me-1"></i> Địa điểm nổi tiếng</li>
+			  </ul>
+		   </div>
+		 </div>
+		 <div class="col-md-6">
+		   <div class="faci_1lil">
+		      <ul class="mb-0 fw-bold">
+		 <li><i class="fa fa-circle col_green font_10 me-1"></i> Dịch vụ tốt nhất</li>
+			  </ul>
+		   </div>
+		 </div>
+		</div>
+		<div class="faci_1li row mt-3">
+		 <div class="col-md-6">
+		   <div class="faci_1lil">
+		      <ul class="mb-0 fw-bold">
+			     <li><i class="fa fa-circle col_green font_10 me-1"></i> Khách sạn tiêu chuẩn</li>
+			  </ul>
+		   </div>
+		 </div>
+		 <div class="col-md-6">
+		   <div class="faci_1lil">
+		      <ul class="mb-0 fw-bold">
+		 <li><i class="fa fa-circle col_green font_10 me-1"></i> Ưu đãi lớn</li>
+			  </ul>
+		   </div>
+		 </div>
+		</div>
+		<div class="explore_1rili row mt-4">
+		 <div class="col-md-6">
+		   <div class="explore_1rilil">
+		        <h6 class="mb-0"><a class="button px-3" href="#">Tìm hiểu</a></h6>
+		   </div>
+		 </div>
+		 <div class="col-md-6">
+		   <div class="explore_1rilir">
+		     <h5 class="mb-0 fs-6"><a href="#"><i class="fa fa-play-circle font_50 me-1 align-middle col_yellow"></i> Xem giới thiệu</a></h5>
+		   </div>
+		 </div>
+		</div>
+		</div>
+	  </div>
+	  <div class="col-md-4">
+	    <div class="explore_1rir pt-5">
+		  <div class="grid clearfix">
+			<figure class="effect-jazz mb-0">
+			<a href="tour{% url ' ' %}"><img src="../static/img/34.png" class="w-100" alt="img25"></a>
+			</figure>
+			</div>
+			<div class="grid clearfix mt-4">
+			<figure class="effect-jazz mb-0">
+			<a href="{% url ' tour' %}"><img src="../static/img/35.png" class="w-100" alt="img25"></a>
+			</figure>
+			</div>
+		</div>
+	  </div>
+	</div>
+</div>
+</div>
+	  </div>
+	</div>
+  </div>
+ </div>
+</section>
+<section id="team" class="p_3">
+ <div class="container-xl">
+  <div class="row vacation_1 text-center mb-4">
+    <div class="col-md-12">
+	  <h5 class="family_1 icon_tag col_green"><i class="fa fa-leaf me-1"></i> Hướng dẫn viên <i class="fa fa-leaf ms-1"></i></h5>
+		<h1 class="font_50 mt-3 mb-0">Hướng dẫn viên du lịch của chúng tôi</h1>
+	</div>
+  </div>
+<div class="row team_1">
+    <div class="col-md-3 col-sm-6">
+      <div class="team_1l border_1">
+	    <div class="team_1l1 position-relative">
+	       <div class="team_1l1i p-4 bg_light1">
+	        <img src="../static/img/55.png" alt="abc" class="w-100 rounded-circle" width="300" height="300">
+	      </div>
+	       <div class="team_1l1i1 position-absolute top-0">
+	         <img src="../static/img/55.png" class="w-100" alt="abc" width="300" height="350">
+	  </div>
+	       <div class="team_1l1i2 bg_back pt-4 pb-4 px-3 position-absolute top-0">
+	          <ul class="mb-0">
+			    <li><a class="text-white a_tag1" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+				 <li class="mt-3"><a class="text-white a_tag1" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+				  <li class="mt-3"><a class="text-white a_tag1" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+				   <li class="mt-3"><a class="text-white a_tag1" href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+			  </ul>
+	  </div>
+	  </div>
+	    <div class="team_1l2  p-3 text-center">
+	      <h4>Ngô Quốc Bảo</h4>
+			  <h6 class="mb-0">Hướng dẫn viên</h6>
+	  </div>
+	  </div>
+	</div>
+	<div class="col-md-3 col-sm-6">
+      <div class="team_1l border_1">
+	    <div class="team_1l1 position-relative">
+	       <div class="team_1l1i p-4 bg_light1">
+	        <img src="../static/img/56.png" alt="abc" class="w-100 rounded-circle" width="300" height="300">
+	      </div>
+	       <div class="team_1l1i1 position-absolute top-0">
+	         <img src="../static/img/56.png" class="w-100" alt="abc" width="300" height="350">
+	  </div>
+	       <div class="team_1l1i2 bg_back pt-4 pb-4 px-3 position-absolute top-0">
+	          <ul class="mb-0">
+			    <li><a class="text-white a_tag1" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+				 <li class="mt-3"><a class="text-white a_tag1" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+				  <li class="mt-3"><a class="text-white a_tag1" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+				   <li class="mt-3"><a class="text-white a_tag1" href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+			  </ul>
+	  </div>
+	  </div>
+	    <div class="team_1l2  p-3 text-center">
+	      <h4>Phạm Thiên Hương</h4>
+			  <h6 class="mb-0">Hướng dẫn viên</h6>
+	  </div>
+	  </div>
+	</div>
+	<div class="col-md-3 col-sm-6">
+      <div class="team_1l border_1">
+	    <div class="team_1l1 position-relative">
+	       <div class="team_1l1i p-4 bg_light1">
+	        <img src="../static/img/57.png" alt="abc" class="w-100 rounded-circle" width="300" height="300">
+	      </div>
+	       <div class="team_1l1i1 position-absolute top-0">
+	         <img src="../static/img/57.png" class="w-100" alt="abc" width="300" height="350">
+	  </div>
+	       <div class="team_1l1i2 bg_back pt-4 pb-4 px-3 position-absolute top-0">
+	          <ul class="mb-0">
+			    <li><a class="text-white a_tag1" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+				 <li class="mt-3"><a class="text-white a_tag1" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+				  <li class="mt-3"><a class="text-white a_tag1" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+				   <li class="mt-3"><a class="text-white a_tag1" href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+			  </ul>
+	  </div>
+	  </div>
+	    <div class="team_1l2  p-3 text-center">
+	      <h4>Trương Hạo Nam</h4>
+			  <h6 class="mb-0">Hướng dẫn viên</h6>
+	  </div>
+	  </div>
+	</div>
+	<div class="col-md-3 col-sm-6">
+      <div class="team_1l border_1">
+	    <div class="team_1l1 position-relative">
+	       <div class="team_1l1i p-4 bg_light1">
+	        <img src="../static/img/58.png" alt="abc" class="w-100 rounded-circle" width="300" height="300">
+	      </div>
+	       <div class="team_1l1i1 position-absolute top-0">
+	         <img src="../static/img/58.png" class="w-100" alt="abc" width="300" height="350">
+	  </div>
+	       <div class="team_1l1i2 bg_back pt-4 pb-4 px-3 position-absolute top-0">
+	          <ul class="mb-0">
+			    <li><a class="text-white a_tag1" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+				 <li class="mt-3"><a class="text-white a_tag1" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+				  <li class="mt-3"><a class="text-white a_tag1" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+				   <li class="mt-3"><a class="text-white a_tag1" href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+			  </ul>
+	  </div>
+	  </div>
+	    <div class="team_1l2  p-3 text-center">
+	      <h4>Trần Quang Hùng</h4>
+			  <h6 class="mb-0">Hướng dẫn viên</h6>
+	  </div>
+	  </div>
+	</div>
+  </div>
+ </div>
+</section>
+
+<section id="artic" class="p_3">
+ <div class="container-fluid">
+  <div class="row vacation_1 text-center mb-4">
+    <div class="col-md-12">
+	  <h5 class="family_1 icon_tag col_green"><i class="fa fa-leaf me-1"></i> Tin tức <i class="fa fa-leaf ms-1"></i></h5>
+		<h1 class="font_50 mt-3 mb-0">Cập nhập tin tức</h1>
+	</div>
+  </div>
+<div class="row artic_1">
+    <div class="col-md-6">
+	  <div class="artic_1l position-relative">
+	    <div class="artic_1l1">
+		  <div class="blog_h1lil position-relative">
+		     <div class="blog_h1lili">
+			   <div class="grid clearfix">
+			<figure class="effect-jazz mb-0">
+			<a href="#"><img src="../static/img/2.png" class="w-100" alt="img25"></a>
+			</figure>
+			</div>
+			 </div>
+			 <div class="blog_h1lili1 position-absolute top-0 p-2">
+			     <h5 class="mb-0 d-inline-block bg_back rounded-circle text-center text-white"><span class="fw-normal fs-6">Tháng</span> 12 <br> </h5>
+			 </div>
+		   </div>
+		</div>
+		<div class="artic_1l2 shadow_box p-4 rounded_1 position-absolute bg-white">
+		  <div class="blog_h1lir">
+		     <div class="blog_h1li1">
+	      <ul class="font_14 fw-bold">
+		    
+			<li class="d-inline-block ms-2"><i class="fa fa-circle col_green me-1 font_8 align-middle"></i> <a class="text-muted a_tag" href="#">Hành trình</a></li>
+		  </ul>
+		  <h5><a href="#">Đến với Sapa: Thành phố trên mây</a></h5>
+		  <div class="blog_h1li1i row mt-3">
+		    <div class="col-md-4">
+			  <div class="blog_h1li1il">
+			    <h6 class="mb-0 fw-bold"><a class="a_tag1 col_green" href="#">Xem bài viết <i class="fa fa-arrow-circle-right ms-1 align-middle"></i></a></h6>
+			  </div>
+			</div>
+			<div class="col-md-8">
+			  <div class="blog_h1li1ir text-end">
+			     <h6 class="mb-0 font_14 text-muted"><i class="fa fa-fire col_green me-1 align-middle"></i> 1 </h6>
+			  </div>
+			</div>
+		  </div>
+	  </div>
+		   </div>
+		</div>
+	  </div>
+	</div>
+	<div class="col-md-6">
+	  <div class="artic_1l position-relative">
+	    <div class="artic_1l1">
+		  <div class="blog_h1lil position-relative">
+		     <div class="blog_h1lili">
+			   <div class="grid clearfix">
+			<figure class="effect-jazz mb-0">
+			<a href="#"><img src="../static/img/3.png" class="w-100" alt="img25"></a>
+			</figure>
+			</div>
+			 </div>
+			 <div class="blog_h1lili1 position-absolute top-0 p-2">
+			     <h5 class="mb-0 d-inline-block bg_back rounded-circle text-center text-white"><span class="fw-normal fs-6"> Tháng <br></span> 1  </h5>
+			 </div>
+		   </div>
+		</div>
+		<div class="artic_1l2 shadow_box p-4 rounded_1 position-absolute bg-white">
+		  <div class="blog_h1lir">
+		     <div class="blog_h1li1">
+	      <ul class="font_14 fw-bold">
+		    
+			<li class="d-inline-block ms-2"><i class="fa fa-circle col_green me-1 font_8 align-middle"></i> <a class="text-muted a_tag" href="#">Khám phá</a></li>
+		  </ul>
+		  <h5><a href="#">Cố Đô Huế: Tìm về cội nguồn lịch sử</a></h5>
+		  <div class="blog_h1li1i row mt-3">
+		    <div class="col-md-4">
+			  <div class="blog_h1li1il">
+			    <h6 class="mb-0 fw-bold"><a class="a_tag1 col_green" href="#">Xem bài viết <i class="fa fa-arrow-circle-right ms-1 align-middle"></i></a></h6>
+			  </div>
+			</div>
+			<div class="col-md-8">
+			  <div class="blog_h1li1ir text-end">
+			     <h6 class="mb-0 font_14 text-muted"><i class="fa fa-fire col_green me-1 align-middle"></i> 3</h6>
+			  </div>
+			</div>
+		  </div>
+	  </div>
+		   </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+ </div>
+</section>
+
+<div class="main_footer position-relative">
+  <div class="main_footer1 position-absolute w-100">
+    <section id="join" class="p_3">
+ <div class="container-xl">
+  <div class="row join_1 shadow_box pt-5 pb-5 mx-0 bg-white">
+    <div class="col-md-3">
+      <div class="join_1l">
+	   <img src="../static/img/44.jpg" class="w-100" alt="abc">
+	  </div>
+	</div>
+	<div class="col-md-6">
+      <div class="join_1m text-center">
+	     <h1>Tham gia</h1>
+		 <p>Để nhận các ưu đãi tốt nhất </p>
+		 <div class="input-group">
+				<input type="text" class="form-control rounded-0 font_14" placeholder="Email của bạn...">
+				<span class="input-group-btn">
+					<button class="btn btn-primary bg_green rounded-0 p-3 px-4  border-0" type="button">
+						<i class="fa fa-arrow-right"></i> </button>
+				</span>
+		</div>
+	  </div>
+	</div>
+	<div class="col-md-3">
+      <div class="join_1l">
+	    <img src="../static/img/44.jpg" class="w-100" alt="abc">
+	  </div>
+	</div>
+  </div>
+ </div>
+</section>
+  </div>
+  <div class="main_footer2">
+    <section id="footer" class="p_3 bg_black">
+ <div class="container-xl">
+  <div class="row footer_1">
+    <div class="col-md-3">
+	  <div class="footer_1l">
+	    <h3 class="mb-3"><a class="text-white" href="{% url ' index' %}"><i class="fa fa-plane-arrival col_green"></i> Đặt <span class="col_yellow">Tour</span> </a></h3>
+		<h2 class="text-light">Bạn muốn tham khảo các gói tour?</h2>
+		<h6 class="mb-0 mt-4"><a class="button" href="#">Đặt tour</a></h6>
+	  </div>
+	</div>
+	<div class="col-md-3">
+	  <div class="footer_1l">
+	    <h5 class="text-white mt-1 mb-3">Liên kết</h5>
+		<div class="row footer_3ism">
+		 <h6 class="col-md-12 col-6"><i class="fa fa-circle col_green me-1 font_8 align-middle"></i> <a class="text-white-50 a_tag" href="#"> Giới thiệu</a></h6>
+	 <h6 class="col-md-12 col-6 mt-2"><i class="fa fa-circle col_green me-1 font_8 align-middle"></i> <a class="text-white-50 a_tag" href="#"> Điểm đến</a></h6>
+	 <h6 class="col-md-12 col-6 mt-2"><i class="fa fa-circle col_green me-1 font_8 align-middle"></i> <a class="text-white-50 a_tag" href="#"> Các gói tour</a></h6>
+	 <h6 class="col-md-12 col-6 mt-2"><i class="fa fa-circle col_green me-1 font_8 align-middle"></i> <a class="text-white-50 a_tag" href="#"> Quyền riêng tư</a></h6>
+	 <h6 class="col-md-12 col-6 mt-2"><i class="fa fa-circle col_green me-1 font_8 align-middle"></i> <a class="text-white-50 a_tag" href="#"> Bài viết</a></h6>
+	 <h6 class="col-md-12 col-6 mt-2 mb-0"><i class="fa fa-circle col_green me-1 font_8 align-middle"></i> <a class="text-white-50 a_tag" href="#"> Liên hệ</a></h6>
+	    </div>
+	  </div>
+	</div>
+	<div class="col-md-3">
+	  <div class="footer_1l">
+	    <h5 class="text-white mt-1 mb-3"><i class="fa fa-phone col_yellow me-1"></i> Số điện thoại</h5>
+		<h6><a class="text-white-50 a_tag1" href="#">+999-888 123 456</a></h6>
+		<h5 class="text-white mt-4 mb-3"><i class="fa fa-location-arrow col_yellow me-1"></i> EMail</h5>
+		<h6><a class="text-white-50 a_tag1" href="#">info@gmail.com</a></h6>
+		<h5 class="text-white mt-4 mb-3"><i class="fa fa-map-marker col_yellow me-1"></i> Địa chỉ</h5>
+		<p class="mb-0"><a class="text-white-50 a_tag1" href="#">House 128/140, Road 01, India - See Map 1 km to city center</a></p>
+	  </div>
+	</div><div class="col-md-3">
+		<div class="footer_1l top_1r">
+		  <h5 class="text-white mt-1 mb-3">Lời cam kết</h5>
+		  <p class="text-white-50">
+			Chúng tôi cam kết mọi thông tin, hình ảnh sẽ được cung cấp
+			một cách trung thực, chính xác, mang đến trải nghiệm độc đáo
+			mà chúng tôi mang lại.
+		  </p>
+		 <h5 class="text-white mt-4 mb-3"> Social Partner</h5>
+         <ul class="mb-0">
+	    <li class="d-inline-block"><a class="d-block text-center rounded-circle" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+		<li class="d-inline-block ms-2"><a class="d-block text-center rounded-circle" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+		<li class="d-inline-block ms-2"><a class="d-block text-center rounded-circle" href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+		<li class="d-inline-block ms-2"><a class="d-block text-center rounded-circle" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+	  </ul>
+	  </div>
+	</div>
+  </div><hr class="line_1">
+  <div class="row footer_2">
+    <div class="col-md-8">
+	  <div class="footer_2l">
+	    <p class="mb-0 text-white-50">© 2013 Your Website Name. All Rights Reserved | Design by <a class="col_green fw-bold" href="http://www.templateonweb.com">TemplateOnWeb</a></p>
+	  </div>
+	</div>
+<div class="col-md-4">
+	  <div class="footer_2r text-end">
+	    <ul class="mb-0">
+		    <li class="d-inline-block"><a class="text-white-50 a_tag" href="#">Privacy Policy</a></li>
+			<li class="d-inline-block ms-2"><i class="fa fa-circle col_green me-1 font_8 align-middle"></i> <a class="text-white-50 a_tag" href="#">Terms & Condition</a></li>
+		  </ul>
+	  </div>
+	</div>
+  </div>
+ </div>
+</section>
+  </div>
+</div>
+
+<script src="../static/js/common.js"></script>
+
+</body>
+
+
+</html>
