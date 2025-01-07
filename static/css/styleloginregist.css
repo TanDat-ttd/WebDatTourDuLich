@@ -40,6 +40,7 @@ body {
 }
 
 .form-group input[type="email"],
+.form-group input[type="tel"],
 .form-group input[type="password"],
 .form-group input[type="text"] {
     width: 100%;
@@ -49,6 +50,7 @@ body {
     box-sizing: border-box; /* Ensures padding doesn't affect total size */
     font-size: 16px;
 }
+
 
 .form-group input[type="tel"] {
     width: 100%;
@@ -60,6 +62,7 @@ body {
 }
 
 .form-group input[type="email"]:focus,
+.form-group input[type="tel"]:focus,
 .form-group input[type="password"]:focus,
 .form-group input[type="text"]:focus {
     border-color: #007bff; /* Blue border when focused */

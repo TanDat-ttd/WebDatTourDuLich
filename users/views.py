@@ -32,7 +32,6 @@ def register(request):
             else:
                 user = User.objects.create_user(username=username, email=email, password=password)
                 user.profile.phone = phone
-                user.profile.plain_password = password  # Lưu mật khẩu không mã hóa
                 user.profile.save()
                 messages.success(request, 'Đăng ký thành công. Bạn có thể đăng nhập.')
                 return redirect('login')

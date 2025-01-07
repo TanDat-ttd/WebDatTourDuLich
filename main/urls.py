@@ -1,4 +1,3 @@
-
 from django.urls import path, include
 from . import views  # Import views của app
 
@@ -22,7 +21,4 @@ urlpatterns = [
     path('faq/', views.faq, name='faq'),
     path('gallery/', views.gallery, name='gallery'),
     path('tour/', views.tour, name='tour'),
-    #path('login/', views.login, name='login'),
-    #path('register/', views.register, name='register'),
-  #  path('payment/', include('payment.urls')),  # Đưa logic thanh toán sang app payment
 ]
