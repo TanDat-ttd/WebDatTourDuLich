@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Thanh Toán Đặt Tour</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .card {
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .card-header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Trang Thanh Toán Đặt Tour Du Lịch</h1>
+
+    {% if tour %}
+        <form method="POST" action="{% url 'payment' tour.id %}">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">Thông Tin Đặt Tour</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Tên Tour: {{ tour.name }}</h5>
+                            <p>
+                                <b>Mã Tour:</b> {{ tour.id }} <br>
+                                <b>Ngày Khởi Hành:</b> {{ tour.start_date }} <br>
+                                <b>Số Khách:</b>
+                                <input type="number" name="number_of_people" id="number_of_people" class="form-control"
+                                       value="1" min="1" required>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">Chi Tiết Thanh Toán</div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="first_name">Họ</label>
+                                <input type="text" name="first_name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="last_name">Tên</label>
+                                <input type="text" name="last_name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="discount_code">Mã Giảm Giá</label>
+                                <input type="text" name="discount_code" class="form-control">
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" id="method1" name="payment_method" value="credit_card" checked>
+                                <label class="form-check-label" for="method1">Thẻ Tín Dụng</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <button type="submit" class="btn btn-primary btn-lg">Thanh Toán</button>
+            </div>
+        </form>
+    {% endif %}
+</div>
+
+<script>
+    $(document).ready(function () {
+        // Khi số khách thay đổi
+        $("#number_of_people").on('change', function () {
+            const numPeople = $(this).val();
+            const originalPrice = {{ tour.price }};
+            const newTotal = numPeople * originalPrice;
+            $("#original-total").text(newTotal + " VND");
+            $("#tong_tien_giam").text("(Chưa xác định)");
+        });
+
+        // Xử lý khi nhập mã giảm giá
+        $("#discount_code").on('change', function () {
+            const tourId = {{ tour.id }};
+            const discountCode = $(this).val();
+            $.ajax({
+                url: "{% url 'apply_discount' %}",
+                method: "POST",
+                data: {
+                    tour_id: tourId,
+                    code: discountCode,
+                    csrfmiddlewaretoken: '{{ csrf_token }}'
+                },
+                success: function (response) {
+                    if (response.valid) {
+                        $("#tong_tien_giam").text(response.discounted_price + " VND");
+                    } else {
+                        alert(response.error);
+                        $("#discount_code").val("");
+                    }
+                },
+            });
+        });
+    });
+</script>
+</body>
+</html>
