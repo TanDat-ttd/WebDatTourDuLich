@@ -1,5 +1,5 @@
 
-from django.urls import path
+from django.urls import path, include
 from . import views  # Import views của app
 
 urlpatterns = [
@@ -10,7 +10,7 @@ urlpatterns = [
     path('blog_detail/', views.blog_detail, name='blog_detail'),
     path('destination/', views.destination, name='destination'),
     path('destination2/', views.destination2, name='destination2'),
-    path('destination/', views.destination3, name='destination3'),
+    path('destination3/', views.destination3, name='destination3'),
     path('destination_BinhDinh/', views.destination_BinhDinh, name='destination_BinhDinh'),
     path('destination_CaoBang/', views.destination_CaoBang, name='destination_CaoBang'),
     path('destination_DaLat/', views.destination_DaLat, name='destination_DaLat'),
@@ -24,4 +24,5 @@ urlpatterns = [
     path('tour/', views.tour, name='tour'),
     path('login/', views.login, name='login'),
     path('register/', views.register, name='register'),
+  #  path('payment/', include('payment.urls')),  # Đưa logic thanh toán sang app payment
 ]

@@ -38,8 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main',
+    'tour.apps.TourConfig',
     # 'tour',
-    # 'payment',
+     'payment',
     # 'smart_map',
     # 'tourBooking',
 ]
@@ -127,3 +128,7 @@ STATICFILES_DIRS = [BASE_DIR / "static"]
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Cấu hình lưu trữ media (ảnh, file)
+MEDIA_URL = '/media/'  # URL để truy cập file media
+MEDIA_ROOT = BASE_DIR / 'media'  # Thư mục lưu trữ file media trong dự án

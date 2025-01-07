@@ -1,5 +1,6 @@
 from django.shortcuts import render
-
+from django.shortcuts import render, get_object_or_404
+from .models import Tour
 
 # Trang chủ
 def index(request):
@@ -92,3 +93,18 @@ def login(request):
 
 def register(request):
     return render(request, 'register.html')
+
+
+# View hiển thị danh sách tours
+def tour_list(request):
+    tours = Tour.objects.all()  # Lấy tất cả các tour trong database
+    return render(request, 'tour_list.html', {'tours': tours})  # Trả về danh sách tours
+
+
+# View hiển thị chi tiết tour và lịch trình
+def tour_detail(request, pk):
+    tour = get_object_or_404(Tour, pk=pk)  # Lấy tour dựa trên primary key (id)
+    schedules = tour.schedules.order_by("day",
+                                        "period")  # Lấy các schedule liên kết với tour, sắp xếp theo ngày và buổi
+    return render(request, 'tour_detail.html', {'tour': tour, 'schedules': schedules})  # Trả về chi tiết tour
+

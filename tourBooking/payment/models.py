@@ -2,60 +2,94 @@ from django.db import models
 from django.utils.timezone import now
 
 
-class Tour(models.Model):
-    name = models.CharField(max_length=255)  # Tên tour
-    description = models.TextField()  # Mô tả về tour (lịch trình, chi tiết, etc.)
-    price = models.DecimalField(max_digits=10, decimal_places=2)  # Giá tour
-    duration = models.IntegerField()  # Số ngày tour (3 ngày, 5 ngày,...)
-    start_date = models.DateField()  # Ngày bắt đầu tour
-    end_date = models.DateField()  # Ngày kết thúc tour
-    available_slots = models.IntegerField()  # Số chỗ trống còn lại cho tour
-    created_at = models.DateTimeField(auto_now_add=True)  # Thời gian tạo tour
-    updated_at = models.DateTimeField(auto_now=True)  # Thời gian chỉnh sửa tour
+# Loại giảm giá
+class DiscountType(models.TextChoices):
+    PERCENTAGE = 'PERCENTAGE', 'Percentage'
+    FIXED = 'FIXED', 'Fixed Amount'
 
-    def __str__(self):
-        return f"{self.name} ({self.start_date} - {self.end_date})"
 
-    def is_available(self):
-        """Kiểm tra xem tour còn slot hay không."""
-        return self.available_slots > 0
+class DiscountCodeManager(models.Manager):
+    def active(self):
+        """Trả về danh sách mã giảm giá đang hoạt động."""
+        return self.filter(valid_from__lte=now(), valid_until__gte=now(), uses_left__gt=0)
+
+    def expired(self):
+        """Trả về danh sách mã giảm giá đã hết hạn."""
+        return self.filter(valid_until__lt=now())
+
+    def used_up(self):
+        """Trả về danh sách mã giảm giá đã hết lượt sử dụng."""
+        return self.filter(uses_left=0)
 
 
 class DiscountCode(models.Model):
-    PERCENTAGE = 'PERCENTAGE'
-    FIXED = 'FIXED'
-    DISCOUNT_TYPE_CHOICES = [
-        (PERCENTAGE, 'Percentage'),
-        (FIXED, 'Fixed'),
-    ]
-
-    code = models.CharField(max_length=50, unique=True)  # Mã giảm giá
-    discount_type = models.CharField(
-        max_length=20,
-        choices=DISCOUNT_TYPE_CHOICES,
-        default=PERCENTAGE,
-    )  # Loại giảm: PERCENTAGE/FIXED
-    discount_value = models.DecimalField(max_digits=10, decimal_places=2)  # Giá trị giảm
-    max_uses = models.PositiveIntegerField(null=True, blank=True)  # Số lần dùng tối đa
-    uses_left = models.PositiveIntegerField(null=True, blank=True)  # Số lần còn lại
-    min_order_value = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)  # Giá trị tối thiểu
-    valid_from = models.DateTimeField(default=now)  # Ngày có hiệu lực
-    valid_until = models.DateTimeField()  # Ngày hết hạn
-    eligible_tours = models.ManyToManyField(Tour, related_name="discounts", blank=True)  # Mối quan hệ với Tour
-    created_at = models.DateTimeField(auto_now_add=True)
+    # Mã giảm giá
+    code = models.CharField(max_length=50, unique=True)
+    # Loại giảm (phần trăm hoặc giá cố định)
+    discount_type = models.CharField(max_length=20, choices=DiscountType.choices, default=DiscountType.PERCENTAGE)
+    # Giá trị giảm (10% hoặc 50000 VNĐ tùy loại)
+    discount_value = models.FloatField()
+    # Giá trị giảm tối đa (nếu áp dụng cho loại PERCENTAGE)
+    max_discount_value = models.FloatField(null=True, blank=True)
+    # Số lần tối đa có thể sử dụng
+    max_uses = models.PositiveIntegerField()
+    # Số lần còn lại có thể sử dụng
+    uses_left = models.PositiveIntegerField(default=0)
+    # Số lần đã sử dụng
+    times_used = models.PositiveIntegerField(default=0)
+    # Ngày bắt đầu hiệu lực
+    valid_from = models.DateTimeField(default=now)
+    # Ngày hết hạn
+    valid_until = models.DateTimeField()
+    # Ghi chú bổ sung
+    description = models.TextField(null=True, blank=True)
+    # Thời gian tạo và cập nhật
+    created_at = models.DateTimeField(auto_now_add=True)  # Đã sửa lỗi: chỉ giữ auto_now_add
     updated_at = models.DateTimeField(auto_now=True)
 
-    def __str__(self):
-        return self.code
+    # Gán DiscountCodeManager custom
+    objects = DiscountCodeManager()
 
     def is_valid(self):
+        """Kiểm tra mã giảm giá có hợp lệ hay không."""
+        return self.uses_left > 0 and self.valid_from <= now() <= self.valid_until
+
+    def is_expired(self):
+        """Kiểm tra mã giảm giá đã hết hạn hay chưa."""
+        return now() > self.valid_until
+
+    def get_status(self):
+        """Trả về trạng thái mã giảm giá: Active, Expired, Used Up."""
+        if self.is_expired():
+            return "Expired"
+        if self.uses_left <= 0:
+            return "Used Up"
+        return "Active"
+
+    def use_discount(self):
+        """Sử dụng mã giảm giá, giảm số lượt còn lại và tăng số lượt dùng."""
+        if not self.is_valid():
+            raise ValueError("Mã giảm giá không hợp lệ hoặc đã hết hạn.")
+        if self.uses_left <= 0:
+            raise ValueError("Mã giảm giá đã hết số lượt sử dụng.")
+
+        self.uses_left -= 1
+        self.times_used += 1
+        self.save()
+
+    def calculate_discount(self, total_amount):
         """
-        Kiểm tra xem mã giảm giá còn hiệu lực không:
-        - Hiệu lực về thời gian.
-        - Còn lượt sử dụng.
+        Tính số tiền giảm giá dựa trên tổng giá trị đơn hàng.
+        total_amount: Tổng giá trị đơn hàng.
         """
-        if now() < self.valid_from or now() > self.valid_until:
-            return False
-        if self.uses_left is not None and self.uses_left <= 0:
-            return False
-        return True
+        if self.discount_type == DiscountType.PERCENTAGE:
+            discount = total_amount * (self.discount_value / 100)
+            if self.max_discount_value:  # Giới hạn mức giảm giá tối đa
+                discount = min(discount, self.max_discount_value)
+            return discount
+        elif self.discount_type == DiscountType.FIXED:
+            return min(self.discount_value, total_amount)
+        return 0
+
+    def __str__(self):
+        return f"{self.code} ({self.discount_type})"

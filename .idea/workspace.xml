@@ -5,19 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c2f19cb-cb00-4a0a-bdbe-f42ef3e5ad61" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/tour_booking_zip.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tourBooking/main/tour_HoChiMinh.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tourBooking/templates/failed.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tourBooking/templates/payment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tourBooking/templates/success.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/main/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/main/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/main/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/main/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/main/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/payment/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/payment/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tourBooking/payment/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/payment/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/payment/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/payment/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/payment/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/payment/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/templates/destination_BinhDinh.html" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/templates/destination_BinhDinh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/tour/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/tour/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/tourBooking/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/tourBooking/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/tourBooking/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/tourBooking/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -52,29 +65,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/tour_booking_zip/tourBooking/smart_map",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "aDefault",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Django Server.tour_booking_zip.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/tour_booking_zip/tourBooking/smart_map&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\tour_booking_zip\tourBooking\smart_map" />
@@ -99,6 +115,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="tourBooking.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -142,7 +159,7 @@
       <workItem from="1735191543593" duration="5000" />
       <workItem from="1735210953949" duration="536000" />
       <workItem from="1736145412514" duration="4789000" />
-      <workItem from="1736232867352" duration="1419000" />
+      <workItem from="1736232867352" duration="14298000" />
     </task>
     <servers />
   </component>
