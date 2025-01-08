@@ -42,35 +42,35 @@ def destination3(request):
 
 # Các trang điểm đến cụ thể
 def destination_BinhDinh(request):
-    return render(request, 'destinations/destination_BinhDinh.html')  # Trả về destination_BinhDinh.html
+    return render(request, 'destination_BinhDinh.html')  # Trả về destination_BinhDinh.html
 
 
 def destination_CaoBang(request):
-    return render(request, 'destinations/destination_CaoBang.html')  # Trả về destination_CaoBang.html
+    return render(request, 'destination_CaoBang.html')  # Trả về destination_CaoBang.html
 
 
 def destination_DaLat(request):
-    return render(request, 'destinations/destination_DaLat.html')  # Trả về destination_DaLat.html
+    return render(request, 'destination_DaLat.html')  # Trả về destination_DaLat.html
 
 
 def destination_HaNoi(request):
-    return render(request, 'destinations/destination_HaNoi.html')  # Trả về destination_HaNoi.html
+    return render(request, 'destination_HaNoi.html')  # Trả về destination_HaNoi.html
 
 
 def destination_HoiAn(request):
-    return render(request, 'destinations/destination_HoiAn.html')  # Trả về destination_HoiAn.html
+    return render(request, 'destination_HoiAn.html')  # Trả về destination_HoiAn.html
 
 
 def destination_NinhBinh(request):
-    return render(request, 'destinations/destination_NinhBinh.html')  # Trả về destination_NinhBinh.html
+    return render(request, 'destination_NinhBinh.html')  # Trả về destination_NinhBinh.html
 
 
 def destination_VinhHaLong(request):
-    return render(request, 'destinations/destination_VinhHaLong.html')  # Trả về destination_VinhHaLong.html
+    return render(request, 'destination_VinhHaLong.html')  # Trả về destination_VinhHaLong.html
 
 
 def destination_VungTau(request):
-    return render(request, 'destinations/destination_VungTau.html')  # Trả về destination_VungTau.html
+    return render(request, 'destination_VungTau.html')  # Trả về destination_VungTau.html
 
 
 # Trang FAQ (câu hỏi thường gặp)
