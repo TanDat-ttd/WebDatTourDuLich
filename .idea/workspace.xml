@@ -5,22 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c2f19cb-cb00-4a0a-bdbe-f42ef3e5ad61" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/tourBooking/main/tour_HoChiMinh.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tourBooking/templates/failed.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tourBooking/templates/payment.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tourBooking/templates/success.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tourBooking/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tourBooking/main/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/main/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tourBooking/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/main/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tourBooking/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/main/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tourBooking/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/main/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tourBooking/payment/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/payment/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tourBooking/payment/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/payment/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tourBooking/payment/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/payment/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tourBooking/payment/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/payment/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tourBooking/templates/destination_BinhDinh.html" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/templates/destination_BinhDinh.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tourBooking/tour/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/tour/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/templates/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/templates/destination_NinhBinh.html" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/templates/destination_NinhBinh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/templates/destionationPayment.html" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/templates/destionationPayment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/templates/tour.html" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/templates/tour.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/tour/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/tour/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tourBooking/tourBooking/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/tourBooking/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tourBooking/tourBooking/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/tourBooking/urls.py" afterDir="false" />
     </list>
@@ -36,6 +31,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -50,12 +46,26 @@
   ],
   &quot;lastFilter&quot;: {}
 }</component>
+  <component name="GitHubPullRequestState">{
+  &quot;prStates&quot;: [
+    {
+      &quot;id&quot;: {
+        &quot;id&quot;: &quot;PR_kwDONI3EKs6GyY2M&quot;,
+        &quot;number&quot;: 1
+      },
+      &quot;lastSeen&quot;: 1736283398145
+    }
+  ]
+}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/TanDat-ttd/WebDatTourDuLich.git&quot;,
     &quot;accountId&quot;: &quot;12a9c87e-5ac8-4aeb-98a1-2848326586f8&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 4
@@ -68,7 +78,11 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;Django Server.tour_booking_zip.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.destination_NinhBinh.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.destionationPayment.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.tour.html.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
@@ -100,14 +114,23 @@
       <recent name="E:\tour_booking_zip\tour_booking\payments" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\tour_booking_zip\tourBooking" />
       <recent name="E:\tour_booking_zip\tourBooking\templates" />
       <recent name="E:\tour_booking_zip\tourBooking\static" />
       <recent name="E:\tour_booking_zip\css" />
       <recent name="E:\tour_booking_zip\tour_booking" />
-      <recent name="E:\tour_booking_zip" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.tour.html">
+    <configuration name="destination_NinhBinh.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/tour_booking_zip/templates/destination_NinhBinh.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="destionationPayment.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/tour_booking_zip/templates/destionationPayment.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="tour.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/tour_booking_zip/templates/tour.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="tour_booking_zip" type="Python.DjangoServer" factoryName="Django server">
       <module name="tour_booking_zip" />
       <option name="ENV_FILES" value="" />
@@ -133,6 +156,13 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.tour.html" />
+        <item itemvalue="JavaScript Debug.destionationPayment.html" />
+        <item itemvalue="JavaScript Debug.destination_NinhBinh.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -160,6 +190,10 @@
       <workItem from="1735210953949" duration="536000" />
       <workItem from="1736145412514" duration="4789000" />
       <workItem from="1736232867352" duration="14298000" />
+      <workItem from="1736257764253" duration="4739000" />
+      <workItem from="1736276951042" duration="6607000" />
+      <workItem from="1736309324715" duration="1072000" />
+      <workItem from="1736321401285" duration="64000" />
     </task>
     <servers />
   </component>

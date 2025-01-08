@@ -20,11 +20,11 @@ from django.contrib import admin
 from django.urls import path, include  # Đã có `include` cho app con
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('main.urls')),
+     path('', include('main.urls')),
     # path('tour/',include('tour.urls')),
      path('payment/',include('payment.urls')),
     # path('smart_map/',include('smart_map.urls')),
-    # path('tour_booking/',include('tourBooking.urls')),
+    #path('tour_booking/',include('tourBooking.urls')),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

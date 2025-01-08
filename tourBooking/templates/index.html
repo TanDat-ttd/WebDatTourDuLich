@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="vi">
 <head>
 	<meta charset="utf-8">
@@ -62,16 +63,16 @@
           <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Trang chủ</a>
         </li>
 
-		   <li class="nav-item">
-			   <a class="nav-link" href="{% url 'about' %}">Giới thiệu </a>
-		   </li>
-		
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'about' %}"> Giới thiệu </a>
+        </li>
+
 		<li class="nav-item">
 			<a class="nav-link" href="{% url 'tour' %}"> Tour</a>
-		  </li>
+        </li>
 		<li class="nav-item">
 			<a class="nav-link" href="{% url 'destination' %}"> Điểm đến </a>
-		  </li>
+        </li>
 		
 		<li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -613,14 +614,14 @@
 	    <div class="about_h1ri row">
 		  <div class="col-md-6 col-sm-6">
 		     <div class="about_h1ril">
-			   <img src="img\dalat_7.png" class="rounded_1 w-100" alt="abc">
-			    <img src="img\45.png" class="rounded_1 w-100 mt-4" alt="abc">
+			   <img src="../static/img/dalat_7.png" class="rounded_1 w-100" alt="abc">
+			    <img src="../static/img/45.png" class="rounded_1 w-100 mt-4" alt="abc">
 			 </div>
 		  </div>
 		  <div class="col-md-6 col-sm-6">
 		     <div class="about_h1ril">
-			  <img src="img\tpHCM_5.png" class="rounded_1 w-100" alt="abc">
-			  <img src="img\PhuYen.png" class="rounded_1 w-100 mt-4" alt="abc">
+			  <img src="../static/img/tpHCM_5.png" class="rounded_1 w-100" alt="abc">
+			  <img src="../static/img/PhuYen.png" class="rounded_1 w-100 mt-4" alt="abc">
 			 </div>
 		  </div>
 		</div>
@@ -1258,7 +1259,7 @@ Giá tour chưa bao gồm vé máy bay, chi phí cá nhân và các chi phí ph�
 		    <div class="col-md-6">
 			  <div class="profile6il2il">
 			    <h6 class="font_14 mb-0">GIÁ CHỈ TỪ:<br>
-<span class="fw-bold"><span class="fs-4 col_green">6,500,000</span> <span class="text-decoration-line-through text-muted">$7,000,000/span></span><br>
+<span class="fw-bold"><span class="fs-4 col_green">6,500,000</span> <span class="text-decoration-line-through text-muted">$7,000,000</span></span><br>
 <span class="font_12">BAO GÒM THUẾ/PHI</span></h6>
 			  </div>
 			</div>
@@ -1415,7 +1416,7 @@ before 48 hours</h6>
 		      <div class="profile7il1i">
 		        <div class="grid clearfix">
 			<figure class="effect-jazz mb-0">
-			<a href="#"><img src="tourBooking/static/img/25.jpg" class="w-100 rounded-0" alt="img25"></a>
+			<a href="#"><img src="../static/img/25.png" class="w-100 rounded-0" alt="img25"></a>
 			</figure>
 			</div>
 		   </div>
@@ -2125,7 +2126,7 @@ before 48 hours</h6>
 			 <div class="col-md-6">
 			   <div class="profile6il2il">
 				 <h6 class="font_14 mb-0">GIÁ CHỈ TỪ:<br>
- <span class="fw-bold"><span class="fs-4 col_green">6,500,000</span> <span class="text-decoration-line-through text-muted">$7,000,000/span></span><br>
+ <span class="fw-bold"><span class="fs-4 col_green">6,500,000</span> <span class="text-decoration-line-through text-muted">$7,000,000</span></span><br>
  <span class="font_12">BAO GÒM THUẾ/PHI</span></h6>
 			   </div>
 			 </div>
@@ -2163,7 +2164,7 @@ before 48 hours</h6>
 			 <div class="col-md-6">
 			   <div class="profile6il2il">
 				 <h6 class="font_14 mb-0">GIÁ CHỈ TỪ:<br>
- <span class="fw-bold"><span class="fs-4 col_green">6,500,000</span> <span class="text-decoration-line-through text-muted">$7,000,000/span></span><br>
+ <span class="fw-bold"><span class="fs-4 col_green">6,500,000</span> <span class="text-decoration-line-through text-muted">$7,000,000</span></span><br>
  <span class="font_12">BAO GÒM THUẾ/PHI</span></h6>
 			   </div>
 			 </div>
@@ -2689,7 +2690,7 @@ before 48 hours</h6>
 	    <div class="profile6il p-3 shadow_box rounded_1">
 		  <div class="profile6il1 position-relative">
 		   <div class="profile6il1i">
-		     <a href="#"><img src="tourBooking/static/img/17.jpg" alt="abc" class="w-100 rounded_1"></a>
+		     <a href="#"><img src="../static/img/17.png" alt="abc" class="w-100 rounded_1"></a>
 		</div>
 		   <div class="profile6il1i1 position-absolute top-0">
 		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 1 WEEK</h6><br>
@@ -2885,12 +2886,12 @@ before 48 hours</h6>
 	    <div class="explore_1rir pt-5">
 		  <div class="grid clearfix">
 			<figure class="effect-jazz mb-0">
-			<a href="#"><img src="tourBooking/static/img/34.jpg" class="w-100" alt="img25"></a>
+			<a href="#"><img src="../static/img/34.png" class="w-100" alt="img25"></a>
 			</figure>
 			</div>
 			<div class="grid clearfix mt-4">
 			<figure class="effect-jazz mb-0">
-			<a href="#"><img src="tourBooking/static/img/35.jpg" class="w-100" alt="img25"></a>
+			<a href="#"><img src="../static/img/35.png" class="w-100" alt="img25"></a>
 			</figure>
 			</div>
 		</div>
@@ -2954,12 +2955,12 @@ before 48 hours</h6>
 	    <div class="explore_1rir pt-5">
 		  <div class="grid clearfix">
 			<figure class="effect-jazz mb-0">
-			<a href="#"><img src="tourBooking/static/img/36.jpg" class="w-100" alt="img25"></a>
+			<a href="#"><img src="../static/img/63.jpg" class="w-100" alt="img25"></a>
 			</figure>
 			</div>
 			<div class="grid clearfix mt-4">
 			<figure class="effect-jazz mb-0">
-			<a href="#"><img src="tourBooking/static/img/37.jpg" class="w-100" alt="img25"></a>
+			<a href="#"><img src="../static/img/37." class="w-100" alt="img25"></a>
 			</figure>
 			</div>
 		</div>
@@ -3023,12 +3024,12 @@ before 48 hours</h6>
 	    <div class="explore_1rir pt-5">
 		  <div class="grid clearfix">
 			<figure class="effect-jazz mb-0">
-			<a href="#"><img src="tourBooking/static/img/38.jpg" class="w-100" alt="img25"></a>
+			<a href="#"><img src="../static/img/38.jpg" class="w-100" alt="img25"></a>
 			</figure>
 			</div>
 			<div class="grid clearfix mt-4">
 			<figure class="effect-jazz mb-0">
-			<a href="#"><img src="tourBooking/static/img/39.jpg" class="w-100" alt="img25"></a>
+			<a href="#"><img src="../static/img/39.jpg" class="w-100" alt="img25"></a>
 			</figure>
 			</div>
 		</div>
@@ -3092,12 +3093,12 @@ before 48 hours</h6>
 	    <div class="explore_1rir pt-5">
 		  <div class="grid clearfix">
 			<figure class="effect-jazz mb-0">
-			<a href="#"><img src="tourBooking/static/img/34.jpg" class="w-100" alt="img25"></a>
+			<a href="#"><img src="../static/img/34.png" class="w-100" alt="img25"></a>
 			</figure>
 			</div>
 			<div class="grid clearfix mt-4">
 			<figure class="effect-jazz mb-0">
-			<a href="#"><img src="tourBooking/static/img/35.jpg" class="w-100" alt="img25"></a>
+			<a href="#"><img src="../static/img/35.png" class="w-100" alt="img25"></a>
 			</figure>
 			</div>
 		</div>
@@ -3161,12 +3162,12 @@ before 48 hours</h6>
 	    <div class="explore_1rir pt-5">
 		  <div class="grid clearfix">
 			<figure class="effect-jazz mb-0">
-			<a href="#"><img src="tourBooking/static/img/36.jpg" class="w-100" alt="img25"></a>
+			<a href="#"><img src="../static/img/63.jpg" class="w-100" alt="img25"></a>
 			</figure>
 			</div>
 			<div class="grid clearfix mt-4">
 			<figure class="effect-jazz mb-0">
-			<a href="#"><img src="tourBooking/static/img/37.jpg" class="w-100" alt="img25"></a>
+			<a href="#"><img src="../static/img/37." class="w-100" alt="img25"></a>
 			</figure>
 			</div>
 		</div>
@@ -3230,12 +3231,12 @@ before 48 hours</h6>
 	    <div class="explore_1rir pt-5">
 		  <div class="grid clearfix">
 			<figure class="effect-jazz mb-0">
-			<a href="#"><img src="tourBooking/static/img/38.jpg" class="w-100" alt="img25"></a>
+			<a href="#"><img src="../static/img/38." class="w-100" alt="img25"></a>
 			</figure>
 			</div>
 			<div class="grid clearfix mt-4">
 			<figure class="effect-jazz mb-0">
-			<a href="#"><img src="tourBooking/static/img/39.jpg" class="w-100" alt="img25"></a>
+			<a href="#"><img src="../static/img/39." class="w-100" alt="img25"></a>
 			</figure>
 			</div>
 		</div>
@@ -3579,7 +3580,7 @@ before 48 hours</h6>
     <div class="col-md-5">
       <div class="blog_h1l">
 	   <div class="blog_h1li">
-	    <a href="#"><img alt="abc" class="rounded-top w-100" src="tourBooking/static/img/40.jpg"></a>
+	    <a href="#"><img alt="abc" class="rounded-top w-100" src="../static/img/40."></a>
 	  </div>
 	  <div class="blog_h1li1 p-4 shadow_box rounded-bottom">
 	      <ul class="font_14 fw-bold">

@@ -1,8 +1,9 @@
 
 from django.urls import path, include
 from . import views  # Import views của app
-
+from django.contrib import admin
 urlpatterns = [
+    path('admin/', admin.site.urls),  # URL mặc định cho admin
     path('', views.index, name='index'),
     path('about/', views.about, name='about'),
     path('contact/', views.contact, name='contact'),
@@ -24,5 +25,9 @@ urlpatterns = [
     path('tour/', views.tour, name='tour'),
     path('login/', views.login, name='login'),
     path('register/', views.register, name='register'),
-  #  path('payment/', include('payment.urls')),  # Đưa logic thanh toán sang app payment
+
+    path('payment/', include('payment.urls')),  # Đưa logic thanh toán sang app payment
+
+    path('tour/<int:pk>/', views.destionationPayment, name='destionationPayment'),  # Chi tiết tour
+
 ]

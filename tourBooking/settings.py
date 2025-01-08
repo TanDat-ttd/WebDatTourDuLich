@@ -39,10 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main',
     'tour.apps.TourConfig',
-    # 'tour',
+     'tour',
      'payment',
     # 'smart_map',
-    # 'tourBooking',
     'users',
 ]
 
