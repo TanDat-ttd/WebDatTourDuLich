@@ -51,7 +51,7 @@
 <section id="header">
 <nav class="navbar navbar-expand-md navbar-light px_4" id="navbar_sticky">
   <div class="container-fluid">
-    <a class="navbar-brand  p-0 fw-bold" href="index.html"><i class="fa fa-plane-arrival col_green"></i> <span class="col_yellow">Đặt Tour Ngay</span> </a>
+    <a class="navbar-brand  p-0 fw-bold" href="{%  url 'index' %}"><i class="fa fa-plane-arrival col_green"></i> <span class="col_yellow">Đặt Tour Ngay</span> </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -59,19 +59,19 @@
 	   <ul class="navbar-nav mb-0 ms-auto nav_1">
 	    
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="index.html"> Trang chủ</a>
+          <a class="nav-link" aria-current="page" href="{%  url 'index' %}"> Trang chủ</a>
         </li>
 		 
 		<li class="nav-item">
-          <a class="nav-link" href="about.html"> Giới thiệu </a>
+          <a class="nav-link" href="{%  url 'about' %}"> Giới thiệu </a>
         </li>
 		
 		<li class="nav-item">
-			<a class="nav-link" href="tour.html"> Tour</a>
+			<a class="nav-link" href="{%  url 'tour' %}"> Tour</a>
 		  </li>
 		
 		<li class="nav-item">
-			<a class="nav-link" href="destination.html"> Điểm đến </a>
+			<a class="nav-link" href="{%  url 'destination' %}"> Điểm đến </a>
 		</li>
 		
 		<li class="nav-item dropdown">
@@ -79,8 +79,8 @@
             Blog
           </a>
           <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="blog.html"> Blog</a></li>
-            <li><a class="dropdown-item border-0" href="blog_detail.html"> Chi tiết blog</a></li>
+            <li><a class="dropdown-item" href="{%  url 'blog' %}"> Blog</a></li>
+            <li><a class="dropdown-item border-0" href="{%  url 'blog_detail' %}"> Chi tiết blog</a></li>
           </ul>
         </li>
 		
@@ -89,30 +89,30 @@
             Cộng đồng
           </a>
           <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
-		    <li><a class="dropdown-item" href="gallery.html"> Thư viện ảnh</a></li>
-			<li><a class="dropdown-item border-0" href="faq.html"> Câu hỏi thường gặp</a></li>
+		    <li><a class="dropdown-item" href="{%  url 'gallery' %}"> Thư viện ảnh</a></li>
+			<li><a class="dropdown-item border-0" href="{%  url 'faq' %}"> Câu hỏi thường gặp</a></li>
           </ul>
         </li>
 			
 		<li class="nav-item">
-          <a class="nav-link" href="contact.html">Liên hệ</a>
+          <a class="nav-link" href="{%  url 'contact' %}">Liên hệ</a>
         </li>
       </ul>
       <ul class="navbar-nav mb-0 ms-auto nav_2">
 	    <ul class="navbar-nav mb-0 ms-auto nav_2">
 			<li class="nav-item dropdown">
-			  <a class="nav-link fs-4" href="login.html" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			  <a class="nav-link fs-4" href="{%  url 'login' %}" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 				<i class="fa fa-user"></i>
 			  </a>
 			  <ul class="dropdown-menu" aria-labelledby="userDropdown">
-				<li><a class="dropdown-item" href="login.html">Đăng nhập</a></li>
-				<li><a class="dropdown-item" href="register.html">Đăng ký</a></li>
+				<li><a class="dropdown-item" href="{%  url 'login' %}">Đăng nhập</a></li>
+				<li><a class="dropdown-item" href="{%  url 'register' %}">Đăng ký</a></li>
 			  </ul>
 			</li>
 		  </ul>
 		    
 		<li class="nav-item">
-          <a class="nav-link fs-4 drop_icon col_green" href="login.html"><i class="fa fa-phone"></i></a>
+          <a class="nav-link fs-4 drop_icon col_green" href="{%  url 'login' %}"><i class="fa fa-phone"></i></a>
         </li>
 		
 		<li class="mb-0  d-inline-block fw-bold font_14 nav-item">Để biết thêm thông tin<br>
@@ -129,7 +129,7 @@
   <div class="row center_o1 text-center">
      <div class="col-md-12">
 	    <h1 class="text-white font_50">Blog</h1>
-		<h6 class="col_green mb-0 mt-3 fw-bold"><a class="text-light" href="index.html"> Trang chủ</a> <span class="mx-2 text-white-50"><i class="fa fa-arrow-right"></i></span> Blog</h6>
+		<h6 class="col_green mb-0 mt-3 fw-bold"><a class="text-light" href="{%  url 'index' %}"> Trang chủ</a> <span class="mx-2 text-white-50"><i class="fa fa-arrow-right"></i></span> Blog</h6>
 	 </div>
   </div>
  </div>
@@ -160,7 +160,7 @@
 		     <div class="blog_h1li1">
 	      <ul class="font_14 fw-bold">
 		    <li class="d-inline-block"><a class="text-muted a_tag" href="https://www.ivivu.com/blog/2024/09/6-diem-den-o-thanh-pho-ho-chi-minh-mang-dam-dau-an-van-hoa-lich-su/">Được viết bởi Nga</a></li>
-			<li class="d-inline-block ms-2"><i class="fa fa-circle col_green me-1 font_8 align-middle"></i> <a class="text-muted a_tag" href="blog_detail.html">Tuyệt vời</a></li>
+			<li class="d-inline-block ms-2"><i class="fa fa-circle col_green me-1 font_8 align-middle"></i> <a class="text-muted a_tag" href="{%  url 'blog_detail' %}">Tuyệt vời</a></li>
 		  </ul>
 		  <h5><a href="https://www.ivivu.com/blog/2024/09/6-diem-den-o-thanh-pho-ho-chi-minh-mang-dam-dau-an-van-hoa-lich-su/">6 điểm đến ở thành phố Hồ Chí Minh mang đậm dấu ấn văn hóa – lịch sử </a></h5>
 		  <div class="blog_h1li1i row mt-3">
@@ -197,7 +197,7 @@
 		     <div class="blog_h1li1">
 	      <ul class="font_14 fw-bold">
 		    <li class="d-inline-block"><a class="text-muted a_tag" href="https://www.ivivu.com/blog/2024/06/9-diem-du-lich-gan-sai-gon-cho-ky-nghi-cuoi-tuan-cuc-chill/">Được viết bởi Q.Minh</a></li>
-			<li class="d-inline-block ms-2"><i class="fa fa-circle col_green me-1 font_8 align-middle"></i> <a class="text-muted a_tag" href="blog_detail.html"> Du thuyền</a></li>
+			<li class="d-inline-block ms-2"><i class="fa fa-circle col_green me-1 font_8 align-middle"></i> <a class="text-muted a_tag" href="{%  url 'blog_detail' %}"> Du thuyền</a></li>
 		  </ul>
 		  <h5><a href="https://www.ivivu.com/blog/2024/06/9-diem-du-lich-gan-sai-gon-cho-ky-nghi-cuoi-tuan-cuc-chill/">9 điểm du lịch gần Sài Gòn cho kỳ nghỉ cuối tuần cực “chill”</a></h5>
 		  <div class="blog_h1li1i row mt-3">
@@ -372,14 +372,14 @@
 		<div class="pages  text-center mt-4 row">
 		      <div class="col-md-12">
 			    <ul class="mb-0">
-			<li><a href="blog_detail.html"><i class="fa fa-chevron-left"></i></a></li>
-			<li><a class="act" href="blog_detail.html">1</a></li>
-			<li><a href="blog_detail.html">2</a></li>
-			<li><a href="blog_detail.html">3</a></li>
-			<li><a href="blog_detail.html">4</a></li>
-			<li><a href="blog_detail.html">5</a></li>
-			<li><a href="blog_detail.html">6</a></li>
-			<li><a href="blog_detail.html"><i class="fa fa-chevron-right"></i></a></li>
+			<li><a href="{%  url 'blog_detail' %}"><i class="fa fa-chevron-left"></i></a></li>
+			<li><a class="act" href="{%  url 'blog_detail' %}">1</a></li>
+			<li><a href="{%  url 'blog_detail' %}">2</a></li>
+			<li><a href="{%  url 'blog_detail' %}">3</a></li>
+			<li><a href="{%  url 'blog_detail' %}">4</a></li>
+			<li><a href="{%  url 'blog_detail' %}">5</a></li>
+			<li><a href="{%  url 'blog_detail' %}">6</a></li>
+			<li><a href="{%  url 'blog_detail' %}"><i class="fa fa-chevron-right"></i></a></li>
 		   </ul>
 			  </div>
 	       </div>
@@ -401,14 +401,14 @@
 	 <div class="blog_1r1 p-4 shadow_box mt-4">
 		<h4>Thể loại</h4>
 		<hr class="line mb-4">
-         <h6 class="mb-0"><a href="blog_detail.html"><i class="fa fa-arrow-right me-1 font_14 col_green align-middle"></i> Khám phá thiên nhiên</a> <span class="float-end">(3)</span></h6><hr>
-		  <h6 class="mb-0"><a href="blog_detail.html"><i class="fa fa-arrow-right me-1 font_14 col_green align-middle"></i> Tham quan thành phố</a> <span class="float-end">(4)</span></h6><hr>
-		  <h6 class="mb-0"><a href="blog_detail.html"><i class="fa fa-arrow-right me-1 font_14 col_green align-middle"></i> Dạo chơi trên thuyền</a> <span class="float-end">(2)</span></h6><hr>
-		  <h6 class="mb-0"><a href="blog_detail.html"><i class="fa fa-arrow-right me-1 font_14 col_green align-middle"></i> Tìm hiểu văn hoá</a> <span class="float-end">(5)</span></h6><hr>
-		  <h6 class="mb-0"><a href="blog_detail.html"><i class="fa fa-arrow-right me-1 font_14 col_green align-middle"></i> Hành trình học hỏi</a> <span class="float-end">(7)</span></h6><hr>
-		  <h6 class="mb-0"><a href="blog_detail.html"><i class="fa fa-arrow-right me-1 font_14 col_green align-middle"></i> Du lịch cao cấp</a> <span class="float-end">(6)</span></h6><hr>
-		  <h6 class="mb-0"><a href="blog_detail.html"><i class="fa fa-arrow-right me-1 font_14 col_green align-middle"></i> Du lịch bình dân</a> <span class="float-end">(9)</span></h6><hr>
-		  <h6 class="mb-0"><a href="blog_detail.html"><i class="fa fa-arrow-right me-1 font_14 col_green align-middle"></i> Chụp ảnh</a> <span class="float-end">(3)</span></h6>
+         <h6 class="mb-0"><a href="{%  url 'blog_detail' %}"><i class="fa fa-arrow-right me-1 font_14 col_green align-middle"></i> Khám phá thiên nhiên</a> <span class="float-end">(3)</span></h6><hr>
+		  <h6 class="mb-0"><a href="{%  url 'blog_detail' %}"><i class="fa fa-arrow-right me-1 font_14 col_green align-middle"></i> Tham quan thành phố</a> <span class="float-end">(4)</span></h6><hr>
+		  <h6 class="mb-0"><a href="{%  url 'blog_detail' %}"><i class="fa fa-arrow-right me-1 font_14 col_green align-middle"></i> Dạo chơi trên thuyền</a> <span class="float-end">(2)</span></h6><hr>
+		  <h6 class="mb-0"><a href="{%  url 'blog_detail' %}"><i class="fa fa-arrow-right me-1 font_14 col_green align-middle"></i> Tìm hiểu văn hoá</a> <span class="float-end">(5)</span></h6><hr>
+		  <h6 class="mb-0"><a href="{%  url 'blog_detail' %}"><i class="fa fa-arrow-right me-1 font_14 col_green align-middle"></i> Hành trình học hỏi</a> <span class="float-end">(7)</span></h6><hr>
+		  <h6 class="mb-0"><a href="{%  url 'blog_detail' %}"><i class="fa fa-arrow-right me-1 font_14 col_green align-middle"></i> Du lịch cao cấp</a> <span class="float-end">(6)</span></h6><hr>
+		  <h6 class="mb-0"><a href="{%  url 'blog_detail' %}"><i class="fa fa-arrow-right me-1 font_14 col_green align-middle"></i> Du lịch bình dân</a> <span class="float-end">(9)</span></h6><hr>
+		  <h6 class="mb-0"><a href="{%  url 'blog_detail' %}"><i class="fa fa-arrow-right me-1 font_14 col_green align-middle"></i> Chụp ảnh</a> <span class="float-end">(3)</span></h6>
 	 </div>
 	 <div class="blog_1r1 p-4 shadow_box mt-4">
 		<h4>Bài Viết Gần Đây</h4>
@@ -470,15 +470,15 @@
 		<h4>Chủ đề có thể bạn quan tâm</h4>
 		<hr class="line mb-4">
         <ul class="mb-0 tags">
-				 <li class="d-inline-block"><a href="blog_detail.html">Du lịch Hà Nội</a></li>
-				 <li class="d-inline-block"><a href="blog_detail.html">Du lịch Sài Gòn</a></li>
-				 <li class="d-inline-block"><a href="blog_detail.html">Khách sạn giá rẻ</a></li>
-				 <li class="d-inline-block"><a href="blog_detail.html">Địa điểm nổi tiếng</a></li>
-				 <li class="d-inline-block"><a href="blog_detail.html">Tour 1 ngày</a></li>
-				 <li class="d-inline-block"><a href="blog_detail.html">Du lịch Vũng Tàu</a></li>
-				 <li class="d-inline-block"><a href="blog_detail.html">Mẹo du lịch</a></li>
-				 <li class="d-inline-block"><a href="blog_detail.html">Vé máy bay</a></li>
-				 <li class="d-inline-block"><a href="blog_detail.html">Vé tàu</a></li>
+				 <li class="d-inline-block"><a href="{%  url 'blog_detail' %}">Du lịch Hà Nội</a></li>
+				 <li class="d-inline-block"><a href="{%  url 'blog_detail' %}">Du lịch Sài Gòn</a></li>
+				 <li class="d-inline-block"><a href="{%  url 'blog_detail' %}">Khách sạn giá rẻ</a></li>
+				 <li class="d-inline-block"><a href="{%  url 'blog_detail' %}">Địa điểm nổi tiếng</a></li>
+				 <li class="d-inline-block"><a href="{%  url 'blog_detail' %}">Tour 1 ngày</a></li>
+				 <li class="d-inline-block"><a href="{%  url 'blog_detail' %}">Du lịch Vũng Tàu</a></li>
+				 <li class="d-inline-block"><a href="{%  url 'blog_detail' %}">Mẹo du lịch</a></li>
+				 <li class="d-inline-block"><a href="{%  url 'blog_detail' %}">Vé máy bay</a></li>
+				 <li class="d-inline-block"><a href="{%  url 'blog_detail' %}">Vé tàu</a></li>
 				 </ul>
 	 </div>
 	  </div>
@@ -534,7 +534,7 @@
 			<div class="col-md-3">
 			  <div class="footer_1l">
 				<h3 class="mb-3">
-				  <a class="text-white" href="index.html"
+				  <a class="text-white" href="{%  url 'index' %}"
 					><i class="fa fa-plane-arrival col_green"></i> Tour
 					<span class="col_yellow">Đặt ngay</span>
 				  </a>
@@ -660,7 +660,8 @@
 				  © 2024 TourBooking. All Rights Reserved | Design by:
 				  <a
 					class="col_green fw-bold"
-					href="http://127.0.0.1:5500/gallery.html"
+					<!--chưa-->
+					href="{%  url 'gallery' %}"
 					>Công ty TNHH Tour Booking
 				  </a>
 				</p>

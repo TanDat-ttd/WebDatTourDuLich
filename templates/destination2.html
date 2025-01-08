@@ -51,7 +51,7 @@
 <section id="header">
 	<nav class="navbar navbar-expand-md navbar-light px_4" id="navbar_sticky">
 	  <div class="container-fluid">
-		<a class="navbar-brand  p-0 fw-bold" href="index.html"><i class="fa fa-plane-arrival col_green"></i> Tour <span class="col_yellow"> Đặt ngay</span> </a>
+		<a class="navbar-brand  p-0 fw-bold" href="{%  url 'index' %}"><i class="fa fa-plane-arrival col_green"></i> Tour <span class="col_yellow"> Đặt ngay</span> </a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		  <span class="navbar-toggler-icon"></span>
 		</button>
@@ -59,19 +59,19 @@
 		   <ul class="navbar-nav mb-0 ms-auto nav_1">
 			
 			<li class="nav-item">
-				<a class="nav-link" aria-current="page" href="index.html">Trang chủ</a>
+				<a class="nav-link" aria-current="page" href="{%  url 'index' %}">Trang chủ</a>
 			  </li>
 			   
 			  <li class="nav-item">
-				<a class="nav-link" href="about.html">Giới thiệu </a>
+				<a class="nav-link" href="{%  url 'about' %}">Giới thiệu </a>
 			  </li>
 			  
 			  <li class="nav-item">
-				<a class="nav-link" href="tour.html"> Tour</a>
+				<a class="nav-link" href="{%  url 'tour' %}"> Tour</a>
 			  </li>
 			
 			<li class="nav-item">
-				<a class="nav-link active" href="destination.html"> Điểm đến </a>
+				<a class="nav-link active" href="{%  url 'destination' %}"> Điểm đến </a>
 			</li>
 			
 			<li class="nav-item dropdown">
@@ -79,8 +79,8 @@
 				Blog
 			  </a>
 			  <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
-				<li><a class="dropdown-item" href="blog.html"> Blog</a></li>
-				<li><a class="dropdown-item border-0" href="blog_detail.html"> Blog chi tiết</a></li>
+				<li><a class="dropdown-item" href="{%  url 'blog' %}"> Blog</a></li>
+				<li><a class="dropdown-item border-0" href="{%  url 'blog_detail' %}"> Blog chi tiết</a></li>
 			  </ul>
 			</li>
 			
@@ -89,18 +89,18 @@
 					Cộng đồng
 				</a>
 				<ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
-				  <li><a class="dropdown-item" href="gallery.html"> Thư viện ảnh</a></li>
-				  <li><a class="dropdown-item border-0" href="faq.html"> Câu hỏi thường gặp</a></li>
+				  <li><a class="dropdown-item" href="{%  url 'gallery' %}"> Thư viện ảnh</a></li>
+				  <li><a class="dropdown-item border-0" href="{%  url 'faq' %}"> Câu hỏi thường gặp</a></li>
 				</ul>
 			  </li>
 				  
 			  <li class="nav-item">
-				<a class="nav-link" href="contact.html">Liên hệ</a>
+				<a class="nav-link" href="{%  url 'contact' %}">Liên hệ</a>
 			  </li>
 			</ul>
 			<ul class="navbar-nav mb-0 ms-auto nav_2">
 			  <li class="nav-item">
-				<a class="nav-link fs-4" href="login.html"><i class="fa fa-user"></i></a>
+				<a class="nav-link fs-4" href="{%  url 'login' %}"><i class="fa fa-user"></i></a>
 			  </li>
 				  
 			  <li class="nav-item">
@@ -121,7 +121,7 @@
    <div class="row center_o1 text-center">
 	  <div class="col-md-12">
 		 <h1 class="text-white font_50"> Điểm đến</h1>
-		 <h6 class="col_green mb-0 mt-3 fw-bold"><a class="text-light" href="index.html"> Trang chủ</a> <span class="mx-2 text-white-50"><i class="fa fa-arrow-right"></i></span> Điểm đến</h6>
+		 <h6 class="col_green mb-0 mt-3 fw-bold"><a class="text-light" href="{%  url 'index' %}"> Trang chủ</a> <span class="mx-2 text-white-50"><i class="fa fa-arrow-right"></i></span> Điểm đến</h6>
 	  </div>
    </div>
   </div>
@@ -140,7 +140,7 @@
 		  <h3 class="mb-0 text-white">Nha Trang</h3>
 		</div>
 		<div class="vacation_2i3 text-center position-absolute top-0 w-100 h-100 bg_back  px-3">
-		   <h3 class="mb-0"><a class="text-white a_tag1" href="destination_detail.html">Nha Trang</a></h3>
+		   <h3 class="mb-0"><a class="text-white a_tag1" href="{%  url 'destination_detail' %}">Nha Trang</a></h3>
 		   <hr class="line mx-auto">
 		   <h6 class="d-inline-block bg_green text-white p-2 px-4"> 4 Tour</h6>
 		</div>
@@ -155,7 +155,7 @@
 		  <h3 class="mb-0 text-white">Đà Nẵng</h3>
 		</div>
 		<div class="vacation_2i3 text-center position-absolute top-0 w-100 h-100 bg_back  px-3">
-		   <h3 class="mb-0"><a class="text-white a_tag1" href="destination_detail.html">Đà Nẵng</a></h3>
+		   <h3 class="mb-0"><a class="text-white a_tag1" href="{%  url 'destination_detail' %}">Đà Nẵng</a></h3>
 		   <hr class="line mx-auto">
 		   <h6 class="d-inline-block bg_green text-white p-2 px-4"> 3 Tour</h6>
 		</div>
@@ -170,7 +170,7 @@
 		  <h3 class="mb-0 text-white">Huế</h3>
 		</div>
 		<div class="vacation_2i3 text-center position-absolute top-0 w-100 h-100 bg_back  px-3">
-		   <h3 class="mb-0"><a class="text-white a_tag1" href="destination_detail.html">Huế</a></h3>
+		   <h3 class="mb-0"><a class="text-white a_tag1" href="{%  url 'destination_detail' %}">Huế</a></h3>
 		   <hr class="line mx-auto">
 		   <h6 class="d-inline-block bg_green text-white p-2 px-4"> 2 Tour</h6>
 		</div>
@@ -185,7 +185,7 @@
 		  <h3 class="mb-0 text-white">Sơn La</h3>
 		</div>
 		<div class="vacation_2i3 text-center position-absolute top-0 w-100 h-100 bg_back  px-3">
-		   <h3 class="mb-0"><a class="text-white a_tag1" href="destination_detail.html">Sơn La</a></h3>
+		   <h3 class="mb-0"><a class="text-white a_tag1" href="{%  url 'destination_detail' %}">Sơn La</a></h3>
 		   <hr class="line mx-auto">
 		   <h6 class="d-inline-block bg_green text-white p-2 px-4"> 5 Tour</h6>
 		</div>
@@ -202,7 +202,7 @@
 		  <h3 class="mb-0 text-white">Lý Sơn</h3>
 		</div>
 		<div class="vacation_2i3 text-center position-absolute top-0 w-100 h-100 bg_back  px-3">
-		   <h3 class="mb-0"><a class="text-white a_tag1" href="destination_detail.html">Lý Sơn</a></h3>
+		   <h3 class="mb-0"><a class="text-white a_tag1" href="{%  url 'destination_detail' %}">Lý Sơn</a></h3>
 		   <hr class="line mx-auto">
 		   <h6 class="d-inline-block bg_green text-white p-2 px-4"> 4 Tour</h6>
 		</div>
@@ -217,7 +217,7 @@
 		  <h3 class="mb-0 text-white">Phú Yên</h3>
 		</div>
 		<div class="vacation_2i3 text-center position-absolute top-0 w-100 h-100 bg_back  px-3">
-		   <h3 class="mb-0"><a class="text-white a_tag1" href="destination_detail.html">Phú Yên</a></h3>
+		   <h3 class="mb-0"><a class="text-white a_tag1" href="{%  url 'destination_detail' %}">Phú Yên</a></h3>
 		   <hr class="line mx-auto">
 		   <h6 class="d-inline-block bg_green text-white p-2 px-4"> 3 Tour</h6>
 		</div>
@@ -232,7 +232,7 @@
 		  <h3 class="mb-0 text-white">SaPa</h3>
 		</div>
 		<div class="vacation_2i3 text-center position-absolute top-0 w-100 h-100 bg_back  px-3">
-		   <h3 class="mb-0"><a class="text-white a_tag1" href="destination_detail.html">SaPa</a></h3>
+		   <h3 class="mb-0"><a class="text-white a_tag1" href="{%  url 'destination_detail' %}">SaPa</a></h3>
 		   <hr class="line mx-auto">
 		   <h6 class="d-inline-block bg_green text-white p-2 px-4"> 2 Tour</h6>
 		</div>
@@ -247,7 +247,7 @@
 		  <h3 class="mb-0 text-white">Quảng Bình</h3>
 		</div>
 		<div class="vacation_2i3 text-center position-absolute top-0 w-100 h-100 bg_back  px-3">
-		   <h3 class="mb-0"><a class="text-white a_tag1" href="destination_detail.html">Quảng Bình</a></h3>
+		   <h3 class="mb-0"><a class="text-white a_tag1" href="{%  url 'destination_detail' %}">Quảng Bình</a></h3>
 		   <hr class="line mx-auto">
 		   <h6 class="d-inline-block bg_green text-white p-2 px-4"> 5 Tour</h6>
 		</div>
@@ -257,11 +257,11 @@
     <div class="pages  text-center mt-4 row">
 		      <div class="col-md-12">
 			    <ul class="mb-0">
-			<li><a href="destination.html"><i class="fa fa-chevron-left"></i></a></li>
-			<li><a href="destination.html">1</a></li>
-			<li><a class="act" href="destination2.html">2</a></li>
-			<li><a href="destination3.html">3</a></li>
-			<li><a href="destination3.html"><i class="fa fa-chevron-right"></i></a></li>
+			<li><a href="{%  url 'destination' %}"><i class="fa fa-chevron-left"></i></a></li>
+			<li><a href="{%  url 'destination' %}">1</a></li>
+			<li><a class="act" href="{%  url 'destination2' %}">2</a></li>
+			<li><a href="{%  url 'destination3' %}">3</a></li>
+			<li><a href="{%  url 'destination3' %}"><i class="fa fa-chevron-right"></i></a></li>
 		   </ul>
 			  </div>
 	       </div>
@@ -306,7 +306,7 @@
 	<div class="row footer_1">
 	  <div class="col-md-3">
 		<div class="footer_1l">
-		  <h3 class="mb-3"><a class="text-white" href="index.html"><i class="fa fa-plane-arrival col_green"></i> Đặt <span class="col_yellow">Tour</span> </a></h3>
+		  <h3 class="mb-3"><a class="text-white" href="{%  url 'index' %}"><i class="fa fa-plane-arrival col_green"></i> Đặt <span class="col_yellow">Tour</span> </a></h3>
 		  <h2 class="text-light">Bạn muốn tham khảo các gói tour?</h2>
 		  <h6 class="mb-0 mt-4"><a class="button" href="#">Đặt tour</a></h6>
 		</div>
