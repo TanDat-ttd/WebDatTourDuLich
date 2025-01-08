@@ -66,16 +66,20 @@ class DiscountCode(models.Model):
             return "Used Up"
         return "Active"
 
-    def use_discount(self):
-        """Sử dụng mã giảm giá, giảm số lượt còn lại và tăng số lượt dùng."""
-        if not self.is_valid():
-            raise ValueError("Mã giảm giá không hợp lệ hoặc đã hết hạn.")
-        if self.uses_left <= 0:
-            raise ValueError("Mã giảm giá đã hết số lượt sử dụng.")
+def use_discount(self, user_email=None):
+    """Cập nhật việc sử dụng mã giảm giá."""
+    if not self.is_valid():
+        raise ValueError("Mã giảm giá không hợp lệ hoặc đã hết hạn.")
 
-        self.uses_left -= 1
-        self.times_used += 1
-        self.save()
+    if self.uses_left <= 0:
+        raise ValueError("Mã giảm giá đã hết số lần sử dụng.")
+
+    # Trừ lượt và ghi lại ai đã sử dụng (nếu có)
+    self.uses_left -= 1
+    self.times_used += 1
+    if user_email:
+        self.description = f"Used by {user_email}"
+    self.save()
 
     def calculate_discount(self, total_amount):
         """

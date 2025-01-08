@@ -121,7 +121,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / "static"]
+STATICFILES_DIRS = [BASE_DIR / "tourBooking/static"]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
@@ -131,3 +131,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Cấu hình lưu trữ media (ảnh, file)
 MEDIA_URL = '/media/'  # URL để truy cập file media
 MEDIA_ROOT = BASE_DIR / 'media'  # Thư mục lưu trữ file media trong dự án
+
+# settings.py
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = '22130037@st.hcmuaf.edu.vn'  # Thay bằng địa chỉ email của bạn
+EMAIL_HOST_PASSWORD = 'Dat123456'  # Thay bằng mật khẩu ứng dụng (Google App Password) của bạn

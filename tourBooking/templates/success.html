@@ -2,14 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt Tour Thành Công</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-top: 50px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: green;
+        }
+        p {
+            font-size: 18px;
+        }
+        .details {
+            text-align: left;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .details p {
+            margin: 5px 0;
+        }
+    </style>
 </head>
 <body>
-  <h1>Đặt Tour Thành Công!</h1>
-<p>Mã đặt tour của bạn: {{ booking.id }}</p>
-<p>Tour: {{ booking.tour.name }}</p>
-<p>Khách hàng: {{ booking.customer }}</p>
-<p>Số lượng người: {{ booking.number_of_people }}</p>
-<p>Tổng tiền: {{ booking.total_price }}</p>
+<h1>Đặt Tour Thành Công!</h1>
+<p>Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi!</p>
+
+<div class="details">
+    <p><strong>Mã đặt tour:</strong> {{ booking.id|default:"Không có sẵn" }}</p>
+    <p><strong>Tour:</strong> {{ booking.tour_name|default:"Không có sẵn" }}</p>
+    <p><strong>Khách hàng:</strong> {{ booking.first_name }} {{ booking.last_name }}</p>
+    <p><strong>Email:</strong> {{ booking.email }}</p>
+    <p><strong>Số điện thoại:</strong> {{ booking.phone }}</p>
+    <p><strong>Số lượng người:</strong> {{ booking.number_of_people|default:"0" }}</p>
+    <p><strong>Tổng tiền:</strong> {{ booking.total_price|default:"0" }} VND</p>
+    <p><strong>Ngày đi:</strong> {{ booking.date_of_travel|default:"Không có sẵn" }}</p>
+    <p><strong>Phương thức thanh toán:</strong> {{ booking.payment_method|default:"Không có sẵn" }}</p>
+</div>
+
+<p>Một email xác nhận đã được gửi về địa chỉ <strong>{{ booking.email }}</strong>. Hãy kiểm tra hộp thư của bạn!</p>
 </body>
 </html>

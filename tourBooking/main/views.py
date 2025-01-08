@@ -102,15 +102,15 @@ def tour_list(request):
 
 
 # View hiển thị chi tiết tour và lịch trình
-def destionationPayment(request, pk):
-    """
-    View hiển thị chi tiết về một tour cụ thể.
-    """
-    # Lấy thông tin tour theo id (primary key - pk)
-    tour = get_object_or_404(Tour, pk=pk)
-
-    # Lấy toàn bộ lịch trình của tour, sắp xếp theo ngày và buổi
-    schedules = tour.schedules.order_by("day", "period")
-
-    # Render tour_detail.html với dữ liệu
-    return render(request, 'tour_detail.html', {'tour': tour, 'schedules': schedules})
+# def destination_payment(request, pk):
+#     """
+#     View hiển thị chi tiết về một tour cụ thể.
+#     """
+#     # Lấy thông tin tour theo id (primary key - pk)
+#     tour = get_object_or_404(Tour, pk=pk)
+#
+#     # Lấy toàn bộ lịch trình của tour, sắp xếp theo ngày và buổi
+#     schedules = tour.schedules.order_by("day", "period")
+#
+#     # Render tour_detail.html với dữ liệu
+#     return render(request, 'tour_detail.html', {'tour': tour, 'schedules': schedules})

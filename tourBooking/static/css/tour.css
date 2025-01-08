@@ -152,3 +152,17 @@ Licence: <a href="https://www.templateonweb.com/license">Website Template Licenc
 }
 @media (min-width: 1201px) and (max-width: 1320px) {
 }
+.dest_dt1 {
+  display: flex;
+  flex-wrap: nowrap; /* Nội dung bên trái và bên phải luôn nằm ngang */
+  gap: 16px; /* Khoảng cách giữa 2 khối */
+}
+
+.dest_dt1 .booking-card {
+  min-width: 300px; /* Đảm bảo tối thiểu chiều ngang của khung thanh toán */
+  flex-shrink: 0; /* Ngăn khung thanh toán bị co lại */
+}
+
+.dest_dt1 .dest_dt1l {
+  flex-grow: 1; /* Cho phép phần nội dung bên trái chiếm tối đa không gian còn lại */
+}

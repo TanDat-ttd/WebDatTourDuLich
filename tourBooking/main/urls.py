@@ -26,8 +26,7 @@ urlpatterns = [
     path('login/', views.login, name='login'),
     path('register/', views.register, name='register'),
 
-    path('payment/', include('payment.urls')),  # Đưa logic thanh toán sang app payment
+    path('destination_payment/', include('payment.urls')),  # Đưa logic thanh toán sang app payment
 
-    path('tour/<int:pk>/', views.destionationPayment, name='destionationPayment'),  # Chi tiết tour
 
 ]
