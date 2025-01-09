@@ -1,8 +1,9 @@
+
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login as auth_login, logout as auth_logout
 from django.contrib.auth.models import User
 from django.contrib import messages
-from .models import Profile
+from django.db import IntegrityError
 
 def login(request):
     if request.method == 'POST':
@@ -21,25 +22,25 @@ def register(request):
     if request.method == 'POST':
         username = request.POST['username']
         email = request.POST['email']
+        phone = request.POST['phone']
         password = request.POST['password']
         confirm_password = request.POST['confirm-password']
-        phone = request.POST['phone']
         if password == confirm_password:
             if User.objects.filter(username=username).exists():
                 messages.error(request, 'Tên người dùng đã tồn tại.')
             elif User.objects.filter(email=email).exists():
                 messages.error(request, 'Email đã được sử dụng.')
             else:
-                user = User.objects.create_user(username=username, email=email, password=password)
-                user.profile.phone = phone
-                user.profile.save()
-                messages.success(request, 'Đăng ký thành công. Bạn có thể đăng nhập.')
-                return redirect('login')
+                try:
+                    User.objects.create_user(username=username, email=email, password=password)
+                    messages.success(request, 'Đăng ký thành công. Bạn có thể đăng nhập.')
+                    return redirect('login')
+                except IntegrityError:
+                    messages.error(request, 'Có lỗi xảy ra. Vui lòng thử lại.')
         else:
             messages.error(request, 'Mật khẩu không khớp.')
     return render(request, 'register.html')
 
 def logout(request):
     auth_logout(request)
-    messages.success(request, 'Đăng xuất thành công.')
     return redirect('index')

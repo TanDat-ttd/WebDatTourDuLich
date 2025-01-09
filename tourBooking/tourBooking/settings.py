@@ -42,6 +42,7 @@ INSTALLED_APPS = [
      'payment',
     #'smart_map',
     # 'tourBooking',
+    'users',
 ]
 
 MIDDLEWARE = [

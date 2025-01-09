@@ -50,69 +50,81 @@
 </section>
 
 <section id="header">
-<nav class="navbar navbar-expand-md navbar-light px_4" id="navbar_sticky">
-  <div class="container-fluid">
-    <a class="navbar-brand  p-0 fw-bold" href="{% url 'index' %}"><i class="fa fa-plane-arrival col_green"></i> <span class="col_yellow">Đặt Tour Ngay</span> </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	   <ul class="navbar-nav mb-0 ms-auto nav_1">
-	    
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Trang chủ</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'about' %}"> Giới thiệu </a>
-        </li>
-
-		<li class="nav-item">
-			<a class="nav-link" href="{% url 'tour' %}"> Tour</a>
-        </li>
-		<li class="nav-item">
-			<a class="nav-link" href="{% url 'destination' %}"> Điểm đến </a>
-        </li>
-		
-		<li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Blog
-          </a>
-          <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="{% url 'blog' %}"> Blog</a></li>
-            <li><a class="dropdown-item border-0" href="{% url 'blog_detail' %}"> Blog điểm đến</a></li>
-          </ul>
-        </li>
-		
-		<li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Cộng đồng
-          </a>
-          <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
-		    <li><a class="dropdown-item" href="{% url 'gallery' %}"> Thư viện ảnh</a></li>
-			<li><a class="dropdown-item border-0" href="{% url 'faq' %}"> Câu hỏi thường gặp</a></li>
-          </ul>
-        </li>
+	<nav class="navbar navbar-expand-md navbar-light px_4" id="navbar_sticky">
+	  <div class="container-fluid">
+		<a class="navbar-brand p-0 fw-bold" href="{% url 'index' %}"><i class="fa fa-plane-arrival col_green"></i> <span class="col_yellow">Đặt Tour Ngay</span> </a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		   <ul class="navbar-nav mb-0 ms-auto nav_1">
 			
-		<li class="nav-item">
-          <a class="nav-link" href="{% url 'contact' %}">Liên hệ</a>
-        </li>
-      </ul>
-      <ul class="navbar-nav mb-0 ms-auto nav_2">
-	    <li class="nav-item">
-          <a class="nav-link fs-4" href="{% url 'login' %}"><i class="fa fa-user"></i></a>
-        </li>
-		    
-		<li class="nav-item">
-          <a class="nav-link fs-4 drop_icon col_green" href="#"><i class="fa fa-phone"></i></a>
-        </li>
-		
-		<li class="mb-0  d-inline-block fw-bold font_14 nav-item">Để biết thêm thông tin<br>
-<a class="col_green a_tag1 fs-5" href="#">+(000) 345 67 89</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+			<li class="nav-item">
+			  <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Trang chủ</a>
+			</li>
+	
+			<li class="nav-item">
+			  <a class="nav-link" href="{% url 'about' %}"> Giới thiệu </a>
+			</li>
+	
+			<li class="nav-item">
+				<a class="nav-link" href="{% url 'tour' %}"> Tour</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{% url 'destination' %}"> Điểm đến </a>
+			</li>
+			
+			<li class="nav-item dropdown">
+			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				Blog
+			  </a>
+			  <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+				<li><a class="dropdown-item" href="{% url 'blog' %}"> Blog</a></li>
+				<li><a class="dropdown-item border-0" href="{% url 'blog_detail' %}"> Blog điểm đến</a></li>
+			  </ul>
+			</li>
+			
+			<li class="nav-item dropdown">
+			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				Cộng đồng
+			  </a>
+			  <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+				<li><a class="dropdown-item" href="{% url 'gallery' %}"> Thư viện ảnh</a></li>
+				<li><a class="dropdown-item border-0" href="{% url 'faq' %}"> Câu hỏi thường gặp</a></li>
+              </ul>
+            </li>
+                
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'contact' %}">Liên hệ</a>
+            </li>
+		</ul>
+		<ul class="navbar-nav mb-0 ms-auto nav_2">
+		  {% if user.is_authenticated %}
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle fs-4 active" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			  <i class="fa fa-user"></i> 
+			</a>
+			<ul class="dropdown-menu drop_1" aria-labelledby="userDropdown">
+			  <li class="dropdown-item-text">{{ user.username }}</li>
+			  <li><a class="dropdown-item border-0" href="{% url 'logout' %}">Đăng xuất</a></li>
+			</ul>
+		  </li>
+		  {% else %}
+		  <li class="nav-item">
+			<a class="nav-link fs-4" href="{% url 'login' %}"><i class="fa fa-user"></i></a>
+		  </li>
+		  {% endif %}
+			  
+		  <li class="nav-item">
+			<a class="nav-link fs-4 drop_icon col_green" href="#"><i class="fa fa-phone"></i></a>
+		  </li>
+        
+            <li class="mb-0 d-inline-block fw-bold font_14 nav-item">Để biết thêm thông tin<br>
+    <a class="col_green a_tag1 fs-5" href="#">+(000) 345 67 89</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 </section>
 
 <div class="main position-relative">
