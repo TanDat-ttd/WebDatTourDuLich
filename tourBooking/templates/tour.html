@@ -132,14 +132,16 @@
    <div class="col-md-4">
      <div class="tour_1l">
       <div class="tour_1l1 p-4 shadow_box">
-        <div class="input-group border_1">
-				<input type="text" class="form-control border-0 rounded-0 font_14" placeholder="Tìm kiếm...">
+		<form method="get" action="{% url 'tour' %}">
+			<div class="input-group border_1">
+				<input type="text" name="search" class="form-control border-0 rounded-0 font_14" placeholder="Tìm kiếm..." value="{{ search_query }}">
 				<span class="input-group-btn">
-					<button class="btn btn-primary bg-white border-0 rounded-0 p-3" type="button">
+					<button class="btn btn-primary bg-white border-0 rounded-0 p-3" type="submit">
 						<i class="fa fa-search col_green"></i> </button>
 				</span>
-		</div>
-	 </div>
+			</div>
+		</form>
+    </div>
 	 <div class="tour_1l1 p-4 shadow_box mt-4">
         <h4>Mức giá</h4>
 		<hr class="line mb-4">
@@ -271,10 +273,13 @@
 		<h6 class="text-white">5 ngày 4 đêm</h6>
 		<h6 class="mb-0 mt-3"><a class="button_1" href="tour.html">Xem các gói</a></h6>
 	</div>
+	   
 	  </div>
 	 </div>
 	 </div>
    </div>
+
+
    <div class="col-md-8">
      <div class="tour_1r">
        <div class="tour_1r1">
@@ -440,11 +445,55 @@
 		  </div>
 		  </div>
 		</div>
+    <div class="tour_1r">
+        <div class="tour_1r1">
+            <div class="col-md-12">
+                <p class="mb-0">Hiển thị {{ tours.count }} Kết quả tìm kiếm</p>
+            </div>
+        </div>
+        <div class="profile6i row mt-4">
+            {% for tour in tours %}
+            <div class="col-md-6">
+                <div class="profile6il p-3 shadow_box rounded_1">
+                    <div class="profile6il1 position-relative">
+                        <div class="profile6il1i">
+                            <a href="{% url 'tour_detail' tour.id %}"><img src="{{ tour.image }}" alt="{{ tour.name }}" class="w-100 rounded_1" width="350" height="200"></a>
+                        </div>
+                        <div class="profile6il1i1 position-absolute top-0">
+                            <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0">{{ tour.duration_days }} ngày</h6><br>
+                            <h6 class="d-inline-block bg_light p-2 px-3 font_14 mb-0"><a href="{% url 'tour_detail' tour.id %}"><i class="fa fa-map-marker me-1 col_green"></i> {{ tour.name }}</a></h6>
+                        </div>
+                    </div>
+                    <div class="profile6il2 mt-3">
+                        <h5><a href="{% url 'tour_detail' tour.id %}">{{ tour.name }}</a></h5>
+                        <ul class="font_12">
+                            <li class="d-inline-block me-1"><a href="{% url 'tour_detail' tour.id %}">KHÁM PHÁ NGAY</a></li>
+                            <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i> CHI PHÍ PHÙ HỢP</li>
+                        </ul>
+                        <hr>
+                        <div class="profile6il2i row">
+                            <div class="col-md-6">
+                                <div class="profile6il2il">
+                                    <h6 class="font_14 mb-0">Giảm giá: <br>
+                                        <span class="fw-bold"><span class="fs-4 col_green">{{ tour.price }}đ</span></span>
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="profile6il2ir text-end pt-2">
+                                    <h6 class="mb-0"><a class="button px-3" href="{% url 'tour_detail' tour.id %}"> Đặt ngay <i class="fa fa-plane"></i></a></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
 
-	 </div>
-   </div>
-  </div>
- </div>
+</div>
 </section>
 
 <div class="main_footer position-relative">
