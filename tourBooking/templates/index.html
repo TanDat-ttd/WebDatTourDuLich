@@ -1948,33 +1948,32 @@ before 48 hours</h6>
 	</div>
   </div>
   <div class="profile6i row">
+	{% for tour in tours %}
 	  <div class="col-md-4">
 	    <div class="profile6il p-3 shadow_box rounded_1">
 		  <div class="profile6il1 position-relative">
 		   <div class="profile6il1i">
-		     <a href="#"><img src="../static/img/13.jpg" alt="abc" class="w-100 rounded_1"></a>
-			</div>
+			<a href="#"><img src="{{ tour.get_image_url }}" alt="{{ tour.name }}" class="w-100 rounded_1"></a>
+		</div>
 			<div class="profile6il1i1 position-absolute top-0">
-			 <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 1 Tuần</h6><br>
-			  <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> Đà Nẵng</a></h6>
+			 <<h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0">{{ tour.duration_days }} Tuần</h6><br>
+			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> {{ tour.name }}</a></h6>
 		 </div>
 		 </div>
 		 <div class="profile6il2 mt-3">
-		   <h5><a href="#">Miền Trung di sản - Hành trình văn hóa & thiên nhiên</a></h5>
-		   <ul class="font_12">
-			<li class="d-inline-block me-1"><a href="#">ĐÀ NẴNG </a></li>
-			 <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
-			<li class="d-inline-block me-1"><a href="#">HỘI AN </a></li>
-			 <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
-			<li class="d-inline-block me-1"><a href="#">HUẾ</a></li>
+			<h5><a href="#">{{ tour.name }}</a></h5>
+			<ul class="font_12">
+				<li class="d-inline-block me-1"><a href="#">{{ tour.name }}</a></li>
 		   </ul>
 		   <hr>
 		   <div class="profile6il2i row">
 			 <div class="col-md-6">
 			   <div class="profile6il2il">
 				 <h6 class="font_14 mb-0">Giá Chỉ<br>
- <span class="fw-bold"><span class="fs-4 col_green">7,000,000</span> <span class="text-decoration-line-through text-muted">9,500,000</span></span><br>
- <span class="font_12">VND</span></h6>
+   <span class="fw-bold"> <span class="fs-4 col_green">{{ tour.price }}</span>
+   <span class="text-decoration-line-through text-muted">{{ tour.price|add:'2500000' }}</span><br>
+   <span class="font_12">VND</span>
+                 </h6>
 			   </div>
 			 </div>
 			 <div class="col-md-6">
@@ -1986,197 +1985,7 @@ before 48 hours</h6>
 		</div>
 		</div>
 	  </div>
-	  <div class="col-md-4">
-	    <div class="profile6il p-3 shadow_box rounded_1">
-		  <div class="profile6il1 position-relative">
-		   <div class="profile6il1i">
-		     <a href="#"><img src="../static/img/18.jpg" alt="abc" class="w-100 rounded_1"></a>
-			</div>
-			<div class="profile6il1i1 position-absolute top-0">
-			 <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0">3 NGÀY 2 ĐÊM</h6><br>
-			  <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> HÀ NỘI</a></h6>
-		 </div>
-		 </div>
- 
-		 <div class="profile6il2 mt-3">
-		   <h5><a href="#">Cổ kính - Linh thiêng - Hùng vĩ</a></h5>
-		   <ul class="font_12">
-			<li class="d-inline-block me-1"><a href="#">HÀ BỘI</a></li>
-			 <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
-			<li class="d-inline-block me-1"><a href="#">NINH BÌNH</a></li>
-		   </ul>
-		   <hr>
-		   <div class="profile6il2i row">
-			 <div class="col-md-6">
-			   <div class="profile6il2il">
-				 <h6 class="font_14 mb-0">Giá Chỉ:<br>
- <span class="fw-bold"><span class="fs-4 col_green">3,500,000</span> <span class="text-decoration-line-through text-muted">4,500,000</span></span><br>
- <span class="font_12">VND</span></h6>
-			   </div>
-			 </div>
-			 <div class="col-md-6">
-			   <div class="profile6il2ir text-end pt-2">
-				 <h6 class="mb-0"><a class="button px-3" href="#">Đặt Ngay <i class="fa fa-plane"></i></a></h6>
-			  </div>
-			</div>
-		  </div>
-		</div>
-		</div>
-	  </div>
-	  <div class="col-md-4">
-	    <div class="profile6il p-3 shadow_box rounded_1">
-		  <div class="profile6il1 position-relative">
-		   <div class="profile6il1i">
-		     <a href="#"><img src="../static/img/19.jpg" alt="abc" class="w-100 rounded_1"></a>
-			</div>
-			<div class="profile6il1i1 position-absolute top-0">
-			 <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0">4 NGÀY 3 ĐÊM</h6><br>
-			  <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> ĐÀ LẠT</a></h6>
-		 </div>
-		 </div>
-		 <div class="profile6il2 mt-3">
-		   <h5><a href="#">Đà Lạt mộng mơ - Thiên đường tình yêu và hoa</a></h5>
-		   <ul class="font_12">
-			<li class="d-inline-block me-1"><a href="#">THÀNH PHỐ ĐÀ LẠT</a></li>
-			 <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
-			<li class="d-inline-block me-1"><a href="#">THUNG LŨNG TÌNH YÊU</a></li>
-			 <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
-			<li class="d-inline-block me-1"><a href="#">THIỀN VIỆN TRÚC LÂM</a></li>
-		   </ul>
-		   <hr>
-		   <div class="profile6il2i row">
-			 <div class="col-md-6">
-			   <div class="profile6il2il">
-				 <h6 class="font_14 mb-0">GIÁ CHỈ TỪ:<br>
- <span class="fw-bold"><span class="fs-4 col_green">5,000,000</span> <span class="text-decoration-line-through text-muted">6,200,000</span></span><br>
- <span class="font_12">VND</span></h6>
-			   </div>
-			 </div>
-			 <div class="col-md-6">
-			   <div class="profile6il2ir text-end pt-2">
-				 <h6 class="mb-0"><a class="button px-3" href="#">Đặt Ngay<i class="fa fa-plane"></i></a></h6>
-			  </div>
-			</div>
-		  </div>
-		</div>
-		</div>
-	  </div>
-	</div>
-	<div class="profile6i row mt-4">
-	  <div class="col-md-4">
-	    <div class="profile6il p-3 shadow_box rounded_1">
-		  <div class="profile6il1 position-relative">
-		   <div class="profile6il1i">
-		     <a href="#"><img src="../static/img/22.jpg" alt="abc" class="w-100 rounded_1"></a>
-			</div>
-			<div class="profile6il1i1 position-absolute top-0">
-			 <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 1 TUẦN</h6><br>
-			  <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> CẦN THƠ </a></h6>
-		 </div>
-		 </div>
-		 <div class="profile6il2 mt-3">
-		   <h5><a href="#">Miền Tây sông nước - Khám phá vẻ đẹp miệt vườn</a></h5>
-		   <ul class="font_12">
-			<li class="d-inline-block me-1"><a href="#">CẦN THƠ</a></li>
-			 <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
-			<li class="d-inline-block me-1"><a href="#">SỐC TRĂNG</a></li>
-			 <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
-			<li class="d-inline-block me-1"><a href="#">CHÂU ĐỐC</a></li>
-		   </ul>
-		   <hr>
-		   <div class="profile6il2i row">
-			 <div class="col-md-6">
-			   <div class="profile6il2il">
-				 <h6 class="font_14 mb-0">GIÁ CHỈ TỪ:<br>
- <span class="fw-bold"><span class="fs-4 col_green">7,000,000</span> <span class="text-decoration-line-through text-muted">8,500,000</span></span><br>
- <span class="font_12">ĐÃ BAO GỒM THUẾ/CHI PHI</span></h6>
-			   </div>
-			 </div>
-			 <div class="col-md-6">
-			   <div class="profile6il2ir text-end pt-2">
-				 <h6 class="mb-0"><a class="button px-3" href="#">Đặt Ngay <i class="fa fa-plane"></i></a></h6>
-			  </div>
-			</div>
-		  </div>
-		</div>
-		</div>
-	  </div>
-	  <div class="col-md-4">
-	    <div class="profile6il p-3 shadow_box rounded_1">
-		  <div class="profile6il1 position-relative">
-		   <div class="profile6il1i">
-		     <a href="#"><img src="../static/img/20.jpg" alt="abc" class="w-100 rounded_1"></a>
-			</div>
-			<div class="profile6il1i1 position-absolute top-0">
-			 <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 4 NGÀY 3 ĐÊM</h6><br>
-			  <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> Spain</a></h6>
-		 </div>
-		 </div>
-		 <div class="profile6il2 mt-3">
-		   <h5><a href="#">Sài Gòn hoa lệ - Năng động và hiện đại</a></h5>
-		   <ul class="font_12">
-			<li class="d-inline-block me-1"><a href="#">TRUNG TÂM THÀNH PHỐ</a></li>
-			 <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
-			<li class="d-inline-block me-1"><a href="#">ĐỊA ĐẠO CỦ CHI</a></li>
-			 <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
-			<li class="d-inline-block me-1"><a href="#">KHU CHỢ LỚN</a></li>
-		   </ul>
-		   <hr>
-		   <div class="profile6il2i row">
-			 <div class="col-md-6">
-			   <div class="profile6il2il">
-				 <h6 class="font_14 mb-0">GIÁ CHỈ TỪ:<br>
- <span class="fw-bold"><span class="fs-4 col_green">6,500,000</span> <span class="text-decoration-line-through text-muted">$7,000,000</span></span><br>
- <span class="font_12">BAO GÒM THUẾ/PHI</span></h6>
-			   </div>
-			 </div>
-			 <div class="col-md-6">
-			   <div class="profile6il2ir text-end pt-2">
-				 <h6 class="mb-0"><a class="button px-3" href="#">Đặt Ngay <i class="fa fa-plane"></i></a></h6>
-			  </div>
-			</div>
-		  </div>
-		</div>
-		</div>
-	  </div>
-	  <div class="col-md-4">
-	    <div class="profile6il p-3 shadow_box rounded_1">
-		  <div class="profile6il1 position-relative">
-		   <div class="profile6il1i">
-		     <a href="#"><img src="../static/img/21.jpg" alt="abc" class="w-100 rounded_1"></a>
-			</div>
-			<div class="profile6il1i1 position-absolute top-0">
-			 <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 4 NGÀY 3 ĐÊM</h6><br>
-			  <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> Spain</a></h6>
-		 </div>
-		 </div>
-		 <div class="profile6il2 mt-3">
-		   <h5><a href="#">Sài Gòn hoa lệ - Năng động và hiện đại</a></h5>
-		   <ul class="font_12">
-			<li class="d-inline-block me-1"><a href="#">TRUNG TÂM THÀNH PHỐ</a></li>
-			 <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
-			<li class="d-inline-block me-1"><a href="#">ĐỊA ĐẠO CỦ CHI</a></li>
-			 <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
-			<li class="d-inline-block me-1"><a href="#">KHU CHỢ LỚN</a></li>
-		   </ul>
-		   <hr>
-		   <div class="profile6il2i row">
-			 <div class="col-md-6">
-			   <div class="profile6il2il">
-				 <h6 class="font_14 mb-0">GIÁ CHỈ TỪ:<br>
- <span class="fw-bold"><span class="fs-4 col_green">6,500,000</span> <span class="text-decoration-line-through text-muted">$7,000,000</span></span><br>
- <span class="font_12">BAO GÒM THUẾ/PHI</span></h6>
-			   </div>
-			 </div>
-			 <div class="col-md-6">
-			   <div class="profile6il2ir text-end pt-2">
-				 <h6 class="mb-0"><a class="button px-3" href="#">Đặt Ngay <i class="fa fa-plane"></i></a></h6>
-			  </div>
-			</div>
-		  </div>
-		</div>
-		</div>
-	  </div>
+	  {% endfor %}
 	</div>
 	<div class="row package_1 text-center mt-5">
     <div class="col-md-12">
@@ -2304,479 +2113,359 @@ before 48 hours</h6>
 </section>
 
 <section id="popular" class="p_3 bg_light1">
- <div class="container-xl">
-  <div class="row vacation_1 text-center mb-4">
-    <div class="col-md-12">
-	  <h5 class="family_1 icon_tag col_green"><i class="fa fa-leaf me-1"></i> Popular Tour <i class="fa fa-leaf ms-1"></i></h5>
-		<h1 class="font_50 mt-3 mb-0">Elite Tourist Attractions</h1>
-	</div>
-  </div>
-<div class="row popular_1 text-center mb-4 expe_1 ">
-    <div class="col-md-12">
-	  <ul class="nav nav-tabs mb-4 border-0 justify-content-center">
-<li class="nav-item d-inline-block">
-<a href="#profile9" data-bs-toggle="tab" aria-expanded="true" class="nav-link active">
-<span class="d-md-block"> Hà Nội</span>
-</a>
-</li>
-
-<li class="nav-item d-inline-block">
-<a href="#profile10" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
-<span class="d-md-block"> Thành Phố Hồ Chí Minh</span>
-</a>
-</li>
-<li class="nav-item d-inline-block">
-<a href="#profile11" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
-<span class="d-md-block"> Đà Nẵng</span>
-</a>
-</li>
-
-<li class="nav-item d-inline-block">
-<a href="#profile12" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
-<span class="d-md-block"> Đà Lạt</span>
-</a>
-</li>
-
-<li class="nav-item d-inline-block">
-<a href="#profile13" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
-<span class="d-md-block"> Vũng Tàu </span>
-</a>
-</li>
-<!-- Cần sữa link nha .......-->
-<li class="nav-item d-inline-block">
-	<a href="#profile14" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
-	<span class="d-md-block"> Cần Thơ</span>
-	</a>
-	</li>
-</ul>
-      <div class="tab-content">
-
-<div class="tab-pane active" id="profile9">
-   <div class="profile6i row">
-	<!-- Hà Nội-->
-	  <div class="col-md-4">
-	    <div class="profile6il p-3 shadow_box rounded_1">
-		  <div class="profile6il1 position-relative">
-		   <div class="profile6il1i">
-		     <a href="#"><img src="../static/img/18.jpg" alt="abc" class="w-100 rounded_1"></a>
+	<div class="container-xl">
+	 <div class="row vacation_1 text-center mb-4">
+	   <div class="col-md-12">
+		 <h5 class="family_1 icon_tag col_green"><i class="fa fa-leaf me-1"></i> Popular Tour <i class="fa fa-leaf ms-1"></i></h5>
+		   <h1 class="font_50 mt-3 mb-0">Elite Tourist Attractions</h1>
+	   </div>
+	 </div>
+   <div class="row popular_1 text-center mb-4 expe_1 ">
+	   <div class="col-md-12">
+		 <ul class="nav nav-tabs mb-4 border-0 justify-content-center">
+   <li class="nav-item d-inline-block">
+   <a href="#profile9" data-bs-toggle="tab" aria-expanded="true" class="nav-link active">
+   <span class="d-md-block"> Hà Nội</span>
+   </a>
+   </li>
+   
+   <li class="nav-item d-inline-block">
+   <a href="#profile10" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+   <span class="d-md-block"> Thành Phố Hồ Chí Minh</span>
+   </a>
+   </li>
+   <li class="nav-item d-inline-block">
+   <a href="#profile11" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+   <span class="d-md-block"> Đà Nẵng</span>
+   </a>
+   </li>
+   
+   <li class="nav-item d-inline-block">
+   <a href="#profile12" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+   <span class="d-md-block"> Đà Lạt</span>
+   </a>
+   </li>
+   
+   <li class="nav-item d-inline-block">
+   <a href="#profile13" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+   <span class="d-md-block"> Vũng Tàu </span>
+   </a>
+   </li>
+   <!-- Cần sữa link nha .......-->
+   <li class="nav-item d-inline-block">
+	   <a href="#profile14" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+	   <span class="d-md-block"> Cần Thơ</span>
+	   </a>
+	   </li>
+   </ul>
+		 <div class="tab-content">
+   
+   <div class="tab-pane active" id="profile9">
+	  <div class="profile6i row">
+	   <!-- Hà Nội-->
+		 <div class="col-md-4">
+		   <div class="profile6il p-3 shadow_box rounded_1">
+			 <div class="profile6il1 position-relative">
+			  <div class="profile6il1i">
+				<a href="#"><img src="../static/img/18.jpg" alt="abc" class="w-100 rounded_1"></a>
+			   </div>
+			   <div class="profile6il1i1 position-absolute top-0">
+				<h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0">3 NGÀY 2 ĐÊM</h6><br>
+				 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> HÀ NỘI</a></h6>
 			</div>
-			<div class="profile6il1i1 position-absolute top-0">
-			 <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0">3 NGÀY 2 ĐÊM</h6><br>
-			  <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> HÀ NỘI</a></h6>
-		 </div>
-		 </div>
- 
-		 <div class="profile6il2 mt-3">
-		   <h5><a href="#">Cổ kính - Linh thiêng - Hùng vĩ</a></h5>
-		   <ul class="font_12">
-			<li class="d-inline-block me-1"><a href="#">HÀ BỘI</a></li>
-			 <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
-			<li class="d-inline-block me-1"><a href="#">NINH BÌNH</a></li>
-		   </ul>
-		   <hr>
-		   <div class="profile6il2i row">
-			 <div class="col-md-6">
-			   <div class="profile6il2il">
-				 <h6 class="font_14 mb-0">Giá Chỉ:<br>
- <span class="fw-bold"><span class="fs-4 col_green">3,500,000</span> <span class="text-decoration-line-through text-muted">4,500,000</span></span><br>
- <span class="font_12">VND</span></h6>
+			</div>
+	
+			<div class="profile6il2 mt-3">
+			  <h5><a href="#">Cổ kính - Linh thiêng - Hùng vĩ</a></h5>
+			  <ul class="font_12">
+			   <li class="d-inline-block me-1"><a href="#">HÀ BỘI</a></li>
+				<li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+			   <li class="d-inline-block me-1"><a href="#">NINH BÌNH</a></li>
+			  </ul>
+			  <hr>
+			  <div class="profile6il2i row">
+				<div class="col-md-6">
+				  <div class="profile6il2il">
+					<h6 class="font_14 mb-0">Giá Chỉ:<br>
+	<span class="fw-bold"><span class="fs-4 col_green">3,500,000</span> <span class="text-decoration-line-through text-muted">4,500,000</span></span><br>
+	<span class="font_12">VND</span></h6>
+				  </div>
+				</div>
+				<div class="col-md-6">
+				  <div class="profile6il2ir text-end pt-2">
+					<h6 class="mb-0"><a class="button px-3" href="#">Đặt Ngay <i class="fa fa-plane"></i></a></h6>
+				 </div>
 			   </div>
 			 </div>
-			 <div class="col-md-6">
-			   <div class="profile6il2ir text-end pt-2">
-				 <h6 class="mb-0"><a class="button px-3" href="#">Đặt Ngay <i class="fa fa-plane"></i></a></h6>
-			  </div>
-			</div>
-		  </div>
-		</div>
-		</div>
-	  </div>
-	  <!-- tour các tour khác của Hà Nội-->
-	  <!-- 
-	  	  <div class="col-md-4">
-	    <div class="profile6il p-3 shadow_box rounded_1">
-		  <div class="profile6il1 position-relative">
-		   <div class="profile6il1i">
-		     <a href="#"><img src="img/18.jpg" alt="abc" class="w-100 rounded_1"></a>
-		</div>
-		   <div class="profile6il1i1 position-absolute top-0">
-		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 2 DAYS / 3 NIGHT</h6><br>
-			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> Spain</a></h6>
-		</div>
-		</div>
-		<div class="profile6il2 mt-3">
-		  <h5><a href="#">Embracing City Lights, Landm, And Iconic Culture.</a></h5>
-		  <ul class="font_12">
-		   <li class="d-inline-block me-1"><a href="#">LOREM PORTA</a></li>
-		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
-		   <li class="d-inline-block me-1"><a href="#">SEA BEACH</a></li>
-		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
-		   <li class="d-inline-block me-1"><a href="#">IPSUM WORLD</a></li>
-		  </ul>
-		  <hr>
-		  <div class="profile6il2i row">
-		    <div class="col-md-6">
-			  <div class="profile6il2il">
-			    <h6 class="font_14 mb-0">Starting From:<br>
-<span class="fw-bold"><span class="fs-4 col_green">$260</span> <span class="text-decoration-line-through text-muted">$410</span></span><br>
-<span class="font_12">TAXES INCL/PERS</span></h6>
-			  </div>
-			</div>
-			<div class="col-md-6">
-			  <div class="profile6il2ir text-end pt-2">
-			    <h6 class="mb-0"><a class="button px-3" href="#">Book A Trip <i class="fa fa-plane"></i></a></h6>
-			  </div>
-			</div>
-		  </div>
-		</div>
-		</div>
-	  </div>
-	  <div class="col-md-4">
-	    <div class="profile6il p-3 shadow_box rounded_1">
-		  <div class="profile6il1 position-relative">
-		   <div class="profile6il1i">
-		     <a href="#"><img src="img/19.jpg" alt="abc" class="w-100 rounded_1"></a>
-		</div>
-		   <div class="profile6il1i1 position-absolute top-0">
-		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 3 DAYS / 4 NIGHT</h6><br>
-			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> LONDON</a></h6>
-		</div>
-		</div>
-		<div class="profile6il2 mt-3">
-		  <h5><a href="#">Immersive Cultural Expirees, Local Cuisine.</a></h5>
-		  <ul class="font_12">
-		   <li class="d-inline-block me-1"><a href="#">LOREM PORTA</a></li>
-		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
-		   <li class="d-inline-block me-1"><a href="#">SEA BEACH</a></li>
-		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
-		   <li class="d-inline-block me-1"><a href="#">IPSUM WORLD</a></li>
-		  </ul>
-		  <hr>
-		  <div class="profile6il2i row">
-		    <div class="col-md-6">
-			  <div class="profile6il2il">
-			    <h6 class="font_14 mb-0">Starting From:<br>
-<span class="fw-bold"><span class="fs-4 col_green">$430</span> <span class="text-decoration-line-through text-muted">$620</span></span><br>
-<span class="font_12">TAXES INCL/PERS</span></h6>
-			  </div>
-			</div>
-			<div class="col-md-6">
-			  <div class="profile6il2ir text-end pt-2">
-			    <h6 class="mb-0"><a class="button px-3" href="#">Book A Trip <i class="fa fa-plane"></i></a></h6>
-			  </div>
-			</div>
-		  </div>
-		</div>
-		</div>
-	  </div>
--->
-
-	</div>
-</div>
-
-<div class="tab-pane" id="profile10">
-    <div class="profile6i row">
-		<!--
+		   </div>
+		   </div>
+		 </div>
 		
-		
-	  <div class="col-md-4">
-	    <div class="profile6il p-3 shadow_box rounded_1">
-		  <div class="profile6il1 position-relative">
-		   <div class="profile6il1i">
-		     <a href="#"><img src="img/22.jpg" alt="abc" class="w-100 rounded_1"></a>
-		</div>
-		   <div class="profile6il1i1 position-absolute top-0">
-		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 1 WEEK</h6><br>
-			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> EGYPT</a></h6>
-		</div>
-		</div>
-		<div class="profile6il2 mt-3">
-		  <h5><a href="#">Discover Serenity, Exploration, And Enlightenment.</a></h5>
-		  <ul class="font_12">
-		   <li class="d-inline-block me-1"><a href="#">LOREM PORTA</a></li>
-		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
-		   <li class="d-inline-block me-1"><a href="#">SEA BEACH</a></li>
-		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
-		   <li class="d-inline-block me-1"><a href="#">IPSUM WORLD</a></li>
-		  </ul>
-		  <hr>
-		  <div class="profile6il2i row">
-		    <div class="col-md-6">
-			  <div class="profile6il2il">
-			    <h6 class="font_14 mb-0">Starting From:<br>
-<span class="fw-bold"><span class="fs-4 col_green">$340</span> <span class="text-decoration-line-through text-muted">$450</span></span><br>
-<span class="font_12">TAXES INCL/PERS</span></h6>
-			  </div>
-			</div>
-			<div class="col-md-6">
-			  <div class="profile6il2ir text-end pt-2">
-			    <h6 class="mb-0"><a class="button px-3" href="#">Book A Trip <i class="fa fa-plane"></i></a></h6>
-			  </div>
-			</div>
-		  </div>
-		</div>
-		</div>
-	  </div>
-	  -->
-	  <div class="col-md-4">
-	    <div class="profile6il p-3 shadow_box rounded_1">
-		  <div class="profile6il1 position-relative">
-		   <div class="profile6il1i">
-		     <a href="#"><img src="../static/img/20.jpg" alt="abc" class="w-100 rounded_1"></a>
-		</div>
-		   <div class="profile6il1i1 position-absolute top-0">
-		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0">3 NGÀY 2 ĐÊM</h6><br>
-			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> HÀ NỘI</a></h6>
-		</div>
-		</div>
-
-		<div class="profile6il2 mt-3">
-		  <h5><a href="#">Cổ kính - Linh thiêng - Hùng vĩ</a></h5>
-		  <ul class="font_12">
-		   <li class="d-inline-block me-1"><a href="#">HÀ BỘI</a></li>
-		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
-		   <li class="d-inline-block me-1"><a href="#">NINH BÌNH</a></li>
-		  </ul>
-		  <hr>
-		  <div class="profile6il2i row">
-		    <div class="col-md-6">
-			  <div class="profile6il2il">
-			    <h6 class="font_14 mb-0">Giá Chỉ:<br>
-<span class="fw-bold"><span class="fs-4 col_green">3,500,000</span> <span class="text-decoration-line-through text-muted">4,500,000</span></span><br>
-<span class="font_12">VND</span></h6>
-			  </div>
-			</div>
-			<div class="col-md-6">
-			  <div class="profile6il2ir text-end pt-2">
-			    <h6 class="mb-0"><a class="button px-3" href="#">Đặt Ngay <i class="fa fa-plane"></i></a></h6>
-			  </div>
-			</div>
-		  </div>
-		</div>
-		</div>
-	  </div>
-
+	   </div>
+   </div>
+   
+   <div class="tab-pane" id="profile10">
+	   <div class="profile6i row">
+				 <div class="col-md-4">
+		   <div class="profile6il p-3 shadow_box rounded_1">
+			 <div class="profile6il1 position-relative">
+			  <div class="profile6il1i">
+				<a href="#"><img src="../static/img/20.jpg" alt="abc" class="w-100 rounded_1"></a>
+		   </div>
+			  <div class="profile6il1i1 position-absolute top-0">
+			   <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0">3 NGÀY 2 ĐÊM</h6><br>
+				<h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> HÀ NỘI</a></h6>
+		   </div>
+		   </div>
+   
+		   <div class="profile6il2 mt-3">
+			 <h5><a href="#">Cổ kính - Linh thiêng - Hùng vĩ</a></h5>
+			 <ul class="font_12">
+			  <li class="d-inline-block me-1"><a href="#">HÀ BỘI</a></li>
+			   <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+			  <li class="d-inline-block me-1"><a href="#">NINH BÌNH</a></li>
+			 </ul>
+			 <hr>
+			 <div class="profile6il2i row">
+			   <div class="col-md-6">
+				 <div class="profile6il2il">
+				   <h6 class="font_14 mb-0">Giá Chỉ:<br>
+   <span class="fw-bold"><span class="fs-4 col_green">3,500,000</span> <span class="text-decoration-line-through text-muted">4,500,000</span></span><br>
+   <span class="font_12">VND</span></h6>
+				 </div>
+			   </div>
+			   <div class="col-md-6">
+				 <div class="profile6il2ir text-end pt-2">
+				   <h6 class="mb-0"><a class="button px-3" href="#">Đặt Ngay <i class="fa fa-plane"></i></a></h6>
+				 </div>
+			   </div>
+			 </div>
+		   </div>
+		   </div>
+		 </div>
+   
+	   </div>
+   </div>
+   
+   <div class="tab-pane" id="profile11">
+	   <div class="profile6i row">
+		 <div class="col-md-4">
+		   <div class="profile6il p-3 shadow_box rounded_1">
+			 <div class="profile6il1 position-relative">
+			  <div class="profile6il1i">
+				<a href="#"><img src="../static/img/19.jpg" alt="abc" class="w-100 rounded_1"></a>
+		   </div>
+			  <div class="profile6il1i1 position-absolute top-0">
+			   <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 3 DAYS / 4 NIGHT</h6><br>
+				<h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> LONDON</a></h6>
+		   </div>
+		   </div>
+		   <div class="profile6il2 mt-3">
+			 <h5><a href="#">Immersive Cultural Expirees, Local Cuisine.</a></h5>
+			 <ul class="font_12">
+			  <li class="d-inline-block me-1"><a href="#">LOREM PORTA</a></li>
+			   <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+			  <li class="d-inline-block me-1"><a href="#">SEA BEACH</a></li>
+			   <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+			  <li class="d-inline-block me-1"><a href="#">IPSUM WORLD</a></li>
+			 </ul>
+			 <hr>
+			 <div class="profile6il2i row">
+			   <div class="col-md-6">
+				 <div class="profile6il2il">
+				   <h6 class="font_14 mb-0">Starting From:<br>
+   <span class="fw-bold"><span class="fs-4 col_green">$430</span> <span class="text-decoration-line-through text-muted">$620</span></span><br>
+   <span class="font_12">TAXES INCL/PERS</span></h6>
+				 </div>
+			   </div>
+			   <div class="col-md-6">
+				 <div class="profile6il2ir text-end pt-2">
+				   <h6 class="mb-0"><a class="button px-3" href="#">Book A Trip <i class="fa fa-plane"></i></a></h6>
+				 </div>
+			   </div>
+			 </div>
+		   </div>
+		   </div>
+		 </div>
+	   </div>
+   </div>
+   
+   <div class="tab-pane" id="profile12">
+	   <div class="profile6i row">
+		 
+		 <div class="col-md-4">
+		   <div class="profile6il p-3 shadow_box rounded_1">
+			 <div class="profile6il1 position-relative">
+			  <div class="profile6il1i">
+				<a href="#"><img src="../static/img/20.jpg" alt="abc" class="w-100 rounded_1"></a>
+		   </div>
+			  <div class="profile6il1i1 position-absolute top-0">
+			   <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 2 DAYS / 3 NIGHT</h6><br>
+				<h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> Spain</a></h6>
+		   </div>
+		   </div>
+		   <div class="profile6il2 mt-3">
+			 <h5><a href="#">Embracing City Lights, Landm, And Iconic Culture.</a></h5>
+			 <ul class="font_12">
+			  <li class="d-inline-block me-1"><a href="#">LOREM PORTA</a></li>
+			   <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+			  <li class="d-inline-block me-1"><a href="#">SEA BEACH</a></li>
+			   <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+			  <li class="d-inline-block me-1"><a href="#">IPSUM WORLD</a></li>
+			 </ul>
+			 <hr>
+			 <div class="profile6il2i row">
+			   <div class="col-md-6">
+				 <div class="profile6il2il">
+				   <h6 class="font_14 mb-0">Starting From:<br>
+   <span class="fw-bold"><span class="fs-4 col_green">$260</span> <span class="text-decoration-line-through text-muted">$410</span></span><br>
+   <span class="font_12">TAXES INCL/PERS</span></h6>
+				 </div>
+			   </div>
+			   <div class="col-md-6">
+				 <div class="profile6il2ir text-end pt-2">
+				   <h6 class="mb-0"><a class="button px-3" href="#">Book A Trip <i class="fa fa-plane"></i></a></h6>
+				 </div>
+			   </div>
+			 </div>
+		   </div>
+		   </div>
+		 </div>
+		 <div class="col-md-4">
+		   <div class="profile6il p-3 shadow_box rounded_1">
+			 <div class="profile6il1 position-relative">
+			  <div class="profile6il1i">
+				<a href="#"><img src="../static/img/21.jpg" alt="abc" class="w-100 rounded_1"></a>
+		   </div>
+			  <div class="profile6il1i1 position-absolute top-0">
+			   <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 3 DAYS / 4 NIGHT</h6><br>
+				<h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> LONDON</a></h6>
+		   </div>
+		   </div>
+		   <div class="profile6il2 mt-3">
+			 <h5><a href="#">Immersive Cultural Expirees, Local Cuisine.</a></h5>
+			 <ul class="font_12">
+			  <li class="d-inline-block me-1"><a href="#">LOREM PORTA</a></li>
+			   <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+			  <li class="d-inline-block me-1"><a href="#">SEA BEACH</a></li>
+			   <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+			  <li class="d-inline-block me-1"><a href="#">IPSUM WORLD</a></li>
+			 </ul>
+			 <hr>
+			 <div class="profile6il2i row">
+			   <div class="col-md-6">
+				 <div class="profile6il2il">
+				   <h6 class="font_14 mb-0">Starting From:<br>
+   <span class="fw-bold"><span class="fs-4 col_green">$430</span> <span class="text-decoration-line-through text-muted">$620</span></span><br>
+   <span class="font_12">TAXES INCL/PERS</span></h6>
+				 </div>
+			   </div>
+			   <div class="col-md-6">
+				 <div class="profile6il2ir text-end pt-2">
+				   <h6 class="mb-0"><a class="button px-3" href="#">Book A Trip <i class="fa fa-plane"></i></a></h6>
+				 </div>
+			   </div>
+			 </div>
+		   </div>
+		   </div>
+		 </div>
+	   </div>
+   </div>
+   
+   <div class="tab-pane" id="profile13">
+	   <div class="profile6i row">
+		 <div class="col-md-4">
+		   <div class="profile6il p-3 shadow_box rounded_1">
+			 <div class="profile6il1 position-relative">
+			  <div class="profile6il1i">
+				<a href="#"><img src="../static/img/17.png" alt="abc" class="w-100 rounded_1"></a>
+		   </div>
+			  <div class="profile6il1i1 position-absolute top-0">
+			   <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 1 WEEK</h6><br>
+				<h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> EGYPT</a></h6>
+		   </div>
+		   </div>
+		   <div class="profile6il2 mt-3">
+			 <h5><a href="#">Discover Serenity, Exploration, And Enlightenment.</a></h5>
+			 <ul class="font_12">
+			  <li class="d-inline-block me-1"><a href="#">LOREM PORTA</a></li>
+			   <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+			  <li class="d-inline-block me-1"><a href="#">SEA BEACH</a></li>
+			   <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+			  <li class="d-inline-block me-1"><a href="#">IPSUM WORLD</a></li>
+			 </ul>
+			 <hr>
+			 <div class="profile6il2i row">
+			   <div class="col-md-6">
+				 <div class="profile6il2il">
+				   <h6 class="font_14 mb-0">Starting From:<br>
+   <span class="fw-bold"><span class="fs-4 col_green">$340</span> <span class="text-decoration-line-through text-muted">$450</span></span><br>
+   <span class="font_12">TAXES INCL/PERS</span></h6>
+				 </div>
+			   </div>
+			   <div class="col-md-6">
+				 <div class="profile6il2ir text-end pt-2">
+				   <h6 class="mb-0"><a class="button px-3" href="#">Book A Trip <i class="fa fa-plane"></i></a></h6>
+				 </div>
+			   </div>
+			 </div>
+		   </div>
+		   </div>
+		 </div>
+		 
+		 <div class="col-md-4">
+		   <div class="profile6il p-3 shadow_box rounded_1">
+			 <div class="profile6il1 position-relative">
+			  <div class="profile6il1i">
+				<a href="#"><img src="../static/img/19.jpg" alt="abc" class="w-100 rounded_1"></a>
+		   </div>
+			  <div class="profile6il1i1 position-absolute top-0">
+			   <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 3 DAYS / 4 NIGHT</h6><br>
+				<h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> LONDON</a></h6>
+		   </div>
+		   </div>
+		   <div class="profile6il2 mt-3">
+			 <h5><a href="#">Immersive Cultural Expirees, Local Cuisine.</a></h5>
+			 <ul class="font_12">
+			  <li class="d-inline-block me-1"><a href="#">LOREM PORTA</a></li>
+			   <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+			  <li class="d-inline-block me-1"><a href="#">SEA BEACH</a></li>
+			   <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
+			  <li class="d-inline-block me-1"><a href="#">IPSUM WORLD</a></li>
+			 </ul>
+			 <hr>
+			 <div class="profile6il2i row">
+			   <div class="col-md-6">
+				 <div class="profile6il2il">
+				   <h6 class="font_14 mb-0">Starting From:<br>
+   <span class="fw-bold"><span class="fs-4 col_green">$430</span> <span class="text-decoration-line-through text-muted">$620</span></span><br>
+   <span class="font_12">TAXES INCL/PERS</span></h6>
+				 </div>
+			   </div>
+			   <div class="col-md-6">
+				 <div class="profile6il2ir text-end pt-2">
+				   <h6 class="mb-0"><a class="button px-3" href="#">Book A Trip <i class="fa fa-plane"></i></a></h6>
+				 </div>
+			   </div>
+			 </div>
+		   </div>
+		   </div>
+		 </div>
+	   </div>
+   </div>
+   
+   </div>
+	   </div>
+	 </div>
+	 <div class="row package_1 text-center mt-5">
+	   <div class="col-md-12">
+		<h6 class="mb-0"><a class="button_1" href="#">View All Package</a></h6>
+	   </div>
+	 </div>
 	</div>
-</div>
-
-<div class="tab-pane" id="profile11">
-    <div class="profile6i row">
-	  <div class="col-md-4">
-	    <div class="profile6il p-3 shadow_box rounded_1">
-		  <div class="profile6il1 position-relative">
-		   <div class="profile6il1i">
-		     <a href="#"><img src="../static/img/19.jpg" alt="abc" class="w-100 rounded_1"></a>
-		</div>
-		   <div class="profile6il1i1 position-absolute top-0">
-		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 3 DAYS / 4 NIGHT</h6><br>
-			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> LONDON</a></h6>
-		</div>
-		</div>
-		<div class="profile6il2 mt-3">
-		  <h5><a href="#">Immersive Cultural Expirees, Local Cuisine.</a></h5>
-		  <ul class="font_12">
-		   <li class="d-inline-block me-1"><a href="#">LOREM PORTA</a></li>
-		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
-		   <li class="d-inline-block me-1"><a href="#">SEA BEACH</a></li>
-		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
-		   <li class="d-inline-block me-1"><a href="#">IPSUM WORLD</a></li>
-		  </ul>
-		  <hr>
-		  <div class="profile6il2i row">
-		    <div class="col-md-6">
-			  <div class="profile6il2il">
-			    <h6 class="font_14 mb-0">Starting From:<br>
-<span class="fw-bold"><span class="fs-4 col_green">$430</span> <span class="text-decoration-line-through text-muted">$620</span></span><br>
-<span class="font_12">TAXES INCL/PERS</span></h6>
-			  </div>
-			</div>
-			<div class="col-md-6">
-			  <div class="profile6il2ir text-end pt-2">
-			    <h6 class="mb-0"><a class="button px-3" href="#">Book A Trip <i class="fa fa-plane"></i></a></h6>
-			  </div>
-			</div>
-		  </div>
-		</div>
-		</div>
-	  </div>
-	</div>
-</div>
-
-<div class="tab-pane" id="profile12">
-    <div class="profile6i row">
-	  
-	  <div class="col-md-4">
-	    <div class="profile6il p-3 shadow_box rounded_1">
-		  <div class="profile6il1 position-relative">
-		   <div class="profile6il1i">
-		     <a href="#"><img src="../static/img/20.jpg" alt="abc" class="w-100 rounded_1"></a>
-		</div>
-		   <div class="profile6il1i1 position-absolute top-0">
-		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 2 DAYS / 3 NIGHT</h6><br>
-			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> Spain</a></h6>
-		</div>
-		</div>
-		<div class="profile6il2 mt-3">
-		  <h5><a href="#">Embracing City Lights, Landm, And Iconic Culture.</a></h5>
-		  <ul class="font_12">
-		   <li class="d-inline-block me-1"><a href="#">LOREM PORTA</a></li>
-		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
-		   <li class="d-inline-block me-1"><a href="#">SEA BEACH</a></li>
-		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
-		   <li class="d-inline-block me-1"><a href="#">IPSUM WORLD</a></li>
-		  </ul>
-		  <hr>
-		  <div class="profile6il2i row">
-		    <div class="col-md-6">
-			  <div class="profile6il2il">
-			    <h6 class="font_14 mb-0">Starting From:<br>
-<span class="fw-bold"><span class="fs-4 col_green">$260</span> <span class="text-decoration-line-through text-muted">$410</span></span><br>
-<span class="font_12">TAXES INCL/PERS</span></h6>
-			  </div>
-			</div>
-			<div class="col-md-6">
-			  <div class="profile6il2ir text-end pt-2">
-			    <h6 class="mb-0"><a class="button px-3" href="#">Book A Trip <i class="fa fa-plane"></i></a></h6>
-			  </div>
-			</div>
-		  </div>
-		</div>
-		</div>
-	  </div>
-	  <div class="col-md-4">
-	    <div class="profile6il p-3 shadow_box rounded_1">
-		  <div class="profile6il1 position-relative">
-		   <div class="profile6il1i">
-		     <a href="#"><img src="../static/img/21.jpg" alt="abc" class="w-100 rounded_1"></a>
-		</div>
-		   <div class="profile6il1i1 position-absolute top-0">
-		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 3 DAYS / 4 NIGHT</h6><br>
-			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> LONDON</a></h6>
-		</div>
-		</div>
-		<div class="profile6il2 mt-3">
-		  <h5><a href="#">Immersive Cultural Expirees, Local Cuisine.</a></h5>
-		  <ul class="font_12">
-		   <li class="d-inline-block me-1"><a href="#">LOREM PORTA</a></li>
-		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
-		   <li class="d-inline-block me-1"><a href="#">SEA BEACH</a></li>
-		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
-		   <li class="d-inline-block me-1"><a href="#">IPSUM WORLD</a></li>
-		  </ul>
-		  <hr>
-		  <div class="profile6il2i row">
-		    <div class="col-md-6">
-			  <div class="profile6il2il">
-			    <h6 class="font_14 mb-0">Starting From:<br>
-<span class="fw-bold"><span class="fs-4 col_green">$430</span> <span class="text-decoration-line-through text-muted">$620</span></span><br>
-<span class="font_12">TAXES INCL/PERS</span></h6>
-			  </div>
-			</div>
-			<div class="col-md-6">
-			  <div class="profile6il2ir text-end pt-2">
-			    <h6 class="mb-0"><a class="button px-3" href="#">Book A Trip <i class="fa fa-plane"></i></a></h6>
-			  </div>
-			</div>
-		  </div>
-		</div>
-		</div>
-	  </div>
-	</div>
-</div>
-
-<div class="tab-pane" id="profile13">
-    <div class="profile6i row">
-	  <div class="col-md-4">
-	    <div class="profile6il p-3 shadow_box rounded_1">
-		  <div class="profile6il1 position-relative">
-		   <div class="profile6il1i">
-		     <a href="#"><img src="../static/img/17.png" alt="abc" class="w-100 rounded_1"></a>
-		</div>
-		   <div class="profile6il1i1 position-absolute top-0">
-		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 1 WEEK</h6><br>
-			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> EGYPT</a></h6>
-		</div>
-		</div>
-		<div class="profile6il2 mt-3">
-		  <h5><a href="#">Discover Serenity, Exploration, And Enlightenment.</a></h5>
-		  <ul class="font_12">
-		   <li class="d-inline-block me-1"><a href="#">LOREM PORTA</a></li>
-		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
-		   <li class="d-inline-block me-1"><a href="#">SEA BEACH</a></li>
-		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
-		   <li class="d-inline-block me-1"><a href="#">IPSUM WORLD</a></li>
-		  </ul>
-		  <hr>
-		  <div class="profile6il2i row">
-		    <div class="col-md-6">
-			  <div class="profile6il2il">
-			    <h6 class="font_14 mb-0">Starting From:<br>
-<span class="fw-bold"><span class="fs-4 col_green">$340</span> <span class="text-decoration-line-through text-muted">$450</span></span><br>
-<span class="font_12">TAXES INCL/PERS</span></h6>
-			  </div>
-			</div>
-			<div class="col-md-6">
-			  <div class="profile6il2ir text-end pt-2">
-			    <h6 class="mb-0"><a class="button px-3" href="#">Book A Trip <i class="fa fa-plane"></i></a></h6>
-			  </div>
-			</div>
-		  </div>
-		</div>
-		</div>
-	  </div>
-	  
-	  <div class="col-md-4">
-	    <div class="profile6il p-3 shadow_box rounded_1">
-		  <div class="profile6il1 position-relative">
-		   <div class="profile6il1i">
-		     <a href="#"><img src="../static/img/19.jpg" alt="abc" class="w-100 rounded_1"></a>
-		</div>
-		   <div class="profile6il1i1 position-absolute top-0">
-		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 3 DAYS / 4 NIGHT</h6><br>
-			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="#"><i class="fa fa-map-marker me-1 col_green"></i> LONDON</a></h6>
-		</div>
-		</div>
-		<div class="profile6il2 mt-3">
-		  <h5><a href="#">Immersive Cultural Expirees, Local Cuisine.</a></h5>
-		  <ul class="font_12">
-		   <li class="d-inline-block me-1"><a href="#">LOREM PORTA</a></li>
-		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
-		   <li class="d-inline-block me-1"><a href="#">SEA BEACH</a></li>
-		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i></li>
-		   <li class="d-inline-block me-1"><a href="#">IPSUM WORLD</a></li>
-		  </ul>
-		  <hr>
-		  <div class="profile6il2i row">
-		    <div class="col-md-6">
-			  <div class="profile6il2il">
-			    <h6 class="font_14 mb-0">Starting From:<br>
-<span class="fw-bold"><span class="fs-4 col_green">$430</span> <span class="text-decoration-line-through text-muted">$620</span></span><br>
-<span class="font_12">TAXES INCL/PERS</span></h6>
-			  </div>
-			</div>
-			<div class="col-md-6">
-			  <div class="profile6il2ir text-end pt-2">
-			    <h6 class="mb-0"><a class="button px-3" href="#">Book A Trip <i class="fa fa-plane"></i></a></h6>
-			  </div>
-			</div>
-		  </div>
-		</div>
-		</div>
-	  </div>
-	</div>
-</div>
-
-</div>
-	</div>
-  </div>
-  <div class="row package_1 text-center mt-5">
-    <div class="col-md-12">
-     <h6 class="mb-0"><a class="button_1" href="#">View All Package</a></h6>
-	</div>
-  </div>
- </div>
-</section>
-
+   </section>
+   
+   
 <section id="explore" class="p_3">
  <div class="container-xl">
   <div class="row vacation_1 text-center mb-4">

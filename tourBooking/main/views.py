@@ -4,7 +4,11 @@ from .models import Tour
 
 # Trang chủ
 def index(request):
-    return render(request, 'index.html')  # Trả về index.html
+    # Lấy tất cả các tour từ cơ sở dữ liệu
+    tours = Tour.objects.all()
+    
+    # Trả về trang index.html và truyền danh sách tours vào context
+    return render(request, 'index.html', {'tours': tours})
 
 
 # Trang giới thiệu
@@ -95,10 +99,7 @@ def register(request):
     return render(request, 'register.html')
 
 
-# View hiển thị danh sách tours
-def tour_list(request):
-    tours = Tour.objects.all()  # Lấy tất cả các tour trong database
-    return render(request, 'tour_list.html', {'tours': tours})  # Trả về danh sách tours
+
 
 
 # View hiển thị chi tiết tour và lịch trình
