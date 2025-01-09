@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     #'smart_map',
     # 'tourBooking',
     'users',
+    'reviews',
+     'django.contrib.humanize',
 ]
 
 MIDDLEWARE = [

@@ -1,0 +1,89 @@
+/* Thêm khoảng cách phía trên phần nội dung để tránh bị dính vào header */
+.tour-detail-container {
+    margin-top: 50px; /* Thêm khoảng cách 50px từ phía trên */
+}
+
+.tour-detail-container h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.tour-detail-container img {
+    height: 300px; /* Đặt chiều cao hợp lý cho hình ảnh */
+    object-fit: cover;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.tour-detail-container p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Các phần khác như lịch trình, đánh giá, và form viết đánh giá vẫn như cũ */
+.tour-detail-container h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 20px;
+}
+
+.review {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.review-user {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.review-rating {
+    font-size: 1.2rem;
+    color: #f06; /* Màu cho sao */
+    font-weight: bold;
+}
+
+.review-comment {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+.review-date {
+    font-size: 0.9rem;
+    color: #888;
+    text-align: right;
+}
+
+.write-review-container form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.write-review-container .btn-success {
+    background-color: #28a745;
+    border: none;
+    color: white;
+}
+
+.write-review-container .btn-success:hover {
+    background-color: #218838;
+}
