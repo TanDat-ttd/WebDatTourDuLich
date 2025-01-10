@@ -166,5 +166,29 @@ font-size:18px!important;
     background-color: #3def1d;
 }
 
+.accordion-button {
+    background-color: #63ab45; /* Nền xanh lá */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    transition: all 0.3s ease;
+}
 
+.accordion-button:hover {
+    background-color: #4caf50; /* Xanh đậm hơn khi hover */
+}
+
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: #4caf50;
+}
+
+.accordion-body {
+    background-color: #fff; /* Nền trắng */
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 15px;
+}
 

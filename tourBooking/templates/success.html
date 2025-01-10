@@ -32,8 +32,8 @@
 <p>Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi!</p>
 
 <div class="details">
-    <p><strong>Mã đặt tour:</strong> {{ booking.id|default:"Không có sẵn" }}</p>
-    <p><strong>Tour:</strong> {{ booking.tour_name|default:"Không có sẵn" }}</p>
+    <p><strong>Mã đặt tour:</strong> {{ booking.booking_code|default:"Không có sẵn" }}</p>
+    <p><strong>Tour:</strong> {{ booking.tour.name|default:"Không có sẵn" }}</p>
     <p><strong>Khách hàng:</strong> {{ booking.first_name }} {{ booking.last_name }}</p>
     <p><strong>Email:</strong> {{ booking.email }}</p>
     <p><strong>Số điện thoại:</strong> {{ booking.phone }}</p>
@@ -44,5 +44,6 @@
 </div>
 
 <p>Một email xác nhận đã được gửi về địa chỉ <strong>{{ booking.email }}</strong>. Hãy kiểm tra hộp thư của bạn!</p>
+<p>Nếu bạn nhận được email xác nhận, vui lòng kiểm tra email và nhấn nút "Xác nhận". Điều này giúp hoàn tất thủ tục đặt tour của bạn!</p>
 </body>
 </html>

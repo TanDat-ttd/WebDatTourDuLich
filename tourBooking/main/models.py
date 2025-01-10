@@ -46,6 +46,12 @@ class Tour(models.Model):
         # Nếu không có ảnh, trả về đường dẫn ảnh mặc định
         return static('images/default_tour.jpg')
 
+    def save(self, *args, **kwargs):
+        # Đảm bảo không cho phép remaining_capacity < 0
+        if self.remaining_capacity < 0:
+            self.remaining_capacity = 0
+        super().save(*args, **kwargs)
+
 
 # Thêm model Schedule
 class Schedule(models.Model):

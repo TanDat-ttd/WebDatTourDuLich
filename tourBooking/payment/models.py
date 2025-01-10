@@ -1,5 +1,55 @@
+import uuid
 from django.db import models
 from django.utils.timezone import now
+from main.models import Tour  # Tham chiếu đến model Tour
+from datetime import timedelta
+
+class Booking(models.Model):
+    STATUS_CHOICES = (
+        ('pending', 'Pending'),
+        ('paid', 'Paid'),
+        ('confirmed', 'Confirmed'),
+    )
+
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)  # Định danh ngẫu nhiên
+    tour = models.ForeignKey(Tour, on_delete=models.CASCADE, related_name='bookings')  # Tham chiếu đến tour
+    first_name = models.CharField(max_length=100)
+    last_name = models.CharField(max_length=100)
+    email = models.EmailField()
+    phone = models.CharField(max_length=15)
+    address = models.TextField()
+    number_of_people = models.PositiveIntegerField()
+    total_price = models.DecimalField(max_digits=10, decimal_places=2)  # Giá trị tổng cộng
+    payment_method = models.CharField(max_length=20, default='cash')
+    created_at = models.DateTimeField(auto_now_add=True)  # Ngày tạo
+    updated_at = models.DateTimeField(auto_now=True)  # Ngày cập nhật
+    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='pending')  # Trạng thái đặt
+    booking_code = models.CharField(max_length=10, unique=True)  # Mã đặt tour
+    confirmation_deadline = models.DateTimeField(null=True, blank=True)  # Hạn cuối để xác nhận
+
+
+
+    def save(self, *args, **kwargs):
+        # Tạo mã đặt tour ngẫu nhiên trước khi lưu
+        if not self.booking_code:
+            self.booking_code = self.generate_booking_code()
+        super().save(*args, **kwargs)
+
+    def generate_booking_code(self):
+        import random
+        import string
+        # Tạo mã ngẫu nhiên với 6 ký tự (có thể thêm quy luật tại đây)
+        return ''.join(random.choices(string.ascii_uppercase + string.digits, k=6))
+
+    def __str__(self):
+        return f"{self.first_name} {self.last_name} - {self.booking_code}"
+
+
+    def set_confirmation_deadline(self):
+        # Đặt hạn xác nhận là 90 phút từ thời điểm booking được tạo
+        self.confirmation_deadline = now() + timedelta(minutes=90)
+        self.save()
+
 
 
 # Loại giảm giá
@@ -97,3 +147,7 @@ def use_discount(self, user_email=None):
 
     def __str__(self):
         return f"{self.code} ({self.discount_type})"
+
+
+
+

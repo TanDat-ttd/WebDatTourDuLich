@@ -5,317 +5,66 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c2f19cb-cb00-4a0a-bdbe-f42ef3e5ad61" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/tourBooking/main/management/commands/delete_unconfirmed_bookings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tourBooking/payment/cron.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tourBooking/payment/send_email.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tourBooking/payment/tasks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tourBooking/reviews/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tourBooking/reviews/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tourBooking/reviews/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tourBooking/reviews/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tourBooking/reviews/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tourBooking/reviews/migrations/0002_alter_review_rating_alter_review_tour.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tourBooking/reviews/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tourBooking/reviews/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tourBooking/reviews/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tourBooking/reviews/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tourBooking/reviews/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tourBooking/static/css/stylesreviews.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/migrations/0002_schedule.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/tour_HoChiMinh.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/migrations/0002_discountcode_created_at_and_more.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smart_map/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smart_map/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smart_map/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smart_map/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smart_map/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smart_map/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smart_map/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smart_map/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/about.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/blog.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/destination.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/gallery.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/global.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/styleloginregist.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/tour.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/css/brands.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/css/fontawesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/css/solid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/js/brands.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/js/conflict-detection.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/js/conflict-detection.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/js/fontawesome.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/js/solid.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/webfonts/fa-brands-400.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/webfonts/fa-brands-400.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/webfonts/fa-solid-900.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/webfonts/fa-solid-900.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/111.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/112.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/113.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/114.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/115.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/16.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/18.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/19.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/191.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/20.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/21.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/22.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/23.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/24.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/26.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/27.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/28.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/29.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/31.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/32.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/33.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/34.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/35.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/41.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/44.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/45.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/45.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/46.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/46.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/47.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/47.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/48.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/48.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/49.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/49.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/51.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/52.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/53.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/54.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/55.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/56.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/57.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/58.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/59.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/60.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/61.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/62.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/63.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/64.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/65.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/66.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/An Giang.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/Anh-dep-Vinh-Ha-Long-14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/BinhDinh_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/BinhDinh_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/BinhDinh_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/BinhDinh_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/BinhDinh_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/BinhDinh_14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/BinhDinh_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/BinhDinh_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/BinhDinh_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/BinhDinh_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/BinhDinh_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/BinhDinh_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/BinhDinh_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/BinhDinh_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/BinhThuan.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/CaMau.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/DaLat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/DaNang.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/DaNang.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/Giai-Nhat--Dem-Sai-G.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/HaGiang.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/HaiPhong.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/HoaBinh.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/Hue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/LySon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/NhaTrang.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/PhuQuoc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/PhuYen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/QuangBinh.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/SonLa.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/ThanhHoa.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/anh-2-hinh-bien-vung-tau.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/anh-dep-cau-rong-da-nang-viet-nam_055418962.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/canh-dep-da-lat-1.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/caobang_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/caobang_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/caobang_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/caobang_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/caobang_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/caobang_14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/caobang_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/caobang_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/caobang_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/caobang_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/caobang_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/caobang_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/caobang_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/caobang_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/co-bay-cityhall-sams-studio-1720601000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/dalat_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/dalat_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/dalat_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/dalat_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/dalat_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/dalat_14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/dalat_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/dalat_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/dalat_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/dalat_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/dalat_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/dalat_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/dalat_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/hanoi_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/hanoi_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/hanoi_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/hanoi_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/hanoi_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/hanoi_14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/hanoi_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/hanoi_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/hanoi_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/hanoi_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/hanoi_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/hanoi_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/hanoi_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/hanoi_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/hoidap.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/istockphoto-478073811-612x612.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/ninhbinh_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/ninhbinh_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/ninhbinh_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/ninhbinh_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/ninhbinh_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/ninhbinh_14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/ninhbinh_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/ninhbinh_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/ninhbinh_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/ninhbinh_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/ninhbinh_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/ninhbinh_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/ninhbinh_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/ninhbinh_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/tpHCM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/tpHCM_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/tpHCM_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/tpHCM_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/tpHCM_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/vhl_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/vhl_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/vhl_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/vhl_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/vhl_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/vhl_14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/vhl_15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/vhl_16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/vhl_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/vhl_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/vhl_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/vhl_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/vhl_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/vhl_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/vhl_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/vhl_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/vungtau_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/vungtau_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/vungtau_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/vungtau_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/vungtau_14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/vungtau_15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/vungtau_16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/vungtau_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/vungtau_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/vungtau_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/vungtau_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/vungtau_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/vungtau_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/vungtau_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/vungtau_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/common.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/jquery-3.7.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog_detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/destination.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/destination2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/destination3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/destination_BinhDinh.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/destination_CaoBang.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/destination_DaLat.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/destination_HaNoi.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/destination_HoiAn.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/destination_NinhBinh.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/destination_VinhHaLong.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/destination_VungTau.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/failed.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/faq.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/gallery.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/payment.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/success.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/tour.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tourBooking/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tourBooking/asgi.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tourBooking/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tourBooking/main/tour_HoChiMinh.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/main/tour_HoChiMinh.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/main/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tourBooking/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/main/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tourBooking/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/main/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/payment/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/payment/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tourBooking/payment/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/payment/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tourBooking/payment/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/payment/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tourBooking/payment/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/payment/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tourBooking/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tourBooking/static/css/tour.css" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/static/css/tour.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tourBooking/templates/destionationPayment.html" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/templates/destination_payment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tourBooking/templates/failed.html" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/templates/failed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/static/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/static/css/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/static/css/styleloginregist.css" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/static/css/styleloginregist.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/templates/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/templates/blog_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/templates/blog_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/templates/destination.html" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/templates/destination.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/templates/destination_BinhDinh.html" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/templates/destination_BinhDinh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/templates/destination_CaoBang.html" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/templates/destination_CaoBang.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/templates/destination_DaLat.html" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/templates/destination_DaLat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/templates/destination_HaNoi.html" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/templates/destination_HaNoi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/templates/destination_HoiAn.html" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/templates/destination_HoiAn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/templates/destination_NinhBinh.html" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/templates/destination_NinhBinh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/templates/destination_VinhHaLong.html" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/templates/destination_VinhHaLong.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/templates/destination_VungTau.html" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/templates/destination_VungTau.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/templates/destination_payment.html" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/templates/destination_payment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/templates/faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/templates/faq.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/templates/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/templates/gallery.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tourBooking/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/templates/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tourBooking/templates/success.html" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/templates/success.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/templates/tour.html" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/templates/tour.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/tour/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/tour/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tourBooking/tourBooking/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/tourBooking/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tourBooking/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tourBooking/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/tourBooking/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/tourBooking/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/users/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/users/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/users/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/users/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/users/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/users/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/users/migrations/0002_profile_plain_password.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/users/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/main/management/commands/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/users/signals.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tourBooking/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tourBooking/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -328,8 +77,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
@@ -389,8 +139,8 @@
     "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "django.template.preview.state": "SHOW_EDITOR",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/tour_booking_zip/tourBooking/smart_map",
+    "git-widget-placeholder": "Merging main",
+    "last_opened_file_path": "E:/tour_booking_zip/tourBooking/main/management/commands",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -407,18 +157,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\tour_booking_zip\tourBooking\main\management\commands" />
       <recent name="E:\tour_booking_zip\tourBooking\smart_map" />
       <recent name="E:\tour_booking_zip\tourBooking\tour" />
       <recent name="E:\tour_booking_zip\tourBooking\payment" />
       <recent name="E:\tour_booking_zip\tourBooking\users" />
-      <recent name="E:\tour_booking_zip\tour_booking\payments" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\tour_booking_zip\tourBooking\payment" />
+      <recent name="E:\tour_booking_zip\tourBooking\main" />
       <recent name="E:\tour_booking_zip\tourBooking" />
       <recent name="E:\tour_booking_zip\tourBooking\tourBooking" />
       <recent name="E:\tour_booking_zip\tourBooking\templates" />
-      <recent name="E:\tour_booking_zip\tourBooking\static" />
-      <recent name="E:\tour_booking_zip\css" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.destionationPayment.html">

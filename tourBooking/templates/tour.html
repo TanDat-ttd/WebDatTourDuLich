@@ -78,7 +78,7 @@
 				   Blog
 				 </a>
 				 <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
-				   <li><a class="dropdown-item" href="{% url 'tour_list' %}"> Blog</a></li>
+				   <li><a class="dropdown-item" href="{% url 'blog' %}"> Blog</a></li>
 				   <li><a class="dropdown-item border-0" href="{% url 'blog_detail' %}"> Blog điểm đến</a></li>
 				 </ul>
 			   </li>
@@ -96,23 +96,11 @@
 			   <li class="nav-item">
 				 <a class="nav-link" href="{% url 'contact' %}">Liên hệ</a>
 			   </li>
-			</ul>
-			<ul class="navbar-nav mb-0 ms-auto nav_2">
-			  {% if user.is_authenticated %}
-			  <li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle fs-4 active" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-				  <i class="fa fa-user"></i> 
-				</a>
-				<ul class="dropdown-menu drop_1" aria-labelledby="userDropdown">
-				  <li class="dropdown-item-text">{{ user.username }}</li>
-				  <li><a class="dropdown-item border-0" href="{% url 'logout' %}">Đăng xuất</a></li>
-				</ul>
-			  </li>
-			  {% else %}
-			  <li class="nav-item">
-				<a class="nav-link fs-4" href="{% url 'login' %}"><i class="fa fa-user"></i></a>
-			  </li>
-			  {% endif %}
+			 </ul>
+			 <ul class="navbar-nav mb-0 ms-auto nav_2">
+			   <li class="nav-item">
+				 <a class="nav-link fs-4" href="{% url 'login' %}"><i class="fa fa-user"></i></a>
+			   </li>
 				   
 			   <li class="nav-item">
 				 <a class="nav-link fs-4 drop_icon col_green" href="#"><i class="fa fa-phone"></i></a>
@@ -294,6 +282,179 @@
 
    <div class="col-md-8">
      <div class="tour_1r">
+       <div class="tour_1r1">
+       <div class="col-md-12">
+	     <p class="mb-0">Hiển thị 1-6 kết quả</p>
+	   </div>
+	 </div>
+	 <div class="profile6i row mt-4">
+
+         <!--
+	  <div class="col-md-6">
+	    <div class="profile6il p-3 shadow_box rounded_1">
+		  <div class="profile6il1 position-relative">
+		   <div class="profile6il1i">
+		     <a href="detail.html"><img src="{% static 'img/vungtau_4.png' %}" alt="abc" class="w-100 rounded_1" width="350" height="200"></a>
+		</div>
+		   <div class="profile6il1i1 position-absolute top-0">
+		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 1 TUẦN</h6><br>
+			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="detail.html"><i class="fa fa-map-marker me-1 col_green"></i> Vũng Tàu</a></h6>
+		</div>
+		</div>
+		<div class="profile6il2 mt-3">
+		  <h5><a href="detail.html"> Vũng tàu biển gọi</a></h5>
+		  <ul class="font_12">
+		   <li class="d-inline-block me-1"><a href="detail.html"> KHÁM PHÁ NGAY</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i> CHI PHÍ PHÙ HỢP</li>
+		   <li class="d-inline-block me-1"><a href="detail.html"> TEAMBUILDING</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i> CHƯƠNG TRÌNH ĐA DẠNG</li>
+		   <li class="d-inline-block me-1"><a href="detail.html"> NHÀ THỜ SONG VĨNH</a></li>
+		  </ul>
+		  <hr>
+		  <div class="profile6il2i row">
+		    <div class="col-md-6">
+			  <div class="profile6il2il">
+			    <h6 class="font_14 mb-0"> Sale còn:<br>
+                    <span class="fw-bold"><span class="fs-4 col_green">1.988.000đ</span> <span class="text-decoration-line-through text-muted">2.300.000đ</span></span><br>
+                        <span class="font_12"> Đã bao gồm thuế</span></h6>
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <div class="profile6il2ir text-end pt-2">
+			    <h6 class="mb-0"><a class="button px-3" href="detail.html"> Đặt ngay <i class="fa fa-plane"></i></a></h6>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		</div>
+	  </div>
+	  -->
+         <!--
+	  <div class="col-md-6">
+	    <div class="profile6il p-3 shadow_box rounded_1">
+		  <div class="profile6il1 position-relative">
+		   <div class="profile6il1i">
+		     <a href="detail.html"><img src="{% static 'img/ninhbinh_9.png' %}" alt="abc" class="w-100 rounded_1" width="350" height="200"></a>
+		</div>
+		   <div class="profile6il1i1 position-absolute top-0">
+		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 2 NGÀY / 3 ĐÊM</h6><br>
+			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="detail.html"><i class="fa fa-map-marker me-1 col_green"></i> Ninh Bình</a></h6>
+		</div>
+		</div>
+		<div class="profile6il2 mt-3">
+		  <h5><a href="detail.html"> Khám phá vẻ đẹp tuyệt sắc miền cố đô</a></h5>
+		  <ul class="font_12">
+		   <li class="d-inline-block me-1"><a href="detail.html"> HÙNG VĨ</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i> THƠ MỘNG</li>
+		   <li class="d-inline-block me-1"><a href="detail.html"> VĂN HÓA LÂU ĐỜI</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i>BỨC TRANG THỦY MẶC</li>
+		   <li class="d-inline-block me-1"><a href="detail.html"> HOANG DÃ</a></li>
+		  </ul>
+		  <hr>
+		  <div class="profile6il2i row">
+		    <div class="col-md-6">
+			  <div class="profile6il2il">
+			    <h6 class="font_14 mb-0">Starting From:<br>
+                <span class="fw-bold"><span class="fs-4 col_green">2.400.000đ</span> <span class="text-decoration-line-through text-muted">3.560.000đ</span></span><br><span class="font_12">Đã bao gồm thuế</span></h6>
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <div class="profile6il2ir text-end pt-2">
+			    <h6 class="mb-0"><a class="button px-3" href="detail.html"> Đặt ngay <i class="fa fa-plane"></i></a></h6>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		</div>
+	  </div>
+         -->
+	</div>
+	<div class="profile6i row mt-4">
+
+    <!--
+	  <div class="col-md-6">
+	    <div class="profile6il p-3 shadow_box rounded_1">
+		  <div class="profile6il1 position-relative">
+		   <div class="profile6il1i">
+		     <a href="detail.html"><img src="{% static 'img/vhl_5.png' %}" alt="abc" class="w-100 rounded_1" width="350" height="200"></a>
+		</div>
+		   <div class="profile6il1i1 position-absolute top-0">
+		    <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 1 TUẦN</h6><br>
+			 <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="detail.html"><i class="fa fa-map-marker me-1 col_green"></i> Vịnh Hạ Long</a></h6>
+		</div>
+		</div>
+		<div class="profile6il2 mt-3">
+		  <h5><a href="detail.html"> Ngủ đêm trên du thuyền</a></h5>
+		  <ul class="font_12">
+		   <li class="d-inline-block me-1"><a href="detail.html"> Đi ngay thôi</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i>KỲ VĨ</li>
+		   <li class="d-inline-block me-1"><a href="detail.html">HUYỀN BÍ</a></li>
+		    <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i>PHONG PHÚ</li>
+		   <li class="d-inline-block me-1"><a href="detail.html">TRẢI NGHIỆM</a></li>
+		  </ul>
+		  <hr>
+		  <div class="profile6il2i row">
+		    <div class="col-md-6">
+			  <div class="profile6il2il">
+			    <h6 class="font_14 mb-0">Sale còn:<br>
+<span class="fw-bold"><span class="fs-4 col_green">3.420.000đ</span> <span class="text-decoration-line-through text-muted">5.100.000đ</span></span><br>
+<span class="font_12"> Đã bao gồm thuế</span></h6>
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <div class="profile6il2ir text-end pt-2">
+			    <h6 class="mb-0"><a class="button px-3" href="detail.html">Đặt ngay <i class="fa fa-plane"></i></a></h6>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		</div>
+	  </div>
+
+-->
+<!--
+		<div class="col-md-6">
+		  <div class="profile6il p-3 shadow_box rounded_1">
+			<div class="profile6il1 position-relative">
+			 <div class="profile6il1i">
+			   <a href="detail.html"><img src="{% static 'img/hanoi_4.png' %}" alt="abc" class="w-100 rounded_1" width="350" height="200"></a>
+		  </div>
+			 <div class="profile6il1i1 position-absolute top-0">
+			  <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0"> 3 NGÀY</h6><br>
+			   <h6 class="d-inline-block bg_light p-2 px-3 font_14  mb-0"><a href="detail.html"><i class="fa fa-map-marker me-1 col_green"></i> Hà Nội</a></h6>
+		  </div>
+		  </div>
+		  <div class="profile6il2 mt-3">
+			<h5><a href="detail.html"> Kinh đô - văn hóa ngàn năm</a></h5>
+			<ul class="font_12">
+			 <li class="d-inline-block me-1"><a href="detail.html"> LÊN ĐỒ NGAY</a></li>
+			  <li class="d-inline-block me-1"><i class="fa fa-arrow-right"></i>CỔ KÍNH</li>
+			 <li class="d-inline-block me-1"><a href="detail.html">LÂU ĐỜI</a></li>
+			  <li class="d-inline-block me-1"><i class="fa fa-arrow-right">TRUYỀN THỐNG</i></li>
+			 <li class="d-inline-block me-1"><a href="detail.html">THỦ ĐÔ</a></li>
+			</ul>
+			<hr>
+			<div class="profile6il2i row">
+			  <div class="col-md-6">
+				<div class="profile6il2il">
+				  <h6 class="font_14 mb-0">Sale còn:<br>
+  <span class="fw-bold"><span class="fs-4 col_green">3.890.000đ</span> <span class="text-decoration-line-through text-muted">5.340.000đ</span></span><br>
+  <span class="font_12"> Đã bao gồm thuế</span></h6>
+				</div>
+			  </div>
+			  <div class="col-md-6">
+				<div class="profile6il2ir text-end pt-2">
+				  <h6 class="mb-0"><a class="button px-3" href="detail.html">Đặt ngay <i class="fa fa-plane"></i></a></h6>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  </div>
+		</div>
+-->
+
+
+
     <div class="tour_1r">
         <div class="tour_1r1">
             <div class="col-md-12">
@@ -306,7 +467,7 @@
                 <div class="profile6il p-3 shadow_box rounded_1">
                     <div class="profile6il1 position-relative">
                         <div class="profile6il1i">
-                            <a href="{% url 'tour_detail' tour.id %}"><img src="{{ tour.get_image_url }}" alt="{{ tour.name }}" class="w-100 rounded_1" width="350" height="200"></a>
+                            <a href="{% url 'tour_detail' tour.id %}"><img src="{{ tour.image }}" alt="{{ tour.name }}" class="w-100 rounded_1" width="350" height="200"></a>
                         </div>
                         <div class="profile6il1i1 position-absolute top-0">
                             <h6 class="d-inline-block bg-black text-white p-2 px-3 font_14 mb-0">{{ tour.duration_days }} ngày</h6><br>
@@ -330,7 +491,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="profile6il2ir text-end pt-2">
-                                    <h6 class="mb-0"><a class="button px-3" href="{% url 'tour_detail' tour.id %}"> Đặt ngay <i class="fa fa-plane"></i></a></h6>
+                                    <h6 class="mb-0"><a class="button px-3" href="{% url 'destination_payment' tour.id %}"> Đặt ngay <i class="fa fa-plane"></i></a></h6>
                                 </div>
                             </div>
                         </div>
