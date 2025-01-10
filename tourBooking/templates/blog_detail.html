@@ -148,14 +148,14 @@
 
     <h3>Đánh giá</h3>
     {% for review in reviews %}
-    <div class="review border p-4 mb-4 shadow-sm rounded">
-        <div class="review-header mb-3">
-            <p class="review-user"><strong>{{ review.user.username }}</strong></p>
-            <p class="review-rating">{{ review.rating }}⭐</p>
-        </div>
-        <p class="review-comment">{{ review.comment }}</p>
-        <p class="review-date"><small>{{ review.created_at }}</small></p>
+<div class="review border p-2 mb-2 shadow-sm rounded" style="font-size: 0.8em;"> 
+    <div class="review-header mb-1">
+        <p class="review-user"><strong>{{ review.user.username }}</strong></p>
+        <p class="review-rating">{{ review.rating }}⭐</p>
     </div>
+    <p class="review-comment">{{ review.comment }}</p>
+    <p class="review-date"><small>{{ review.created_at }}</small></p>
+</div>
     {% empty %}
     <p class="no-reviews">Chưa có đánh giá nào.</p>
     {% endfor %}

@@ -1,3 +1,5 @@
+/* styles.css */
+
 /* Thêm khoảng cách phía trên phần nội dung để tránh bị dính vào header */
 .tour-detail-container {
     margin-top: 50px; /* Thêm khoảng cách 50px từ phía trên */
@@ -30,60 +32,82 @@
     margin-top: 20px;
 }
 
+/* Thu nhỏ phần đánh giá */
 .review {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 5px; /* Giảm padding */
+    margin-bottom: 5px; /* Giảm khoảng cách dưới */
+    border-radius: 5px; /* Giảm kích thước border-radius */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* Giảm kích thước shadow */
 }
 
 .review-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 3px; /* Giảm khoảng cách giữa tiêu đề và nội dung */
 }
 
 .review-user {
-    font-size: 1.1rem;
+    font-size: 0.75rem; /* Giảm kích thước font chữ */
     font-weight: bold;
     color: #333;
 }
 
 .review-rating {
-    font-size: 1.2rem;
+    font-size: 0.75rem; /* Giảm kích thước font chữ */
     color: #f06; /* Màu cho sao */
     font-weight: bold;
 }
 
 .review-comment {
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 0.7rem; /* Giảm kích thước font chữ */
+    line-height: 1.1; /* Giảm chiều cao dòng */
     color: #555;
 }
 
 .review-date {
-    font-size: 0.9rem;
+    font-size: 0.65rem; /* Giảm kích thước font chữ */
     color: #888;
     text-align: right;
 }
 
+/* Thu nhỏ phần form viết đánh giá */
 .write-review-container form {
     background-color: #f9f9f9;
-    padding: 20px;
+    padding: 12px; /* Giảm padding để form nhỏ gọn */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 30px;
+    margin-top: 20px; /* Giảm khoảng cách với các phần phía trên */
 }
 
 .write-review-container .btn-success {
     background-color: #28a745;
     border: none;
     color: white;
+    padding: 6px 10px; /* Giảm kích thước nút */
 }
 
 .write-review-container .btn-success:hover {
     background-color: #218838;
+}
+
+/* Các phần tử khác trên trang */
+.tour-detail-container ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.tour-detail-container ul li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.tour-detail-container .no-reviews {
+    font-size: 1rem;
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
 }
