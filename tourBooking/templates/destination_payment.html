@@ -272,8 +272,9 @@
                      </div>
 
                      <div class="mb-3">
-                         <label for="date" class="form-label">Ngày đi:</label>
-                         <input type="date" class="form-control" id="date" name="date" required>
+                         <label for="tickets" class="form-label">Số lượng vé:</label>
+                         <input type="number" class="form-control" id="tickets" name="tickets" placeholder="Số lượng vé" required>
+                         <small class="form-text text-muted">Chỗ còn lại: {{ tour.remaining_capacity }}</small>
                      </div>
 
                      <div class="mb-3">
@@ -413,7 +414,9 @@
   </div>
 
 <script src="{% static 'js/common.js' %}"></script>
+<script>
 
+</script>
   </body>
 
 

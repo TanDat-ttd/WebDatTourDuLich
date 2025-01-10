@@ -9,8 +9,11 @@ https://docs.djangoproject.com/en/5.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
-
+import os
 from pathlib import Path
+
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'thay_bang_secret_key_cua_ban')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD', 'thay_bang_password_email_cua_ban')
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -42,6 +45,10 @@ INSTALLED_APPS = [
      'payment',
     #'smart_map',
     # 'tourBooking',
+    'users',
+    'reviews',
+     'django.contrib.humanize',
+ #   'django_cron'
 ]
 
 MIDDLEWARE = [
@@ -138,4 +145,15 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = '22130037@st.hcmuaf.edu.vn'  # Thay bằng địa chỉ email của bạn
-EMAIL_HOST_PASSWORD = 'Dat123456'  # Thay bằng mật khẩu ứng dụng (Google App Password) của bạn
+EMAIL_HOST_PASSWORD = 'kfmt aids rcxc iinb' # Thay bằng mật khẩu ứng dụng (Google App Password) của bạn
+
+# settings.py
+
+TIME_ZONE = 'Asia/Ho_Chi_Minh'
+
+USE_TZ = True  # Đảm bảo True để bật múi giờ mặc định cho toàn hệ thống
+
+
+CRON_CLASSES = [
+    'payment.cron.DeleteUnconfirmedBookingsJob',
+]

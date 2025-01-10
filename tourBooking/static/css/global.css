@@ -898,4 +898,6 @@ padding-right:0;
 max-width: 1140px; 
  }
  }
-
+ .user-dropdown {
+  font-size: 1rem; /* Giảm kích thước chữ */
+}

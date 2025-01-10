@@ -78,7 +78,7 @@
 				   Blog
 				 </a>
 				 <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
-				   <li><a class="dropdown-item" href="{% url 'blog' %}"> Blog</a></li>
+				   <li><a class="dropdown-item" href="{% url 'tour_list' %}"> Blog</a></li>
 				   <li><a class="dropdown-item border-0" href="{% url 'blog_detail' %}"> Blog điểm đến</a></li>
 				 </ul>
 			   </li>
@@ -96,11 +96,23 @@
 			   <li class="nav-item">
 				 <a class="nav-link" href="{% url 'contact' %}">Liên hệ</a>
 			   </li>
-			 </ul>
-			 <ul class="navbar-nav mb-0 ms-auto nav_2">
-			   <li class="nav-item">
-				 <a class="nav-link fs-4" href="{% url 'login' %}"><i class="fa fa-user"></i></a>
-			   </li>
+			</ul>
+			<ul class="navbar-nav mb-0 ms-auto nav_2">
+			  {% if user.is_authenticated %}
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle fs-4 active" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				  <i class="fa fa-user"></i> 
+				</a>
+				<ul class="dropdown-menu drop_1" aria-labelledby="userDropdown">
+				  <li class="dropdown-item-text">{{ user.username }}</li>
+				  <li><a class="dropdown-item border-0" href="{% url 'logout' %}">Đăng xuất</a></li>
+				</ul>
+			  </li>
+			  {% else %}
+			  <li class="nav-item">
+				<a class="nav-link fs-4" href="{% url 'login' %}"><i class="fa fa-user"></i></a>
+			  </li>
+			  {% endif %}
 				   
 			   <li class="nav-item">
 				 <a class="nav-link fs-4 drop_icon col_green" href="#"><i class="fa fa-phone"></i></a>

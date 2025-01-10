@@ -27,3 +27,5 @@ def tour_detail(request, id):
         'tour': tour
     }
     return render(request, 'tour.html', context)
+
+

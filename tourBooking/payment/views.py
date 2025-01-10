@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import DiscountCode
+from .models import DiscountCode, Booking
 from main.models import Tour, Schedule
 from django.contrib import messages
 from django.core.mail import send_mail
@@ -7,9 +7,14 @@ from collections import defaultdict
 from django.conf import settings
 from datetime import date
 import logging
+from django.http import HttpResponse
+from django.utils.html import format_html
+from django.urls import reverse
+
 
 # Thiết lập logger để theo dõi lỗi
 logger = logging.getLogger(__name__)
+
 
 
 def destination_payment(request, tour_id):
@@ -22,14 +27,6 @@ def destination_payment(request, tour_id):
     for schedule in schedules:
         grouped_schedules[schedule.day].append(schedule)
 
-    if not schedules.exists():
-        # Hiển thị thông báo nếu lịch trình không có dữ liệu
-        messages.warning(request, "Không có lịch trình chi tiết nào cho tour này.")
-    else:
-        # Nhóm dữ liệu lịch trình theo ngày
-        for schedule in schedules:
-            grouped_schedules[schedule.day].append(schedule)
-
     if request.method == "POST":
         # Lấy thông tin từ form
         first_name = request.POST.get("first_name", "").strip()
@@ -37,7 +34,6 @@ def destination_payment(request, tour_id):
         email = request.POST.get("email", "").strip()
         phone = request.POST.get("phone", "").strip()
         address = request.POST.get("address", "").strip()
-        date_of_travel = request.POST.get("date", "").strip()
         number_of_people = int(request.POST.get("tickets", 1))
         discount_code = request.POST.get("coupon", "").strip()
         payment_method = request.POST.get("payment_method", "cash").strip()
@@ -51,12 +47,9 @@ def destination_payment(request, tour_id):
             messages.error(request, "Số lượng vé phải lớn hơn hoặc bằng 1.")
             return redirect('destination_payment', tour_id=tour_id)
 
-        try:
-            if date_of_travel and date.fromisoformat(date_of_travel) < date.today():
-                messages.error(request, "Ngày đi không hợp lệ. Ngày đi phải ở tương lai.")
-                return redirect('destination_payment', tour_id=tour_id)
-        except ValueError:
-            messages.error(request, "Định dạng ngày đi không đúng. Vui lòng nhập đúng định dạng!")
+        # Kiểm tra số lượng vé không vượt quá số lượng chỗ còn lại
+        if number_of_people > tour.remaining_capacity:
+            messages.error(request, "Số lượng vé đặt vượt quá số chỗ trống còn lại của tour!")
             return redirect('destination_payment', tour_id=tour_id)
 
         # Tính toán tổng giá ban đầu
@@ -88,7 +81,6 @@ def destination_payment(request, tour_id):
             'email': email,
             'phone': phone,
             'address': address,
-            'date_of_travel': date_of_travel,
             'number_of_people': number_of_people,
             'total_price': float(total_price),
             'tour_name': tour.name,
@@ -97,9 +89,10 @@ def destination_payment(request, tour_id):
         messages.success(request, "Đặt tour thành công!")
         return redirect('payment_success')
 
+    # Hiển thị thông tin tour & form đặt vé
     return render(request, "destination_payment.html", {
         "tour": tour,
-        "grouped_schedules": grouped_schedules,  # Truyền lịch trình nhóm theo ngày
+        "grouped_schedules": grouped_schedules,
     })
 
 
@@ -107,44 +100,85 @@ def payment_success(request):
     # Lấy thông tin đặt tour từ session
     booking = request.session.get('booking')
     if not booking:
-        messages.error(request, "Không tìm thấy thông tin đặt tour. Vui lòng thử lại!")
-        return redirect('destination_payment')
-
-    # Chuẩn bị nội dung email để gửi cho khách hàng
-    subject = "Xác nhận thanh toán tour du lịch"
-    message = f"""
-    Chào {booking['first_name']} {booking['last_name']},
-    
-    Cảm ơn bạn đã đặt tour "{booking['tour_name']}" với chúng tôi!
-    Dưới đây là thông tin bạn đã cung cấp:
-
-    - Số lượng vé: {booking['number_of_people']}
-    - Tổng số tiền: {booking['total_price']:,.2f} VNĐ
-    - Số điện thoại: {booking['phone']}
-    - Địa chỉ: {booking['address']}
-    - Ngày đi: {booking['date_of_travel']}
-    - Phương thức thanh toán: {booking['payment_method']}
-    
-    Xin hãy liên hệ với chúng tôi nếu có bất kỳ câu hỏi nào. Chúc bạn một chuyến đi vui vẻ!
-    """
-
-    recipient_email = booking['email']
+        messages.error(request, "Không thể truy cập trực tiếp trang này. Vui lòng hoàn tất thanh toán trước!")
+        return redirect('index')  # Redirect đến trang chính nếu không có dữ liệu session
 
     try:
-        send_mail(
-            subject,
-            message,
-            settings.EMAIL_HOST_USER,
-            [recipient_email],
-            fail_silently=False,
-        )
-        messages.success(request, "Xác nhận đã được gửi qua email của bạn!")
-    except Exception as e:
-        logger.error(f"Lỗi khi gửi email xác nhận: {e}")
-        messages.error(request, "Có lỗi xảy ra khi gửi email xác nhận. Vui lòng liên hệ chúng tôi qua hotline.")
+        # Lấy thông tin tour đã đặt
+        tour = get_object_or_404(Tour, name=booking['tour_name'])
 
-    # Trả về trang xác nhận thành công
-    return render(request, "success.html", {"booking": booking})
+        # Kiểm tra nếu số lượng vé đặt vượt quá chỗ còn lại
+        if int(booking['number_of_people']) > tour.remaining_capacity:
+            messages.error(request,
+                           f"Số lượng vé đặt ({booking['number_of_people']}) vượt quá số lượng chỗ trống còn lại ({tour.remaining_capacity}) của tour!")
+            return redirect('destination_payment', tour_id=tour.id)
+
+        # Tạo hoặc lấy booking trong database
+        new_booking, created = Booking.objects.get_or_create(
+            tour=tour,
+            first_name=booking['first_name'],
+            last_name=booking['last_name'],
+            email=booking['email'],
+            phone=booking['phone'],
+            address=booking['address'],
+            number_of_people=booking['number_of_people'],
+            total_price=booking['total_price'],
+            defaults={
+                'payment_method': booking['payment_method'],
+                'status': 'paid',  # Đặt trạng thái mặc định là "đã thanh toán"
+            },
+        )
+
+        # Nếu booking được tạo mới, giảm số lượng chỗ còn lại
+        if created:
+            tour.remaining_capacity -= new_booking.number_of_people
+            # Đảm bảo giá trị remaining_capacity không âm
+            if tour.remaining_capacity < 0:
+                tour.remaining_capacity = 0
+            tour.save()
+
+            # Gửi email xác nhận cho người dùng
+            confirm_url = request.build_absolute_uri(
+                reverse('confirm_booking', args=[new_booking.id])
+            )
+            subject = "Xác nhận thanh toán tour du lịch"
+            message = f"""
+            Chào {new_booking.first_name} {new_booking.last_name},
+
+            Mã đặt tour của bạn: {new_booking.booking_code}
+
+            Cảm ơn bạn đã đặt tour "{new_booking.tour.name}" với chúng tôi!
+            Số tiền đã thanh toán: {new_booking.total_price:.2f} VNĐ
+
+            Vui lòng nhấn vào nút dưới đây để xác nhận đặt tour của bạn:
+            {confirm_url}
+
+            Trân trọng,
+            Đội ngũ quản lý Tour
+            """
+            send_mail(
+                subject,
+                message,
+                settings.EMAIL_HOST_USER,
+                [new_booking.email],
+                fail_silently=False
+            )
+        else:
+            # Nếu booking đã tồn tại, thông báo cho người dùng
+            messages.info(request, "Bạn đã đặt tour này trước đó. Không thể đặt lại!")
+
+    except Exception as e:
+        # Ghi log lỗi và hiển thị thông báo chung
+        logger.error(f"Lỗi xảy ra trong quá trình xử lý thanh toán: {e}")
+        messages.error(request, "Có lỗi xảy ra khi xử lý thông tin thanh toán. Vui lòng liên hệ chúng tôi!")
+        return redirect('destination_payment', tour_id=tour.id)
+
+    # Xóa session booking (đảm bảo không truy cập lại mà không qua thanh toán)
+    del request.session['booking']
+
+    # Trả về trang xác nhận đặt tour thành công
+    return render(request, "success.html", {"booking": new_booking})
+
 
 
 def payment_failed(request):
@@ -160,4 +194,27 @@ def tour_schedule_view(request, tour_id):
         'tour': tour,
         'schedules': schedules,
     })
+
+
+
+def confirm_booking(request, booking_id):
+    try:
+        # Tìm booking dựa vào ID từ URL
+        booking = get_object_or_404(Booking, id=booking_id)
+
+        # Kiểm tra trạng thái và cập nhật
+        if booking.status != 'confirmed':
+            booking.status = 'confirmed'
+            booking.save()
+            messages.success(request, "Đặt tour của bạn đã được xác nhận thành công!")
+        else:
+            messages.info(request, "Đặt tour này đã được xác nhận trước đó.")
+    except Exception as e:
+        logger.error(f"Lỗi khi xác nhận booking: {e}")
+        return HttpResponse("Có lỗi xảy ra khi xác nhận. Vui lòng thử lại sau!", status=500)
+
+    # Redirect về trang thành công hoặc trang khác
+    return redirect('payment_success')
+
+
 

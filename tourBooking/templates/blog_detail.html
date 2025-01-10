@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 {% load static %}
+{% load humanize %}
 <html lang="vi">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Đặt Tour Du Lịch Việt Nam</title>
-	<link href="../static/css/bootstrap.min.css" rel="stylesheet" >
-	 <link href="../static/fonts/css/fontawesome.min.css" rel="stylesheet" >
-	<link href="../static/fonts/css/brands.min.css" rel="stylesheet" />
-    <link href="../static/fonts/css/solid.min.css" rel="stylesheet" />
-	<link href="../static/css/global.css" rel="stylesheet">
-	<link href="../static/css/index.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-	<script src="../static/js/bootstrap.bundle.min.js"></script>
-
-</head>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Đặt Tour Du Lịch Việt Nam</title>
+		<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" >
+		<link href="{% static 'fonts/css/fontawesome.min.css' %}" rel="stylesheet" >
+		<link href="{% static 'fonts/css/brands.min.css' %}" rel="stylesheet" />
+		<link href="{% static 'fonts/css/solid.min.css' %}" rel="stylesheet" />
+		<link href="{% static 'css/global.css' %}" rel="stylesheet">
+		<link href="{% static 'css/index.css' %}" rel="stylesheet">
+		<link href="{% static 'css/stylesreviews.css' %}" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/stylesreviews.css' %}">
+		<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+	</head>
+	
 <body>
 
 <section id="top" class="bg_black pt-2 pb-2">
@@ -79,7 +82,7 @@
             Blog
           </a>
           <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="{% url 'blog' %}"> Blog</a></li>
+            <li><a class="dropdown-item" href="{% url 'tour_list' %}"> Blog</a></li>
             <li><a class="dropdown-item border-0" href="{% url 'blog_detail' %}"> Blog điểm đến</a></li>
           </ul>
         </li>
@@ -97,11 +100,23 @@
 		<li class="nav-item">
           <a class="nav-link" href="{% url 'contact' %}">Liên hệ</a>
         </li>
-      </ul>
-      <ul class="navbar-nav mb-0 ms-auto nav_2">
-	    <li class="nav-item">
-          <a class="nav-link fs-4" href="{% url 'login' %}"><i class="fa fa-user"></i></a>
-        </li>
+	</ul>
+	<ul class="navbar-nav mb-0 ms-auto nav_2">
+	  {% if user.is_authenticated %}
+	  <li class="nav-item dropdown">
+		<a class="nav-link dropdown-toggle fs-4 active" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		  <i class="fa fa-user"></i> 
+		</a>
+		<ul class="dropdown-menu drop_1" aria-labelledby="userDropdown">
+		  <li class="dropdown-item-text">{{ user.username }}</li>
+		  <li><a class="dropdown-item border-0" href="{% url 'logout' %}">Đăng xuất</a></li>
+		</ul>
+	  </li>
+	  {% else %}
+	  <li class="nav-item">
+		<a class="nav-link fs-4" href="{% url 'login' %}"><i class="fa fa-user"></i></a>
+	  </li>
+	  {% endif %}
 		    
 		<li class="nav-item">
           <a class="nav-link fs-4 drop_icon col_green" href="#"><i class="fa fa-phone"></i></a>
@@ -114,281 +129,50 @@
   </div>
 </nav>
 </section>
-	   <section id="center" class="center_blog">
-		  <div class="center_om bg_back">
-			<div class="container-xl">
-		 <div class="row center_o1 text-center">
-			<div class="col-md-12">
-			   <h1 class="text-white font_50">Blog</h1>
-			   <h6 class="col_green mb-0 mt-3 fw-bold"><a class="text-light" href="index.html"> Trang chủ</a> <span class="mx-2 text-white-50"><i class="fa fa-arrow-right"></i></span> Blog</h6>
-			</div>
-		 </div>
-		</div>
-		  </div>   
-		</section>
 
-<section id="blog" class="p_3">
- <div class="container-xl">
-  <div class="row blog_1">
-    <div class="col-md-8">
-	  <div class="blog_1dt">
-	    <div class="blog_1dt1">
-	       <div class="grid clearfix">
-				  <figure class="effect-jazz mb-0">
-					<a href="blog_detail.html"><img src="../static/img/2.jpg" class="w-100" alt="abc"></a>
-				  </figure>
-			  </div><hr>
-			<div class="blog_1dt1i row">
-			  <div class="col-md-3">
-			    <div class="blog_1dt1il">
-				 <h6 class="mb-0 fw-bold"><i class="fa fa-user fs-3 align-middle text-muted me-1"></i> Bởi <a class="col_green" href="#">Thùy Minh</a></h6>
-				</div>
-			  </div>
-			  <div class="col-md-9">
-			    <div class="blog_1dt1ir text-end">
-				  <ul class="mb-0 mt-1">
-		    <li class="d-inline-block"><i class="fa fa-fire col_green me-1"></i> 173 Views</li>
-			<li class="d-inline-block ms-3"><i class="fa fa-clock col_green me-1"></i> 2 phút đọc</li>
-			<li class="d-inline-block ms-3"><i class="fa fa-comment col_green me-1"></i> (3) Bình luận</li>
-		  </ul>
-				</div>
-			  </div>
-			</div><hr>
-			<p>Hầu như tất cả mọi người, dù có phải là người Sài Gòn hay không thì đều biết đến ngôi chợ nổi tiếng nhất của Sài Gòn từ hàng trăm năm qua, đó là chợ Bến Thành. Từ lâu, ngôi chợ này đã trở thành một cột mốc ký ức mà người Sài Gòn đi xa ai cũng nhớ về, một biểu tượng kiến trúc và một đại diện cho văn hóa truyền thống địa phương.</p>
-			<p>“Những người trẻ tuổi họ đi tứ xứ vẫn trở về đây, họ mong ước được vô chợ Bến Thành, được mua những món hàng đơn giản, từ cái giỏ xách đến ly trà sữa, họ vẫn muốn vào đây. Cảm giác có cái gì đó gắn bó thôi, mua một nải chuối thôi cũng thấy vui, không biết là lý do tại sao nữa” – đó là những lời tâm sự mộc mạc của cô Trương Thị Tuyết Trinh, tiểu thương chợ Bến Thành.</p>
-				    <div class="blog_1dt1i1 position-relative bg_light1 p-5 mt-5">
-					  <div class="blog_1dt1i1i">
-					    <p>Đến Sài Gòn mà không đi chợ Bến Thành là coi như chưa đến Sài Gòn</p>
-						<h5 class="mb-0"><i class="fa fa-user me-1 col_green"></i> Chưa biết</h5>
-					  </div>
-					  <div class="blog_1dt1i1i1 position-absolute">
-					    <span class="d-inline-block text-white text-center rounded-circle bg_green"><i class="fa fa-quote-left"></i></span>
-					  </div>
-					</div>
-					<p class="mt-3">Có câu nói vui mà người dân hay nói với nhau “Đến Sài Gòn mà không đi chợ Bến Thành là coi như chưa đến Sài Gòn”. Trải qua gần 100 năm, tính từ thời điểm khánh thành chợ vào năm 1914 với bao thăng trầm, cho đến nay, chợ đã ăn sâu vào tiềm thức của người dân và trở thành biểu tượng của TPHCM.</p>
-					<div class="grid clearfix">
-				  <figure class="effect-jazz mb-0">
-					<a href="blog_detail.html"><img src="../static/img/3.jpg" class="w-100" alt="abc"></a>
-				  </figure>
-			  </div>
-			  <h2 class="mt-4">Cuối cùng.</h2>
-			  <p class="mt-3">Nhà văn, nhà báo Phạm Công Luận cho rằng chúng ta nhận diện một nơi chốn thân quen bằng những hình ảnh thân quen. Chúng ta nhận dạng một phần lịch sử của Sài Gòn xưa qua chợ Bến Thành – ngôi chợ lớn nhất Nam Kỳ, nơi lui tới buôn bán của muôn vạn người qua các thế hệ. Người sinh ra và lớn lên ở thành phố này, đang sống ở đây hay đã định cư xa xứ sẽ tìm thấy một phần đời của mình ở đó mà nếu mất đi ngoài sự nuối tiếc còn là sự xóa sạch một địa chỉ văn hoá – xã hội sống động.</p>
-	  </div>
-	    <div class="blog_1dt2">
-		  <div class="blog_1dt2i row">
-		    <div class="col-md-7">
-			 <div class="blog_1dt2il">
-			   <ul class="mb-0 tags">
-				 <li class="d-inline-block"><a href="blog_detail.html">Chuyến đi</a></li>
-				 <li class="d-inline-block"><a href="blog_detail.html">Tham quan thành phố</a></li>
-				 <li class="d-inline-block"><a href="blog_detail.html">Văn hóa</a></li>
-				 <li class="d-inline-block"><a href="blog_detail.html">Du thuyền</a></li>
-				 </ul>
-			 </div>
-			</div>
-			<div class="col-md-5">
-			 <div class="blog_1dt2ir mt-1 text-end">
-			    <ul class="mb-0">
-				 <li class="d-inline-block"><a href="blog_detail.html">Chia sẻ trên:</a></li>
-				 <li class="d-inline-block ms-3"><a href="blog_detail.html"><i class="fa-brands fa-facebook"></i></a></li>
-				 <li class="d-inline-block ms-3"><a href="blog_detail.html"><i class="fa-brands fa-twitter"></i></a></li>
-				 <li class="d-inline-block ms-3"><a href="blog_detail.html"><i class="fa-brands fa-pinterest"></i></a></li>
-				 <li class="d-inline-block ms-3"><a href="blog_detail.html"><i class="fa-brands fa-instagram"></i></a></li>
-				 </ul>
-			 </div>
-			</div>
-		  </div><hr>
-		  <div class="blog_1dt2i1 row">
-		    <div class="col-md-6">
-			  <div class="blog_1dt2i1l">
-			   <h6 class="font_14"><a href="#">Bài viết trước</a></h6>
-			   <h5 class="mb-0"><a href="#">6 điểm đến ở thành phố Hồ Chí Minh mang đậm dấu ấn văn hóa – lịch sử</a></h5>
-			  </div>
-			</div>
-			<div class="col-md-6">
-			  <div class="blog_1dt2i1l text-end">
-			   <h6 class="font_14"><a href="#">Bài viết sau</a></h6>
-			   <h5 class="mb-0"><a href="#">9 điểm du lịch gần Sài Gòn cho kỳ nghỉ cuối tuần cực “chill”</a></h5>
-			  </div>
-			</div>
-		  </div>
-		  <h3 class="mt-4 mb-4"> Nhận xét gần đây </h3>
-		  <div class="tour_dt2l2i row">
-	    <div class="col-md-2 col-2">
-		 <div class="tour_dt2l2il">
-		   <img alt="abc" class="w-100 rounded-circle" src="img\tpHCM_2.png">
-		 </div>
-		</div>
-		<div class="col-md-10 col-10">
-		 <div class="tour_dt2l2ir">
-		   <h6 class="font_14">
-<i class="fa fa-user col_green me-1 align-middle"></i> Nguyễn Trần <i class="fa fa-clock col_green me-1 ms-3 align-middle"></i> Th12 17, 2023</h6>
-<hr>
-<p class="mb-0">Nhớ Sài Gòn quá, mới xa 2 năm mà đọc bài báo rất ưa chi tiết và đáng yêu lại càng thấy yêu và nhớ Sài Gòn da diết</p>
-		 </div>
-		</div>
-	   </div>
-	     <div class="tour_dt2l2i row mt-4">
-	    <div class="col-md-2 col-2">
-		 <div class="tour_dt2l2il">
-		   <img alt="abc" class="w-100 rounded-circle" src="img\tpHCM.png">
-		 </div>
-		</div>
-		<div class="col-md-10 col-10">
-		 <div class="tour_dt2l2ir">
-		   <h6 class="font_14">
-<i class="fa fa-user col_green me-1 align-middle"></i> Thanh Phong <i class="fa fa-clock col_green me-1 ms-3 align-middle"></i> Th12 19, 2023</h6>
-<hr>
-<p class="mb-0">Sống ở TP HCM đã lâu rồi nhưng những kiến thức trong bài này là Mới Lạ hoàn toàn với mình dù cũng vài lần đi lại địa danh trên : Lại học tiếp và Cám ơn bài viết!</p>
-		 </div>
-		</div>
-	   </div>
-	   <h3 class="mt-4 mb-4">Để lại comment</h3>
-		</div>
-		<div class="detail_1l4b">
-			 <div class="detail_1l4b1 row">
-			  <div class="col-md-6">
-			   <div class="detail_1l4b1l">
-			    <input class="form-control rounded_10 border-0 bg_light" placeholder="Tên" type="text">
-			   </div>
-			  </div>
-			  <div class="col-md-6">
-			   <div class="detail_1l4b1l">
-			    <input class="form-control rounded_10 border-0 bg_light" placeholder="Email" type="text">
-			   </div>
-			  </div>
-			 </div>
-			 <div class="detail_1l4b1 row mt-4">
-			  <div class="col-md-6">
-			   <div class="detail_1l4b1l">
-			    <input class="form-control rounded_10 border-0 bg_light" placeholder="Website" type="text">
-			   </div>
-			  </div>
-			  <div class="col-md-6">
-			   <div class="detail_1l4b1l">
-			    <input class="form-control rounded_10 border-0 bg_light" placeholder="Chủ đề" type="text">
-			   </div>
-			  </div>
-			 </div>
-			 <div class="detail_1l4b1 row mt-4">
-			  <div class="col-md-12">
-			   <div class="detail_1l4b1l">
-			    <textarea class="form-control rounded_10 border-0 bg_light form_text" placeholder="Comment..."></textarea>
-				<div class="form-check mt-3">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-  <label class="form-check-label" for="flexCheckDefault">
-    Lưu tên, email và trang web của tôi trong trình duyệt này cho lần bình luận tiếp theo.
-  </label>
+<div class="container tour-detail-container">
+    <h1>{{ tour.name }}</h1>
+    <img src="{{ tour.get_image_url }}" class="img-fluid mb-3" alt="{{ tour.name }}">
+    <p>{{ tour.description }}</p>
+    <p><strong>Giá:</strong> {{ tour.price }} VND</p>
+    <p><strong>Thời gian:</strong> {{ tour.start_date }} - {{ tour.end_date }} ({{ tour.duration_days }} ngày)</p>
+
+    <h3>Lịch trình</h3>
+    <ul>
+        {% for schedule in schedules %}
+        <li><strong>Ngày {{ schedule.day }} ({{ schedule.period }}):</strong> {{ schedule.activity }}</li>
+        {% empty %}
+        <p>Chưa có lịch trình.</p>
+        {% endfor %}
+    </ul>
+
+    <h3>Đánh giá</h3>
+    {% for review in reviews %}
+    <div class="review border p-4 mb-4 shadow-sm rounded">
+        <div class="review-header mb-3">
+            <p class="review-user"><strong>{{ review.user.username }}</strong></p>
+            <p class="review-rating">{{ review.rating }}⭐</p>
+        </div>
+        <p class="review-comment">{{ review.comment }}</p>
+        <p class="review-date"><small>{{ review.created_at }}</small></p>
+    </div>
+    {% empty %}
+    <p class="no-reviews">Chưa có đánh giá nào.</p>
+    {% endfor %}
+
+    {% if user.is_authenticated %}
+    <h3>Viết đánh giá</h3>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-success">Gửi đánh giá</button>
+    </form>
+    {% else %}
+    <p><a href="{% url 'login' %}">Đăng nhập</a> để viết đánh giá.</p>
+    {% endif %}
 </div>
-				<h6 class="mb-0 mt-4 center_sm"><a class="button" href="#">Gửi</a></h6>
-			   </div>
-			  </div>
-			  
-			 </div>
-			</div>
-	  </div>
-	</div>
-	<div class="col-md-4">
-	  <div class="blog_1r">
-	    <div class="tour_1l1 p-4 shadow_box">
-		<h4>Tìm kiếm</h4>
-		<hr class="line mb-4">
-        <div class="input-group border_1">
-				<input type="text" class="form-control border-0 rounded-0 font_14" placeholder="Tìm...">
-				<span class="input-group-btn">
-					<button class="btn btn-primary bg-white border-0 rounded-0 p-3" type="button">
-						<i class="fa fa-search col_green"></i> </button>
-				</span>
-		</div>
-	 </div>
-	 <div class="blog_1r1 p-4 shadow_box mt-4">
-		<h4>Thể loại</h4>
-		<hr class="line mb-4">
-         <h6 class="mb-0"><a href="blog_detail.html"><i class="fa fa-arrow-right me-1 font_14 col_green align-middle"></i> Khám phá thiên nhiên</a> <span class="float-end">(3)</span></h6><hr>
-		  <h6 class="mb-0"><a href="blog_detail.html"><i class="fa fa-arrow-right me-1 font_14 col_green align-middle"></i> Tham quan thành phố</a> <span class="float-end">(4)</span></h6><hr>
-		  <h6 class="mb-0"><a href="blog_detail.html"><i class="fa fa-arrow-right me-1 font_14 col_green align-middle"></i> Dạo chơi trên thuyền</a> <span class="float-end">(2)</span></h6><hr>
-		  <h6 class="mb-0"><a href="blog_detail.html"><i class="fa fa-arrow-right me-1 font_14 col_green align-middle"></i> Tìm hiểu văn hoá</a> <span class="float-end">(5)</span></h6><hr>
-		  <h6 class="mb-0"><a href="blog_detail.html"><i class="fa fa-arrow-right me-1 font_14 col_green align-middle"></i> Hành trình học hỏi</a> <span class="float-end">(7)</span></h6><hr>
-		  <h6 class="mb-0"><a href="blog_detail.html"><i class="fa fa-arrow-right me-1 font_14 col_green align-middle"></i> Du lịch cao cấp</a> <span class="float-end">(6)</span></h6><hr>
-		  <h6 class="mb-0"><a href="blog_detail.html"><i class="fa fa-arrow-right me-1 font_14 col_green align-middle"></i> Du lịch bình dân</a> <span class="float-end">(9)</span></h6><hr>
-		  <h6 class="mb-0"><a href="blog_detail.html"><i class="fa fa-arrow-right me-1 font_14 col_green align-middle"></i> Chụp ảnh</a> <span class="float-end">(3)</span></h6>
-	 </div>
-	 <div class="blog_1r1 p-4 shadow_box mt-4">
-		<h4>Bài Viết Gần Đây</h4>
-		<hr class="line mb-4">
-        <div class="blog_1r1i row">
-		  <div class="col-md-4 col-sm-4">
-		   <div class="blog_1r1il">
-		       <div class="grid clearfix">
-			<figure class="effect-jazz mb-0">
-			<a href="https://www.ivivu.com/blog/2024/09/6-diem-den-o-thanh-pho-ho-chi-minh-mang-dam-dau-an-van-hoa-lich-su/"><img src="img\tpHCM_3.png" class="w-100" alt="img25"></a>
-			</figure>
-			</div>
-		   </div>
-		  </div>
-		  <div class="col-md-8 col-sm-8">
-		   <div class="blog_1r1ir">
-		     <h6 class="text-muted fw-bold font_14">06 Tháng 2, 2024</h6>
-			 <h5 class="mb-0 fs-6"><a href="https://www.ivivu.com/blog/2024/09/6-diem-den-o-thanh-pho-ho-chi-minh-mang-dam-dau-an-van-hoa-lich-su/">6 điểm đến ở thành phố Hồ Chí Minh mang đậm dấu ấn văn hóa – lịch sử</a></h5>
-		   </div>
-		  </div>
-		</div><hr>
-		<div class="blog_1r1i row">
-		  <div class="col-md-4 col-sm-4">
-		   <div class="blog_1r1il">
-		       <div class="grid clearfix">
-			<figure class="effect-jazz mb-0">
-			<a href="https://www.ivivu.com/blog/2024/06/9-diem-du-lich-gan-sai-gon-cho-ky-nghi-cuoi-tuan-cuc-chill/"><img src="img\tpHCM_4.png" class="w-100" alt="img25"></a>
-			</figure>
-			</div>
-		   </div>
-		  </div>
-		  <div class="col-md-8 col-sm-8">
-		   <div class="blog_1r1ir">
-		     <h6 class="text-muted fw-bold font_14">06 Tháng 2, 2024</h6>
-			 <h5 class="mb-0 fs-6"><a href="https://www.ivivu.com/blog/2024/06/9-diem-du-lich-gan-sai-gon-cho-ky-nghi-cuoi-tuan-cuc-chill/">9 điểm du lịch gần Sài Gòn cho kỳ nghỉ cuối tuần cực “chill”</a></h5>
-		   </div>
-		  </div>
-		</div><hr>
-		<div class="blog_1r1i row">
-		  <div class="col-md-4 col-sm-4">
-		   <div class="blog_1r1il">
-		       <div class="grid clearfix">
-			<figure class="effect-jazz mb-0">
-			<a href="https://www.ivivu.com/blog/2024/10/yen-binh-voi-thien-nhien-nguyen-so-tai-hon-cau-con-dao/">
-				<img src="img\tpHCM_5.png" class="w-100" alt="img25"></a>
-			</figure>
-			</div>
-		   </div>
-		  </div>
-		  <div class="col-md-8 col-sm-8">
-		   <div class="blog_1r1ir">
-		     <h6 class="text-muted fw-bold font_14">06 Tháng 2, 2024</h6>
-			 <h5 class="mb-0 fs-6"><a href="https://www.ivivu.com/blog/2024/10/yen-binh-voi-thien-nhien-nguyen-so-tai-hon-cau-con-dao/">Yên bình với thiên nhiên nguyên sơ tại Hòn Cau Côn Đảo</a></h5>
-		   </div>
-		  </div>
-		</div>
-	 </div>
-	 <div class="blog_1r1 p-4 shadow_box mt-4">
-		<h4>Chủ đề có thể bạn quan tâm</h4>
-		<hr class="line mb-4">
-        <ul class="mb-0 tags">
-				 <li class="d-inline-block"><a href="blog_detail.html">Du lịch Hà Nội</a></li>
-				 <li class="d-inline-block"><a href="blog_detail.html">Du lịch Sài Gòn</a></li>
-				 <li class="d-inline-block"><a href="blog_detail.html">Khách sạn giá rẻ</a></li>
-				 <li class="d-inline-block"><a href="blog_detail.html">Địa điểm nổi tiếng</a></li>
-				 <li class="d-inline-block"><a href="blog_detail.html">Tour 1 ngày</a></li>
-				 <li class="d-inline-block"><a href="blog_detail.html">Du lịch Vũng Tàu</a></li>
-				 <li class="d-inline-block"><a href="blog_detail.html">Mẹo du lịch</a></li>
-				 <li class="d-inline-block"><a href="blog_detail.html">Vé máy bay</a></li>
-				 <li class="d-inline-block"><a href="blog_detail.html">Vé tàu</a></li>
-				 </ul>
-	 </div>
-	  </div>
-	</div>
-  </div>
- </div>
-</section>
+
+
 
 <div class="main_footer position-relative">
 	<div class="main_footer1 position-absolute w-100">
@@ -397,7 +181,7 @@
 		  <div class="row join_1 shadow_box pt-5 pb-5 mx-0 bg-white">
 			<div class="col-md-3">
 			  <div class="join_1l">
-				<img src="../static/img/44.jpg" class="w-100" alt="abc" />
+				<img src="{% static 'img/44.jpg' %}" class="w-100" alt="abc" />
 			  </div>
 			</div>
 			<div class="col-md-6">
@@ -423,7 +207,7 @@
 			</div>
 			<div class="col-md-3">
 			  <div class="join_1l">
-				<img src="../static/img/44.jpg" class="w-100" alt="abc" />
+				<img src="{% static 'img/44.jpg' %}" class="w-100" alt="abc" />
 			  </div>
 			</div>
 		  </div>
@@ -437,7 +221,7 @@
 			<div class="col-md-3">
 			  <div class="footer_1l">
 				<h3 class="mb-3">
-				  <a class="text-white" href="index.html"
+				  <a class="text-white" href="{% url 'index' %}"
 					><i class="fa fa-plane-arrival col_green"></i> Tour
 					<span class="col_yellow">Đặt ngay</span>
 				  </a>
@@ -563,7 +347,7 @@
 				  © 2024 TourBooking. All Rights Reserved | Design by:
 				  <a
 					class="col_green fw-bold"
-					href="http://127.0.0.1:5500/gallery.html"
+					href="{% url 'gallery' %}"
 					>Công ty TNHH Tour Booking
 				  </a>
 				</p>
@@ -593,7 +377,8 @@
 	  </section>
 	</div>
   </div>
-<script src="../static/js/common.js"></script>
+
+<script src="{% static 'js/common.js' %}"></script>
 
 </body>
 
