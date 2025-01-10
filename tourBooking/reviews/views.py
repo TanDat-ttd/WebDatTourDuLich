@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
-from django.db.models import Avg
+from django.db.models import Avg, Q
 from .models import Tour, Review
 from .forms import ReviewForm
 
@@ -42,3 +42,20 @@ def tour_list(request):
         tour.average_rating = tour.reviews.aggregate(Avg('rating'))['rating__avg'] or 0
 
     return render(request, 'blog.html', {'tours': tours})
+
+def tour_list(request):
+    query = request.GET.get('q', '')  # Lấy từ khóa tìm kiếm từ URL
+    tours = Tour.objects.all()
+
+    if query:
+        tours = tours.filter(
+            Q(name__icontains=query) | 
+            Q(code__icontains=query) | 
+            Q(description__icontains=query)
+        )
+
+    # Tính toán điểm đánh giá trung bình cho từng tour
+    for tour in tours:
+        tour.average_rating = tour.reviews.aggregate(Avg('rating'))['rating__avg'] or 0
+
+    return render(request, 'blog.html', {'tours': tours, 'query': query})

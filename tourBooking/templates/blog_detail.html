@@ -134,7 +134,7 @@
     <h1>{{ tour.name }}</h1>
     <img src="{{ tour.get_image_url }}" class="img-fluid mb-3" alt="{{ tour.name }}">
     <p>{{ tour.description }}</p>
-    <p><strong>Giá:</strong> {{ tour.price }} VND</p>
+    <p><strong>Giá:</strong> {{ tour.price|intcomma }} VND</p>
     <p><strong>Thời gian:</strong> {{ tour.start_date }} - {{ tour.end_date }} ({{ tour.duration_days }} ngày)</p>
 
     <h3>Lịch trình</h3>
